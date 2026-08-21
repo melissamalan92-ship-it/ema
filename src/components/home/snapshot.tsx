@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { RetroCalculator } from "./retro-calculator";
 
 const ERAS = ["1980s", "1990s", "2000s+"] as const;
 
@@ -63,7 +64,9 @@ export function Snapshot() {
       </div>
 
       <div className="mx-auto mt-14 flex justify-center">
-        {era === 0 && <CalculatorPanel {...shared} />}
+        {era === 0 && (
+          <RetroCalculator setIncome={setIncome} setExpenses={setExpenses} />
+        )}
         {era === 1 && <LedgerPanel {...shared} />}
         {era === 2 && <ModernPanel {...shared} />}
       </div>
@@ -82,75 +85,6 @@ type PanelProps = {
 
 const numberInputReset =
   "[appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none";
-
-function CalculatorPanel({
-  income,
-  expenses,
-  setIncome,
-  setExpenses,
-  net,
-  margin,
-}: PanelProps) {
-  const keys = ["7", "8", "9", "÷", "4", "5", "6", "×", "1", "2", "3", "−", "0", ".", "=", "+"];
-
-  return (
-    <div className="w-[300px] rounded-[18px] border border-[#d8d0bc] bg-[linear-gradient(175deg,#f2ede2,#e4ddcd)] p-5 shadow-[0_30px_60px_-20px_rgba(0,0,0,0.5)]">
-      <div className="flex items-baseline justify-between px-1 pb-3">
-        <span className="text-[15px] font-bold tracking-[0.03em] text-[#2a2620]">EMA</span>
-        <span className="font-mono text-[10px] tracking-[0.06em] text-[#6b6454]">EST. 1983</span>
-      </div>
-
-      <div className="mb-4 rounded-md bg-[#c7cfb9] px-3.5 py-3 shadow-[inset_0_2px_6px_rgba(0,0,0,0.25)]">
-        <div className="flex items-center justify-between font-mono text-[11px] tracking-[0.04em] text-[#1d2b1a]/70">
-          <span>NET</span>
-          <span>MRGN</span>
-        </div>
-        <div className="flex items-baseline justify-between font-mono text-2xl font-medium text-[#1d2b1a]">
-          <span>R{net.toLocaleString("en-ZA", { maximumFractionDigits: 0 })}</span>
-          <span>{margin.toFixed(1)}%</span>
-        </div>
-      </div>
-
-      <div className="mb-4 flex flex-col gap-2">
-        <label className="flex items-center justify-between gap-2 rounded-md bg-[#2a2b2e]/5 px-3 py-2">
-          <span className="font-mono text-[11px] font-semibold tracking-[0.04em] text-[#6b6454]">
-            INCOME
-          </span>
-          <input
-            type="number"
-            placeholder="0"
-            value={income}
-            onChange={(e) => setIncome(e.target.value)}
-            className={`w-24 bg-transparent text-right font-mono text-sm text-[#2a2620] outline-none ${numberInputReset}`}
-          />
-        </label>
-        <label className="flex items-center justify-between gap-2 rounded-md bg-[#2a2b2e]/5 px-3 py-2">
-          <span className="font-mono text-[11px] font-semibold tracking-[0.04em] text-[#6b6454]">
-            EXPENSES
-          </span>
-          <input
-            type="number"
-            placeholder="0"
-            value={expenses}
-            onChange={(e) => setExpenses(e.target.value)}
-            className={`w-24 bg-transparent text-right font-mono text-sm text-[#2a2620] outline-none ${numberInputReset}`}
-          />
-        </label>
-      </div>
-
-      <div className="grid grid-cols-4 gap-2">
-        {keys.map((k) => (
-          <div
-            key={k}
-            className="flex h-9 items-center justify-center rounded-md bg-[#2a2b2e] font-mono text-sm font-semibold text-[#f2ede2]/70"
-          >
-            {k}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
 
 function LedgerPanel({
   income,
