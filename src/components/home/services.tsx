@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const SERVICES = [
   {
     title: "Accounting Services",
@@ -119,32 +121,41 @@ const SERVICES = [
 export function Services() {
   return (
     <section id="services" className="px-10 py-[120px]">
-      <div className="mx-auto flex max-w-[720px] flex-col items-center gap-6 text-center">
-        <span className="font-mono text-xs font-medium tracking-[0.1em] text-[#cddaf0]">
-          [ What We Do ]
-        </span>
-        <h2 className="text-[38px] font-semibold leading-[1.25] text-bg-warm">
-          Accounting services{" "}
-          <em className="font-serif font-normal italic text-[#8fb0ff]">
-            designed
-          </em>{" "}
-          for{" "}
-          <em className="font-serif font-normal italic text-[#8fb0ff]">
-            growth
-          </em>
-          .
-        </h2>
-        <p className="max-w-[520px] text-base leading-[1.7] text-[#cddaf0]">
-          From day-to-day bookkeeping to business advisory, here&rsquo;s the
-          full range of support we bring to every client relationship.
-        </p>
+      <div className="mx-auto flex max-w-[1100px] items-center justify-between gap-10">
+        <div className="flex max-w-[600px] flex-col items-start gap-6 text-left">
+          <span className="font-mono text-xs font-medium tracking-[0.1em] text-[#cddaf0]">
+            [ What We Do ]
+          </span>
+          <h2 className="text-[38px] font-semibold leading-[1.25] text-bg-warm">
+            Accounting services{" "}
+            <em className="font-serif font-normal italic text-[#8fb0ff]">
+              designed
+            </em>{" "}
+            for{" "}
+            <em className="font-serif font-normal italic text-[#8fb0ff]">
+              growth
+            </em>
+            .
+          </h2>
+          <p className="text-base leading-[1.7] text-[#cddaf0]">
+            From day-to-day bookkeeping to business advisory, here&rsquo;s the
+            full range of support we bring to every client relationship.
+          </p>
+        </div>
+
+        <Link
+          href="#contact"
+          className="shrink-0 rounded-full bg-blue-accent px-[30px] py-[14px] text-[15px] font-semibold text-bg-warm transition-opacity hover:opacity-90"
+        >
+          Get in touch
+        </Link>
       </div>
 
       <div className="mx-auto mt-14 grid max-w-[1100px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {SERVICES.map((service) => (
           <div
             key={service.title}
-            className="flex flex-col gap-4 rounded-[20px] border border-[rgba(253,255,248,0.16)] bg-[rgba(253,255,248,0.07)] p-7 backdrop-blur-xl backdrop-saturate-150 shadow-[0_20px_50px_-24px_rgba(0,0,0,0.55)]"
+            className="flex aspect-square flex-col gap-4 rounded-[20px] border border-[rgba(253,255,248,0.16)] bg-[rgba(253,255,248,0.07)] p-7 backdrop-blur-xl backdrop-saturate-150 shadow-[0_20px_50px_-24px_rgba(0,0,0,0.55)]"
           >
             <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[rgba(16,31,46,0.55)] text-bg-warm">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
