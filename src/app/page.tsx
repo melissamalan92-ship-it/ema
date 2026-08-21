@@ -5,23 +5,30 @@ import { Snapshot } from "@/components/home/snapshot";
 import { Locations } from "@/components/home/locations";
 import { Footer } from "@/components/home/footer";
 
+const GRAIN =
+  "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>";
+
 export default function Home() {
   return (
-    <main className="min-w-[1040px] overflow-x-hidden bg-bg-warm">
+    <main
+      className="relative min-w-[1040px] overflow-x-hidden"
+      style={{
+        backgroundImage:
+          "linear-gradient(180deg, #33466c 0%, #243b78 42%, #101f2e 100%)",
+      }}
+    >
       <div
-        className="relative overflow-hidden pb-24"
-        style={{
-          backgroundImage:
-            "radial-gradient(ellipse 700px 550px at 12% 92%, rgba(67,117,205,0.55), transparent 60%), radial-gradient(ellipse 650px 500px at 92% 4%, rgba(51,70,108,0.65), transparent 60%), linear-gradient(165deg, #243b78 0%, #101f2e 100%)",
-        }}
-      >
+        className="pointer-events-none absolute inset-0 opacity-[0.05] mix-blend-overlay"
+        style={{ backgroundImage: `url("${GRAIN}")` }}
+      />
+      <div className="relative">
         <Nav />
         <Hero />
+        <About />
+        <Snapshot />
+        <Locations />
+        <Footer />
       </div>
-      <About />
-      <Snapshot />
-      <Locations />
-      <Footer />
     </main>
   );
 }

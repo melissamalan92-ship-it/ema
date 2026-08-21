@@ -9,7 +9,7 @@ const locations = [
 
 export function Locations() {
   return (
-    <section id="locations" className="bg-navy-dark px-10 pb-[100px] pt-[120px]">
+    <section id="locations" className="px-10 pb-[100px] pt-[120px]">
       <div className="mx-auto mb-16 flex max-w-[1180px] flex-col items-center gap-4 text-center">
         <span className="font-mono text-xs font-medium tracking-[0.1em] text-bg-mint">
           [ Where To Find Us ]

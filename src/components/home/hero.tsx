@@ -5,30 +5,28 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="mx-auto flex max-w-[1180px] flex-col items-center gap-[22px] px-10 pt-14 text-center"
+      className="mx-auto flex max-w-[1180px] flex-col items-center gap-[22px] px-10 pt-20 text-center"
     >
-      <div className="w-full max-w-[880px] rounded-[32px] border border-[rgba(253,255,248,0.18)] bg-[rgba(253,255,248,0.08)] px-10 py-14 shadow-[0_30px_60px_-20px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.15)] backdrop-blur-[36px] backdrop-saturate-150 sm:px-16">
-        <div className="mb-8 flex justify-center">
-          <Logo size="sm" variant="light" />
-        </div>
-
-        <h1 className="mx-auto max-w-[680px] font-sans text-[46px] font-semibold leading-[1.25] tracking-[-0.01em] text-bg-warm">
-          Accounting and Financial Guidance to Grow and Protect What
-          You&rsquo;ve Built
-        </h1>
-
-        <p className="mx-auto mt-5 max-w-[520px] text-base leading-[1.7] text-[#cddaf0]">
-          We provide practical accounting and financial guidance for
-          individuals and businesses seeking long-term clarity and control.
-        </p>
-
-        <Link
-          href="#contact"
-          className="mt-7 inline-block rounded-full bg-blue-accent px-[30px] py-[14px] text-[15px] font-semibold text-bg-warm transition-opacity hover:opacity-90"
-        >
-          Get in touch
-        </Link>
+      <div className="mb-6">
+        <Logo size="sm" variant="light" />
       </div>
+
+      <h1 className="mx-auto max-w-[700px] font-sans text-[46px] font-semibold leading-[1.25] tracking-[-0.01em] text-bg-warm">
+        Accounting and Financial Guidance to Grow and Protect What
+        You&rsquo;ve Built
+      </h1>
+
+      <p className="mx-auto max-w-[560px] text-base leading-[1.7] text-[#cddaf0]">
+        We provide practical accounting and financial guidance for
+        individuals and businesses seeking long-term clarity and control.
+      </p>
+
+      <Link
+        href="#contact"
+        className="mt-2 inline-block rounded-full bg-blue-accent px-[30px] py-[14px] text-[15px] font-semibold text-bg-warm transition-opacity hover:opacity-90"
+      >
+        Get in touch
+      </Link>
 
       <WaveChart />
     </section>
