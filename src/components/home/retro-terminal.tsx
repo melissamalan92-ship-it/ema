@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 // Screen glass measured directly off the photo (public/images/old-computer2-cutout.png).
-const SCREEN = { left: 15.5, top: 13.8, width: 69.3, height: 48.9 };
+const SCREEN = { left: 14.7, top: 13.1, width: 70.9, height: 45.7 };
 
 const numberInputReset =
   "[appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none";
@@ -26,7 +26,7 @@ export function RetroTerminal({
   margin,
 }: Props) {
   return (
-    <div className="relative" style={{ width: 500, height: (500 * 966) / 958 }}>
+    <div className="relative" style={{ width: 500, height: (500 * 958) / 950 }}>
       <Image
         src="/images/old-computer2-cutout.png"
         alt="Old computer monitor"
