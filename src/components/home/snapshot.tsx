@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { RetroCalculator } from "./retro-calculator";
+import { RetroTerminal } from "./retro-terminal";
 
 const ERAS = ["1980s", "1990s", "2000s+"] as const;
 
@@ -67,7 +68,7 @@ export function Snapshot() {
         {era === 0 && (
           <RetroCalculator setIncome={setIncome} setExpenses={setExpenses} />
         )}
-        {era === 1 && <LedgerPanel {...shared} />}
+        {era === 1 && <RetroTerminal {...shared} />}
         {era === 2 && <ModernPanel {...shared} />}
       </div>
     </section>
@@ -85,76 +86,6 @@ type PanelProps = {
 
 const numberInputReset =
   "[appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none";
-
-function LedgerPanel({
-  income,
-  expenses,
-  setIncome,
-  setExpenses,
-  net,
-  margin,
-}: PanelProps) {
-  return (
-    <div className="relative w-[520px] overflow-hidden rounded-sm border-2 border-[#33ff66] bg-black p-5 font-mono text-[#33ff66] shadow-[0_0_40px_rgba(51,255,102,0.15)]">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.06]"
-        style={{
-          backgroundImage:
-            "repeating-linear-gradient(0deg, #33ff66 0px, #33ff66 1px, transparent 1px, transparent 3px)",
-        }}
-      />
-
-      <div className="relative border-b border-[#33ff66]/50 pb-2 text-xs">
-        EMA-LEDGER Professional v2.1 (C) 1991 [ FISCAL.DAT ]
-      </div>
-      <div className="relative border-b border-[#33ff66]/30 py-2 text-[11px] tracking-[0.15em] text-[#33ff66]/60">
-        FILE&nbsp;&nbsp;EDIT&nbsp;&nbsp;VIEW&nbsp;&nbsp;REPORTS&nbsp;&nbsp;TOOLS&nbsp;&nbsp;HELP
-      </div>
-
-      <div className="relative flex flex-col gap-3 py-5 text-sm">
-        <label className="flex items-center gap-2">
-          <span>INCOME.....:</span>
-          <span>R</span>
-          <input
-            type="number"
-            placeholder="0"
-            value={income}
-            onChange={(e) => setIncome(e.target.value)}
-            className={`w-32 bg-transparent text-[#33ff66] outline-none placeholder:text-[#33ff66]/40 ${numberInputReset}`}
-          />
-        </label>
-        <label className="flex items-center gap-2">
-          <span>EXPENSES...:</span>
-          <span>R</span>
-          <input
-            type="number"
-            placeholder="0"
-            value={expenses}
-            onChange={(e) => setExpenses(e.target.value)}
-            className={`w-32 bg-transparent text-[#33ff66] outline-none placeholder:text-[#33ff66]/40 ${numberInputReset}`}
-          />
-          <span className="animate-[blink_1s_step-end_infinite]">█</span>
-        </label>
-      </div>
-
-      <div className="relative border-t border-[#33ff66]/50 pt-3 text-sm">
-        <div className="mb-1 text-[11px] tracking-[0.15em] text-[#33ff66]/60">[ SUMMARY ]</div>
-        <div>
-          NET PROFIT: R{net.toLocaleString("en-ZA", { maximumFractionDigits: 2 })}
-          &nbsp;&nbsp;&nbsp;MARGIN: {margin.toFixed(1)}%
-        </div>
-        <div className="text-[#33ff66]/70">
-          STATUS: {net >= 0 ? "POSITIVE" : "NEEDS REVIEW"}
-        </div>
-      </div>
-
-      <div className="relative mt-4 border-t border-[#33ff66]/50 pt-2 text-[11px] tracking-[0.1em] text-[#33ff66]/60">
-        [F1]HELP&nbsp;&nbsp;[F2]SAVE&nbsp;&nbsp;[F7]POST&nbsp;&nbsp;[ESC]EXIT
-      </div>
-    </div>
-  );
-}
 
 function ModernPanel({
   income,
