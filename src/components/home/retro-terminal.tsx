@@ -26,12 +26,12 @@ export function RetroTerminal({
   margin,
 }: Props) {
   return (
-    <div className="relative" style={{ width: 420, height: (420 * 586) / 612 }}>
+    <div className="relative" style={{ width: 500, height: (500 * 586) / 612 }}>
       <Image
-        src="/images/old computer.jpg"
+        src="/images/old-computer-cutout.png"
         alt="Old computer monitor"
         fill
-        sizes="420px"
+        sizes="500px"
         className="pointer-events-none select-none object-contain"
         priority
       />
