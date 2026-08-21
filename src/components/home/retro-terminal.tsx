@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 
-// Screen glass measured directly off the photo (public/images/old computer.jpg).
-const SCREEN = { left: 21, top: 20, width: 59, height: 43 };
+// Screen glass measured directly off the photo (public/images/old-computer2-cutout.png).
+const SCREEN = { left: 15.5, top: 13.8, width: 69.3, height: 48.9 };
 
 const numberInputReset =
   "[appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none";
@@ -26,9 +26,9 @@ export function RetroTerminal({
   margin,
 }: Props) {
   return (
-    <div className="relative" style={{ width: 500, height: (500 * 586) / 612 }}>
+    <div className="relative" style={{ width: 500, height: (500 * 966) / 958 }}>
       <Image
-        src="/images/old-computer-cutout.png"
+        src="/images/old-computer2-cutout.png"
         alt="Old computer monitor"
         fill
         sizes="500px"
