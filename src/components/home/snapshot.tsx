@@ -39,39 +39,57 @@ export function Snapshot() {
           &mdash; the care hasn&rsquo;t. Slide through the decades to see how
           we&rsquo;ve always kept your numbers straight.
         </p>
+      </div>
 
-        <div className="mt-4 w-full max-w-[360px]">
-          <input
-            type="range"
-            min={0}
-            max={2}
-            step={1}
-            value={era}
-            onChange={(e) => setEra(Number(e.target.value))}
-            className="w-full accent-blue-accent"
-            aria-label="Choose a decade"
-          />
-          <div className="mt-2 flex justify-between font-mono text-xs font-medium tracking-[0.08em] text-[#cddaf0]">
-            {ERAS.map((label, i) => (
-              <span
-                key={label}
-                className={i === era ? "text-bg-warm" : undefined}
-              >
-                {label}
-              </span>
-            ))}
-          </div>
+      <div className="mx-auto mt-14 flex max-w-[1000px] items-center justify-center gap-16">
+        <EraStepper era={era} setEra={setEra} />
+
+        <div className="flex flex-1 justify-center">
+          {era === 0 && (
+            <RetroCalculator setIncome={setIncome} setExpenses={setExpenses} />
+          )}
+          {era === 1 && <RetroTerminal {...shared} />}
+          {era === 2 && <ModernPanel {...shared} />}
         </div>
       </div>
-
-      <div className="mx-auto mt-14 flex justify-center">
-        {era === 0 && (
-          <RetroCalculator setIncome={setIncome} setExpenses={setExpenses} />
-        )}
-        {era === 1 && <RetroTerminal {...shared} />}
-        {era === 2 && <ModernPanel {...shared} />}
-      </div>
     </section>
+  );
+}
+
+function EraStepper({
+  era,
+  setEra,
+}: {
+  era: number;
+  setEra: (n: number) => void;
+}) {
+  return (
+    <div className="relative flex shrink-0 flex-col">
+      <div className="absolute left-[15px] top-[55px] bottom-[55px] w-px bg-[rgba(253,255,248,0.3)]" />
+      {ERAS.map((label, i) => (
+        <button
+          key={label}
+          type="button"
+          onClick={() => setEra(i)}
+          className="relative z-10 flex h-[110px] items-center gap-3 text-left"
+        >
+          <span
+            className={`h-[30px] w-[30px] shrink-0 rounded-full border-2 transition-colors ${
+              i === era
+                ? "border-bg-warm bg-blue-accent"
+                : "border-[rgba(253,255,248,0.4)] bg-transparent"
+            }`}
+          />
+          <span
+            className={`font-mono text-xs font-medium tracking-[0.08em] whitespace-nowrap ${
+              i === era ? "text-bg-warm" : "text-[#cddaf0]"
+            }`}
+          >
+            {label}
+          </span>
+        </button>
+      ))}
+    </div>
   );
 }
 
