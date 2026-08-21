@@ -16,11 +16,7 @@ export function Hero() {
         }}
       />
 
-      <div className="relative flex flex-col items-start gap-6 text-left">
-        <span className="font-mono text-xs font-medium tracking-[0.1em] text-[#cddaf0]">
-          [ From Complexity to Clarity ]
-        </span>
-
+      <div className="relative flex flex-col items-start gap-6 pl-10 text-left">
         <h1 className="max-w-[560px] text-[38px] font-bold leading-[1.25] text-bg-warm">
           <span className="font-normal opacity-70">
             Straightforward accounting,
@@ -36,7 +32,7 @@ export function Hero() {
 
         <Link
           href="#contact"
-          className="mt-1 flex items-center gap-1.5 text-[15px] font-semibold text-bg-warm hover:text-blue-accent"
+          className="mt-1 flex items-center gap-2 rounded-full border border-[rgba(253,255,248,0.35)] bg-[rgba(253,255,248,0.1)] px-6 py-3 text-[15px] font-semibold text-bg-warm backdrop-blur-md transition-colors hover:bg-[rgba(253,255,248,0.18)]"
         >
           Get in touch
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
@@ -51,8 +47,11 @@ export function Hero() {
         </Link>
       </div>
 
-      <div className="relative flex justify-center">
+      <div className="relative flex flex-col items-center gap-2">
         <Logo size="lg" variant="light" />
+        <span className="font-mono text-[11px] font-medium tracking-[0.2em] text-[#b7c2d6]">
+          ESTABLISHED IN 1983
+        </span>
       </div>
     </section>
   );
