@@ -2,11 +2,17 @@ export function Logo({
   size = "md",
   variant = "dark",
 }: {
-  size?: "sm" | "md";
+  size?: "sm" | "md" | "lg";
   variant?: "dark" | "light";
 }) {
-  const wordmark = size === "sm" ? "text-[17px]" : "text-[22px]";
-  const subline = size === "sm" ? "text-[7px] tracking-[0.16em]" : "text-[9px] tracking-[0.18em]";
+  const wordmark =
+    size === "sm" ? "text-[17px]" : size === "lg" ? "text-[34px]" : "text-[22px]";
+  const subline =
+    size === "sm"
+      ? "text-[7px] tracking-[0.16em]"
+      : size === "lg"
+        ? "text-[11px] tracking-[0.2em]"
+        : "text-[9px] tracking-[0.18em]";
   const bar = variant === "light" ? "bg-bg-warm" : "bg-navy-primary";
   const word = variant === "light" ? "text-bg-warm" : "text-navy-primary";
   const sub = variant === "light" ? "text-[#b7c2d6]" : "text-ink-soft";
