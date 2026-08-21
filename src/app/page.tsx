@@ -14,7 +14,7 @@ export default function Home() {
       className="relative min-w-[1040px] overflow-x-hidden"
       style={{
         backgroundImage:
-          "linear-gradient(180deg, #33466c 0%, #243b78 42%, #101f2e 100%)",
+          "linear-gradient(180deg, #d0e0df 0%, #4375cd 6%, #33466c 14%, #243b78 32%, #101f2e 100%)",
       }}
     >
       <div
