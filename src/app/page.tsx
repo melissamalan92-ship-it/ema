@@ -12,12 +12,13 @@ export default function Home() {
     <main
       className="relative min-w-[1040px] overflow-x-hidden"
       style={{
+        backgroundColor: "#101f2e",
         backgroundImage:
-          "linear-gradient(180deg, #d0e0df 0%, #4375cd 6%, #33466c 14%, #243b78 32%, #101f2e 100%)",
+          "radial-gradient(ellipse 480px 380px at 9% 5%, rgba(208,224,223,0.55), transparent 45%), radial-gradient(ellipse 560px 460px at 13% 7%, rgba(67,117,205,0.4), transparent 55%), radial-gradient(ellipse 640px 540px at 17% 6%, rgba(51,70,108,0.35), transparent 65%)",
       }}
     >
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.05] mix-blend-overlay"
+        className="pointer-events-none absolute inset-0 opacity-[0.12] mix-blend-overlay"
         style={{ backgroundImage: `url("${GRAIN}")` }}
       />
       <div className="relative">
