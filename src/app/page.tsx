@@ -1,6 +1,7 @@
 import { Nav } from "@/components/home/nav";
 import { Hero } from "@/components/home/hero";
 import { Snapshot } from "@/components/home/snapshot";
+import { Services } from "@/components/home/services";
 import { Locations } from "@/components/home/locations";
 import { Footer } from "@/components/home/footer";
 
@@ -25,6 +26,7 @@ export default function Home() {
         <Nav />
         <Hero />
         <Snapshot />
+        <Services />
         <Locations />
         <Footer />
       </div>
