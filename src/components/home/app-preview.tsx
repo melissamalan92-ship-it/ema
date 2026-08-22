@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { ReactNode } from "react";
 
 function GlassCard({
@@ -46,13 +47,15 @@ export function AppPreview() {
             className="relative z-0 mt-6 h-[500px] w-[248px] shrink-0 rounded-[44px] bg-[#0b1220] p-[10px] shadow-[0_60px_100px_-30px_rgba(0,0,0,0.7)]"
             style={{ transform: "rotate(-6deg)" }}
           >
-            <div
-              className="relative h-full w-full overflow-hidden rounded-[34px]"
-              style={{
-                backgroundImage:
-                  "radial-gradient(120% 90% at 20% 10%, #d0e0df 0%, #4375cd 40%, #243b78 72%, #101f2e 100%)",
-              }}
-            >
+            <div className="relative h-full w-full overflow-hidden rounded-[34px]">
+              <Image
+                src="/images/EMA App.jpg"
+                alt="EMA app preview"
+                fill
+                className="object-cover object-top"
+                sizes="228px"
+                priority
+              />
               <div className="absolute left-1/2 top-3 h-6 w-24 -translate-x-1/2 rounded-full bg-black/70" />
             </div>
           </div>
