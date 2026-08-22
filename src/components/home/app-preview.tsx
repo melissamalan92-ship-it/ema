@@ -44,11 +44,11 @@ export function AppPreview() {
         </p>
       </div>
 
-      <div className="relative mx-auto mt-20 h-[560px] w-full max-w-[720px]">
+      <div className="relative mx-auto mt-16 flex w-full max-w-[560px] justify-center" style={{ minHeight: 560 }}>
         {/* Phone */}
         <div
-          className="absolute left-1/2 top-1/2 h-[500px] w-[248px] -translate-x-1/2 -translate-y-1/2 rounded-[44px] bg-[#0b1220] p-[10px] shadow-[0_60px_100px_-30px_rgba(0,0,0,0.7)]"
-          style={{ transform: "translate(-50%, -50%) rotate(-6deg)" }}
+          className="relative z-0 mt-6 h-[500px] w-[248px] shrink-0 rounded-[44px] bg-[#0b1220] p-[10px] shadow-[0_60px_100px_-30px_rgba(0,0,0,0.7)]"
+          style={{ transform: "rotate(-6deg)" }}
         >
           <div
             className="relative h-full w-full overflow-hidden rounded-[34px]"
@@ -61,8 +61,8 @@ export function AppPreview() {
           </div>
         </div>
 
-        {/* Floating glass cards */}
-        <GlassCard className="left-[2%] top-[8%] -rotate-3">
+        {/* Floating glass cards -- overlapping the phone's edges */}
+        <GlassCard className="left-[2%] top-[14%] z-10 -rotate-3">
           <IconBadge>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
               <rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" strokeWidth="1.5" fill="none" />
@@ -74,7 +74,7 @@ export function AppPreview() {
           </span>
         </GlassCard>
 
-        <GlassCard className="right-[0%] top-[16%] rotate-2">
+        <GlassCard className="right-[6%] top-[24%] z-10 rotate-2">
           <IconBadge>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
               <path
@@ -92,7 +92,7 @@ export function AppPreview() {
           </span>
         </GlassCard>
 
-        <GlassCard className="left-[0%] bottom-[20%] rotate-2">
+        <GlassCard className="left-[4%] bottom-[22%] z-10 rotate-2">
           <IconBadge>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
               <circle cx="8" cy="8" r="2.5" stroke="currentColor" strokeWidth="1.5" fill="none" />
@@ -105,7 +105,7 @@ export function AppPreview() {
           </span>
         </GlassCard>
 
-        <GlassCard className="right-[2%] bottom-[6%] max-w-[240px] -rotate-2 flex-col items-start gap-2 text-left">
+        <GlassCard className="right-[2%] bottom-[8%] z-10 max-w-[220px] -rotate-2 flex-col items-start gap-2 text-left">
           <span className="font-mono text-[10px] font-semibold tracking-[0.1em] text-[#8fb0ff]">
             [ EMA APP ]
           </span>
