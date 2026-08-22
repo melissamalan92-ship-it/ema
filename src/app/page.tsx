@@ -13,13 +13,13 @@ export default function Home() {
     <main
       className="relative min-w-[1040px] overflow-x-hidden"
       style={{
-        backgroundColor: "#101f2e",
+        backgroundColor: "#182c47",
         backgroundImage:
-          "radial-gradient(ellipse 480px 380px at 9% 5%, rgba(208,224,223,0.55), transparent 45%), radial-gradient(ellipse 560px 460px at 13% 7%, rgba(67,117,205,0.4), transparent 55%), radial-gradient(ellipse 640px 540px at 17% 6%, rgba(51,70,108,0.35), transparent 65%)",
+          "radial-gradient(ellipse 620px 480px at 8% 4%, rgba(208,224,223,0.5), transparent 48%), radial-gradient(ellipse 700px 560px at 12% 6%, rgba(67,117,205,0.32), transparent 58%), radial-gradient(ellipse 640px 520px at 14% 34%, rgba(143,176,255,0.22), transparent 55%), radial-gradient(ellipse 720px 600px at 82% 46%, rgba(67,117,205,0.24), transparent 55%), radial-gradient(ellipse 660px 540px at 18% 68%, rgba(208,224,223,0.16), transparent 55%), radial-gradient(ellipse 700px 560px at 78% 84%, rgba(51,70,108,0.3), transparent 58%), linear-gradient(180deg, #1c3252 0%, #101f2e 100%)",
       }}
     >
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.12] mix-blend-overlay"
+        className="pointer-events-none absolute inset-0 opacity-[0.2] mix-blend-overlay"
         style={{ backgroundImage: `url("${GRAIN}")` }}
       />
       <div className="relative">
