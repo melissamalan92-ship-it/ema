@@ -1,11 +1,7 @@
 import Link from "next/link";
 import { Logo } from "./logo";
 
-const links = [
-  { href: "#snapshot", label: "Snapshot" },
-  { href: "#services", label: "Services" },
-  { href: "#locations", label: "Locations" },
-];
+const links = [{ href: "#services", label: "Services" }];
 
 export function Nav() {
   return (
