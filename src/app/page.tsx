@@ -28,12 +28,8 @@ export default function Home() {
         style={{ backgroundImage: `url("${GRAIN}")` }}
       />
       <div className="relative">
-        <div className="p-4 sm:p-6">
-          <div className="overflow-hidden rounded-[32px] border-2 border-blue-accent bg-bg-warm shadow-[0_40px_90px_-30px_rgba(0,0,0,0.6)]">
-            <Nav />
-            <Hero />
-          </div>
-        </div>
+        <Nav />
+        <Hero />
         <Services />
         <AppPreview />
         <Locations />
