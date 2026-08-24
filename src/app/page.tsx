@@ -3,6 +3,7 @@ import { Hero } from "@/components/home/hero";
 import { Services } from "@/components/home/services";
 import { AppPreview } from "@/components/home/app-preview";
 import { Locations } from "@/components/home/locations";
+import { Cta } from "@/components/home/cta";
 import { Footer } from "@/components/home/footer";
 
 // Snapshot (decade-slider calculator) is shelved for now per the client's
@@ -33,6 +34,7 @@ export default function Home() {
         <Services />
         <AppPreview />
         <Locations />
+        <Cta />
         <Footer />
       </div>
     </main>
