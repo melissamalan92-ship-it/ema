@@ -121,7 +121,7 @@ const SERVICES = [
 export function Services() {
   return (
     <section id="services" className="px-10 py-[120px]">
-      <div className="mx-auto grid max-w-[1180px] grid-cols-1 items-center gap-16 lg:grid-cols-[0.85fr_1.15fr]">
+      <div className="mx-auto grid max-w-[1180px] grid-cols-1 items-stretch gap-16 lg:grid-cols-[0.85fr_1.15fr]">
         <div className="flex flex-col items-start gap-6 text-left">
           <span className="font-mono text-xs font-medium tracking-[0.1em] text-[#cddaf0]">
             [ What We Do ]
@@ -142,7 +142,7 @@ export function Services() {
             full range of support we bring to every client relationship.
           </p>
 
-          <div className="mt-1 flex flex-nowrap items-center gap-3">
+          <div className="mt-auto flex flex-nowrap items-center gap-3">
             <Link
               href="#contact"
               className="shrink-0 rounded-full bg-blue-accent px-[30px] py-[14px] text-[15px] font-semibold text-bg-warm transition-opacity hover:opacity-90"
