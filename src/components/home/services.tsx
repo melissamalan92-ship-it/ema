@@ -121,8 +121,8 @@ const SERVICES = [
 export function Services() {
   return (
     <section id="services" className="px-10 py-[120px]">
-      <div className="mx-auto flex max-w-[1100px] items-center justify-between gap-10">
-        <div className="flex max-w-[600px] flex-col items-start gap-6 text-left">
+      <div className="mx-auto grid max-w-[1180px] grid-cols-1 items-center gap-16 lg:grid-cols-[0.85fr_1.15fr]">
+        <div className="flex flex-col items-start gap-6 text-left">
           <span className="font-mono text-xs font-medium tracking-[0.1em] text-[#cddaf0]">
             [ What We Do ]
           </span>
@@ -137,55 +137,54 @@ export function Services() {
             </em>
             .
           </h2>
-          <p className="text-base leading-[1.7] text-[#cddaf0]">
+          <p className="max-w-[440px] text-base leading-[1.7] text-[#cddaf0]">
             From day-to-day bookkeeping to business advisory, here&rsquo;s the
             full range of support we bring to every client relationship.
           </p>
+
+          <div className="mt-1 flex flex-wrap items-center gap-3">
+            <Link
+              href="#contact"
+              className="rounded-full bg-blue-accent px-[30px] py-[14px] text-[15px] font-semibold text-bg-warm transition-opacity hover:opacity-90"
+            >
+              Get in touch
+            </Link>
+            <Link
+              href="/services"
+              className="inline-flex items-center gap-1.5 rounded-full border border-[rgba(253,255,248,0.3)] px-6 py-3 text-sm font-semibold text-bg-warm transition-colors hover:bg-[rgba(253,255,248,0.1)]"
+            >
+              Learn more about our services
+              <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 8H13M13 8L9 4M13 8L9 12"
+                  stroke="currentColor"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </Link>
+          </div>
         </div>
 
-        <Link
-          href="#contact"
-          className="shrink-0 rounded-full bg-blue-accent px-[30px] py-[14px] text-[15px] font-semibold text-bg-warm transition-opacity hover:opacity-90"
-        >
-          Get in touch
-        </Link>
-      </div>
+        <div className="grid grid-cols-2 gap-6">
+          {SERVICES.map((service) => (
+            <div
+              key={service.title}
+              className="flex aspect-[2/1] flex-col items-center gap-4 rounded-[20px] border border-[rgba(253,255,248,0.16)] bg-[rgba(253,255,248,0.07)] p-7 text-center backdrop-blur-xl backdrop-saturate-150 shadow-[0_20px_50px_-24px_rgba(0,0,0,0.55)] transition-colors duration-200 hover:bg-[rgba(253,255,248,0.14)]"
+            >
+              <h3 className="text-lg font-semibold text-bg-warm">
+                {service.title}
+              </h3>
 
-      <div className="mx-auto mt-14 grid max-w-[1100px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {SERVICES.map((service) => (
-          <div
-            key={service.title}
-            className="flex aspect-[2/1] flex-col items-center gap-4 rounded-[20px] border border-[rgba(253,255,248,0.16)] bg-[rgba(253,255,248,0.07)] p-7 text-center backdrop-blur-xl backdrop-saturate-150 shadow-[0_20px_50px_-24px_rgba(0,0,0,0.55)] transition-colors duration-200 hover:bg-[rgba(253,255,248,0.14)]"
-          >
-            <h3 className="text-lg font-semibold text-bg-warm">
-              {service.title}
-            </h3>
-
-            <span className="mt-auto flex h-12 w-12 items-center justify-center rounded-full bg-[rgba(16,31,46,0.55)] text-bg-warm">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                {service.icon}
-              </svg>
-            </span>
-          </div>
-        ))}
-      </div>
-
-      <div className="mx-auto mt-10 flex max-w-[1100px] justify-center">
-        <Link
-          href="/services"
-          className="inline-flex items-center gap-1.5 rounded-full border border-[rgba(253,255,248,0.3)] px-6 py-3 text-sm font-semibold text-bg-warm transition-colors hover:bg-[rgba(253,255,248,0.1)]"
-        >
-          Learn more about our services
-          <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
-            <path
-              d="M3 8H13M13 8L9 4M13 8L9 12"
-              stroke="currentColor"
-              strokeWidth="1.6"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </Link>
+              <span className="mt-auto flex h-12 w-12 items-center justify-center rounded-full bg-[rgba(16,31,46,0.55)] text-bg-warm">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  {service.icon}
+                </svg>
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
