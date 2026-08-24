@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const SERVICES = [
+export const SERVICES = [
   {
     title: "Accounting Services",
     description:
