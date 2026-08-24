@@ -155,19 +155,34 @@ export function Services() {
         {SERVICES.map((service) => (
           <div
             key={service.title}
-            className="flex aspect-square flex-col gap-4 rounded-[20px] border border-[rgba(253,255,248,0.16)] bg-[rgba(253,255,248,0.07)] p-7 backdrop-blur-xl backdrop-saturate-150 shadow-[0_20px_50px_-24px_rgba(0,0,0,0.55)]"
+            className="flex aspect-square flex-col items-center gap-4 rounded-[20px] border border-[rgba(253,255,248,0.16)] bg-[rgba(253,255,248,0.07)] p-7 text-center backdrop-blur-xl backdrop-saturate-150 shadow-[0_20px_50px_-24px_rgba(0,0,0,0.55)] transition-colors duration-200 hover:bg-[rgba(253,255,248,0.14)]"
           >
-            <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[rgba(16,31,46,0.55)] text-bg-warm">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                {service.icon}
-              </svg>
-            </span>
             <h3 className="text-[17px] font-semibold text-bg-warm">
               {service.title}
             </h3>
-            <p className="text-sm leading-[1.6] text-[#cddaf0]">
-              {service.description}
-            </p>
+
+            <div className="mt-auto flex flex-col items-center gap-4">
+              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[rgba(16,31,46,0.55)] text-bg-warm">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  {service.icon}
+                </svg>
+              </span>
+              <Link
+                href="/services"
+                className="inline-flex items-center gap-1.5 rounded-full border border-[rgba(253,255,248,0.3)] px-4 py-2 text-xs font-semibold text-bg-warm transition-colors hover:bg-[rgba(253,255,248,0.18)]"
+              >
+                Learn more
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8H13M13 8L9 4M13 8L9 12"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </Link>
+            </div>
           </div>
         ))}
       </div>
