@@ -38,29 +38,23 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="relative z-10 mx-auto -mt-6 grid max-w-[1180px] grid-cols-6 px-10">
-        {SERVICES.map((service, i) => (
-          <span
-            key={service.title}
-            className="flex h-12 items-center justify-center rounded-md bg-bg-warm text-xs font-semibold tracking-[0.08em] text-navy-primary shadow-[0_12px_30px_-12px_rgba(0,0,0,0.5)]"
-          >
-            {String(i + 1).padStart(2, "0")}
-          </span>
-        ))}
-      </div>
-
-      <div className="grid grid-cols-6">
-        {SERVICES.map((service, i) => (
+      <div className="mx-auto grid max-w-[1180px] grid-cols-6 gap-5 px-10 py-16">
+        {SERVICES.map((service) => (
           <div
             key={service.title}
-            className={`flex min-h-[260px] flex-col justify-end gap-3 bg-bg-mint px-6 pb-10 pt-24 ${
-              i > 0 ? "border-l border-[#b9cdcb]" : ""
-            }`}
+            className="flex flex-col gap-3 rounded-2xl border border-[rgba(253,255,248,0.16)] bg-[rgba(253,255,248,0.07)] p-5 backdrop-blur-xl backdrop-saturate-150 shadow-[0_20px_50px_-24px_rgba(0,0,0,0.55)]"
           >
-            <h3 className="font-serif text-xl font-normal text-ink">
-              {service.title}
-            </h3>
-            <p className="text-sm leading-[1.6] text-ink-soft">
+            <div className="flex items-center gap-3">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[rgba(16,31,46,0.55)] text-bg-warm">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  {service.icon}
+                </svg>
+              </span>
+              <h3 className="text-sm font-semibold text-bg-warm">
+                {service.title}
+              </h3>
+            </div>
+            <p className="text-xs leading-[1.6] text-[#cddaf0]">
               {service.description}
             </p>
           </div>
