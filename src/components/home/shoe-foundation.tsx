@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import fs from "fs";
 import path from "path";
 
@@ -11,10 +12,10 @@ export function ShoeFoundation() {
       className="px-10 py-24 text-center"
       style={{
         backgroundImage:
-          "linear-gradient(120deg, #101f2e 0%, #243b78 55%, #4375cd 100%)",
+          "linear-gradient(180deg, #243b78 0%, #1c3252 55%, #101f2e 100%)",
       }}
     >
-      <div className="mx-auto flex max-w-[480px] flex-col items-center gap-5 rounded-[28px] border border-[rgba(253,255,248,0.18)] bg-[rgba(253,255,248,0.1)] p-10 backdrop-blur-xl backdrop-saturate-150 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.6)]">
+      <div className="mx-auto flex max-w-[480px] flex-col items-center gap-5 rounded-[28px] border border-white/40 bg-white/25 p-10 backdrop-blur-2xl backdrop-saturate-150 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.6)]">
         {hasLogo ? (
           <div className="relative h-28 w-28 overflow-hidden rounded-2xl">
             <Image
@@ -26,17 +27,23 @@ export function ShoeFoundation() {
             />
           </div>
         ) : (
-          <div className="flex h-28 w-28 items-center justify-center rounded-2xl border border-dashed border-[rgba(253,255,248,0.3)] text-center text-[10px] leading-tight text-bg-warm/50">
+          <div className="flex h-28 w-28 items-center justify-center rounded-2xl border border-dashed border-white/40 text-center text-[10px] leading-tight text-bg-warm/60">
             Logo goes here
           </div>
         )}
         <h2 className="font-serif text-[28px] font-normal text-bg-warm">
           Proud Partner of The Shoe Foundation
         </h2>
-        <p className="text-sm leading-[1.6] text-[#cddaf0]">
+        <p className="text-sm leading-[1.6] text-[#e3e9f5]">
           This foundation helps fund learners fully through five years of
           secondary education.
         </p>
+        <Link
+          href="#contact"
+          className="mt-2 rounded-full bg-navy-primary px-7 py-3 text-sm font-semibold text-bg-warm transition-opacity hover:opacity-90"
+        >
+          Find Out More
+        </Link>
       </div>
     </section>
   );
