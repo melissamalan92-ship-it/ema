@@ -115,7 +115,7 @@ export function AppPreview() {
           </GlassCard>
         </div>
 
-        <div className="flex flex-col items-start gap-6 text-left">
+        <div className="flex flex-col items-start gap-6 rounded-2xl bg-[#d9dcd6] p-10 text-left shadow-[0_20px_40px_-28px_rgba(16,31,46,0.4)]">
           <span className="font-mono text-xs font-medium tracking-[0.1em] text-ink-soft">
             [ Coming Soon ]
           </span>
