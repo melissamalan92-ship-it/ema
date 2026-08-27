@@ -1,4 +1,3 @@
-import { Nav } from "@/components/home/nav";
 import { Hero } from "@/components/home/hero";
 import { AppPreview } from "@/components/home/app-preview";
 import { Locations } from "@/components/home/locations";
@@ -31,7 +30,6 @@ export default function Home() {
         style={{ backgroundImage: `url("${GRAIN}")` }}
       />
       <div className="relative">
-        <Nav />
         <Hero />
         <AppPreview />
         <Locations />

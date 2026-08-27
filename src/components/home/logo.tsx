@@ -3,7 +3,7 @@ export function Logo({
   variant = "dark",
 }: {
   size?: "sm" | "md" | "lg";
-  variant?: "dark" | "light";
+  variant?: "dark" | "light" | "blue";
 }) {
   const wordmark =
     size === "sm" ? "text-[17px]" : size === "lg" ? "text-[34px]" : "text-[22px]";
@@ -13,9 +13,11 @@ export function Logo({
       : size === "lg"
         ? "text-[11px] tracking-[0.2em]"
         : "text-[9px] tracking-[0.18em]";
-  const bar = variant === "light" ? "bg-bg-warm" : "bg-navy-primary";
-  const word = variant === "light" ? "text-bg-warm" : "text-navy-primary";
-  const sub = variant === "light" ? "text-[#b7c2d6]" : "text-ink-soft";
+  const bar =
+    variant === "light" ? "bg-bg-warm" : variant === "blue" ? "bg-blue-accent" : "bg-navy-primary";
+  const word =
+    variant === "light" ? "text-bg-warm" : variant === "blue" ? "text-blue-accent" : "text-navy-primary";
+  const sub = variant === "light" ? "text-[#b7c2d6]" : variant === "blue" ? "text-[#8fb0ff]" : "text-ink-soft";
 
   return (
     <div className="flex items-start gap-2.5">

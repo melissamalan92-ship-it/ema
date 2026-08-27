@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Logo } from "./logo";
 
 const links = [
   { href: "#services", label: "Services" },
@@ -8,8 +7,7 @@ const links = [
 
 export function Nav() {
   return (
-    <nav className="relative mx-auto flex max-w-[1180px] items-center justify-between px-10 pt-10">
-      <Logo variant="light" />
+    <nav className="relative mx-auto flex max-w-[1180px] items-center justify-end px-10 pt-10">
       <div className="hidden items-center gap-10 md:flex">
         {links.map((link) => (
           <Link
