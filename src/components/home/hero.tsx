@@ -4,20 +4,12 @@ import { useEffect, useRef, useState } from "react";
 import { Nav } from "./nav";
 import { Logo } from "./logo";
 import { SERVICES } from "./services";
+import { Cta } from "./cta";
 
 const CLIPS = [
   { src: "/images/EMA%20video%201980%27s.mp4", label: "1980s" },
   { src: "/images/EMA%20video%201990%27s.mp4", label: "1990s" },
   { src: "/images/EMA%20video%202000%27s.mp4", label: "Now" },
-];
-
-// Placeholder marks -- swap for real client logos once EMA supplies them.
-const PLACEHOLDER_LOGOS = [
-  "Company One",
-  "Company Two",
-  "Company Three",
-  "Company Four",
-  "Company Five",
 ];
 
 export function Hero() {
@@ -119,31 +111,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div
-        className="relative px-10 py-16 text-center"
-        style={{
-          backgroundImage:
-            "linear-gradient(120deg, #101f2e 0%, #243b78 55%, #4375cd 100%)",
-        }}
-      >
-        <p className="text-2xl font-semibold text-bg-warm">
-          Trusted by over 2,500 companies
-        </p>
-        <p className="mx-auto mt-2 max-w-[480px] text-sm leading-[1.6] text-[#cddaf0]">
-          Straightforward accounting and financial guidance for businesses
-          nationwide.
-        </p>
-        <div className="mx-auto mt-10 flex max-w-[1180px] flex-wrap items-center justify-center gap-x-14 gap-y-6">
-          {PLACEHOLDER_LOGOS.map((name) => (
-            <span
-              key={name}
-              className="text-lg font-semibold uppercase tracking-[0.08em] text-bg-warm/50"
-            >
-              {name}
-            </span>
-          ))}
-        </div>
-      </div>
+      <Cta />
 
       <div className="bg-bg-grey px-10 py-16">
         <div className="mx-auto grid max-w-[1180px] grid-cols-3 gap-6">

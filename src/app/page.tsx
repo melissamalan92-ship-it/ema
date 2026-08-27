@@ -1,7 +1,6 @@
 import { Hero } from "@/components/home/hero";
 import { AppPreview } from "@/components/home/app-preview";
 import { Locations } from "@/components/home/locations";
-import { Cta } from "@/components/home/cta";
 import { Footer } from "@/components/home/footer";
 
 // Snapshot (decade-slider calculator) is shelved for now per the client's
@@ -31,9 +30,8 @@ export default function Home() {
       />
       <div className="relative">
         <Hero />
-        <AppPreview />
         <Locations />
-        <Cta />
+        <AppPreview />
         <Footer />
       </div>
     </main>
