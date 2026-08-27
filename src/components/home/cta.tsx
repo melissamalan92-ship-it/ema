@@ -2,13 +2,7 @@ import Link from "next/link";
 
 export function Cta() {
   return (
-    <section
-      className="relative px-10 py-20 text-center"
-      style={{
-        backgroundImage:
-          "linear-gradient(120deg, #101f2e 0%, #243b78 55%, #4375cd 100%)",
-      }}
-    >
+    <section className="relative px-10 py-20 text-center">
       <div className="mx-auto flex max-w-[640px] flex-col items-center gap-6">
         <h2 className="font-serif text-[42px] font-normal leading-[1.2] text-bg-warm">
           Looking for a trusted partner.
