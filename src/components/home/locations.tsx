@@ -17,12 +17,9 @@ export function Locations() {
 
   return (
     <section id="locations" className="px-10 pb-[100px] pt-[120px]">
-      <div className="mx-auto flex max-w-[1180px] flex-col items-start gap-10 lg:flex-row lg:items-stretch">
-        <div className="flex w-full max-w-[420px] shrink-0 flex-col gap-10">
+      <div className="mx-auto flex max-w-[1180px] flex-row items-stretch gap-10">
+        <div className="flex h-full w-full max-w-[420px] shrink-0 flex-col justify-between">
           <div className="flex flex-col items-start gap-4 text-left">
-            <span className="font-mono text-xs font-medium tracking-[0.1em] text-bg-mint">
-              [ Where To Find Us ]
-            </span>
             <h2 className="inline-block border-b-2 border-blue-accent pb-2.5 font-serif text-[52px] font-normal text-bg-warm">
               Our Locations
             </h2>
@@ -33,7 +30,9 @@ export function Locations() {
           </div>
 
           <div className="flex items-center justify-center">
-            <SAMap active={active} onSelect={handleSelect} />
+            <div className="w-full max-w-[360px]">
+              <SAMap active={active} onSelect={handleSelect} />
+            </div>
           </div>
         </div>
 
