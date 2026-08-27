@@ -15,7 +15,7 @@ export function ShoeFoundation() {
           "linear-gradient(180deg, #243b78 0%, #1c3252 55%, #101f2e 100%)",
       }}
     >
-      <div className="mx-auto flex max-w-[480px] flex-col items-center gap-5 rounded-[28px] border border-white/40 bg-white/25 p-10 backdrop-blur-2xl backdrop-saturate-150 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.6)]">
+      <div className="mx-auto flex max-w-[480px] flex-col items-center gap-5 rounded-[32px] border-2 border-blue-accent bg-bg-grey p-10 shadow-[0_40px_90px_-30px_rgba(0,0,0,0.5)]">
         {hasLogo ? (
           <div className="relative h-44 w-44 overflow-hidden rounded-2xl">
             <Image
@@ -27,14 +27,14 @@ export function ShoeFoundation() {
             />
           </div>
         ) : (
-          <div className="flex h-44 w-44 items-center justify-center rounded-2xl border border-dashed border-white/40 text-center text-[10px] leading-tight text-bg-warm/60">
+          <div className="flex h-44 w-44 items-center justify-center rounded-2xl border border-dashed border-ink/30 text-center text-[10px] leading-tight text-ink-soft">
             Logo goes here
           </div>
         )}
-        <h2 className="font-serif text-[28px] font-normal text-bg-warm">
+        <h2 className="font-serif text-[28px] font-normal text-ink">
           Proud Partner of The Shoe Foundation
         </h2>
-        <p className="text-sm leading-[1.6] text-[#e3e9f5]">
+        <p className="text-sm leading-[1.6] text-ink-soft">
           This foundation helps fund learners fully through five years of
           secondary education.
         </p>

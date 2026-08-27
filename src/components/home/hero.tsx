@@ -29,7 +29,8 @@ export function Hero() {
 
   return (
     <section id="services" className="relative">
-      <div className="relative h-[70vh] w-full overflow-hidden">
+      <div className="p-4 sm:p-6">
+      <div className="relative h-[70vh] w-full overflow-hidden rounded-[32px] border-2 border-blue-accent">
         {CLIPS.map((clip, i) => (
           <video
             key={clip.src}
@@ -110,31 +111,34 @@ export function Hero() {
           </div>
         </div>
       </div>
+      </div>
 
       <Cta />
 
-      <div className="bg-bg-grey px-10 py-16">
-        <div className="mx-auto grid max-w-[1180px] grid-cols-3 gap-6">
-          {SERVICES.map((service) => (
-            <div
-              key={service.title}
-              className="flex flex-col gap-3 rounded-2xl bg-[#d9dcd6] p-6 shadow-[0_20px_40px_-28px_rgba(16,31,46,0.4)]"
-            >
-              <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-navy-primary text-bg-warm">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                    {service.icon}
-                  </svg>
-                </span>
-                <h3 className="text-base font-semibold text-ink">
-                  {service.title}
-                </h3>
+      <div className="px-10 py-16">
+        <div className="mx-auto max-w-[1180px] rounded-[32px] border-2 border-blue-accent bg-bg-grey p-16 shadow-[0_40px_90px_-30px_rgba(0,0,0,0.5)]">
+          <div className="grid grid-cols-3 gap-6">
+            {SERVICES.map((service) => (
+              <div
+                key={service.title}
+                className="flex flex-col gap-3 rounded-2xl bg-[#d9dcd6] p-6 shadow-[0_20px_40px_-28px_rgba(16,31,46,0.4)]"
+              >
+                <div className="flex items-center gap-3">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-navy-primary text-bg-warm">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                      {service.icon}
+                    </svg>
+                  </span>
+                  <h3 className="text-base font-semibold text-ink">
+                    {service.title}
+                  </h3>
+                </div>
+                <p className="text-sm leading-[1.6] text-ink-soft">
+                  {service.description}
+                </p>
               </div>
-              <p className="text-sm leading-[1.6] text-ink-soft">
-                {service.description}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

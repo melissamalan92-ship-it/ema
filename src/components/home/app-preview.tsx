@@ -36,8 +36,9 @@ function AppleIcon() {
 
 export function AppPreview() {
   return (
-    <section className="bg-bg-grey px-10 py-[120px]">
-      <div className="mx-auto grid max-w-[1180px] grid-cols-1 items-center gap-16 lg:grid-cols-[1.05fr_1fr]">
+    <section className="px-10 py-[120px]">
+      <div className="mx-auto max-w-[1180px] rounded-[32px] border-2 border-blue-accent bg-bg-grey p-16 shadow-[0_40px_90px_-30px_rgba(0,0,0,0.5)]">
+        <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-[1.05fr_1fr]">
         <div
           className="relative mx-auto flex w-full max-w-[540px] justify-center"
           style={{ minHeight: 560 }}
@@ -115,7 +116,7 @@ export function AppPreview() {
           </GlassCard>
         </div>
 
-        <div className="flex flex-col items-start gap-6 rounded-2xl bg-[#d9dcd6] p-10 text-left shadow-[0_20px_40px_-28px_rgba(16,31,46,0.4)]">
+        <div className="flex flex-col items-start gap-6 text-left">
           <span className="font-mono text-xs font-medium tracking-[0.1em] text-ink-soft">
             [ Coming Soon ]
           </span>
@@ -139,6 +140,7 @@ export function AppPreview() {
             </span>
           </span>
         </div>
+      </div>
       </div>
     </section>
   );
