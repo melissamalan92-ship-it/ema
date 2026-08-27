@@ -29,7 +29,7 @@ export function Hero() {
 
   return (
     <section id="services" className="relative">
-      <div className="relative h-screen w-full overflow-hidden">
+      <div className="relative h-[70vh] w-full overflow-hidden">
         {CLIPS.map((clip, i) => (
           <video
             key={clip.src}
