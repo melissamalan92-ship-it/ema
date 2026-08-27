@@ -17,17 +17,17 @@ export function ShoeFoundation() {
     >
       <div className="mx-auto flex max-w-[480px] flex-col items-center gap-5 rounded-[28px] border border-white/40 bg-white/25 p-10 backdrop-blur-2xl backdrop-saturate-150 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.6)]">
         {hasLogo ? (
-          <div className="relative h-28 w-28 overflow-hidden rounded-2xl">
+          <div className="relative h-44 w-44 overflow-hidden rounded-2xl">
             <Image
               src="/images/shoe-foundation-logo.png"
               alt="The Shoe Foundation"
               fill
               className="object-cover"
-              sizes="112px"
+              sizes="176px"
             />
           </div>
         ) : (
-          <div className="flex h-28 w-28 items-center justify-center rounded-2xl border border-dashed border-white/40 text-center text-[10px] leading-tight text-bg-warm/60">
+          <div className="flex h-44 w-44 items-center justify-center rounded-2xl border border-dashed border-white/40 text-center text-[10px] leading-tight text-bg-warm/60">
             Logo goes here
           </div>
         )}

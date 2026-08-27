@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer id="contact" className="border-t border-[#24344a] px-10 pb-8 pt-16">
+    <footer id="contact" className="px-10 pb-8 pt-16">
       <div className="mx-auto flex max-w-[1180px] flex-col justify-between gap-12 pb-12 sm:flex-row">
         <div className="flex max-w-[280px] flex-col gap-3.5">
           <div className="flex items-start gap-2.5">
