@@ -112,7 +112,7 @@ export function Hero() {
       </div>
 
       <div className="px-10 py-24">
-        <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-4 pb-16 text-center">
+        <div className="mx-auto flex max-w-[1180px] flex-col items-start gap-4 pb-16 text-left">
           <span className="font-mono text-xs font-medium tracking-[0.1em] text-[#8fb0ff]">
             [ What We Do ]
           </span>
@@ -132,17 +132,16 @@ export function Hero() {
         <div className="mx-auto grid max-w-[1180px] grid-cols-3 gap-x-12 gap-y-14">
           {SERVICES.map((service) => (
             <div key={service.title} className="flex flex-col gap-4">
+              <div className="flex items-center gap-2">
+                <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-[#8fb0ff]" />
+                <span className="h-0 w-full border-t border-dashed border-[rgba(253,255,248,0.3)]" />
+              </div>
               <h3 className="text-lg font-semibold text-bg-warm">
                 {service.title}
               </h3>
               <p className="text-sm leading-[1.6] text-[#cddaf0]">
                 {service.description}
               </p>
-              <span className="mt-2 text-bg-warm">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                  {service.icon}
-                </svg>
-              </span>
             </div>
           ))}
         </div>
