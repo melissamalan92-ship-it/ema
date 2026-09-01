@@ -29,8 +29,7 @@ export function Hero() {
 
   return (
     <section id="services" className="relative">
-      <div className="p-4 sm:p-6">
-      <div className="relative h-[70vh] w-full overflow-hidden rounded-[32px] border-2 border-blue-accent">
+      <div className="relative h-[70vh] w-full overflow-hidden">
         {CLIPS.map((clip, i) => (
           <video
             key={clip.src}
@@ -110,7 +109,6 @@ export function Hero() {
             ))}
           </div>
         </div>
-      </div>
       </div>
 
       <Cta />
