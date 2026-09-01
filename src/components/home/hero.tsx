@@ -1,10 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { Nav } from "./nav";
 import { Logo } from "./logo";
 import { SERVICES } from "./services";
-import { Cta } from "./cta";
 
 const CLIPS = [
   { src: "/images/EMA%20video%201980%27s.mp4", label: "1980s" },
@@ -111,8 +111,6 @@ export function Hero() {
         </div>
       </div>
 
-      <Cta />
-
       <div className="px-10 py-24">
         <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-4 pb-16 text-center">
           <span className="font-mono text-xs font-medium tracking-[0.1em] text-[#8fb0ff]">
@@ -147,6 +145,15 @@ export function Hero() {
               </span>
             </div>
           ))}
+        </div>
+
+        <div className="mx-auto mt-16 flex max-w-[1180px] justify-center">
+          <Link
+            href="#contact"
+            className="rounded-full border border-[rgba(253,255,248,0.3)] bg-[rgba(253,255,248,0.12)] px-8 py-4 text-[15px] font-semibold text-bg-warm backdrop-blur-xl backdrop-saturate-150 transition-colors hover:bg-[rgba(253,255,248,0.2)]"
+          >
+            Schedule a Call
+          </Link>
         </div>
       </div>
     </section>
