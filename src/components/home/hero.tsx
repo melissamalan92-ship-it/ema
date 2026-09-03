@@ -13,9 +13,48 @@ const CLIPS = [
 ];
 
 const STATS = [
-  { value: "1983", label: "Since" },
-  { value: "2,500+", label: "Companies served" },
-  { value: "40+", label: "Years of experience" },
+  {
+    value: "1983",
+    label: "Since",
+    icon: (
+      <path
+        d="M7 3.5v3M17 3.5v3M4 9h16M5.5 6h13a1.5 1.5 0 0 1 1.5 1.5V19a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19V7.5A1.5 1.5 0 0 1 5.5 6Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+    ),
+  },
+  {
+    value: "2,500+",
+    label: "Companies served",
+    icon: (
+      <path
+        d="M4 20V9.5L9 6v14M9 9.5h4M9 13h4M9 16.5h4M13 20V4l7 3v13M15.5 9.5h2M15.5 13h2M15.5 16.5h2"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+    ),
+  },
+  {
+    value: "40+",
+    label: "Years of experience",
+    icon: (
+      <path
+        d="m3 17 6-6 4 4 8-8M21 7v6M21 7h-6"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+    ),
+  },
 ];
 
 export function Hero() {
@@ -115,15 +154,23 @@ export function Hero() {
       </div>
 
       {/* Stats band */}
-      <div className="bg-navy-secondary px-10 py-10">
-        <div className="mx-auto grid max-w-[1180px] grid-cols-3 divide-x divide-bg-warm/20 text-center">
+      <div className="bg-navy-secondary px-10 py-16">
+        <div className="mx-auto grid max-w-[1180px] grid-cols-3 divide-x divide-bg-warm/25">
           {STATS.map((stat) => (
-            <div key={stat.label} className="flex flex-col gap-1 px-6">
-              <span className="font-mono text-[11px] font-medium uppercase tracking-[0.15em] text-bg-warm/60">
-                {stat.label}
+            <div
+              key={stat.label}
+              className="flex flex-col items-start gap-3 px-10 text-left first:pl-0"
+            >
+              <span className="text-bg-warm/80">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                  {stat.icon}
+                </svg>
               </span>
-              <span className="text-[28px] font-semibold text-bg-warm">
+              <span className="text-xl font-semibold text-bg-warm">
                 {stat.value}
+              </span>
+              <span className="text-sm leading-[1.6] text-bg-warm/70">
+                {stat.label}
               </span>
             </div>
           ))}
