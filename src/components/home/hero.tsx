@@ -12,6 +12,12 @@ const CLIPS = [
   { src: "/images/EMA%20video%202000%27s.mp4", label: "Now" },
 ];
 
+const STATS = [
+  { value: "1983", label: "Since" },
+  { value: "2,500+", label: "Companies served" },
+  { value: "40+", label: "Years of experience" },
+];
+
 export function Hero() {
   const [active, setActive] = useState(0);
   const videoRefs = useRef<Array<HTMLVideoElement | null>>([]);
@@ -66,18 +72,15 @@ export function Hero() {
               <Logo size="lg" variant="blue" />
               <h1 className="max-w-[620px] text-[52px] font-semibold leading-[1.2] text-bg-warm">
                 Accounting services{" "}
-                <em className="font-serif font-normal italic text-[#8fb0ff]">
+                <em className="font-serif font-normal italic text-blue-accent">
                   designed
                 </em>{" "}
                 for{" "}
-                <em className="font-serif font-normal italic text-[#8fb0ff]">
+                <em className="font-serif font-normal italic text-blue-accent">
                   growth
                 </em>
                 .
               </h1>
-              <p className="max-w-[480px] text-lg leading-[1.7] text-[#e3e6e9]">
-                Working since 1983 with over 2,500 companies.
-              </p>
             </div>
           </div>
 
@@ -111,48 +114,61 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="px-10 py-24">
-        <div className="mx-auto flex max-w-[1180px] flex-col items-start gap-4 pb-16 text-left">
-          <span className="font-mono text-xs font-medium tracking-[0.1em] text-[#8fb0ff]">
-            [ What We Do ]
-          </span>
-          <h2 className="text-[38px] font-semibold leading-[1.25] text-bg-warm">
-            A full range of support{" "}
-            <em className="font-serif font-normal italic text-[#8fb0ff]">
-              for your business
-            </em>
-            .
-          </h2>
-          <p className="max-w-[520px] text-base leading-[1.7] text-[#cddaf0]">
-            From day-to-day bookkeeping to strategic advice, here&rsquo;s
-            how we support every client relationship.
-          </p>
-        </div>
-
-        <div className="mx-auto grid max-w-[1180px] grid-cols-3 gap-x-12 gap-y-14">
-          {SERVICES.map((service) => (
-            <div key={service.title} className="flex flex-col gap-4">
-              <div className="flex items-center gap-2">
-                <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-[#8fb0ff]" />
-                <span className="h-0 w-full border-t border-dashed border-[rgba(253,255,248,0.3)]" />
-              </div>
-              <h3 className="text-lg font-semibold text-bg-warm">
-                {service.title}
-              </h3>
-              <p className="text-sm leading-[1.6] text-[#cddaf0]">
-                {service.description}
-              </p>
+      {/* Stats band */}
+      <div className="bg-navy-secondary px-10 py-10">
+        <div className="mx-auto grid max-w-[1180px] grid-cols-3 divide-x divide-bg-warm/20 text-center">
+          {STATS.map((stat) => (
+            <div key={stat.label} className="flex flex-col gap-1 px-6">
+              <span className="font-mono text-[11px] font-medium uppercase tracking-[0.15em] text-bg-warm/60">
+                {stat.label}
+              </span>
+              <span className="text-[28px] font-semibold text-bg-warm">
+                {stat.value}
+              </span>
             </div>
           ))}
         </div>
+      </div>
 
-        <div className="mx-auto mt-16 flex max-w-[1180px] justify-center">
-          <Link
-            href="#contact"
-            className="rounded-full border border-[rgba(253,255,248,0.3)] bg-[rgba(253,255,248,0.12)] px-8 py-4 text-[15px] font-semibold text-bg-warm backdrop-blur-xl backdrop-saturate-150 transition-colors hover:bg-[rgba(253,255,248,0.2)]"
-          >
-            Schedule a Call
-          </Link>
+      <div className="px-10 py-24">
+        <div className="mx-auto grid max-w-[1180px] grid-cols-[0.85fr_1.15fr] items-start gap-16">
+          <div className="flex flex-col items-start gap-4 text-left">
+            <span className="font-mono text-xs font-medium tracking-[0.1em] text-blue-accent">
+              [ What We Do ]
+            </span>
+            <h2 className="text-[38px] font-semibold leading-[1.25] text-bg-warm">
+              Everything your business needs to{" "}
+              <em className="font-serif font-normal italic text-blue-accent">
+                grow
+              </em>
+              .
+            </h2>
+            <p className="max-w-[420px] text-base leading-[1.7] text-bg-warm/70">
+              We offer a full range of professional services to support your
+              business at every stage.
+            </p>
+            <Link
+              href="#contact"
+              className="mt-2 rounded-full border border-bg-warm/30 bg-bg-warm/10 px-7 py-3 text-sm font-semibold text-bg-warm backdrop-blur-xl backdrop-saturate-150 transition-colors hover:bg-bg-warm/20"
+            >
+              Schedule a Call
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-3 gap-x-8 gap-y-10">
+            {SERVICES.map((service) => (
+              <div key={service.title} className="flex flex-col gap-3">
+                <span className="text-bg-warm">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    {service.icon}
+                  </svg>
+                </span>
+                <h3 className="text-sm font-semibold leading-[1.4] text-bg-warm">
+                  {service.title}
+                </h3>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

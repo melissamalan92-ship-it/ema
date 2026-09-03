@@ -1,4 +1,5 @@
 import { Hero } from "@/components/home/hero";
+import { WhyEma } from "@/components/home/why-ema";
 import { AppPreview } from "@/components/home/app-preview";
 import { Locations } from "@/components/home/locations";
 import { ShoeFoundation } from "@/components/home/shoe-foundation";
@@ -20,9 +21,9 @@ export default function Home() {
     <main
       className="relative min-w-[1040px] overflow-x-hidden"
       style={{
-        backgroundColor: "#182c47",
+        backgroundColor: "#113158",
         backgroundImage:
-          "radial-gradient(ellipse 620px 480px at 8% 4%, rgba(208,224,223,0.5), transparent 48%), radial-gradient(ellipse 700px 560px at 12% 6%, rgba(67,117,205,0.32), transparent 58%), radial-gradient(ellipse 640px 520px at 14% 34%, rgba(143,176,255,0.22), transparent 55%), radial-gradient(ellipse 720px 600px at 82% 46%, rgba(67,117,205,0.24), transparent 55%), radial-gradient(ellipse 660px 540px at 18% 68%, rgba(208,224,223,0.16), transparent 55%), radial-gradient(ellipse 700px 560px at 78% 84%, rgba(51,70,108,0.3), transparent 58%), linear-gradient(180deg, #1c3252 0%, #101f2e 100%)",
+          "radial-gradient(ellipse 620px 480px at 8% 4%, rgba(244,240,232,0.14), transparent 48%), radial-gradient(ellipse 700px 560px at 12% 6%, rgba(133,182,219,0.28), transparent 58%), radial-gradient(ellipse 640px 520px at 14% 34%, rgba(133,182,219,0.18), transparent 55%), radial-gradient(ellipse 720px 600px at 82% 46%, rgba(89,114,134,0.35), transparent 55%), radial-gradient(ellipse 660px 540px at 18% 68%, rgba(244,240,232,0.08), transparent 55%), radial-gradient(ellipse 700px 560px at 78% 84%, rgba(89,114,134,0.3), transparent 58%), linear-gradient(180deg, #16385f 0%, #113158 100%)",
       }}
     >
       <div
@@ -31,6 +32,7 @@ export default function Home() {
       />
       <div className="relative">
         <Hero />
+        <WhyEma />
         <Locations />
         <AppPreview />
         <ShoeFoundation />

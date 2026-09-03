@@ -17,7 +17,7 @@ export function Logo({
     variant === "light" ? "bg-bg-warm" : variant === "blue" ? "bg-blue-accent" : "bg-navy-primary";
   const word =
     variant === "light" ? "text-bg-warm" : variant === "blue" ? "text-blue-accent" : "text-navy-primary";
-  const sub = variant === "light" ? "text-[#b7c2d6]" : variant === "blue" ? "text-[#8fb0ff]" : "text-ink-soft";
+  const sub = variant === "light" ? "text-bg-warm/70" : variant === "blue" ? "text-blue-accent" : "text-ink-soft";
 
   return (
     <div className="flex items-start gap-2.5">

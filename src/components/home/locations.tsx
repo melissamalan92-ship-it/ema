@@ -20,10 +20,13 @@ export function Locations() {
       <div className="mx-auto flex max-w-[1180px] flex-row items-stretch gap-10">
         <div className="flex h-full w-full max-w-[420px] shrink-0 flex-col justify-between">
           <div className="flex flex-col items-start gap-4 text-left">
+            <span className="font-mono text-xs font-medium tracking-[0.1em] text-blue-accent">
+              [ Where To Find Us ]
+            </span>
             <h2 className="inline-block border-b-2 border-blue-accent pb-2.5 font-serif text-[52px] font-normal text-bg-warm">
               Our Locations
             </h2>
-            <p className="max-w-[440px] text-base leading-[1.6] text-[#b7c2d6]">
+            <p className="max-w-[440px] text-base leading-[1.6] text-bg-warm/70">
               Contact your nearest branch for more information on how we can
               help you, or click a pin to find out more.
             </p>
