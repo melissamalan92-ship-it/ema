@@ -21,8 +21,6 @@ export default function Home() {
       className="relative min-w-[1040px] overflow-x-hidden"
       style={{
         backgroundColor: "#042144",
-        backgroundImage:
-          "radial-gradient(ellipse 620px 480px at 8% 4%, rgba(244,240,232,0.14), transparent 48%), radial-gradient(ellipse 700px 560px at 12% 6%, rgba(133,182,219,0.28), transparent 58%), radial-gradient(ellipse 640px 520px at 14% 34%, rgba(133,182,219,0.18), transparent 55%), radial-gradient(ellipse 720px 600px at 82% 46%, rgba(89,114,134,0.35), transparent 55%), radial-gradient(ellipse 660px 540px at 18% 68%, rgba(244,240,232,0.08), transparent 55%), radial-gradient(ellipse 700px 560px at 78% 84%, rgba(89,114,134,0.3), transparent 58%), linear-gradient(180deg, #0a2d54 0%, #042144 100%)",
       }}
     >
       <div
