@@ -22,9 +22,16 @@ export const SERVICES = [
       "Income tax, VAT, employees' tax, and statutory levies handled end-to-end.",
     icon: (
       <>
-        <circle cx="8" cy="8" r="2.5" stroke="currentColor" strokeWidth="1.5" fill="none" />
-        <circle cx="16" cy="16" r="2.5" stroke="currentColor" strokeWidth="1.5" fill="none" />
-        <path d="M17 7 7 17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <rect x="6" y="3" width="12" height="18" rx="1.5" stroke="currentColor" strokeWidth="1.5" fill="none" />
+        <rect x="8" y="5.5" width="8" height="3" rx="0.5" stroke="currentColor" strokeWidth="1.5" fill="none" />
+        <circle cx="8.5" cy="12" r="0.9" fill="currentColor" />
+        <circle cx="12" cy="12" r="0.9" fill="currentColor" />
+        <circle cx="15.5" cy="12" r="0.9" fill="currentColor" />
+        <circle cx="8.5" cy="15.5" r="0.9" fill="currentColor" />
+        <circle cx="12" cy="15.5" r="0.9" fill="currentColor" />
+        <circle cx="15.5" cy="15.5" r="0.9" fill="currentColor" />
+        <circle cx="8.5" cy="19" r="0.9" fill="currentColor" />
+        <circle cx="12" cy="19" r="0.9" fill="currentColor" />
       </>
     ),
   },
@@ -57,23 +64,14 @@ export const SERVICES = [
     description:
       "Company registration, trust formation, and statutory compliance.",
     icon: (
-      <>
-        <path
-          d="M12 3.5 4.5 7v3c0 5 3.2 8.3 7.5 10.5 4.3-2.2 7.5-5.5 7.5-10.5V7L12 3.5Z"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinejoin="round"
-          fill="none"
-        />
-        <path
-          d="m9 12 2 2 4-4.5"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          fill="none"
-        />
-      </>
+      <path
+        d="M4 9 12 4l8 5M5 9h14M6 9v9M9 9v9M12 9v9M15 9v9M18 9v9M4 20h16"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
     ),
   },
   {

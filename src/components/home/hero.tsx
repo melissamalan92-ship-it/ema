@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { Nav } from "./nav";
 import { Logo } from "./logo";
@@ -190,21 +189,16 @@ export function Hero() {
               </em>
               .
             </h2>
+            <span className="h-0.5 w-16 bg-blue-accent" />
             <p className="max-w-[420px] text-base leading-[1.7] text-bg-warm/70">
               We offer a full range of professional services to support your
               business at every stage.
             </p>
-            <Link
-              href="#contact"
-              className="mt-2 rounded-full border border-bg-warm/30 bg-bg-warm/10 px-7 py-3 text-sm font-semibold text-bg-warm backdrop-blur-xl backdrop-saturate-150 transition-colors hover:bg-bg-warm/20"
-            >
-              Schedule a Call
-            </Link>
           </div>
 
           <div className="grid grid-cols-3 gap-x-8 gap-y-10">
             {SERVICES.map((service) => (
-              <div key={service.title} className="flex flex-col gap-3">
+              <div key={service.title} className="flex flex-col gap-2">
                 <span className="text-bg-warm">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                     {service.icon}
@@ -213,6 +207,9 @@ export function Hero() {
                 <h3 className="text-sm font-semibold leading-[1.4] text-bg-warm">
                   {service.title}
                 </h3>
+                <p className="text-xs leading-[1.5] text-bg-warm/60">
+                  {service.description}
+                </p>
               </div>
             ))}
           </div>
