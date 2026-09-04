@@ -1,5 +1,4 @@
 import { Hero } from "@/components/home/hero";
-import { WhyEma } from "@/components/home/why-ema";
 import { AppPreview } from "@/components/home/app-preview";
 import { Locations } from "@/components/home/locations";
 import { ShoeFoundation } from "@/components/home/shoe-foundation";
@@ -32,7 +31,6 @@ export default function Home() {
       />
       <div className="relative">
         <Hero />
-        <WhyEma />
         <Locations />
         <AppPreview />
         <ShoeFoundation />
