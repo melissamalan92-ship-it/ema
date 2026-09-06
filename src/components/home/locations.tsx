@@ -16,7 +16,7 @@ export function Locations() {
   };
 
   return (
-    <section id="locations" className="px-10 pb-[100px] pt-[120px]">
+    <section id="locations" className="bg-navy-secondary px-10 pb-[100px] pt-[100px]">
       <div className="mx-auto flex max-w-[1180px] flex-row items-stretch gap-10">
         <div className="flex h-full w-full max-w-[420px] shrink-0 flex-col justify-between">
           <div className="flex flex-col items-start gap-4 text-left">
