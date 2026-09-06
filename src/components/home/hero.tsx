@@ -153,22 +153,22 @@ export function Hero() {
       </div>
 
       {/* Stats band */}
-      <div className="bg-navy-secondary px-10 py-16">
+      <div className="bg-navy-secondary px-10 py-20">
         <div className="mx-auto grid max-w-[1180px] grid-cols-3 divide-x divide-bg-warm/25">
           {STATS.map((stat) => (
             <div
               key={stat.label}
-              className="flex flex-col items-start gap-3 px-10 text-left first:pl-0"
+              className="flex flex-col items-start gap-4 px-12 text-left first:pl-0"
             >
               <span className="text-bg-warm/80">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <svg width="38" height="38" viewBox="0 0 24 24" fill="none">
                   {stat.icon}
                 </svg>
               </span>
-              <span className="text-xl font-semibold text-bg-warm">
+              <span className="text-2xl font-semibold text-bg-warm">
                 {stat.value}
               </span>
-              <span className="text-sm leading-[1.6] text-bg-warm/70">
+              <span className="text-base leading-[1.6] text-bg-warm/70">
                 {stat.label}
               </span>
             </div>
