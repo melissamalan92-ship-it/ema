@@ -37,7 +37,7 @@ const PILLARS = [
   },
   {
     title: "Built for today",
-    description: "Modern tools and practical support that moves with you.",
+    description: "Modern tools and practical support that evolves with you.",
     icon: (
       <path
         d="m3 17 6-6 4 4 8-8M21 7v6M21 7h-6"
