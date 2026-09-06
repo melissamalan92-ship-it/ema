@@ -11,38 +11,46 @@ const CLIPS = [
   { src: "/images/EMA%20video%202000%27s.mp4", label: "Now" },
 ];
 
-const STATS = [
+const PILLARS = [
   {
-    value: "1983",
-    label: "Since",
+    value: "Established experience",
+    label: "Trusted expertise built over more than 40 years.",
     icon: (
       <path
-        d="M7 3.5v3M17 3.5v3M4 9h16M5.5 6h13a1.5 1.5 0 0 1 1.5 1.5V19a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19V7.5A1.5 1.5 0 0 1 5.5 6Z"
+        d="M12 3.5 4.5 7v3c0 5 3.2 8.3 7.5 10.5 4.3-2.2 7.5-5.5 7.5-10.5V7L12 3.5Z"
         stroke="currentColor"
         strokeWidth="1.5"
-        strokeLinecap="round"
         strokeLinejoin="round"
         fill="none"
       />
     ),
   },
   {
-    value: "2,500+",
-    label: "Companies served",
+    value: "Personal relationships",
+    label: "Advice shaped around your business, not a template.",
     icon: (
-      <path
-        d="M4 20V9.5L9 6v14M9 9.5h4M9 13h4M9 16.5h4M13 20V4l7 3v13M15.5 9.5h2M15.5 13h2M15.5 16.5h2"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
+      <>
+        <circle cx="9" cy="8" r="2.8" stroke="currentColor" strokeWidth="1.5" fill="none" />
+        <path
+          d="M3.5 19c.5-3.2 2.8-5 5.5-5s5 1.8 5.5 5"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          fill="none"
+        />
+        <path
+          d="M15.5 5.5a2.8 2.8 0 0 1 0 5.4M17.5 19c-.3-2.1-1.3-3.7-2.9-4.6"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          fill="none"
+        />
+      </>
     ),
   },
   {
-    value: "40+",
-    label: "Years of experience",
+    value: "Built for today",
+    label: "Modern tools and practical support that evolves with you.",
     icon: (
       <path
         d="m3 17 6-6 4 4 8-8M21 7v6M21 7h-6"
@@ -152,24 +160,24 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Stats band */}
-      <div className="bg-navy-secondary px-10 py-20">
+      {/* Pillars band */}
+      <div className="bg-navy-secondary px-10 py-16">
         <div className="mx-auto grid max-w-[1180px] grid-cols-3 divide-x divide-bg-warm/25">
-          {STATS.map((stat) => (
+          {PILLARS.map((pillar) => (
             <div
-              key={stat.label}
-              className="flex flex-col items-start gap-4 px-12 text-left first:pl-0"
+              key={pillar.value}
+              className="flex flex-col items-start gap-3 px-12 text-left first:pl-0"
             >
               <span className="text-bg-warm/80">
-                <svg width="38" height="38" viewBox="0 0 24 24" fill="none">
-                  {stat.icon}
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                  {pillar.icon}
                 </svg>
               </span>
-              <span className="text-2xl font-semibold text-bg-warm">
-                {stat.value}
+              <span className="text-lg font-semibold text-bg-warm">
+                {pillar.value}
               </span>
-              <span className="text-base leading-[1.6] text-bg-warm/70">
-                {stat.label}
+              <span className="text-sm leading-[1.6] text-bg-warm/70">
+                {pillar.label}
               </span>
             </div>
           ))}
