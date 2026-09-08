@@ -35,8 +35,8 @@ export function SAMap({ active, onSelect }: Props) {
         <path
           d={`${MAINLAND} ${LESOTHO}`}
           fillRule="evenodd"
-          fill="rgba(67,117,205,0.1)"
-          stroke="rgba(253,255,248,0.55)"
+          fill="rgba(4,33,68,0.06)"
+          stroke="rgba(4,33,68,0.55)"
           strokeWidth="4"
           strokeLinejoin="round"
         />
@@ -44,7 +44,7 @@ export function SAMap({ active, onSelect }: Props) {
         <path
           d={linePath}
           fill="none"
-          stroke="rgba(253,255,248,0.35)"
+          stroke="rgba(4,33,68,0.35)"
           strokeWidth="3"
           strokeDasharray="2 12"
           strokeLinecap="round"
@@ -63,8 +63,8 @@ export function SAMap({ active, onSelect }: Props) {
                 cx={loc.mapX}
                 cy={loc.mapY}
                 r={isActive ? 16 : 11}
-                fill={isActive ? "#4375cd" : "transparent"}
-                stroke={isActive ? "#fdfff8" : "rgba(253,255,248,0.6)"}
+                fill={isActive ? "#85b6db" : "transparent"}
+                stroke={isActive ? "#042144" : "rgba(4,33,68,0.6)"}
                 strokeWidth={isActive ? 4 : 3}
                 className="transition-all duration-200"
               />
@@ -76,7 +76,7 @@ export function SAMap({ active, onSelect }: Props) {
                 style={{
                   fontFamily: "var(--font-mono)",
                   fontSize: 20,
-                  fill: isActive ? "#fdfff8" : "rgba(253,255,248,0.65)",
+                  fill: isActive ? "#042144" : "rgba(4,33,68,0.65)",
                   fontWeight: isActive ? 600 : 500,
                 }}
               >

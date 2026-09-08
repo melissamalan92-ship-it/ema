@@ -1,21 +1,22 @@
 import Link from "next/link";
-import { Logo } from "./logo";
 
 const links = [
+  { href: "#hero", label: "Home" },
+  { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
-  { href: "#locations", label: "Locations" },
+  { href: "#shoe-foundation", label: "Shoe Foundation" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export function Nav() {
   return (
-    <nav className="relative mx-auto flex max-w-[1180px] items-center justify-between px-10 pt-10">
-      <Logo variant="light" />
-      <div className="hidden items-center gap-10 md:flex">
+    <nav className="bg-navy-primary px-10 py-4">
+      <div className="mx-auto flex max-w-[1180px] items-center justify-center gap-10">
         {links.map((link) => (
           <Link
             key={link.href}
             href={link.href}
-            className="text-sm font-medium text-bg-warm/80 hover:text-bg-warm"
+            className="text-sm font-medium capitalize text-bg-warm/80 hover:text-bg-warm"
           >
             {link.label}
           </Link>

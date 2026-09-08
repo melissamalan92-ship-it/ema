@@ -118,70 +118,52 @@ export const SERVICES = [
 
 export function Services() {
   return (
-    <section id="services" className="px-10 py-[120px]">
-      <div className="mx-auto grid max-w-[1180px] grid-cols-1 items-stretch gap-16 lg:grid-cols-[0.85fr_1.15fr]">
-        <div className="flex flex-col items-start gap-6 text-left">
-          <span className="font-mono text-xs font-medium tracking-[0.1em] text-[#cddaf0]">
-            [ What We Do ]
-          </span>
-          <h2 className="text-[38px] font-semibold leading-[1.25] text-bg-warm">
-            Accounting services{" "}
-            <em className="font-serif font-normal italic text-[#8fb0ff]">
-              designed
-            </em>{" "}
-            for{" "}
-            <em className="font-serif font-normal italic text-[#8fb0ff]">
-              growth
-            </em>
-            .
-          </h2>
-          <p className="max-w-[440px] text-base leading-[1.7] text-[#cddaf0]">
-            From day-to-day bookkeeping to business advisory, here&rsquo;s the
-            full range of support we bring to every client relationship.
-          </p>
+    <section id="services" className="bg-navy-primary px-10 py-24">
+      <div className="mx-auto flex max-w-[1180px] flex-col items-start gap-4 pb-16 text-left">
+        <span className="font-mono text-xs font-medium tracking-[0.1em] text-blue-accent">
+          [ What We Do ]
+        </span>
+        <h2 className="text-[38px] font-semibold leading-[1.25] text-bg-warm">
+          Everything your business needs to{" "}
+          <em className="font-serif font-normal italic text-blue-accent">
+            grow
+          </em>
+          .
+        </h2>
+        <span className="h-0.5 w-16 bg-blue-accent" />
+      </div>
 
-          <div className="mt-auto flex flex-nowrap items-center gap-3">
-            <Link
-              href="#contact"
-              className="shrink-0 rounded-full bg-blue-accent px-[30px] py-[14px] text-[15px] font-semibold text-bg-warm transition-opacity hover:opacity-90"
-            >
-              Get in touch
-            </Link>
-            <Link
-              href="/services"
-              className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-[rgba(253,255,248,0.3)] px-6 py-3 text-sm font-semibold text-bg-warm transition-colors hover:bg-[rgba(253,255,248,0.1)]"
-            >
-              More about our services
-              <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
-                <path
-                  d="M3 8H13M13 8L9 4M13 8L9 12"
-                  stroke="currentColor"
-                  strokeWidth="1.6"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
+      <div className="mx-auto grid max-w-[1180px] grid-cols-3 gap-6">
+        {SERVICES.map((service) => (
+          <div
+            key={service.title}
+            className="flex flex-col gap-4 rounded-2xl border border-bg-warm/15 bg-bg-warm/8 p-7"
+          >
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-navy-secondary text-bg-warm">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                {service.icon}
               </svg>
-            </Link>
+            </span>
+            <h3 className="text-base font-semibold text-bg-warm">
+              {service.title}
+            </h3>
+            <p className="text-sm leading-[1.6] text-bg-warm/60">
+              {service.description}
+            </p>
           </div>
-        </div>
+        ))}
 
-        <div className="grid grid-cols-2 gap-6">
-          {SERVICES.map((service) => (
-            <div
-              key={service.title}
-              className="flex h-[180px] flex-col items-center gap-4 rounded-[20px] border border-[rgba(253,255,248,0.16)] bg-[rgba(253,255,248,0.07)] p-7 text-center backdrop-blur-xl backdrop-saturate-150 shadow-[0_20px_50px_-24px_rgba(0,0,0,0.55)] transition-colors duration-200 hover:bg-[rgba(253,255,248,0.14)]"
-            >
-              <h3 className="text-lg font-semibold leading-snug text-bg-warm">
-                {service.title}
-              </h3>
-
-              <span className="mt-auto flex h-12 w-12 items-center justify-center rounded-full bg-[rgba(16,31,46,0.55)] text-bg-warm">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                  {service.icon}
-                </svg>
-              </span>
-            </div>
-          ))}
+        <div className="col-span-3 flex flex-col items-start gap-4 rounded-2xl bg-bg-warm p-8 sm:flex-row sm:items-center sm:justify-between">
+          <p className="max-w-[480px] text-base leading-[1.6] text-ink">
+            We offer a full range of professional services to support your
+            business at every stage.
+          </p>
+          <Link
+            href="/services"
+            className="shrink-0 rounded-full bg-navy-primary px-7 py-3 text-sm font-semibold text-bg-warm transition-opacity hover:opacity-90"
+          >
+            Find out more
+          </Link>
         </div>
       </div>
     </section>
