@@ -10,13 +10,13 @@ const links = [
 
 export function Nav() {
   return (
-    <nav className="bg-navy-primary px-10 py-4">
+    <nav className="bg-bg-warm px-10 py-4">
       <div className="mx-auto flex max-w-[1180px] items-center justify-center gap-10">
         {links.map((link) => (
           <Link
             key={link.href}
             href={link.href}
-            className="text-sm font-medium capitalize text-bg-warm/80 hover:text-bg-warm"
+            className="text-sm font-medium capitalize text-ink-soft hover:text-ink"
           >
             {link.label}
           </Link>
