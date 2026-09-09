@@ -10,6 +10,7 @@
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
   --font-serif: var(--font-serif);
+  --font-body: var(--font-body);
   --font-hand: var(--font-hand);
   --font-heading: var(--font-sans);
   --color-navy-primary: var(--navy-primary);
@@ -60,15 +61,15 @@
 }
 
 :root {
-  --navy-primary: #042144;
-  --navy-dark: #042144;
-  --navy-secondary: #597286;
-  --blue-accent: #bac7de;
-  --bg-warm: #f4f0e8;
-  --bg-grey: #f4f0e8;
-  --bg-mint: #f4f0e8;
-  --ink: #2b2b2b;
-  --ink-soft: #597286;
+  --navy-primary: #10263e;
+  --navy-dark: #10263e;
+  --navy-secondary: #7096b9;
+  --blue-accent: #7096b9;
+  --bg-warm: #f8f7f5;
+  --bg-grey: #f8f7f5;
+  --bg-mint: #f8f7f5;
+  --ink: #10263e;
+  --ink-soft: #5f6b76;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);

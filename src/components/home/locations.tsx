@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { SAMap } from "./sa-map";
 import { LocationsBento } from "./locations-bento";
 import { LocationCard } from "./location-card";
 import { LOCATIONS } from "./locations-data";
@@ -17,33 +16,25 @@ export function Locations() {
   };
 
   return (
-    <section id="locations" className="bg-bg-warm px-10 pb-[100px] pt-[100px]">
-      <div className="mx-auto flex max-w-[1180px] flex-row items-stretch gap-10">
-        <div className="flex h-full w-full max-w-[420px] shrink-0 flex-col justify-between">
-          <div className="flex flex-col items-start gap-4 text-left">
-            <span className="font-mono text-xs font-medium tracking-[0.1em] text-navy-secondary">
-              [ Where To Find Us ]
-            </span>
-            <h2 className="inline-block border-b-2 border-navy-secondary pb-2.5 font-serif text-[52px] font-normal text-ink">
-              Our Locations
-            </h2>
-            <p className="max-w-[440px] text-base leading-[1.6] text-ink-soft">
-              Contact your nearest branch for more information on how we can
-              help you, or click a pin to find out more.
-            </p>
-            <Link
-              href="#contact"
-              className="mt-1 rounded-full bg-navy-primary px-7 py-3 text-sm font-semibold text-bg-warm transition-opacity hover:opacity-90"
-            >
-              Find out more
-            </Link>
-          </div>
-
-          <div className="flex items-center justify-center">
-            <div className="w-full max-w-[360px]">
-              <SAMap active={active} onSelect={handleSelect} />
-            </div>
-          </div>
+    <section id="locations" className="bg-navy-primary px-10 py-24">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-2 items-center gap-16">
+        <div className="flex flex-col items-start gap-4 text-left">
+          <span className="font-mono text-xs font-medium tracking-[0.1em] text-blue-accent">
+            [ Where To Find Us ]
+          </span>
+          <h2 className="font-serif text-[40px] font-normal leading-[1.2] text-bg-warm">
+            Our Locations
+          </h2>
+          <p className="max-w-[380px] font-body text-base leading-[1.7] text-bg-warm/70">
+            Contact your nearest branch for more information on how we can
+            help you, or click a pin to find out more.
+          </p>
+          <Link
+            href="#contact"
+            className="mt-1 rounded-lg bg-bg-warm px-7 py-3 text-sm font-semibold text-navy-primary transition-opacity hover:opacity-90"
+          >
+            Find out more
+          </Link>
         </div>
 
         <div className="relative h-[480px] w-full">

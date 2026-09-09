@@ -1,9 +1,9 @@
 import { Nav } from "@/components/home/nav";
 import { Hero } from "@/components/home/hero";
 import { About } from "@/components/home/about";
+import { Locations } from "@/components/home/locations";
 import { Services } from "@/components/home/services";
 import { AppPreview } from "@/components/home/app-preview";
-import { Locations } from "@/components/home/locations";
 import { ShoeFoundation } from "@/components/home/shoe-foundation";
 import { Footer } from "@/components/home/footer";
 
@@ -20,7 +20,7 @@ export default function Home() {
     <main
       className="relative min-w-[1040px] overflow-x-hidden"
       style={{
-        backgroundColor: "#042144",
+        backgroundColor: "#10263e",
       }}
     >
       <div
@@ -31,8 +31,8 @@ export default function Home() {
         <Nav />
         <Hero />
         <About />
-        <Services />
         <Locations />
+        <Services />
         <AppPreview />
         <ShoeFoundation />
         <Footer />

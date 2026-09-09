@@ -118,49 +118,42 @@ export const SERVICES = [
 
 export function Services() {
   return (
-    <section id="services" className="bg-navy-primary px-10 py-24">
-      <div className="mx-auto flex max-w-[1180px] flex-col items-start gap-4 pb-16 text-left">
-        <span className="font-mono text-xs font-medium tracking-[0.1em] text-blue-accent">
-          [ What We Do ]
-        </span>
-        <h2 className="text-[38px] font-semibold leading-[1.25] text-bg-warm">
-          Everything your business needs to{" "}
-          <em className="font-serif font-normal italic text-blue-accent">
-            grow
-          </em>
-          .
-        </h2>
-        <span className="h-0.5 w-16 bg-blue-accent" />
-      </div>
+    <section id="services" className="bg-bg-warm px-10 py-24">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-2 items-center gap-16">
+        <div className="grid grid-cols-3 gap-x-6 gap-y-10">
+          {SERVICES.map((service) => (
+            <div key={service.title} className="flex flex-col items-start gap-3">
+              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-navy-primary text-bg-warm">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  {service.icon}
+                </svg>
+              </span>
+              <h3 className="text-sm font-semibold leading-[1.4] text-ink">
+                {service.title}
+              </h3>
+              <p className="font-body text-xs leading-[1.6] text-ink-soft">
+                {service.description}
+              </p>
+            </div>
+          ))}
+        </div>
 
-      <div className="mx-auto grid max-w-[1180px] grid-cols-3 gap-6">
-        {SERVICES.map((service) => (
-          <div
-            key={service.title}
-            className="flex flex-col gap-4 rounded-2xl border border-bg-warm/15 bg-bg-warm/8 p-7"
-          >
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-navy-secondary text-bg-warm">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                {service.icon}
-              </svg>
-            </span>
-            <h3 className="text-base font-semibold text-bg-warm">
-              {service.title}
-            </h3>
-            <p className="text-sm leading-[1.6] text-bg-warm/60">
-              {service.description}
-            </p>
-          </div>
-        ))}
-
-        <div className="col-span-3 flex flex-col items-start gap-4 rounded-2xl bg-bg-warm p-8 sm:flex-row sm:items-center sm:justify-between">
-          <p className="max-w-[480px] text-base leading-[1.6] text-ink">
+        <div className="flex flex-col items-start gap-4 text-left">
+          <span className="font-mono text-xs font-medium tracking-[0.1em] text-blue-accent">
+            [ What We Do ]
+          </span>
+          <h2 className="font-serif text-[40px] font-normal leading-[1.2] text-ink">
+            Everything your{" "}
+            <em className="italic text-blue-accent">business</em> needs to{" "}
+            <em className="italic text-blue-accent">grow</em>.
+          </h2>
+          <p className="max-w-[420px] font-body text-base leading-[1.7] text-ink-soft">
             We offer a full range of professional services to support your
             business at every stage.
           </p>
           <Link
             href="/services"
-            className="shrink-0 rounded-full bg-navy-primary px-7 py-3 text-sm font-semibold text-bg-warm transition-opacity hover:opacity-90"
+            className="mt-1 rounded-lg bg-navy-primary px-7 py-3 text-sm font-semibold text-bg-warm transition-opacity hover:opacity-90"
           >
             Find out more
           </Link>

@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer id="contact" className="px-10 pb-8 pt-16">
-      <div className="mx-auto flex max-w-[1180px] flex-col justify-between gap-12 pb-12 sm:flex-row">
+    <footer id="contact" className="bg-navy-primary px-10 pb-8 pt-16">
+      <div className="mx-auto flex max-w-[1200px] flex-col justify-between gap-12 pb-12 sm:flex-row">
         <div className="flex max-w-[280px] flex-col gap-3.5">
           <div className="flex items-start gap-2.5">
             <div className="w-[2px] self-stretch bg-bg-warm" />
@@ -53,7 +53,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto flex max-w-[1180px] justify-between border-t border-bg-warm/15 pt-6">
+      <div className="mx-auto flex max-w-[1200px] justify-between border-t border-bg-warm/15 pt-6">
         <span className="text-xs text-bg-warm/40">
           &copy; 2026 E Malan &amp; Associates. All rights reserved.
         </span>

@@ -42,14 +42,11 @@ export function AppPreview() {
           <span className="font-mono text-xs font-medium tracking-[0.1em] text-blue-accent">
             [ EMA App ]
           </span>
-          <h2 className="text-[38px] font-semibold leading-[1.25] text-bg-warm">
+          <h2 className="font-serif text-[40px] font-normal leading-[1.2] text-bg-warm">
             Your accounts,{" "}
-            <em className="font-serif font-normal italic text-blue-accent">
-              in your pocket
-            </em>
-            .
+            <em className="italic text-blue-accent">in your pocket</em>.
           </h2>
-          <p className="max-w-[440px] text-base leading-[1.7] text-bg-warm/70">
+          <p className="max-w-[440px] font-body text-base leading-[1.7] text-bg-warm/70">
             We&rsquo;re building an app that brings the same clarity we
             bring to every client relationship straight to your phone.
           </p>

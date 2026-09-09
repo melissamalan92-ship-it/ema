@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans, IBM_Plex_Mono, Instrument_Serif, Caveat } from "next/font/google";
+import { IBM_Plex_Sans, IBM_Plex_Mono, Libre_Baskerville, Alike, Caveat } from "next/font/google";
 import "./globals.css";
 
 const plexSans = IBM_Plex_Sans({
@@ -14,11 +14,17 @@ const plexMono = IBM_Plex_Mono({
   weight: ["400", "500", "600", "700"],
 });
 
-const instrumentSerif = Instrument_Serif({
+const libreBaskerville = Libre_Baskerville({
   variable: "--font-serif",
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "700"],
   style: ["normal", "italic"],
+});
+
+const alike = Alike({
+  variable: "--font-body",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 const caveat = Caveat({
@@ -37,7 +43,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${plexSans.variable} ${plexMono.variable} ${instrumentSerif.variable} ${caveat.variable} h-full antialiased`}
+      className={`${plexSans.variable} ${plexMono.variable} ${libreBaskerville.variable} ${alike.variable} ${caveat.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
