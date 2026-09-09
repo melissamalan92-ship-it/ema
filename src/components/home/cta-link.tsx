@@ -10,17 +10,20 @@ export function CtaLink({
 }: {
   href: string;
   children: React.ReactNode;
-  variant?: "accent" | "cream";
+  variant?: "accent" | "cream" | "dark";
   className?: string;
 }) {
   return (
     <Link
       href={href}
       className={cn(
-        "group/cta inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold text-ink shadow-sm transition-all duration-300 ease-out hover:gap-3 hover:shadow-xl",
-        variant === "accent"
-          ? "bg-blue-accent hover:bg-blue-accent/90 hover:shadow-blue-accent/25"
-          : "bg-cream hover:bg-white hover:shadow-black/10",
+        "group/cta inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold shadow-sm transition-all duration-300 ease-out hover:gap-3 hover:shadow-xl",
+        variant === "accent" &&
+          "bg-blue-accent text-ink hover:bg-blue-accent/90 hover:shadow-blue-accent/25",
+        variant === "cream" &&
+          "bg-cream text-ink hover:bg-white hover:shadow-black/10",
+        variant === "dark" &&
+          "bg-navy-primary text-cream hover:bg-navy-primary/90 hover:shadow-navy-primary/25",
         className
       )}
     >

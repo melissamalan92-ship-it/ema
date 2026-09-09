@@ -120,7 +120,7 @@ export const SERVICES = [
 export function Services() {
   return (
     <section id="services" className="border-t border-ink/10 bg-bg-warm px-10 py-28">
-      <div className="mx-auto grid max-w-[1200px] grid-cols-2 items-start gap-16 divide-x divide-ink/10">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-2 items-start gap-16">
         <div className="grid grid-cols-2 gap-x-8 gap-y-9">
           {SERVICES.map((service, i) => (
             <Reveal
@@ -147,7 +147,10 @@ export function Services() {
           ))}
         </div>
 
-        <Reveal delay={150} className="flex flex-col items-start gap-4 pl-16 text-left">
+        <Reveal
+          delay={150}
+          className="flex flex-col items-start gap-4 border-l border-ink/10 pl-16 text-left"
+        >
           <h2 className="font-serif text-[42px] font-normal leading-[1.15] tracking-[-0.01em] text-ink">
             Everything your{" "}
             <em className="italic text-blue-accent">business</em> needs to{" "}
