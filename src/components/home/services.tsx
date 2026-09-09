@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { Reveal } from "./reveal";
+import { CtaLink } from "./cta-link";
 
 export const SERVICES = [
   {
@@ -118,12 +119,16 @@ export const SERVICES = [
 
 export function Services() {
   return (
-    <section id="services" className="bg-bg-warm px-10 py-24">
+    <section id="services" className="bg-bg-warm px-10 py-28">
       <div className="mx-auto grid max-w-[1200px] grid-cols-2 items-center gap-16">
-        <div className="grid grid-cols-3 gap-x-6 gap-y-10">
-          {SERVICES.map((service) => (
-            <div key={service.title} className="flex flex-col items-start gap-3">
-              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-navy-primary text-bg-warm">
+        <div className="grid grid-cols-3 gap-x-5 gap-y-6">
+          {SERVICES.map((service, i) => (
+            <Reveal
+              key={service.title}
+              delay={i * 80}
+              className="group flex flex-col items-start gap-3 rounded-2xl border border-transparent p-4 transition-all duration-300 hover:-translate-y-1 hover:border-ink/10 hover:bg-white hover:shadow-[0_20px_40px_-25px_rgba(16,38,62,0.35)]"
+            >
+              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-navy-primary text-bg-warm transition-colors duration-300 group-hover:bg-blue-accent">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                   {service.icon}
                 </svg>
@@ -134,15 +139,15 @@ export function Services() {
               <p className="font-body text-xs leading-[1.6] text-ink-soft">
                 {service.description}
               </p>
-            </div>
+            </Reveal>
           ))}
         </div>
 
-        <div className="flex flex-col items-start gap-4 text-left">
+        <Reveal delay={150} className="flex flex-col items-start gap-4 text-left">
           <span className="font-mono text-xs font-medium tracking-[0.1em] text-blue-accent">
             [ What We Do ]
           </span>
-          <h2 className="font-serif text-[40px] font-normal leading-[1.2] text-ink">
+          <h2 className="font-serif text-[42px] font-normal leading-[1.15] tracking-[-0.01em] text-ink">
             Everything your{" "}
             <em className="italic text-blue-accent">business</em> needs to{" "}
             <em className="italic text-blue-accent">grow</em>.
@@ -151,13 +156,8 @@ export function Services() {
             We offer a full range of professional services to support your
             business at every stage.
           </p>
-          <Link
-            href="/services"
-            className="mt-1 rounded-lg bg-navy-primary px-7 py-3 text-sm font-semibold text-bg-warm transition-opacity hover:opacity-90"
-          >
-            Find out more
-          </Link>
-        </div>
+          <CtaLink href="/services">Find out more</CtaLink>
+        </Reveal>
       </div>
     </section>
   );

@@ -1,5 +1,17 @@
 import Link from "next/link";
 
+function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <Link
+      href={href}
+      className="group/flink relative w-fit text-sm text-bg-warm/80 transition-colors hover:text-bg-warm"
+    >
+      {children}
+      <span className="absolute bottom-0 left-0 h-px w-0 bg-blue-accent transition-all duration-300 ease-out group-hover/flink:w-full" />
+    </Link>
+  );
+}
+
 export function Footer() {
   return (
     <footer id="contact" className="bg-navy-primary px-10 pb-8 pt-16">
@@ -26,29 +38,17 @@ export function Footer() {
             <span className="text-xs font-semibold tracking-[0.08em] text-bg-warm/50">
               SERVICES
             </span>
-            <Link href="#" className="text-sm text-bg-warm/80 hover:text-bg-warm">
-              Business Consulting
-            </Link>
-            <Link href="#" className="text-sm text-bg-warm/80 hover:text-bg-warm">
-              Personal Consulting
-            </Link>
-            <Link href="#" className="text-sm text-bg-warm/80 hover:text-bg-warm">
-              Tax &amp; Retirement
-            </Link>
+            <FooterLink href="#">Business Consulting</FooterLink>
+            <FooterLink href="#">Personal Consulting</FooterLink>
+            <FooterLink href="#">Tax &amp; Retirement</FooterLink>
           </div>
           <div className="flex flex-col gap-3">
             <span className="text-xs font-semibold tracking-[0.08em] text-bg-warm/50">
               COMPANY
             </span>
-            <Link href="#about" className="text-sm text-bg-warm/80 hover:text-bg-warm">
-              About
-            </Link>
-            <Link href="#locations" className="text-sm text-bg-warm/80 hover:text-bg-warm">
-              Locations
-            </Link>
-            <Link href="#" className="text-sm text-bg-warm/80 hover:text-bg-warm">
-              Careers
-            </Link>
+            <FooterLink href="#about">About</FooterLink>
+            <FooterLink href="#locations">Locations</FooterLink>
+            <FooterLink href="#">Careers</FooterLink>
           </div>
         </div>
       </div>

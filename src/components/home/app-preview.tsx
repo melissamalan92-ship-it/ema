@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Reveal } from "./reveal";
 
 function AppleIcon() {
   return (
@@ -25,24 +26,30 @@ function PlayIcon() {
 
 export function AppPreview() {
   return (
-    <section className="bg-navy-primary px-10 py-[120px]">
-      <div className="mx-auto grid max-w-[1180px] grid-cols-[0.8fr_1.2fr] items-center gap-16">
-        <div className="mx-auto w-full max-w-[360px]">
-          <Image
-            src="/images/phone%20colour.png"
-            alt="Hand holding a phone with the EMA app"
-            width={518}
-            height={741}
-            className="w-full rounded-2xl"
-            priority
-          />
-        </div>
+    <section className="relative overflow-hidden bg-navy-primary px-10 py-[120px]">
+      <div
+        className="pointer-events-none absolute -bottom-32 right-0 h-[480px] w-[480px] rounded-full opacity-[0.12] blur-[120px]"
+        style={{ background: "var(--blue-accent)" }}
+      />
+      <div className="relative mx-auto grid max-w-[1180px] grid-cols-[0.8fr_1.2fr] items-center gap-16">
+        <Reveal className="mx-auto w-full max-w-[360px]">
+          <div className="group transition-transform duration-500 ease-out hover:-translate-y-2">
+            <Image
+              src="/images/phone%20colour.png"
+              alt="Hand holding a phone with the EMA app"
+              width={518}
+              height={741}
+              className="w-full rounded-2xl shadow-[0_40px_80px_-25px_rgba(0,0,0,0.6)] transition-shadow duration-500 group-hover:shadow-[0_50px_90px_-20px_rgba(0,0,0,0.7)]"
+              priority
+            />
+          </div>
+        </Reveal>
 
-        <div className="flex flex-col items-start gap-6 text-left">
+        <Reveal delay={120} className="flex flex-col items-start gap-6 text-left">
           <span className="font-mono text-xs font-medium tracking-[0.1em] text-blue-accent">
             [ EMA App ]
           </span>
-          <h2 className="font-serif text-[40px] font-normal leading-[1.2] text-bg-warm">
+          <h2 className="font-serif text-[42px] font-normal leading-[1.15] tracking-[-0.01em] text-bg-warm">
             Your accounts,{" "}
             <em className="italic text-blue-accent">in your pocket</em>.
           </h2>
@@ -52,14 +59,14 @@ export function AppPreview() {
           </p>
 
           <div className="mt-2 flex flex-wrap items-center gap-3">
-            <span className="inline-flex items-center gap-3 rounded-xl bg-navy-secondary px-5 py-3 text-bg-warm">
+            <span className="inline-flex items-center gap-3 rounded-xl bg-navy-secondary px-5 py-3 text-bg-warm transition-all duration-300 hover:-translate-y-0.5 hover:bg-navy-secondary/90 hover:shadow-lg">
               <AppleIcon />
               <span className="flex flex-col items-start leading-tight">
                 <span className="text-[10px]">Download on the</span>
                 <span className="-mt-0.5 text-lg font-semibold">App Store</span>
               </span>
             </span>
-            <span className="inline-flex items-center gap-3 rounded-xl bg-navy-secondary px-5 py-3 text-bg-warm">
+            <span className="inline-flex items-center gap-3 rounded-xl bg-navy-secondary px-5 py-3 text-bg-warm transition-all duration-300 hover:-translate-y-0.5 hover:bg-navy-secondary/90 hover:shadow-lg">
               <PlayIcon />
               <span className="flex flex-col items-start leading-tight">
                 <span className="text-[10px]">Get it on</span>
@@ -67,7 +74,7 @@ export function AppPreview() {
               </span>
             </span>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
