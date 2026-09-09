@@ -21,7 +21,7 @@ const FEATURES = [
 
 export function Hero() {
   return (
-    <section id="hero" className="relative bg-navy-primary px-10 pb-16 pt-24">
+    <section id="hero" className="relative z-10 bg-navy-primary px-10 pb-16 pt-24">
       <div className="relative mx-auto grid max-w-[1200px] grid-cols-2 items-center gap-16">
         <div
           className="flex flex-col items-start gap-5 text-left opacity-0"
@@ -53,7 +53,7 @@ export function Hero() {
         </div>
 
         <div
-          className="relative opacity-0"
+          className="relative mb-[-160px] opacity-0"
           style={{ animation: "reveal-up 1000ms cubic-bezier(0.16,1,0.3,1) 250ms both" }}
         >
           <div className="absolute left-0 top-1/2 z-10 flex -translate-x-1/2 -translate-y-1/2 flex-col gap-2.5">
