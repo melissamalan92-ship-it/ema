@@ -1,20 +1,7 @@
-"use client";
-
-import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { LocationsBento } from "./locations-bento";
-import { LocationCard } from "./location-card";
-import { LOCATIONS } from "./locations-data";
 
 export function Locations() {
-  const [active, setActive] = useState<string | null>(null);
-
-  const activeLocation = LOCATIONS.find((l) => l.id === active) ?? null;
-
-  const handleSelect = (id: string) => {
-    setActive((prev) => (prev === id ? null : id));
-  };
-
   return (
     <section id="locations" className="bg-navy-primary px-10 py-24">
       <div className="mx-auto grid max-w-[1200px] grid-cols-2 items-center gap-16">
@@ -37,14 +24,13 @@ export function Locations() {
           </Link>
         </div>
 
-        <div className="relative h-[480px] w-full">
-          <LocationsBento active={active} onSelect={handleSelect} />
-          {activeLocation && (
-            <LocationCard
-              location={activeLocation}
-              onClose={() => setActive(null)}
-            />
-          )}
+        <div className="relative aspect-[772/682] w-full overflow-hidden rounded-2xl">
+          <Image
+            src="/images/Locations- colour.png"
+            alt="EMA locations across South Africa"
+            fill
+            className="object-cover"
+          />
         </div>
       </div>
     </section>

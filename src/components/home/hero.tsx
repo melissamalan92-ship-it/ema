@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Logo } from "./logo";
 
 export function Hero() {
@@ -19,13 +18,14 @@ export function Hero() {
         </div>
 
         <div className="relative z-10 mb-[-220px]">
-          <div className="relative aspect-[772/682] w-full overflow-hidden rounded-2xl shadow-[0_40px_80px_-20px_rgba(0,0,0,0.5)]">
-            <Image
-              src="/images/Locations- colour.png"
-              alt="EMA locations across South Africa"
-              fill
-              className="object-cover"
-              priority
+          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl shadow-[0_40px_80px_-20px_rgba(0,0,0,0.5)]">
+            <video
+              src="/images/EMA video 2000's.mp4"
+              className="absolute inset-0 h-full w-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
             />
           </div>
         </div>
