@@ -4,7 +4,7 @@ import { CtaLink } from "./cta-link";
 export function About() {
   return (
     <section id="about" className="bg-bg-warm px-10 py-28">
-      <div className="mx-auto grid max-w-[1200px] grid-cols-2 items-start gap-16">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-[0.6fr_1fr] items-center gap-12">
         <Reveal className="flex flex-col items-start gap-4 text-left">
           <span className="font-body text-sm text-ink-soft">
             Trusted expertise since 1983
@@ -21,7 +21,7 @@ export function About() {
 
         <Reveal
           delay={120}
-          className="flex flex-col items-start gap-6 border-l border-ink/15 pl-16 text-left"
+          className="flex flex-col items-start gap-6 border-l border-ink/25 pl-12 text-left"
         >
           <p className="max-w-[440px] font-body text-base leading-[1.7] text-ink-soft">
             For over{" "}
