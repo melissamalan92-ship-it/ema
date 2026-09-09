@@ -1,14 +1,13 @@
 import Image from "next/image";
 import { Reveal } from "./reveal";
-import { CtaLink } from "./cta-link";
 
 export function ShoeFoundation() {
   return (
     <section id="shoe-foundation" className="bg-bg-warm px-10 py-28">
       <div className="mx-auto grid max-w-[1200px] grid-cols-2 items-center gap-16">
         <Reveal className="flex flex-col items-start gap-5 text-left">
-          <span className="font-mono text-xs font-medium tracking-[0.1em] text-blue-accent">
-            [ Social Responsibility ]
+          <span className="font-body text-sm text-ink-soft">
+            More than just accounting
           </span>
           <h2 className="max-w-[420px] font-serif text-[38px] font-normal leading-[1.15] tracking-[-0.01em] text-ink">
             Proudly supporting
@@ -19,7 +18,6 @@ export function ShoeFoundation() {
             Through The Shoe Foundation, we&rsquo;re committed to making a
             positive impact in the communities where we live and work.
           </p>
-          <CtaLink href="#contact">Find out more</CtaLink>
         </Reveal>
 
         <Reveal

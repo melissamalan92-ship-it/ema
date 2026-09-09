@@ -18,25 +18,6 @@ export const SERVICES = [
     ),
   },
   {
-    title: "Taxation Services",
-    description:
-      "Income tax, VAT, employees' tax, and statutory levies handled end-to-end.",
-    icon: (
-      <>
-        <rect x="6" y="3" width="12" height="18" rx="1.5" stroke="currentColor" strokeWidth="1.5" fill="none" />
-        <rect x="8" y="5.5" width="8" height="3" rx="0.5" stroke="currentColor" strokeWidth="1.5" fill="none" />
-        <circle cx="8.5" cy="12" r="0.9" fill="currentColor" />
-        <circle cx="12" cy="12" r="0.9" fill="currentColor" />
-        <circle cx="15.5" cy="12" r="0.9" fill="currentColor" />
-        <circle cx="8.5" cy="15.5" r="0.9" fill="currentColor" />
-        <circle cx="12" cy="15.5" r="0.9" fill="currentColor" />
-        <circle cx="15.5" cy="15.5" r="0.9" fill="currentColor" />
-        <circle cx="8.5" cy="19" r="0.9" fill="currentColor" />
-        <circle cx="12" cy="19" r="0.9" fill="currentColor" />
-      </>
-    ),
-  },
-  {
     title: "Payroll Administration",
     description:
       "Salary and wage processing, PAYE, IRP5s, and HR administration support.",
@@ -73,6 +54,25 @@ export const SERVICES = [
         strokeLinejoin="round"
         fill="none"
       />
+    ),
+  },
+  {
+    title: "Taxation Services",
+    description:
+      "Income tax, VAT, employees' tax, and statutory levies handled end-to-end.",
+    icon: (
+      <>
+        <rect x="6" y="3" width="12" height="18" rx="1.5" stroke="currentColor" strokeWidth="1.5" fill="none" />
+        <rect x="8" y="5.5" width="8" height="3" rx="0.5" stroke="currentColor" strokeWidth="1.5" fill="none" />
+        <circle cx="8.5" cy="12" r="0.9" fill="currentColor" />
+        <circle cx="12" cy="12" r="0.9" fill="currentColor" />
+        <circle cx="15.5" cy="12" r="0.9" fill="currentColor" />
+        <circle cx="8.5" cy="15.5" r="0.9" fill="currentColor" />
+        <circle cx="12" cy="15.5" r="0.9" fill="currentColor" />
+        <circle cx="15.5" cy="15.5" r="0.9" fill="currentColor" />
+        <circle cx="8.5" cy="19" r="0.9" fill="currentColor" />
+        <circle cx="12" cy="19" r="0.9" fill="currentColor" />
+      </>
     ),
   },
   {
@@ -119,20 +119,24 @@ export const SERVICES = [
 
 export function Services() {
   return (
-    <section id="services" className="bg-bg-warm px-10 py-28">
-      <div className="mx-auto grid max-w-[1200px] grid-cols-2 items-center gap-16">
-        <div className="grid grid-cols-3 gap-x-5 gap-y-6">
+    <section id="services" className="border-t border-ink/10 bg-bg-warm px-10 py-28">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-2 items-start gap-16 divide-x divide-ink/10">
+        <div className="grid grid-cols-2 gap-x-8 gap-y-9">
           {SERVICES.map((service, i) => (
             <Reveal
               key={service.title}
-              delay={i * 80}
-              className="group flex flex-col items-start gap-3 rounded-2xl border border-transparent p-4 transition-all duration-300 hover:-translate-y-1 hover:border-ink/10 hover:bg-white hover:shadow-[0_20px_40px_-25px_rgba(16,38,62,0.35)]"
+              delay={i * 70}
+              className="flex flex-col items-start gap-2.5"
             >
-              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-navy-primary text-bg-warm transition-colors duration-300 group-hover:bg-blue-accent">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                  {service.icon}
-                </svg>
-              </span>
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                fill="none"
+                className="text-ink"
+              >
+                {service.icon}
+              </svg>
               <h3 className="text-sm font-semibold leading-[1.4] text-ink">
                 {service.title}
               </h3>
@@ -143,10 +147,7 @@ export function Services() {
           ))}
         </div>
 
-        <Reveal delay={150} className="flex flex-col items-start gap-4 text-left">
-          <span className="font-mono text-xs font-medium tracking-[0.1em] text-blue-accent">
-            [ What We Do ]
-          </span>
+        <Reveal delay={150} className="flex flex-col items-start gap-4 pl-16 text-left">
           <h2 className="font-serif text-[42px] font-normal leading-[1.15] tracking-[-0.01em] text-ink">
             Everything your{" "}
             <em className="italic text-blue-accent">business</em> needs to{" "}
@@ -156,7 +157,7 @@ export function Services() {
             We offer a full range of professional services to support your
             business at every stage.
           </p>
-          <CtaLink href="/services">Find out more</CtaLink>
+          <CtaLink href="#contact">Contact Us</CtaLink>
         </Reveal>
       </div>
     </section>

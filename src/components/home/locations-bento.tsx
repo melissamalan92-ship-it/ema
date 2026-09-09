@@ -1,12 +1,5 @@
-"use client";
-
 import Image from "next/image";
 import { LOCATIONS } from "./locations-data";
-
-type Props = {
-  active: string | null;
-  onSelect: (id: string) => void;
-};
 
 const AREAS: Record<string, string> = {
   capetown: "capetown",
@@ -17,7 +10,7 @@ const AREAS: Record<string, string> = {
   cptpeninsula: "cptpeninsula",
 };
 
-export function LocationsBento({ active, onSelect }: Props) {
+export function LocationsBento() {
   return (
     <div
       className="grid h-full w-full gap-3"
@@ -29,32 +22,23 @@ export function LocationsBento({ active, onSelect }: Props) {
       }}
     >
       {LOCATIONS.map((loc) => (
-        <button
+        <div
           key={loc.id}
-          type="button"
-          onClick={() => onSelect(loc.id)}
           style={{ gridArea: AREAS[loc.id] }}
-          className="group relative overflow-hidden rounded-[14px] text-left"
+          className="group relative overflow-hidden rounded-[14px]"
         >
           <Image
             src={loc.image}
             alt={loc.shortName}
             fill
             sizes="220px"
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
+            className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
           />
-          <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[rgba(16,31,46,0.55)] to-transparent" />
-          <div
-            className={`absolute inset-0 ring-inset transition-all ${
-              active === loc.id
-                ? "ring-2 ring-[rgba(253,255,248,0.7)]"
-                : "ring-0"
-            }`}
-          />
-          <span className="absolute bottom-3 left-3 font-serif text-sm italic text-bg-warm">
+          <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[rgba(36,63,74,0.55)] to-transparent" />
+          <span className="absolute bottom-3 left-3 font-serif text-sm italic text-cream">
             {loc.shortName}
           </span>
-        </button>
+        </div>
       ))}
     </div>
   );

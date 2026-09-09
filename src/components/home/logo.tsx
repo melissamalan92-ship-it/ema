@@ -14,10 +14,10 @@ export function Logo({
         ? "text-[11px] tracking-[0.2em]"
         : "text-[9px] tracking-[0.18em]";
   const bar =
-    variant === "light" ? "bg-bg-warm" : variant === "blue" ? "bg-blue-accent" : "bg-navy-primary";
+    variant === "light" ? "bg-cream" : variant === "blue" ? "bg-blue-accent" : "bg-navy-primary";
   const word =
-    variant === "light" ? "text-bg-warm" : variant === "blue" ? "text-blue-accent" : "text-navy-primary";
-  const sub = variant === "light" ? "text-bg-warm/70" : variant === "blue" ? "text-blue-accent" : "text-ink-soft";
+    variant === "light" ? "text-cream" : variant === "blue" ? "text-blue-accent" : "text-navy-primary";
+  const sub = variant === "light" ? "text-cream/70" : variant === "blue" ? "text-blue-accent" : "text-ink-soft";
 
   return (
     <div className="flex items-start gap-2.5">

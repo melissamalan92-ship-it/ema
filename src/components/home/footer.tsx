@@ -4,7 +4,7 @@ function FooterLink({ href, children }: { href: string; children: React.ReactNod
   return (
     <Link
       href={href}
-      className="group/flink relative w-fit text-sm text-bg-warm/80 transition-colors hover:text-bg-warm"
+      className="group/flink relative w-fit text-sm text-cream/80 transition-colors hover:text-cream"
     >
       {children}
       <span className="absolute bottom-0 left-0 h-px w-0 bg-blue-accent transition-all duration-300 ease-out group-hover/flink:w-full" />
@@ -18,46 +18,36 @@ export function Footer() {
       <div className="mx-auto flex max-w-[1200px] flex-col justify-between gap-12 pb-12 sm:flex-row">
         <div className="flex max-w-[280px] flex-col gap-3.5">
           <div className="flex items-start gap-2.5">
-            <div className="w-[2px] self-stretch bg-bg-warm" />
+            <div className="w-[2px] self-stretch bg-cream" />
             <div className="flex flex-col gap-0.5">
-              <span className="text-[22px] font-bold leading-none tracking-[0.02em] text-bg-warm">
+              <span className="text-[22px] font-bold leading-none tracking-[0.02em] text-cream">
                 EMA
               </span>
-              <span className="whitespace-nowrap text-[9px] font-medium tracking-[0.18em] text-bg-warm/60">
+              <span className="whitespace-nowrap text-[9px] font-medium tracking-[0.18em] text-cream/60">
                 E MALAN AND ASSOCIATES
               </span>
             </div>
           </div>
-          <p className="text-[13px] leading-[1.6] text-bg-warm/50">
+          <p className="text-[13px] leading-[1.6] text-cream/50">
             Accounting &amp; financial consulting since 1983.
           </p>
         </div>
 
-        <div className="flex gap-16">
-          <div className="flex flex-col gap-3">
-            <span className="text-xs font-semibold tracking-[0.08em] text-bg-warm/50">
-              SERVICES
-            </span>
-            <FooterLink href="#">Business Consulting</FooterLink>
-            <FooterLink href="#">Personal Consulting</FooterLink>
-            <FooterLink href="#">Tax &amp; Retirement</FooterLink>
-          </div>
-          <div className="flex flex-col gap-3">
-            <span className="text-xs font-semibold tracking-[0.08em] text-bg-warm/50">
-              COMPANY
-            </span>
-            <FooterLink href="#about">About</FooterLink>
-            <FooterLink href="#locations">Locations</FooterLink>
-            <FooterLink href="#">Careers</FooterLink>
-          </div>
+        <div className="flex flex-col gap-3">
+          <span className="font-body text-sm text-cream/60">
+            E Malan &amp; Associates
+          </span>
+          <FooterLink href="#contact">Contact</FooterLink>
+          <FooterLink href="#about">About Us</FooterLink>
+          <FooterLink href="#">Work With Us</FooterLink>
         </div>
       </div>
 
-      <div className="mx-auto flex max-w-[1200px] justify-between border-t border-bg-warm/15 pt-6">
-        <span className="text-xs text-bg-warm/40">
+      <div className="mx-auto flex max-w-[1200px] justify-between border-t border-cream/15 pt-6">
+        <span className="text-xs text-cream/40">
           &copy; 2026 E Malan &amp; Associates. All rights reserved.
         </span>
-        <span className="text-xs text-bg-warm/40">
+        <span className="text-xs text-cream/40">
           Johannesburg &middot; Cape Town &middot; Paarl
         </span>
       </div>

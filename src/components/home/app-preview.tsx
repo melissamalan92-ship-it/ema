@@ -46,27 +46,25 @@ export function AppPreview() {
         </Reveal>
 
         <Reveal delay={120} className="flex flex-col items-start gap-6 text-left">
-          <span className="font-mono text-xs font-medium tracking-[0.1em] text-blue-accent">
-            [ EMA App ]
-          </span>
-          <h2 className="font-serif text-[42px] font-normal leading-[1.15] tracking-[-0.01em] text-bg-warm">
-            Your accounts,{" "}
-            <em className="italic text-blue-accent">in your pocket</em>.
+          <h2 className="font-serif text-[42px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
+            Your accountants{" "}
+            <br />
+            in your <em className="italic text-blue-accent">pocket</em>.
           </h2>
-          <p className="max-w-[440px] font-body text-base leading-[1.7] text-bg-warm/70">
+          <p className="max-w-[440px] font-body text-base leading-[1.7] text-cream/70">
             We&rsquo;re building an app that brings the same clarity we
             bring to every client relationship straight to your phone.
           </p>
 
           <div className="mt-2 flex flex-wrap items-center gap-3">
-            <span className="inline-flex items-center gap-3 rounded-xl bg-navy-secondary px-5 py-3 text-bg-warm transition-all duration-300 hover:-translate-y-0.5 hover:bg-navy-secondary/90 hover:shadow-lg">
+            <span className="inline-flex items-center gap-3 rounded-xl bg-black px-5 py-3 text-cream transition-all duration-300 hover:-translate-y-0.5 hover:bg-black/80 hover:shadow-lg">
               <AppleIcon />
               <span className="flex flex-col items-start leading-tight">
                 <span className="text-[10px]">Download on the</span>
                 <span className="-mt-0.5 text-lg font-semibold">App Store</span>
               </span>
             </span>
-            <span className="inline-flex items-center gap-3 rounded-xl bg-navy-secondary px-5 py-3 text-bg-warm transition-all duration-300 hover:-translate-y-0.5 hover:bg-navy-secondary/90 hover:shadow-lg">
+            <span className="inline-flex items-center gap-3 rounded-xl bg-black px-5 py-3 text-cream transition-all duration-300 hover:-translate-y-0.5 hover:bg-black/80 hover:shadow-lg">
               <PlayIcon />
               <span className="flex flex-col items-start leading-tight">
                 <span className="text-[10px]">Get it on</span>

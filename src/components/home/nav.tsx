@@ -5,11 +5,11 @@ import Link from "next/link";
 import { Logo } from "./logo";
 
 const links = [
-  { href: "#hero", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#shoe-foundation", label: "Shoe Foundation" },
-  { href: "#contact", label: "Contact" },
+  { href: "#hero", label: "home" },
+  { href: "#about", label: "about" },
+  { href: "#services", label: "services" },
+  { href: "#shoe-foundation", label: "shoe foundation" },
+  { href: "#contact", label: "contact" },
 ];
 
 export function Nav() {
@@ -37,7 +37,7 @@ export function Nav() {
             <Link
               key={link.href}
               href={link.href}
-              className="group/link relative py-1 text-sm font-medium capitalize text-bg-warm/80 transition-colors duration-200 hover:text-bg-warm"
+              className="group/link relative py-1 text-sm font-medium text-cream/80 transition-colors duration-200 hover:text-cream"
             >
               {link.label}
               <span className="absolute bottom-0 left-0 h-px w-0 bg-blue-accent transition-all duration-300 ease-out group-hover/link:w-full" />

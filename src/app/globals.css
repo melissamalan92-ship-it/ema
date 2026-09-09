@@ -17,7 +17,7 @@
   --color-navy-dark: var(--navy-dark);
   --color-navy-secondary: var(--navy-secondary);
   --color-blue-accent: var(--blue-accent);
-  --color-accent-warm: var(--accent-warm);
+  --color-cream: var(--cream);
   --color-bg-warm: var(--bg-warm);
   --color-bg-grey: var(--bg-grey);
   --color-bg-mint: var(--bg-mint);
@@ -62,16 +62,16 @@
 }
 
 :root {
-  --navy-primary: #0b1d3a;
-  --navy-dark: #0b1d3a;
-  --navy-secondary: #3563b0;
-  --blue-accent: #3563b0;
-  --accent-warm: #c0894f;
-  --bg-warm: #f4f5f8;
-  --bg-grey: #f4f5f8;
-  --bg-mint: #f4f5f8;
-  --ink: #0b1d3a;
-  --ink-soft: #5a6472;
+  --navy-primary: #243f4a;
+  --navy-dark: #243f4a;
+  --navy-secondary: #86af9f;
+  --blue-accent: #86af9f;
+  --cream: #f2f4ef;
+  --bg-warm: #f5f8f8;
+  --bg-grey: #f5f8f8;
+  --bg-mint: #f5f8f8;
+  --ink: #2a3e43;
+  --ink-soft: #5c6e72;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -153,7 +153,7 @@
   }
   ::selection {
     background: var(--blue-accent);
-    color: var(--bg-warm);
+    color: var(--cream);
   }
 }
 

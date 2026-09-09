@@ -20,7 +20,7 @@ export default function Home() {
     <main
       className="relative min-w-[1040px] overflow-x-hidden"
       style={{
-        backgroundColor: "#0b1d3a",
+        backgroundColor: "#243f4a",
       }}
     >
       <div
