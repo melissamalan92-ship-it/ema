@@ -21,11 +21,7 @@ const FEATURES = [
 
 export function Hero() {
   return (
-    <section id="hero" className="relative overflow-hidden bg-navy-primary px-10 pb-16 pt-24">
-      <div
-        className="pointer-events-none absolute -top-40 left-1/3 h-[560px] w-[560px] rounded-full opacity-[0.15] blur-[120px]"
-        style={{ background: "var(--blue-accent)" }}
-      />
+    <section id="hero" className="relative bg-navy-primary px-10 pb-16 pt-24">
       <div className="relative mx-auto grid max-w-[1200px] grid-cols-2 items-center gap-16">
         <div
           className="flex flex-col items-start gap-5 text-left opacity-0"
