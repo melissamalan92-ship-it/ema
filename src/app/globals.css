@@ -17,6 +17,7 @@
   --color-navy-dark: var(--navy-dark);
   --color-navy-secondary: var(--navy-secondary);
   --color-blue-accent: var(--blue-accent);
+  --color-accent-warm: var(--accent-warm);
   --color-bg-warm: var(--bg-warm);
   --color-bg-grey: var(--bg-grey);
   --color-bg-mint: var(--bg-mint);
@@ -61,15 +62,16 @@
 }
 
 :root {
-  --navy-primary: #10263e;
-  --navy-dark: #10263e;
-  --navy-secondary: #7096b9;
-  --blue-accent: #7096b9;
-  --bg-warm: #f8f7f5;
-  --bg-grey: #f8f7f5;
-  --bg-mint: #f8f7f5;
-  --ink: #10263e;
-  --ink-soft: #5f6b76;
+  --navy-primary: #0b1d3a;
+  --navy-dark: #0b1d3a;
+  --navy-secondary: #3563b0;
+  --blue-accent: #3563b0;
+  --accent-warm: #c0894f;
+  --bg-warm: #f4f5f8;
+  --bg-grey: #f4f5f8;
+  --bg-mint: #f4f5f8;
+  --ink: #0b1d3a;
+  --ink-soft: #5a6472;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);

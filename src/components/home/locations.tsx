@@ -17,9 +17,7 @@ export function Locations() {
             Contact your nearest branch for more information on how we can
             help you.
           </p>
-          <CtaLink href="#contact" variant="light">
-            Find out more
-          </CtaLink>
+          <CtaLink href="#contact">Find out more</CtaLink>
         </Reveal>
 
         <Reveal
