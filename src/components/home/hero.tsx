@@ -27,7 +27,7 @@ export function Hero() {
           className="flex flex-col items-start gap-5 text-left opacity-0"
           style={{ animation: "reveal-up 900ms cubic-bezier(0.16,1,0.3,1) 100ms both" }}
         >
-          <span className="font-body text-sm text-cream/70">E Malan &amp; Associates</span>
+          <span className="font-body text-[32px] text-cream/70">E Malan &amp; Associates</span>
           <h1 className="max-w-[480px] font-serif text-[46px] font-normal leading-[1.12] tracking-[-0.01em] text-cream">
             Accounting services{" "}
             <em className="italic text-blue-accent">designed</em> for{" "}
@@ -40,11 +40,11 @@ export function Hero() {
                 key={feature.title}
                 className="flex flex-col items-start gap-2 border-l border-cream/15 pl-4 first:border-l-0 first:pl-0"
               >
-                <feature.icon className="size-5 text-blue-accent" strokeWidth={1.75} />
-                <h3 className="text-[13px] font-semibold leading-tight text-cream">
+                <feature.icon className="size-6 text-blue-accent" strokeWidth={1.75} />
+                <h3 className="text-[23px] font-semibold leading-tight text-cream">
                   {feature.title}
                 </h3>
-                <p className="font-body text-[11.5px] leading-[1.5] text-cream/55">
+                <p className="font-body text-[19px] leading-[1.4] text-cream/70">
                   {feature.body}
                 </p>
               </div>

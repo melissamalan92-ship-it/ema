@@ -7,13 +7,13 @@ export function Locations() {
     <section id="locations" className="bg-navy-primary px-10 py-28">
       <div className="mx-auto grid max-w-[1200px] grid-cols-2 items-center gap-16">
         <Reveal className="flex flex-col items-start gap-4 text-left">
-          <span className="font-body text-sm text-cream/60">
+          <span className="font-body text-[21px] text-cream/60">
             Where to find us
           </span>
-          <h2 className="font-serif text-[42px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
+          <h2 className="font-serif text-[54px] font-normal leading-[1.1] tracking-[-0.01em] text-cream">
             Our <em className="italic text-blue-accent">locations</em>.
           </h2>
-          <p className="max-w-[380px] font-body text-base leading-[1.7] text-cream/70">
+          <p className="max-w-[460px] font-body text-[29px] leading-[1.35] text-cream/70">
             Contact your nearest branch for more information on how we can
             help you.
           </p>

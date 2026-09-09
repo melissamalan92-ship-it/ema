@@ -18,6 +18,7 @@
   --color-navy-secondary: var(--navy-secondary);
   --color-blue-accent: var(--blue-accent);
   --color-cream: var(--cream);
+  --color-button-navy: var(--button-navy);
   --color-bg-warm: var(--bg-warm);
   --color-bg-grey: var(--bg-grey);
   --color-bg-mint: var(--bg-mint);
@@ -67,11 +68,12 @@
   --navy-secondary: #86af9f;
   --blue-accent: #86af9f;
   --cream: #f2f4ef;
+  --button-navy: #37616b;
   --bg-warm: #f5f8f8;
   --bg-grey: #f5f8f8;
   --bg-mint: #f5f8f8;
   --ink: #2a3e43;
-  --ink-soft: #5c6e72;
+  --ink-soft: #758291;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);

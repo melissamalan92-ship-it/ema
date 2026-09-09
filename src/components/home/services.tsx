@@ -120,8 +120,8 @@ export const SERVICES = [
 export function Services() {
   return (
     <section id="services" className="border-t border-ink/10 bg-bg-warm px-10 py-28">
-      <div className="mx-auto grid max-w-[1200px] grid-cols-2 items-start gap-16">
-        <div className="grid grid-cols-2 gap-x-8 gap-y-9">
+      <div className="mx-auto grid max-w-[1160px] grid-cols-[1fr_1.1fr] items-start gap-16">
+        <div className="grid grid-cols-2 gap-x-10 gap-y-10">
           {SERVICES.map((service, i) => (
             <Reveal
               key={service.title}
@@ -129,18 +129,18 @@ export function Services() {
               className="flex flex-col items-start gap-2.5"
             >
               <svg
-                width="26"
-                height="26"
+                width="28"
+                height="28"
                 viewBox="0 0 24 24"
                 fill="none"
                 className="text-ink"
               >
                 {service.icon}
               </svg>
-              <h3 className="text-sm font-semibold leading-[1.4] text-ink">
+              <h3 className="text-[19px] font-bold leading-[1.3] text-ink">
                 {service.title}
               </h3>
-              <p className="font-body text-xs leading-[1.6] text-ink-soft">
+              <p className="font-body text-[19px] leading-[1.4] text-ink-soft">
                 {service.description}
               </p>
             </Reveal>
@@ -149,14 +149,14 @@ export function Services() {
 
         <Reveal
           delay={150}
-          className="flex flex-col items-start gap-4 border-l border-ink/10 pl-16 text-left"
+          className="flex flex-col items-start gap-6 border-l border-ink/10 pl-16 text-left"
         >
-          <h2 className="font-serif text-[42px] font-normal leading-[1.15] tracking-[-0.01em] text-ink">
+          <h2 className="font-serif text-[54px] font-normal leading-[1.1] tracking-[-0.01em] text-ink">
             Everything your{" "}
             <em className="italic text-blue-accent">business</em> needs to{" "}
             <em className="italic text-blue-accent">grow</em>.
           </h2>
-          <p className="max-w-[420px] font-body text-base leading-[1.7] text-ink-soft">
+          <p className="max-w-[460px] font-body text-[29px] leading-[1.35] text-ink">
             We offer a full range of professional services to support your
             business at every stage.
           </p>

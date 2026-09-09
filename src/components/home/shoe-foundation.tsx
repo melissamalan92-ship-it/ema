@@ -6,15 +6,15 @@ export function ShoeFoundation() {
     <section id="shoe-foundation" className="bg-bg-warm px-10 py-28">
       <div className="mx-auto grid max-w-[1200px] grid-cols-2 items-center gap-16">
         <Reveal className="flex flex-col items-start gap-5 text-left">
-          <span className="font-body text-sm text-ink-soft">
+          <span className="font-body text-[22px] text-ink-soft">
             More than just accounting
           </span>
-          <h2 className="max-w-[420px] font-serif text-[38px] font-normal leading-[1.15] tracking-[-0.01em] text-ink">
+          <h2 className="max-w-[460px] font-serif text-[69px] font-normal leading-[1.05] tracking-[-0.01em] text-ink">
             Proudly supporting
             <br />
             <em className="italic text-blue-accent">The Shoe Foundation.</em>
           </h2>
-          <p className="max-w-[420px] font-body text-base leading-[1.7] text-ink-soft">
+          <p className="max-w-[440px] font-body text-[26px] leading-[1.4] text-ink-soft">
             Through The Shoe Foundation, we&rsquo;re committed to making a
             positive impact in the communities where we live and work.
           </p>

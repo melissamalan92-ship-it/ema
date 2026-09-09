@@ -4,7 +4,7 @@ function FooterLink({ href, children }: { href: string; children: React.ReactNod
   return (
     <Link
       href={href}
-      className="group/flink relative w-fit text-sm text-cream/80 transition-colors hover:text-cream"
+      className="group/flink relative w-fit text-[17px] text-cream/80 transition-colors hover:text-cream"
     >
       {children}
       <span className="absolute bottom-0 left-0 h-px w-0 bg-blue-accent transition-all duration-300 ease-out group-hover/flink:w-full" />
@@ -34,7 +34,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col gap-3">
-          <span className="font-body text-sm text-cream/60">
+          <span className="font-body text-[17px] text-cream/60">
             E Malan &amp; Associates
           </span>
           <FooterLink href="#contact">Contact</FooterLink>
