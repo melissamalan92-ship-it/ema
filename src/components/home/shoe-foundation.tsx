@@ -28,8 +28,8 @@ export function ShoeFoundation() {
 
         <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl">
           <Image
-            src="/images/shoe foundation-kid.png"
-            alt="Person walking, supported by The Shoe Foundation"
+            src="/images/Charity-colour.png"
+            alt="Child walking to school, supported by The Shoe Foundation"
             fill
             className="object-cover"
             sizes="480px"

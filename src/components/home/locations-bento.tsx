@@ -41,9 +41,9 @@ export function LocationsBento({ active, onSelect }: Props) {
             alt={loc.shortName}
             fill
             sizes="220px"
-            className="object-cover grayscale transition-transform duration-300 group-hover:scale-105"
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-[rgba(16,31,46,0.45)] mix-blend-multiply" />
+          <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[rgba(16,31,46,0.55)] to-transparent" />
           <div
             className={`absolute inset-0 ring-inset transition-all ${
               active === loc.id

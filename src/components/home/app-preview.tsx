@@ -29,10 +29,10 @@ export function AppPreview() {
       <div className="mx-auto grid max-w-[1180px] grid-cols-[0.8fr_1.2fr] items-center gap-16">
         <div className="mx-auto w-full max-w-[360px]">
           <Image
-            src="/images/phone.png"
+            src="/images/phone%20colour.png"
             alt="Hand holding a phone with the EMA app"
-            width={1080}
-            height={1350}
+            width={518}
+            height={741}
             className="w-full rounded-2xl"
             priority
           />
