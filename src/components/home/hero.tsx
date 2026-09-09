@@ -19,10 +19,10 @@ export function Hero() {
         </div>
 
         <div className="relative z-10 mb-[-220px]">
-          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl shadow-[0_40px_80px_-20px_rgba(0,0,0,0.5)]">
+          <div className="relative aspect-[772/682] w-full overflow-hidden rounded-2xl shadow-[0_40px_80px_-20px_rgba(0,0,0,0.5)]">
             <Image
-              src="/images/hero-photo-placeholder.jpg"
-              alt="EMA team member at work"
+              src="/images/Locations- colour.png"
+              alt="EMA locations across South Africa"
               fill
               className="object-cover"
               priority
