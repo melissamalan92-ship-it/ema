@@ -120,7 +120,7 @@ export const SERVICES = [
 export function Services() {
   return (
     <section id="services" className="border-t border-ink/10 bg-bg-warm px-10 py-28">
-      <div className="mx-auto grid max-w-[1160px] grid-cols-[1fr_1.1fr] items-start gap-16">
+      <div className="mx-auto grid max-w-[1160px] grid-cols-[1fr_1.1fr] items-stretch gap-16">
         <div className="grid grid-cols-2 gap-x-10 gap-y-10">
           {SERVICES.map((service, i) => (
             <Reveal
@@ -149,7 +149,7 @@ export function Services() {
 
         <Reveal
           delay={150}
-          className="flex flex-col items-start gap-6 border-l border-ink/10 pl-16 text-left"
+          className="flex flex-col items-start justify-center gap-6 border-l border-ink/10 pl-16 text-left"
         >
           <h2 className="font-serif text-[40px] font-normal leading-[1.15] tracking-[-0.01em] text-ink">
             Everything your{" "}
