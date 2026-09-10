@@ -2,12 +2,7 @@ import type { Metadata } from "next";
 import { Nav } from "@/components/home/nav";
 import { Footer } from "@/components/home/footer";
 import { AboutHero } from "@/components/about-us/about-hero";
-import {
-  WhoWeAre,
-  TheGroup,
-  TrainingAndIt,
-  AboutContactCta,
-} from "@/components/about-us/sections";
+import { DecadesSection, ExpertiseSection } from "@/components/about-us/sections";
 
 export const metadata: Metadata = {
   title: "About Us | EMA",
@@ -31,10 +26,8 @@ export default function AboutUsPage() {
       <div className="relative">
         <Nav />
         <AboutHero />
-        <WhoWeAre />
-        <TheGroup />
-        <TrainingAndIt />
-        <AboutContactCta />
+        <DecadesSection />
+        <ExpertiseSection />
         <Footer />
       </div>
     </main>
