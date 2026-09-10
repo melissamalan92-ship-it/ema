@@ -1,10 +1,26 @@
+import { CalendarCheck, MapPin, ShieldCheck } from "lucide-react";
 import { Reveal } from "@/components/home/reveal";
 import { MediaPlaceholder } from "./media-placeholder";
 
 const STATS = [
-  { value: "1983", label: "Founded in" },
-  { value: "Five", label: "offices across South Africa" },
-  { value: "Saipa", label: "registered professional practice" },
+  {
+    icon: CalendarCheck,
+    content: (
+      <>Founded in <strong className="font-semibold text-ink">1983</strong></>
+    ),
+  },
+  {
+    icon: MapPin,
+    content: (
+      <><strong className="font-semibold text-ink">Five</strong> offices across South Africa</>
+    ),
+  },
+  {
+    icon: ShieldCheck,
+    content: (
+      <><strong className="font-semibold text-ink">Saipa</strong> registered professional practice</>
+    ),
+  },
 ];
 
 const DECADES = ["1980s", "1990s", "2000s"];
@@ -19,12 +35,15 @@ export function AboutHero() {
               E Malan &amp; Associates
             </span>
             <h1 className="font-serif text-[54px] font-normal leading-[1.1] tracking-[-0.01em] text-cream">
-              Four decades of{" "}
-              <em className="italic text-blue-accent">trusted</em> accounting.
+              Four decades
+              <br />
+              of <em className="italic text-blue-accent">trusted</em>
+              <br />
+              accounting.
             </h1>
           </Reveal>
 
-          <Reveal delay={120} className="relative">
+          <Reveal delay={120} className="relative -mb-24">
             <MediaPlaceholder
               kind="video"
               label="Hero video placeholder"
@@ -51,16 +70,19 @@ export function AboutHero() {
         </div>
       </section>
 
-      <section className="bg-bg-warm px-10 py-16">
+      <section className="bg-bg-warm px-10 pb-16 pt-24">
         <Reveal className="mx-auto grid max-w-[1160px] grid-cols-3 gap-10">
-          {STATS.map((stat) => (
-            <div key={stat.label} className="flex flex-col items-start gap-1 text-left">
-              <span className="font-serif text-[29px] font-normal text-ink">
-                {stat.value}
-              </span>
-              <span className="font-body text-[16px] leading-[1.4] text-ink-soft">
-                {stat.label}
-              </span>
+          {STATS.map((stat, i) => (
+            <div
+              key={i}
+              className={`flex flex-col items-start gap-3 pl-10 text-left first:pl-0 ${
+                i > 0 ? "border-l border-ink/15" : ""
+              }`}
+            >
+              <stat.icon className="size-8 text-blue-accent" strokeWidth={1.5} />
+              <p className="font-body text-[22px] leading-[1.4] text-ink-soft">
+                {stat.content}
+              </p>
             </div>
           ))}
         </Reveal>
