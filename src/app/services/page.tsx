@@ -3,6 +3,7 @@ import { Nav } from "@/components/home/nav";
 import { Footer } from "@/components/home/footer";
 import { ServicesHero } from "@/components/services/services-hero";
 import { ServicesGrid } from "@/components/services/services-grid";
+import { TrainingSection } from "@/components/services/training-section";
 
 export const metadata: Metadata = {
   title: "Services | EMA",
@@ -27,6 +28,7 @@ export default function ServicesPage() {
         <Nav />
         <ServicesHero />
         <ServicesGrid />
+        <TrainingSection />
         <Footer />
       </div>
     </main>
