@@ -9,7 +9,7 @@ const links = [
   { href: "/about-us", label: "about" },
   { href: "/services", label: "services" },
   { href: "/#shoe-foundation", label: "shoe foundation" },
-  { href: "/#contact", label: "contact" },
+  { href: "/contact", label: "contact" },
 ];
 
 export function Nav() {
