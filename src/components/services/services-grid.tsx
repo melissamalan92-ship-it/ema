@@ -1,3 +1,4 @@
+import { Check } from "lucide-react";
 import { SERVICES as SERVICE_ICONS } from "@/components/home/services";
 import { Reveal } from "@/components/home/reveal";
 
@@ -68,31 +69,38 @@ const SERVICES = [
 export function ServicesGrid() {
   return (
     <section className="bg-bg-warm px-10 py-24">
-      <div className="mx-auto grid max-w-[1160px] grid-cols-2 gap-x-16 gap-y-16">
+      <div className="mx-auto grid max-w-[1160px] grid-cols-2 gap-6">
         {SERVICES.map((service, i) => (
           <Reveal
             key={service.title}
             delay={(i % 2) * 80}
-            className="flex flex-col items-start gap-4 border-t border-ink/10 pt-8 text-left"
+            className="group flex flex-col items-start gap-4 rounded-2xl border border-ink/10 bg-white p-8 text-left transition-all duration-300 hover:-translate-y-1 hover:border-ink/15 hover:shadow-[0_24px_48px_-28px_rgba(16,38,62,0.4)]"
           >
-            <span className="flex size-11 items-center justify-center rounded-full bg-navy-primary text-cream">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                {iconFor(service.title)}
-              </svg>
-            </span>
+            <div className="flex w-full items-center justify-between">
+              <span className="flex size-12 items-center justify-center rounded-xl bg-navy-primary text-cream transition-colors duration-300 group-hover:bg-blue-accent">
+                <svg width="21" height="21" viewBox="0 0 24 24" fill="none">
+                  {iconFor(service.title)}
+                </svg>
+              </span>
+              <span className="font-mono text-[12px] tracking-[0.1em] text-ink-soft/60">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+            </div>
             <h3 className="font-serif text-[26px] font-normal leading-[1.2] text-ink">
               {service.title}
             </h3>
             <p className="max-w-[440px] font-body text-[17px] leading-[1.55] text-ink-soft">
               {service.description}
             </p>
-            <ul className="flex flex-col gap-2 pt-1">
+            <ul className="flex flex-col gap-2.5 pt-1">
               {service.items.map((item) => (
                 <li
                   key={item}
-                  className="flex items-start gap-2.5 font-body text-[15px] leading-[1.4] text-ink"
+                  className="flex items-center gap-2.5 font-body text-[15px] leading-[1.4] text-ink"
                 >
-                  <span className="mt-[9px] size-1.5 shrink-0 rounded-full bg-blue-accent" />
+                  <span className="flex size-4 shrink-0 items-center justify-center rounded-full bg-blue-accent/15">
+                    <Check className="size-2.5 text-blue-accent" strokeWidth={3} />
+                  </span>
                   {item}
                 </li>
               ))}
