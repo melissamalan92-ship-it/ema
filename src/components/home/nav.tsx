@@ -5,11 +5,11 @@ import Link from "next/link";
 import { Logo } from "./logo";
 
 const links = [
-  { href: "#hero", label: "home" },
-  { href: "#about", label: "about" },
-  { href: "#services", label: "services" },
-  { href: "#shoe-foundation", label: "shoe foundation" },
-  { href: "#contact", label: "contact" },
+  { href: "/#hero", label: "home" },
+  { href: "/about-us", label: "about" },
+  { href: "/#services", label: "services" },
+  { href: "/#shoe-foundation", label: "shoe foundation" },
+  { href: "/#contact", label: "contact" },
 ];
 
 export function Nav() {
@@ -31,7 +31,9 @@ export function Nav() {
       }`}
     >
       <div className="relative mx-auto flex max-w-[1200px] items-center">
-        <Logo variant="light" />
+        <Link href="/" aria-label="EMA home">
+          <Logo variant="light" />
+        </Link>
         <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center gap-10 whitespace-nowrap">
           {links.map((link) => (
             <Link

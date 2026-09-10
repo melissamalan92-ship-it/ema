@@ -38,7 +38,7 @@ export function Footer() {
             E Malan &amp; Associates
           </span>
           <FooterLink href="#contact">Contact</FooterLink>
-          <FooterLink href="#about">About Us</FooterLink>
+          <FooterLink href="/about-us">About Us</FooterLink>
           <FooterLink href="#">Work With Us</FooterLink>
         </div>
       </div>
