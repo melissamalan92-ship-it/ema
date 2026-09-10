@@ -1,4 +1,5 @@
 import { ShieldCheck, Users, TrendingUp } from "lucide-react";
+import { HeroVideo } from "./hero-video";
 
 const FEATURES = [
   {
@@ -21,7 +22,7 @@ const FEATURES = [
 export function Hero() {
   return (
     <section id="hero" className="relative z-10 bg-navy-primary px-10 pb-16 pt-24">
-      <div className="relative mx-auto grid max-w-[1200px] grid-cols-2 items-center gap-16">
+      <div className="relative mx-auto grid max-w-[1200px] grid-cols-[1fr_1.15fr] items-center gap-16">
         <div
           className="flex flex-col items-start gap-5 text-left opacity-0"
           style={{ animation: "reveal-up 900ms cubic-bezier(0.16,1,0.3,1) 100ms both" }}
@@ -52,24 +53,10 @@ export function Hero() {
         </div>
 
         <div
-          className="relative mb-[-160px] opacity-0"
+          className="relative -mr-16 -mb-[160px] opacity-0"
           style={{ animation: "reveal-up 1000ms cubic-bezier(0.16,1,0.3,1) 250ms both" }}
         >
-          <div className="absolute left-0 top-1/2 z-10 flex -translate-x-1/2 -translate-y-1/2 flex-col gap-2.5">
-            <span className="size-2 rounded-full bg-cream" />
-            <span className="size-2 rounded-full bg-cream/40" />
-            <span className="size-2 rounded-full bg-cream/40" />
-          </div>
-          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl shadow-[0_40px_80px_-20px_rgba(0,0,0,0.55)]">
-            <video
-              src="/images/Decades%20video%20colour.mp4"
-              className="absolute inset-0 h-full w-full object-cover"
-              autoPlay
-              muted
-              loop
-              playsInline
-            />
-          </div>
+          <HeroVideo />
         </div>
       </div>
     </section>
