@@ -42,13 +42,17 @@ export function TrainingSection() {
               className="pointer-events-none absolute -bottom-6 left-1/2 h-[70%] w-[85%] -translate-x-1/2 rounded-full opacity-40 blur-[60px]"
               style={{ background: "var(--cream)" }}
             />
-            <div className="relative -mb-16 -mr-14 ml-auto w-[78%]">
+            <div className="relative -mb-32 -mr-20 ml-auto w-[82%]">
+              <div
+                className="pointer-events-none absolute -bottom-8 left-1/2 h-24 w-[90%] -translate-x-1/2 rounded-full opacity-30 blur-[40px]"
+                style={{ background: "var(--ink)" }}
+              />
               <Image
                 src="/images/Saipa.png"
                 alt="SAIPA accredited training centre"
                 width={476}
                 height={722}
-                className="w-full rounded-2xl bg-white p-10 shadow-[0_40px_80px_-20px_rgba(0,0,0,0.5)]"
+                className="relative w-full rounded-2xl bg-white p-10 shadow-[0_50px_90px_-20px_rgba(0,0,0,0.55)]"
               />
             </div>
           </Reveal>
