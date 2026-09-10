@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Nav } from "@/components/home/nav";
 import { Footer } from "@/components/home/footer";
 import { ServicesHero } from "@/components/services/services-hero";
+import { ServicesGrid } from "@/components/services/services-grid";
 
 export const metadata: Metadata = {
   title: "Services | EMA",
@@ -25,6 +26,7 @@ export default function ServicesPage() {
       <div className="relative">
         <Nav />
         <ServicesHero />
+        <ServicesGrid />
         <Footer />
       </div>
     </main>
