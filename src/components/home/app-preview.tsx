@@ -46,12 +46,12 @@ export function AppPreview() {
         </Reveal>
 
         <Reveal delay={120} className="flex flex-col items-start gap-6 text-left">
-          <h2 className="font-serif text-[50px] font-normal leading-[1.1] tracking-[-0.01em] text-cream">
+          <h2 className="font-serif text-[38px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
             Your accountants{" "}
             <br />
             in your <em className="italic text-blue-accent">pocket</em>.
           </h2>
-          <p className="max-w-[480px] font-body text-[26px] leading-[1.4] text-cream/70">
+          <p className="max-w-[420px] font-body text-[19px] leading-[1.5] text-cream/70">
             We&rsquo;re building an app that brings the same clarity we
             bring to every client relationship straight to your phone.
           </p>
