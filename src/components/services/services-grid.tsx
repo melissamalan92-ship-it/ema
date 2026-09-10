@@ -68,38 +68,38 @@ const SERVICES = [
 
 export function ServicesGrid() {
   return (
-    <section className="bg-bg-warm px-10 py-24">
-      <div className="mx-auto grid max-w-[1160px] grid-cols-2 gap-6">
+    <section className="bg-bg-warm px-10 py-16">
+      <div className="mx-auto grid max-w-[1000px] grid-cols-2 gap-5">
         {SERVICES.map((service, i) => (
           <Reveal
             key={service.title}
             delay={(i % 2) * 80}
-            className="group flex flex-col items-start gap-4 rounded-2xl border border-ink/10 bg-white p-8 text-left transition-all duration-300 hover:-translate-y-1 hover:border-ink/15 hover:shadow-[0_24px_48px_-28px_rgba(16,38,62,0.4)]"
+            className="group flex flex-col items-start gap-3 rounded-xl border border-ink/10 bg-white p-6 text-left transition-all duration-300 hover:-translate-y-1 hover:border-ink/15 hover:shadow-[0_24px_48px_-28px_rgba(16,38,62,0.4)]"
           >
             <div className="flex w-full items-center justify-between">
-              <span className="flex size-12 items-center justify-center rounded-xl bg-navy-primary text-cream transition-colors duration-300 group-hover:bg-blue-accent">
-                <svg width="21" height="21" viewBox="0 0 24 24" fill="none">
+              <span className="flex size-9 items-center justify-center rounded-lg bg-navy-primary text-cream transition-colors duration-300 group-hover:bg-blue-accent">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                   {iconFor(service.title)}
                 </svg>
               </span>
-              <span className="font-mono text-[12px] tracking-[0.1em] text-ink-soft/60">
+              <span className="font-mono text-[10px] tracking-[0.1em] text-ink-soft/60">
                 {String(i + 1).padStart(2, "0")}
               </span>
             </div>
-            <h3 className="font-serif text-[26px] font-normal leading-[1.2] text-ink">
+            <h3 className="font-serif text-[20px] font-normal leading-[1.2] text-ink">
               {service.title}
             </h3>
-            <p className="max-w-[440px] font-body text-[17px] leading-[1.55] text-ink-soft">
+            <p className="max-w-[400px] font-body text-[14px] leading-[1.5] text-ink-soft">
               {service.description}
             </p>
-            <ul className="flex flex-col gap-2.5 pt-1">
+            <ul className="flex flex-col gap-1.5 pt-1">
               {service.items.map((item) => (
                 <li
                   key={item}
-                  className="flex items-center gap-2.5 font-body text-[15px] leading-[1.4] text-ink"
+                  className="flex items-center gap-2 font-body text-[13px] leading-[1.4] text-ink"
                 >
-                  <span className="flex size-4 shrink-0 items-center justify-center rounded-full bg-blue-accent/15">
-                    <Check className="size-2.5 text-blue-accent" strokeWidth={3} />
+                  <span className="flex size-3.5 shrink-0 items-center justify-center rounded-full bg-blue-accent/15">
+                    <Check className="size-2 text-blue-accent" strokeWidth={3} />
                   </span>
                   {item}
                 </li>
