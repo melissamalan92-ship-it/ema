@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ShieldCheck, Users, TrendingUp } from "lucide-react";
 
 const FEATURES = [
@@ -62,12 +61,13 @@ export function Hero() {
             <span className="size-2 rounded-full bg-cream/40" />
           </div>
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl shadow-[0_40px_80px_-20px_rgba(0,0,0,0.55)]">
-            <Image
-              src="/images/hero-photo-placeholder.jpg"
-              alt="EMA team member at work"
-              fill
-              className="object-cover"
-              priority
+            <video
+              src="/images/Decades%20video%20colour.mp4"
+              className="absolute inset-0 h-full w-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
             />
           </div>
         </div>
