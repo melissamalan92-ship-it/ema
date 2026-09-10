@@ -12,9 +12,9 @@ export function Locations() {
   const activeLocation = LOCATIONS.find((l) => l.id === active) ?? null;
 
   return (
-    <section id="locations" className="bg-bg-warm px-10 py-20">
-      <div className="relative mx-auto max-w-[1160px] rounded-[32px] bg-navy-primary p-14">
-        <div className="grid grid-cols-2 items-center gap-16">
+    <section id="locations" className="bg-bg-warm py-20">
+      <div className="relative mr-24 rounded-r-[32px] bg-navy-primary p-14 pl-10">
+        <div className="grid grid-cols-2 items-start gap-16">
           <Reveal className="flex flex-col items-start gap-4 text-left">
             <span className="font-body text-[16px] text-cream/60">
               Where to find us
@@ -34,7 +34,7 @@ export function Locations() {
           <Reveal
             delay={120}
             onMouseLeave={() => setActive(null)}
-            className="relative -mt-20 -mr-20 h-[540px] w-[calc(100%+5rem)]"
+            className="relative -mb-24 -mr-20 h-[540px] w-[calc(100%+5rem)]"
           >
             <LocationsBento onHover={setActive} />
             {activeLocation && (
