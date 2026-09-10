@@ -12,7 +12,7 @@ export function LocationCard({
   onClose: () => void;
 }) {
   return (
-    <div className="absolute inset-0 z-10 overflow-hidden rounded-[20px] shadow-[0_30px_70px_-20px_rgba(0,0,0,0.6)]">
+    <div className="pointer-events-none absolute inset-0 z-10 overflow-hidden rounded-[20px] shadow-[0_30px_70px_-20px_rgba(0,0,0,0.6)]">
       <Image
         src={location.image}
         alt={location.shortName}
@@ -20,13 +20,13 @@ export function LocationCard({
         sizes="500px"
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-[rgba(16,31,46,0.15)] via-[rgba(16,31,46,0.1)] to-[rgba(16,31,46,0.75)]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[rgba(36,63,74,0.15)] via-[rgba(36,63,74,0.1)] to-[rgba(36,63,74,0.8)]" />
 
       <button
         type="button"
         onClick={onClose}
         aria-label="Close"
-        className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full bg-[rgba(16,31,46,0.5)] text-bg-warm backdrop-blur-md transition-colors hover:bg-[rgba(16,31,46,0.7)]"
+        className="pointer-events-auto absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full bg-[rgba(36,63,74,0.5)] text-cream backdrop-blur-md transition-colors hover:bg-[rgba(36,63,74,0.7)]"
       >
         <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
           <path
@@ -38,12 +38,8 @@ export function LocationCard({
         </svg>
       </button>
 
-      <div className="absolute inset-x-4 bottom-4 flex flex-col gap-4 rounded-[16px] border border-[rgba(253,255,248,0.18)] bg-[rgba(253,255,248,0.12)] p-6 backdrop-blur-xl backdrop-saturate-150">
-        <h3 className="text-xl font-semibold text-bg-warm">{location.name}</h3>
-
-        <p className="text-sm italic leading-[1.6] text-[#cddaf0]">
-          A text box here to be filled in.
-        </p>
+      <div className="pointer-events-auto absolute inset-x-4 bottom-4 flex flex-col gap-3 rounded-[16px] border border-[rgba(242,244,239,0.18)] bg-[rgba(36,63,74,0.55)] p-6 backdrop-blur-xl backdrop-saturate-150">
+        <h3 className="text-xl font-semibold text-cream">{location.name}</h3>
 
         <div className="flex flex-col gap-2">
           <ContactRow icon="phone" text="[ Phone number ]" />
@@ -53,7 +49,7 @@ export function LocationCard({
 
         <Link
           href="#contact"
-          className="mt-1 self-start rounded-full bg-blue-accent px-6 py-2.5 text-sm font-semibold text-bg-warm transition-opacity hover:opacity-90"
+          className="mt-1 self-start rounded-full bg-blue-accent px-6 py-2.5 text-sm font-semibold text-ink transition-opacity hover:opacity-90"
         >
           Get in touch
         </Link>
@@ -70,7 +66,7 @@ function ContactRow({
   text: string;
 }) {
   return (
-    <div className="flex items-center gap-2.5 text-[13px] text-[#cddaf0]">
+    <div className="flex items-center gap-2.5 text-[13px] text-cream/80">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" className="shrink-0">
         {icon === "phone" && (
           <path

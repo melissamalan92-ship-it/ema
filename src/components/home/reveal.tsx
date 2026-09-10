@@ -7,7 +7,8 @@ export function Reveal({
   children,
   className,
   delay = 0,
-}: {
+  ...rest
+}: React.HTMLAttributes<HTMLDivElement> & {
   children: React.ReactNode;
   className?: string;
   delay?: number;
@@ -42,6 +43,7 @@ export function Reveal({
             }
           : undefined
       }
+      {...rest}
     >
       {children}
     </div>
