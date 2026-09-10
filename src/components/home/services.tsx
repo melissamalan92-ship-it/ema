@@ -120,28 +120,23 @@ export const SERVICES = [
 export function Services() {
   return (
     <section id="services" className="border-t border-ink/10 bg-bg-warm px-10 py-28">
-      <div className="mx-auto grid max-w-[1160px] grid-cols-[1fr_1.1fr] items-stretch gap-16">
-        <div className="grid grid-cols-2 gap-4">
+      <div className="mx-auto grid max-w-[1160px] grid-cols-[1.2fr_1fr] items-stretch gap-12">
+        <div className="grid grid-cols-2 gap-x-8 gap-y-10">
           {SERVICES.map((service, i) => (
             <Reveal
               key={service.title}
               delay={i * 70}
-              className="group flex flex-col items-start gap-3 rounded-xl border border-blue-accent/20 bg-cream p-5 text-left transition-all duration-300 hover:-translate-y-1 hover:border-blue-accent/40 hover:shadow-[0_20px_40px_-24px_rgba(36,63,74,0.35)]"
+              className="group flex flex-col items-start gap-2.5"
             >
-              <div className="flex w-full items-center justify-between">
-                <span className="flex size-9 items-center justify-center rounded-lg bg-blue-accent/15 text-blue-accent transition-colors duration-300 group-hover:bg-blue-accent group-hover:text-cream">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                    {service.icon}
-                  </svg>
-                </span>
-                <span className="font-mono text-[10px] tracking-[0.1em] text-ink-soft/60">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-              </div>
-              <h3 className="text-[15px] font-bold leading-[1.3] text-ink">
+              <span className="flex size-9 items-center justify-center rounded-lg bg-blue-accent/15 text-blue-accent transition-colors duration-300 group-hover:bg-blue-accent group-hover:text-cream">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  {service.icon}
+                </svg>
+              </span>
+              <h3 className="text-[15px] font-bold leading-[1.3] text-ink transition-colors duration-300 group-hover:text-blue-accent">
                 {service.title}
               </h3>
-              <p className="font-body text-[13px] leading-[1.5] text-ink-soft">
+              <p className="font-body text-[14px] leading-[1.5] text-ink-soft">
                 {service.description}
               </p>
             </Reveal>
@@ -150,7 +145,7 @@ export function Services() {
 
         <Reveal
           delay={150}
-          className="flex flex-col items-start justify-center gap-6 border-l border-blue-accent/20 pl-16 text-left"
+          className="flex flex-col items-start justify-center gap-6 border-l border-blue-accent/20 pl-12 text-left"
         >
           <h2 className="font-serif text-[40px] font-normal leading-[1.15] tracking-[-0.01em] text-ink">
             Everything your{" "}

@@ -54,7 +54,7 @@ export function ContactFormSection() {
 
             <button
               type="submit"
-              className="mt-2 self-start rounded-lg bg-ink px-8 py-3.5 font-body text-[16px] font-bold text-cream transition-opacity hover:opacity-90"
+              className="mt-2 self-start rounded-[19px] bg-ink px-8 py-3.5 font-body text-[16px] font-bold text-cream transition-opacity hover:opacity-90"
             >
               Submit
             </button>

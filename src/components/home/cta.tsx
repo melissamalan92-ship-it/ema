@@ -14,7 +14,7 @@ export function Cta() {
         </p>
         <Link
           href="#contact"
-          className="mt-2 rounded-full bg-bg-warm px-8 py-4 text-[15px] font-semibold text-navy-primary transition-opacity hover:opacity-90"
+          className="mt-2 rounded-[19px] bg-bg-warm px-8 py-4 text-[15px] font-semibold text-navy-primary transition-opacity hover:opacity-90"
         >
           Schedule a Call
         </Link>

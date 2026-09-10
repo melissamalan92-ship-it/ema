@@ -49,7 +49,7 @@ export function LocationCard({
 
         <Link
           href="#contact"
-          className="mt-1 self-start rounded-full bg-blue-accent px-6 py-2.5 text-sm font-semibold text-ink transition-opacity hover:opacity-90"
+          className="mt-1 self-start rounded-[19px] bg-blue-accent px-6 py-2.5 text-sm font-semibold text-ink transition-opacity hover:opacity-90"
         >
           Get in touch
         </Link>
