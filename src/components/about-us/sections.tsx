@@ -5,8 +5,8 @@ import { MediaPlaceholder } from "./media-placeholder";
 export function DecadesSection() {
   return (
     <section className="bg-navy-primary px-10 py-24">
-      <div className="mx-auto flex max-w-[1160px] flex-col items-start gap-6 text-left">
-        <Reveal className="flex flex-col items-start gap-4">
+      <div className="mx-auto grid max-w-[1160px] grid-cols-2 items-center gap-16">
+        <Reveal className="flex flex-col items-start gap-4 text-left">
           <span className="font-body text-[16px] text-cream/60">
             Our story
           </span>
@@ -18,6 +18,17 @@ export function DecadesSection() {
           <CtaLink href="#contact" variant="cream" className="mt-2">
             Contact Us
           </CtaLink>
+        </Reveal>
+
+        <Reveal delay={120} className="text-left">
+          <p className="max-w-[460px] font-body text-[19px] leading-[1.6] text-cream/70">
+            Established in 1983, EMA has worked across South Africa
+            providing accounting, tax and advisory services to businesses
+            of every size. We are a member of the South African Institute
+            of Professional Accountants (SAIPA), and our commitment to
+            understanding each client&rsquo;s individual needs has kept
+            many relationships strong for over twenty years.
+          </p>
         </Reveal>
       </div>
     </section>
