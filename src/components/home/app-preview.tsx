@@ -27,13 +27,13 @@ function PlayIcon() {
 export function AppPreview() {
   return (
     <section className="bg-bg-warm py-20">
-      <div className="relative ml-24 overflow-hidden rounded-l-[32px] bg-navy-primary p-14 pr-10">
+      <div className="relative ml-24 rounded-l-[32px] bg-navy-primary p-14 pr-10">
         <div
           className="pointer-events-none absolute -bottom-32 right-0 h-[480px] w-[480px] rounded-full opacity-[0.12] blur-[120px]"
           style={{ background: "var(--blue-accent)" }}
         />
         <div className="relative grid grid-cols-[0.8fr_1.2fr] items-center gap-16">
-          <Reveal className="relative -ml-24 w-[calc(100%+6rem)]">
+          <Reveal className="relative -ml-[152px] w-[calc(100%+152px)]">
             <div className="group transition-transform duration-500 ease-out hover:-translate-y-2">
               <Image
                 src="/images/phone%20colour.png"
