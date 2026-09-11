@@ -43,7 +43,7 @@ export function DonateOptionsSection() {
             delay={i * 80}
             className="group flex flex-col items-center gap-3 text-center"
           >
-            <span className="flex size-11 items-center justify-center rounded-lg bg-shoe-yellow/50 text-shoe-blue transition-colors duration-300 group-hover:bg-shoe-yellow">
+            <span className="flex size-11 items-center justify-center rounded-lg bg-blue-accent/15 text-blue-accent transition-colors duration-300 group-hover:bg-shoe-yellow group-hover:text-shoe-blue">
               <option.icon className="size-5" strokeWidth={1.75} />
             </span>
             <h3 className="font-body text-[19px] font-bold text-shoe-blue">
