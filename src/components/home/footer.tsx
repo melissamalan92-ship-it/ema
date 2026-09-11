@@ -15,7 +15,7 @@ function FooterLink({ href, children }: { href: string; children: React.ReactNod
 export function Footer() {
   return (
     <footer className="bg-navy-primary px-10 pb-8 pt-16">
-      <div className="mx-auto flex max-w-[1200px] flex-col justify-between gap-12 pb-12 sm:flex-row">
+      <div className="flex max-w-[1200px] flex-col justify-between gap-12 pb-12 sm:flex-row">
         <div className="flex max-w-[280px] flex-col gap-3.5">
           <div className="flex items-start gap-2.5">
             <div className="w-[2px] self-stretch bg-cream" />
@@ -46,7 +46,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto flex max-w-[1200px] justify-between border-t border-cream/15 pt-6">
+      <div className="flex max-w-[1200px] justify-between border-t border-cream/15 pt-6">
         <span className="text-xs text-cream/40">
           &copy; 2026 E Malan &amp; Associates. All rights reserved.
         </span>

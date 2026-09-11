@@ -5,12 +5,12 @@ import { CtaLink } from "./cta-link";
 export function ShoeFoundation() {
   return (
     <section id="shoe-foundation" className="bg-bg-warm px-10 py-28">
-      <div className="mx-auto grid max-w-[1200px] grid-cols-2 items-center gap-16">
+      <div className="grid max-w-[1200px] grid-cols-2 items-center gap-16">
         <Reveal className="flex flex-col items-start gap-5 text-left">
           <span className="font-body text-[16px] text-ink-soft">
             More than just accounting
           </span>
-          <h2 className="max-w-[420px] font-serif text-[48px] font-normal leading-[1.1] tracking-[-0.01em] text-ink">
+          <h2 className="max-w-[420px] font-serif text-[42px] font-normal leading-[1.15] tracking-[-0.01em] text-ink">
             Proudly supporting
             <br />
             <em className="italic text-blue-accent">The Shoe Foundation.</em>

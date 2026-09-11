@@ -19,7 +19,7 @@ export function Locations() {
             <span className="font-body text-[16px] text-cream/60">
               Where to find us
             </span>
-            <h2 className="font-serif text-[40px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
+            <h2 className="font-serif text-[42px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
               Our <em className="italic text-blue-accent">locations</em>.
             </h2>
             <p className="max-w-[400px] font-body text-[19px] leading-[1.5] text-cream/70">

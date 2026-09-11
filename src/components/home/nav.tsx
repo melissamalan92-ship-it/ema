@@ -30,7 +30,7 @@ export function Nav() {
           : "py-4 shadow-none"
       }`}
     >
-      <div className="relative mx-auto flex max-w-[1200px] items-center">
+      <div className="relative flex max-w-[1200px] items-center">
         <Link href="/" aria-label="EMA home">
           <Logo variant="light" />
         </Link>
