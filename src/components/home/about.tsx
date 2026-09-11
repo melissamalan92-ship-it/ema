@@ -21,9 +21,9 @@ export function About() {
 
         <Reveal
           delay={120}
-          className="flex flex-col items-start gap-6 border-l border-ink/20 pl-16 text-left"
+          className="flex flex-col items-start justify-center gap-6 border-l border-ink/20 pl-16 text-left"
         >
-          <p className="mt-9 max-w-[500px] font-body text-[20px] leading-[1.5] text-ink">
+          <p className="max-w-[500px] font-body text-[20px] leading-[1.5] text-ink">
             For over{" "}
             <em className="italic text-blue-accent">four decades</em>,
             we&rsquo;ve worked alongside businesses to navigate change, seize
