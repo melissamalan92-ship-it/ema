@@ -69,32 +69,32 @@ const SERVICES = [
 export function ServicesGrid() {
   return (
     <section className="bg-bg-warm px-10 py-16">
-      <div className="mx-auto grid max-w-[1000px] grid-cols-2 gap-x-10 gap-y-10">
+      <div className="mx-auto grid max-w-[1000px] grid-cols-2 gap-x-16 gap-y-14">
         {SERVICES.map((service, i) => (
           <Reveal
             key={service.title}
             delay={(i % 2) * 80}
-            className="group flex flex-col items-start gap-3 text-left"
+            className="group flex flex-col items-start gap-2.5 text-left"
           >
-            <span className="flex size-9 items-center justify-center rounded-lg bg-blue-accent/15 text-blue-accent transition-colors duration-300 group-hover:bg-blue-accent group-hover:text-cream">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <span className="flex size-8 items-center justify-center rounded-lg bg-blue-accent/15 text-blue-accent transition-colors duration-300 group-hover:bg-blue-accent group-hover:text-cream">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
                 {iconFor(service.title)}
               </svg>
             </span>
-            <h3 className="font-serif text-[20px] font-normal leading-[1.2] text-ink transition-colors duration-300 group-hover:text-blue-accent">
+            <h3 className="font-serif text-[18px] font-normal leading-[1.2] text-ink transition-colors duration-300 group-hover:text-blue-accent">
               {service.title}
             </h3>
-            <p className="max-w-[400px] font-body text-[14px] leading-[1.5] text-ink-soft">
+            <p className="max-w-[400px] font-body text-[13px] leading-[1.5] text-ink-soft">
               {service.description}
             </p>
             <ul className="flex flex-col gap-1.5 pt-1">
               {service.items.map((item) => (
                 <li
                   key={item}
-                  className="flex items-center gap-2 font-body text-[13px] leading-[1.4] text-ink"
+                  className="flex items-center gap-2 font-body text-[12px] leading-[1.4] text-ink"
                 >
-                  <span className="flex size-3.5 shrink-0 items-center justify-center rounded-full bg-blue-accent/15">
-                    <Check className="size-2 text-blue-accent" strokeWidth={3} />
+                  <span className="flex size-3 shrink-0 items-center justify-center rounded-full bg-blue-accent/15">
+                    <Check className="size-1.5 text-blue-accent" strokeWidth={3} />
                   </span>
                   {item}
                 </li>
