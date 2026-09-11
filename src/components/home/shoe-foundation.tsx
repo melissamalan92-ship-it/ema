@@ -26,7 +26,7 @@ export function ShoeFoundation() {
 
         <Reveal
           delay={120}
-          className="group relative aspect-[4/5] w-full overflow-hidden rounded-2xl shadow-[0_30px_60px_-25px_rgba(16,38,62,0.35)]"
+          className="group relative ml-auto aspect-[4/5] w-[380px] max-w-full overflow-hidden rounded-2xl shadow-[0_30px_60px_-25px_rgba(16,38,62,0.35)]"
         >
           <Image
             src="/images/Charity-colour.png"
