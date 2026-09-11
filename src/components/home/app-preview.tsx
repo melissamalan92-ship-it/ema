@@ -33,7 +33,7 @@ export function AppPreview() {
           style={{ background: "var(--blue-accent)" }}
         />
         <div className="relative grid grid-cols-[0.8fr_1.2fr] items-center gap-16">
-          <Reveal className="relative -ml-[152px] w-[calc(100%+152px)]">
+          <Reveal className="relative -ml-[152px] w-[400px]">
             <div className="group transition-transform duration-500 ease-out hover:-translate-y-2">
               <Image
                 src="/images/phone%20colour.png"
