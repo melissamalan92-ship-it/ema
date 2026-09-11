@@ -69,24 +69,19 @@ const SERVICES = [
 export function ServicesGrid() {
   return (
     <section className="bg-bg-warm px-10 py-16">
-      <div className="mx-auto grid max-w-[1000px] grid-cols-2 gap-5">
+      <div className="mx-auto grid max-w-[1000px] grid-cols-2 gap-x-10 gap-y-10">
         {SERVICES.map((service, i) => (
           <Reveal
             key={service.title}
             delay={(i % 2) * 80}
-            className="group flex flex-col items-start gap-3 rounded-xl border border-ink/10 bg-white p-6 text-left transition-all duration-300 hover:-translate-y-1 hover:border-ink/15 hover:shadow-[0_24px_48px_-28px_rgba(16,38,62,0.4)]"
+            className="group flex flex-col items-start gap-3 text-left"
           >
-            <div className="flex w-full items-center justify-between">
-              <span className="flex size-9 items-center justify-center rounded-lg bg-navy-primary text-cream transition-colors duration-300 group-hover:bg-blue-accent">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                  {iconFor(service.title)}
-                </svg>
-              </span>
-              <span className="font-mono text-[10px] tracking-[0.1em] text-ink-soft/60">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-            </div>
-            <h3 className="font-serif text-[20px] font-normal leading-[1.2] text-ink">
+            <span className="flex size-9 items-center justify-center rounded-lg bg-blue-accent/15 text-blue-accent transition-colors duration-300 group-hover:bg-blue-accent group-hover:text-cream">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                {iconFor(service.title)}
+              </svg>
+            </span>
+            <h3 className="font-serif text-[20px] font-normal leading-[1.2] text-ink transition-colors duration-300 group-hover:text-blue-accent">
               {service.title}
             </h3>
             <p className="max-w-[400px] font-body text-[14px] leading-[1.5] text-ink-soft">
