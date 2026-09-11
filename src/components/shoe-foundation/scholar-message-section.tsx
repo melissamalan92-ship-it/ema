@@ -4,7 +4,7 @@ import { Reveal } from "@/components/home/reveal";
 export function ScholarMessageSection() {
   return (
     <section className="bg-bg-warm px-10 py-20">
-      <div className="relative mx-auto max-w-[1160px] overflow-hidden rounded-[32px] bg-shoe-blue p-14">
+      <div className="relative mr-24 rounded-r-[32px] bg-shoe-blue p-14 pl-10">
         <div className="grid grid-cols-2 items-center gap-16">
           <Reveal className="flex flex-col items-start gap-6 text-left">
             <h2 className="font-display text-[34px] font-normal leading-[1.2] text-cream">
@@ -30,7 +30,7 @@ export function ScholarMessageSection() {
 
           <Reveal
             delay={120}
-            className="relative -mr-14 -mt-24 mb-[-3.5rem] w-[calc(100%+3.5rem)]"
+            className="relative -mb-14 -mr-20 ml-auto w-[calc(100%+5rem)]"
           >
             <Image
               src="/images/Nontsikelelo%20Fokazi.jpg"
