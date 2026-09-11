@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "@/components/home/reveal";
 import { CtaLink } from "@/components/home/cta-link";
 
@@ -28,9 +29,17 @@ export function ShoeContactSection() {
 
       <Reveal
         delay={150}
-        className="mx-auto mt-20 max-w-[760px] text-center"
+        className="mx-auto mt-20 flex max-w-[960px] flex-col items-center gap-4 text-center"
       >
-        <p className="font-serif text-[22px] italic leading-[1.5] text-shoe-yellow">
+        <Image
+          src="/images/shoes.png"
+          alt=""
+          width={500}
+          height={500}
+          className="w-[130px]"
+          aria-hidden
+        />
+        <p className="whitespace-nowrap font-serif text-[20px] italic leading-[1.5] text-shoe-yellow">
           In memory of [Name] &mdash; a legacy carried forward through
           opportunity and education.
         </p>
