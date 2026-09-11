@@ -6,10 +6,10 @@ export function ShoeContactSection() {
   return (
     <section className="bg-shoe-blue px-10 py-24">
       <Reveal className="mx-auto flex max-w-[720px] flex-col items-center gap-5 text-center">
-        <span className="font-body text-[16px] uppercase tracking-[0.15em] text-cream/60">
+        <span className="font-display text-[28px] text-cream/70">
           Contact
         </span>
-        <h2 className="font-serif text-[32px] font-normal text-blue-accent">
+        <h2 className="font-display text-[32px] font-normal text-blue-accent">
           The Shoe Foundation
         </h2>
         <p className="max-w-[560px] font-body text-[17px] leading-[1.6] text-cream">
@@ -39,7 +39,7 @@ export function ShoeContactSection() {
           className="w-[130px]"
           aria-hidden
         />
-        <p className="whitespace-nowrap font-serif text-[20px] italic leading-[1.5] text-shoe-yellow">
+        <p className="whitespace-nowrap font-display text-[20px] leading-[1.5] text-shoe-yellow">
           In memory of [Name] &mdash; a legacy carried forward through
           opportunity and education.
         </p>

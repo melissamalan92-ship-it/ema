@@ -5,7 +5,7 @@ export function TestimonialsSection() {
   return (
     <section className="bg-bg-warm px-10 py-24">
       <Reveal className="mx-auto flex max-w-[640px] flex-col items-center gap-3 text-center">
-        <h2 className="font-serif text-[40px] font-normal leading-[1.15] text-shoe-blue">
+        <h2 className="font-display text-[40px] font-normal leading-[1.15] text-shoe-blue">
           Testimonials
         </h2>
         <p className="font-body text-[17px] leading-[1.5] text-ink-soft">

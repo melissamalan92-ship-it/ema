@@ -5,6 +5,7 @@ import { ShoeFoundationHero } from "@/components/shoe-foundation/shoe-foundation
 import { AboutSection } from "@/components/shoe-foundation/about-section";
 import { DonationMeaningSection } from "@/components/shoe-foundation/donation-meaning-section";
 import { DonateOptionsSection } from "@/components/shoe-foundation/donate-options-section";
+import { ScholarMessageSection } from "@/components/shoe-foundation/scholar-message-section";
 import { TestimonialsSection } from "@/components/shoe-foundation/testimonials-section";
 import { ShoeContactSection } from "@/components/shoe-foundation/shoe-contact-section";
 
@@ -33,6 +34,7 @@ export default function ShoeFoundationPage() {
         <AboutSection />
         <DonationMeaningSection />
         <DonateOptionsSection />
+        <ScholarMessageSection />
         <TestimonialsSection />
         <ShoeContactSection />
         <Footer />

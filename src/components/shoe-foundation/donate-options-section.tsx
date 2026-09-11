@@ -27,7 +27,7 @@ export function DonateOptionsSection() {
   return (
     <section className="bg-bg-warm px-10 py-24">
       <Reveal className="mx-auto mb-14 flex max-w-[640px] flex-col items-center gap-3 text-center">
-        <h2 className="font-serif text-[48px] font-normal leading-[1.15] text-shoe-blue">
+        <h2 className="font-display text-[48px] font-normal leading-[1.15] text-shoe-blue">
           How can you donate?
         </h2>
         <p className="font-body text-[18px] leading-[1.5] text-ink">
@@ -46,7 +46,7 @@ export function DonateOptionsSection() {
             <span className="flex size-11 items-center justify-center rounded-lg bg-shoe-blue/10 text-shoe-blue">
               <option.icon className="size-5" strokeWidth={1.75} />
             </span>
-            <h3 className="font-serif text-[21px] font-bold text-shoe-blue">
+            <h3 className="font-body text-[19px] font-bold text-shoe-blue">
               {option.title}
             </h3>
             <p className="font-body text-[14px] leading-[1.6] text-blue-accent">

@@ -5,7 +5,7 @@ export function DonationMeaningSection() {
   return (
     <section className="bg-shoe-blue px-10 py-24">
       <Reveal className="mx-auto flex max-w-[820px] flex-col items-center gap-8 text-center">
-        <h2 className="font-serif text-[56px] font-normal leading-[1.1] text-shoe-yellow">
+        <h2 className="font-display text-[56px] font-normal leading-[1.1] text-shoe-yellow">
           What does your donation mean?
         </h2>
 
