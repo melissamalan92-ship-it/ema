@@ -23,7 +23,7 @@ export function ScholarMessageSection() {
               it&rsquo;s about lifting people up with kindness and real
               support. Thank you to The Shoe foundation.
             </p>
-            <p className="font-display text-[20px] text-shoe-yellow">
+            <p className="self-end font-display text-[30px] text-shoe-yellow">
               Nontsikelelo Fokasi
             </p>
           </Reveal>
