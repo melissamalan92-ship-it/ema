@@ -34,11 +34,7 @@ export function AppPreview() {
         />
         <div className="relative grid grid-cols-[0.8fr_1.2fr] items-center gap-16">
           <Reveal className="relative -ml-[152px] w-[calc(100%+152px)]">
-            <div
-              className="absolute inset-y-[-56px] left-0 w-24 bg-navy-primary"
-              aria-hidden
-            />
-            <div className="group relative transition-transform duration-500 ease-out hover:-translate-y-2">
+            <div className="group transition-transform duration-500 ease-out hover:-translate-y-2">
               <Image
                 src="/images/phone%20colour.png"
                 alt="Hand holding a phone with the EMA app"
