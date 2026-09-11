@@ -14,7 +14,7 @@ function FooterLink({ href, children }: { href: string; children: React.ReactNod
 
 export function Footer() {
   return (
-    <footer id="contact" className="bg-navy-primary px-10 pb-8 pt-16">
+    <footer className="bg-navy-primary px-10 pb-8 pt-16">
       <div className="mx-auto flex max-w-[1200px] flex-col justify-between gap-12 pb-12 sm:flex-row">
         <div className="flex max-w-[280px] flex-col gap-3.5">
           <div className="flex items-start gap-2.5">
@@ -35,11 +35,13 @@ export function Footer() {
 
         <div className="flex flex-col gap-3">
           <span className="font-body text-[17px] text-cream/60">
-            E Malan &amp; Associates
+            Quick Links
           </span>
-          <FooterLink href="#contact">Contact</FooterLink>
+          <FooterLink href="/">Home</FooterLink>
           <FooterLink href="/about-us">About Us</FooterLink>
-          <FooterLink href="#">Work With Us</FooterLink>
+          <FooterLink href="/services">Services</FooterLink>
+          <FooterLink href="/shoe-foundation">Shoe Foundation</FooterLink>
+          <FooterLink href="/contact">Contact</FooterLink>
         </div>
       </div>
 
@@ -48,7 +50,8 @@ export function Footer() {
           &copy; 2026 E Malan &amp; Associates. All rights reserved.
         </span>
         <span className="text-xs text-cream/40">
-          Johannesburg &middot; Cape Town &middot; Paarl
+          Joburg &middot; Cape Town &middot; CPT Peninsula &middot; Paarl
+          &middot; Tygervalley &middot; Loxton
         </span>
       </div>
     </footer>

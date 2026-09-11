@@ -15,7 +15,7 @@ export function DecadesSection() {
             <br />
             Built for <em className="italic text-blue-accent">today</em>.
           </h2>
-          <CtaLink href="#contact" variant="cream" className="mt-2">
+          <CtaLink href="/contact" variant="cream" className="mt-2">
             Contact Us
           </CtaLink>
         </Reveal>

@@ -57,7 +57,7 @@ export function DonateOptionsSection() {
       </div>
 
       <div className="mt-14 flex justify-center">
-        <CtaLink href="#donate" variant="dark">
+        <CtaLink href="/contact" variant="dark">
           Contact Us
         </CtaLink>
       </div>

@@ -13,7 +13,7 @@ export function Cta() {
           more.
         </p>
         <Link
-          href="#contact"
+          href="/contact"
           className="mt-2 rounded-[19px] bg-bg-warm px-8 py-4 text-[15px] font-semibold text-navy-primary transition-opacity hover:opacity-90"
         >
           Schedule a Call

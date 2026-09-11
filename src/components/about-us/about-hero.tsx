@@ -1,6 +1,6 @@
 import { CalendarCheck, MapPin, ShieldCheck } from "lucide-react";
 import { Reveal } from "@/components/home/reveal";
-import { MediaPlaceholder } from "./media-placeholder";
+import { HeroVideo } from "@/components/home/hero-video";
 
 const STATS = [
   {
@@ -23,8 +23,6 @@ const STATS = [
   },
 ];
 
-const DECADES = ["1980s", "1990s", "2000s"];
-
 export function AboutHero() {
   return (
     <>
@@ -44,28 +42,7 @@ export function AboutHero() {
           </Reveal>
 
           <Reveal delay={120} className="relative -mb-24">
-            <MediaPlaceholder
-              kind="video"
-              label="Hero video placeholder"
-              className="aspect-[6/5] w-full overflow-hidden rounded-2xl shadow-[0_40px_80px_-20px_rgba(0,0,0,0.55)]"
-            />
-            <div className="absolute inset-x-0 bottom-0 rounded-b-2xl bg-gradient-to-t from-black/55 to-transparent px-8 pb-5 pt-12">
-              <div className="relative flex items-center justify-between">
-                <div className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-cream/25" />
-                {DECADES.map((label, i) => (
-                  <div key={label} className="relative z-10 flex flex-col items-center gap-2">
-                    <span
-                      className={`size-2.5 rounded-full ${i === 0 ? "bg-cream" : "bg-cream/35"}`}
-                    />
-                    <span
-                      className={`font-body text-xs tracking-[0.05em] ${i === 0 ? "text-cream" : "text-cream/50"}`}
-                    >
-                      {label}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <HeroVideo />
           </Reveal>
         </div>
       </section>

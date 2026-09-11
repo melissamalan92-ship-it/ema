@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Reveal } from "./reveal";
+import { CtaLink } from "./cta-link";
 
 export function ShoeFoundation() {
   return (
@@ -18,6 +19,9 @@ export function ShoeFoundation() {
             Through The Shoe Foundation, we&rsquo;re committed to making a
             positive impact in the communities where we live and work.
           </p>
+          <CtaLink href="/shoe-foundation" variant="dark" className="mt-2">
+            Learn More
+          </CtaLink>
         </Reveal>
 
         <Reveal

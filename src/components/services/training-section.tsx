@@ -32,7 +32,7 @@ export function TrainingSection() {
               </p>
             </div>
 
-            <CtaLink href="#contact" variant="cream" className="mt-6">
+            <CtaLink href="/contact" variant="cream" className="mt-6">
               Contact Us
             </CtaLink>
           </Reveal>

@@ -8,8 +8,8 @@ export function ContactHero() {
           Find your <em className="italic text-blue-accent">practice</em>
         </h1>
         <p className="max-w-[640px] font-body text-[22px] leading-[1.6] tracking-[0.02em] text-cream">
-          A full range of professional services to support your business at
-          every stage.
+          Reach out to your nearest branch, or get in touch for general
+          enquiries — we&rsquo;re here to help.
         </p>
       </Reveal>
     </section>

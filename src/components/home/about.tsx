@@ -14,7 +14,7 @@ export function About() {
             <br />
             <em className="italic text-blue-accent">numbers</em>
           </h2>
-          <CtaLink href="#contact" variant="dark" className="mt-7">
+          <CtaLink href="/contact" variant="dark" className="mt-7">
             Contact Us
           </CtaLink>
         </Reveal>

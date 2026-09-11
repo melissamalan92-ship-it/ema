@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Logo } from "./logo";
 
 const links = [
-  { href: "/#hero", label: "home" },
+  { href: "/", label: "home" },
   { href: "/about-us", label: "about" },
   { href: "/services", label: "services" },
   { href: "/shoe-foundation", label: "shoe foundation" },

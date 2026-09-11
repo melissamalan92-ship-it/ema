@@ -22,7 +22,7 @@ export function ShoeContactSection() {
           For donations, sponsorships or general enquiries, get in touch
           with Zubeida.
         </p>
-        <CtaLink href="#contact" variant="cream" className="mt-2">
+        <CtaLink href="/contact" variant="cream" className="mt-2">
           Contact Us
         </CtaLink>
       </Reveal>

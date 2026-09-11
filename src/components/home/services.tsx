@@ -156,7 +156,7 @@ export function Services() {
             We offer a full range of professional services to support your
             business at every stage.
           </p>
-          <CtaLink href="#contact">Contact Us</CtaLink>
+          <CtaLink href="/contact">Contact Us</CtaLink>
           <p className="max-w-[380px] font-body text-[14px] leading-[1.5] text-ink-soft">
             Not sure which branch to reach out to? Contact us here for
             general enquiries and we&apos;ll point you in the right
