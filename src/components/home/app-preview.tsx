@@ -32,6 +32,10 @@ export function AppPreview() {
           className="pointer-events-none absolute -bottom-32 right-0 h-[480px] w-[480px] rounded-full opacity-[0.12] blur-[120px]"
           style={{ background: "var(--blue-accent)" }}
         />
+        <div
+          className="pointer-events-none absolute -left-24 top-8 bottom-8 w-24 bg-navy-primary"
+          aria-hidden
+        />
         <div className="relative grid grid-cols-[0.8fr_1.2fr] items-center gap-16">
           <Reveal className="relative -ml-[152px] w-[calc(100%+152px)]">
             <div className="group transition-transform duration-500 ease-out hover:-translate-y-2">
