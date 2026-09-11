@@ -22,13 +22,13 @@ const FEATURES = [
 export function Hero() {
   return (
     <section id="hero" className="relative z-10 bg-navy-primary px-10 pb-16 pt-24">
-      <div className="relative mx-auto grid max-w-[1200px] grid-cols-[1fr_1.15fr] items-center gap-16">
+      <div className="relative mx-auto grid max-w-[1200px] grid-cols-[1fr_1.15fr] items-start gap-16">
         <div
           className="flex flex-col items-start gap-5 text-left opacity-0"
           style={{ animation: "reveal-up 900ms cubic-bezier(0.16,1,0.3,1) 100ms both" }}
         >
           <span className="font-body text-[18px] text-cream/70">E Malan &amp; Associates</span>
-          <h1 className="max-w-[480px] font-serif text-[46px] font-normal leading-[1.12] tracking-[-0.01em] text-cream">
+          <h1 className="max-w-[480px] font-serif text-[38px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
             Accounting services{" "}
             <em className="italic text-blue-accent">designed</em> for{" "}
             <em className="italic text-blue-accent">growth</em>.
