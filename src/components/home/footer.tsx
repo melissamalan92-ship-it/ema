@@ -42,6 +42,7 @@ export function Footer() {
           <FooterLink href="/services">Services</FooterLink>
           <FooterLink href="/shoe-foundation">Shoe Foundation</FooterLink>
           <FooterLink href="/contact">Contact</FooterLink>
+          <FooterLink href="/careers">Careers</FooterLink>
         </div>
       </div>
 
