@@ -41,15 +41,15 @@ export function DonateOptionsSection() {
           <Reveal
             key={option.title}
             delay={i * 80}
-            className="flex flex-col items-start gap-3 rounded-xl border border-shoe-blue/15 bg-white p-7 text-left"
+            className="group flex flex-col items-center gap-3 text-center"
           >
-            <span className="flex size-11 items-center justify-center rounded-lg bg-shoe-blue/10 text-shoe-blue">
+            <span className="flex size-11 items-center justify-center rounded-lg bg-shoe-yellow/50 text-shoe-blue transition-colors duration-300 group-hover:bg-shoe-yellow">
               <option.icon className="size-5" strokeWidth={1.75} />
             </span>
             <h3 className="font-body text-[19px] font-bold text-shoe-blue">
               {option.title}
             </h3>
-            <p className="font-body text-[14px] leading-[1.6] text-blue-accent">
+            <p className="max-w-[280px] font-body text-[14px] leading-[1.6] text-blue-accent">
               {option.description}
             </p>
           </Reveal>
