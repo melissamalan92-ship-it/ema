@@ -26,26 +26,27 @@ function PlayIcon() {
 
 export function AppPreview() {
   return (
-    <section className="relative overflow-hidden bg-navy-primary px-10 py-[120px]">
-      <div
-        className="pointer-events-none absolute -bottom-32 right-0 h-[480px] w-[480px] rounded-full opacity-[0.12] blur-[120px]"
-        style={{ background: "var(--blue-accent)" }}
-      />
-      <div className="relative mx-auto grid max-w-[1180px] grid-cols-[0.8fr_1.2fr] items-center gap-16">
-        <Reveal className="mx-auto w-full max-w-[360px]">
-          <div className="group transition-transform duration-500 ease-out hover:-translate-y-2">
-            <Image
-              src="/images/phone%20colour.png"
-              alt="Hand holding a phone with the EMA app"
-              width={518}
-              height={741}
-              className="w-full rounded-2xl shadow-[0_40px_80px_-25px_rgba(0,0,0,0.6)] transition-shadow duration-500 group-hover:shadow-[0_50px_90px_-20px_rgba(0,0,0,0.7)]"
-              priority
-            />
-          </div>
-        </Reveal>
+    <section className="bg-bg-warm py-20">
+      <div className="relative ml-24 overflow-hidden rounded-l-[32px] bg-navy-primary p-14 pr-10">
+        <div
+          className="pointer-events-none absolute -bottom-32 right-0 h-[480px] w-[480px] rounded-full opacity-[0.12] blur-[120px]"
+          style={{ background: "var(--blue-accent)" }}
+        />
+        <div className="relative grid grid-cols-[0.8fr_1.2fr] items-center gap-16">
+          <Reveal className="relative -ml-24 w-[calc(100%+6rem)]">
+            <div className="group transition-transform duration-500 ease-out hover:-translate-y-2">
+              <Image
+                src="/images/phone%20colour.png"
+                alt="Hand holding a phone with the EMA app"
+                width={518}
+                height={741}
+                className="w-full rounded-2xl shadow-[0_40px_80px_-25px_rgba(0,0,0,0.6)] transition-shadow duration-500 group-hover:shadow-[0_50px_90px_-20px_rgba(0,0,0,0.7)]"
+                priority
+              />
+            </div>
+          </Reveal>
 
-        <Reveal delay={120} className="flex flex-col items-start gap-6 text-left">
+          <Reveal delay={120} className="flex flex-col items-start gap-6 text-left">
           <h2 className="font-serif text-[38px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
             Your accountants{" "}
             <br />
@@ -72,7 +73,8 @@ export function AppPreview() {
               </span>
             </span>
           </div>
-        </Reveal>
+          </Reveal>
+        </div>
       </div>
     </section>
   );
