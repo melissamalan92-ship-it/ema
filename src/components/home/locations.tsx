@@ -15,7 +15,7 @@ export function Locations() {
     <section id="locations" className="bg-bg-warm py-20">
       <div className="relative mr-24 rounded-r-[32px] bg-navy-primary p-14 pl-10">
         <div className="grid grid-cols-2 items-start gap-16">
-          <Reveal className="flex flex-col items-start gap-4 text-left">
+          <Reveal className="flex h-full flex-col items-start justify-center gap-4 text-left">
             <span className="font-body text-[16px] text-cream/60">
               Where to find us
             </span>
