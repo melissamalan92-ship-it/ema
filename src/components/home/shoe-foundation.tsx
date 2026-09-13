@@ -5,7 +5,7 @@ import { CtaLink } from "./cta-link";
 export function ShoeFoundation() {
   return (
     <section id="shoe-foundation" className="bg-bg-warm px-10 py-28">
-      <div className="grid max-w-[1200px] grid-cols-2 items-center gap-16">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-2 items-center gap-16">
         <Reveal className="flex flex-col items-start gap-5 text-left">
           <span className="font-body text-[16px] text-ink-soft">
             More than just accounting

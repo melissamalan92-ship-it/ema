@@ -26,7 +26,8 @@ function PlayIcon() {
 
 export function AppPreview() {
   return (
-    <section className="bg-bg-warm py-20">
+    <section className="bg-bg-warm px-10 py-28">
+      <div className="relative mx-auto max-w-[1200px]">
       <div className="relative ml-24 rounded-l-[32px] bg-navy-primary p-14 pr-10">
         <div
           className="pointer-events-none absolute -bottom-32 right-0 h-[480px] w-[480px] rounded-full opacity-[0.12] blur-[120px]"
@@ -75,6 +76,7 @@ export function AppPreview() {
           </div>
           </Reveal>
         </div>
+      </div>
       </div>
     </section>
   );

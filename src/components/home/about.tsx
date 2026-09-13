@@ -4,7 +4,7 @@ import { CtaLink } from "./cta-link";
 export function About() {
   return (
     <section id="about" className="bg-bg-warm px-10 py-28">
-      <div className="grid max-w-[1160px] grid-cols-[0.58fr_1fr] items-stretch gap-12">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-[0.58fr_1fr] items-stretch gap-12">
         <Reveal className="flex flex-col items-start gap-4 text-left">
           <span className="font-body text-[17px] text-ink-soft">
             Trusted expertise since 1983

@@ -12,7 +12,8 @@ export function Locations() {
   const activeLocation = LOCATIONS.find((l) => l.id === active) ?? null;
 
   return (
-    <section id="locations" className="bg-bg-warm py-20">
+    <section id="locations" className="bg-bg-warm px-10 py-28">
+      <div className="relative mx-auto max-w-[1200px]">
       <div className="relative mr-24 rounded-r-[32px] bg-navy-primary p-14 pl-10">
         <div className="grid grid-cols-2 items-start gap-16">
           <Reveal className="flex h-full flex-col items-start justify-center gap-4 text-left">
@@ -45,6 +46,7 @@ export function Locations() {
             )}
           </Reveal>
         </div>
+      </div>
       </div>
     </section>
   );

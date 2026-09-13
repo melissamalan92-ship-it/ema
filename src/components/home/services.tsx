@@ -120,7 +120,7 @@ export const SERVICES = [
 export function Services() {
   return (
     <section id="services" className="border-t border-ink/10 bg-bg-warm px-10 py-28">
-      <div className="grid max-w-[1160px] grid-cols-[1.2fr_1fr] items-stretch gap-12">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-[1.2fr_1fr] items-stretch gap-12">
         <div className="grid grid-cols-2 gap-x-8 gap-y-10">
           {SERVICES.map((service, i) => (
             <Reveal
