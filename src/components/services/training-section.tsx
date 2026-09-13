@@ -4,7 +4,8 @@ import { CtaLink } from "@/components/home/cta-link";
 
 export function TrainingSection() {
   return (
-    <section className="bg-bg-warm py-20">
+    <section className="bg-bg-warm px-10 py-20">
+      <div className="relative mx-auto max-w-[1200px]">
       <div className="relative mr-24 rounded-r-[32px] bg-navy-primary p-14 pl-10">
         <div className="grid grid-cols-2 items-center gap-16">
           <Reveal className="flex flex-col items-start gap-1 text-left">
@@ -47,6 +48,7 @@ export function TrainingSection() {
             />
           </Reveal>
         </div>
+      </div>
       </div>
     </section>
   );

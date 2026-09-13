@@ -5,7 +5,7 @@ import { MediaPlaceholder } from "./media-placeholder";
 export function DecadesSection() {
   return (
     <section className="bg-navy-primary px-10 py-24">
-      <div className="mx-auto grid max-w-[1160px] grid-cols-2 items-center gap-16">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-2 items-center gap-16">
         <Reveal className="flex flex-col items-start gap-4 text-left">
           <span className="font-body text-[16px] text-cream/60">
             Our story
@@ -38,7 +38,7 @@ export function DecadesSection() {
 export function ExpertiseSection() {
   return (
     <section className="bg-bg-warm px-10 py-24">
-      <div className="mx-auto grid max-w-[1160px] grid-cols-2 items-center gap-16">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-2 items-center gap-16">
         <Reveal className="-ml-10">
           <MediaPlaceholder
             kind="image"

@@ -27,7 +27,7 @@ export function AboutHero() {
   return (
     <>
       <section className="relative z-10 bg-navy-primary px-10 pb-16 pt-24">
-        <div className="mx-auto grid max-w-[1160px] grid-cols-[1fr_1.15fr] items-center gap-16">
+        <div className="mx-auto grid max-w-[1200px] grid-cols-[1fr_1.15fr] items-center gap-16">
           <Reveal className="flex flex-col items-start gap-5 text-left">
             <span className="font-body text-[18px] text-cream/70">
               E Malan &amp; Associates
@@ -48,7 +48,7 @@ export function AboutHero() {
       </section>
 
       <section className="bg-bg-warm px-10 pb-16 pt-24">
-        <Reveal className="mx-auto grid max-w-[1160px] grid-cols-3 gap-10">
+        <Reveal className="mx-auto grid max-w-[1200px] grid-cols-3 gap-10">
           {STATS.map((stat, i) => (
             <div
               key={i}
