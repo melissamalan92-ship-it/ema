@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { LOCATIONS } from "./locations-data";
+import { LocationCard } from "./location-card";
 
 const AREAS: Record<string, string> = {
   capetown: "capetown",
@@ -11,10 +12,11 @@ const AREAS: Record<string, string> = {
 };
 
 type Props = {
+  active: string | null;
   onHover: (id: string | null) => void;
 };
 
-export function LocationsBento({ onHover }: Props) {
+export function LocationsBento({ active, onHover }: Props) {
   return (
     <div
       className="grid h-full w-full gap-3"
@@ -26,13 +28,14 @@ export function LocationsBento({ onHover }: Props) {
       }}
     >
       {LOCATIONS.map((loc) => (
-        <button
+        <div
           key={loc.id}
-          type="button"
           onMouseEnter={() => onHover(loc.id)}
+          onMouseLeave={() => onHover(null)}
           onFocus={() => onHover(loc.id)}
+          onBlur={() => onHover(null)}
           style={{ gridArea: AREAS[loc.id] }}
-          className="group relative overflow-hidden rounded-[14px] text-left"
+          className="group relative overflow-hidden rounded-[14px]"
         >
           <Image
             src={loc.image}
@@ -45,7 +48,10 @@ export function LocationsBento({ onHover }: Props) {
           <span className="absolute bottom-3 left-3 font-serif text-sm italic text-cream">
             {loc.shortName}
           </span>
-        </button>
+          {active === loc.id && (
+            <LocationCard location={loc} onClose={() => onHover(null)} />
+          )}
+        </div>
       ))}
     </div>
   );

@@ -120,7 +120,7 @@ export const SERVICES = [
 
 export function Services() {
   return (
-    <section id="services" className="border-t border-ink/10 bg-bg-warm px-10 py-28">
+    <section id="services" className="border-t border-ink/10 bg-bg-warm px-10 py-24">
       <Container className="grid grid-cols-[1.2fr_1fr] items-stretch gap-12">
         <div className="grid grid-cols-2 gap-x-8 gap-y-10">
           {SERVICES.map((service, i) => (
@@ -153,7 +153,7 @@ export function Services() {
             <em className="italic text-blue-accent">business</em> needs to{" "}
             <em className="italic text-blue-accent">grow</em>.
           </h2>
-          <p className="max-w-[420px] font-body text-[19px] leading-[1.5] text-ink">
+          <p className="max-w-[420px] font-body text-[16px] leading-[1.6] text-ink">
             We offer a full range of professional services to support your
             business at every stage.
           </p>

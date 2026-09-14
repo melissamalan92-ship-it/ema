@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/container";
 
 export function ShoeFoundation() {
   return (
-    <section id="shoe-foundation" className="bg-bg-warm px-10 py-28">
+    <section id="shoe-foundation" className="bg-bg-warm px-10 py-24">
       <Container className="grid grid-cols-2 items-center gap-16">
         <Reveal className="flex flex-col items-start gap-5 text-left">
           <span className="font-body text-[16px] text-ink-soft">
@@ -16,7 +16,7 @@ export function ShoeFoundation() {
             <br />
             <em className="italic text-blue-accent">The Shoe Foundation.</em>
           </h2>
-          <p className="max-w-[400px] font-body text-[19px] leading-[1.5] text-ink-soft">
+          <p className="max-w-[400px] font-body text-[16px] leading-[1.6] text-ink-soft">
             Through The Shoe Foundation, we&rsquo;re committed to making a
             positive impact in the communities where we live and work.
           </p>
