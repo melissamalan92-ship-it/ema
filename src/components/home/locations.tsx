@@ -23,7 +23,7 @@ export function Locations() {
             </h2>
             <p className="max-w-[400px] font-body text-[16px] leading-[1.6] text-cream/70">
               Contact your nearest branch for more information on how we can
-              help you, or hover a photo to find out more.
+              help you, or click a photo to find out more.
             </p>
             <CtaLink href="/contact" variant="cream">
               Contact Us
@@ -34,7 +34,7 @@ export function Locations() {
             delay={120}
             className="relative -mb-24 -mr-20 h-[540px] w-[calc(100%+5rem)]"
           >
-            <LocationsBento active={active} onHover={setActive} />
+            <LocationsBento active={active} onSelect={setActive} />
           </Reveal>
         </div>
       </div>

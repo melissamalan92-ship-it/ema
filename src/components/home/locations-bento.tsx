@@ -13,10 +13,10 @@ const AREAS: Record<string, string> = {
 
 type Props = {
   active: string | null;
-  onHover: (id: string | null) => void;
+  onSelect: (id: string | null) => void;
 };
 
-export function LocationsBento({ active, onHover }: Props) {
+export function LocationsBento({ active, onSelect }: Props) {
   return (
     <div
       className="grid h-full w-full gap-3"
@@ -30,26 +30,28 @@ export function LocationsBento({ active, onHover }: Props) {
       {LOCATIONS.map((loc) => (
         <div
           key={loc.id}
-          onMouseEnter={() => onHover(loc.id)}
-          onMouseLeave={() => onHover(null)}
-          onFocus={() => onHover(loc.id)}
-          onBlur={() => onHover(null)}
           style={{ gridArea: AREAS[loc.id] }}
           className="group relative overflow-hidden rounded-[14px]"
         >
-          <Image
-            src={loc.image}
-            alt={loc.shortName}
-            fill
-            sizes="260px"
-            className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-          />
-          <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[rgba(36,63,74,0.55)] to-transparent" />
-          <span className="absolute bottom-3 left-3 font-serif text-sm italic text-cream">
-            {loc.shortName}
-          </span>
+          <button
+            type="button"
+            onClick={() => onSelect(loc.id)}
+            className="absolute inset-0 h-full w-full text-left"
+          >
+            <Image
+              src={loc.image}
+              alt={loc.shortName}
+              fill
+              sizes="260px"
+              className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            />
+            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[rgba(36,63,74,0.55)] to-transparent" />
+            <span className="absolute bottom-3 left-3 font-serif text-sm italic text-cream">
+              {loc.shortName}
+            </span>
+          </button>
           {active === loc.id && (
-            <LocationCard location={loc} onClose={() => onHover(null)} />
+            <LocationCard location={loc} onClose={() => onSelect(null)} />
           )}
         </div>
       ))}

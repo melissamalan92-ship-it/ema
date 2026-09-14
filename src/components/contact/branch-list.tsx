@@ -4,43 +4,6 @@ import { Reveal } from "@/components/home/reveal";
 import { Container } from "@/components/ui/container";
 import { LOCATIONS } from "@/components/home/locations-data";
 
-const CONTACT_DETAILS: Record<
-  string,
-  { phone: string; email: string; address: string }
-> = {
-  joburg: {
-    phone: "011 958 9100",
-    email: "admin@ema.co.za",
-    address:
-      "Unit 31 (Block B) Willowbrook Office Park, Cnr Hendrik Potgieter & Van der Kloof Street, Ruimsig, Roodepoort",
-  },
-  capetown: {
-    phone: "021 422 5117",
-    email: "infoct@ema.co.za",
-    address: "Unit 2A, 2nd Floor, 83 Castle St, Cape Town City Centre, 8000",
-  },
-  cptpeninsula: {
-    phone: "021 492 5677",
-    email: "infopen@ema.co.za",
-    address: "Unit 2C, Castle Gate, 83 Castle Street, Cape Town, 8000",
-  },
-  paarl: {
-    phone: "021 872 2525",
-    email: "infopaarl@ema.co.za",
-    address: "Workshop 17, Tabak Street, Paarl",
-  },
-  tygervalley: {
-    phone: "021 914 0053",
-    email: "infotv@ema.co.za",
-    address: "First Floor, Willowbridge Centre, Carl Cronje Dr, Bellville Park, 7530",
-  },
-  loxton: {
-    phone: "021 422 5117",
-    email: "info@ema.co.za",
-    address: "83 Castle St, Cape Town City Centre, Cape Town, 8000",
-  },
-};
-
 export function BranchList() {
   return (
     <section className="bg-bg-warm px-10 py-20">
@@ -56,7 +19,6 @@ export function BranchList() {
 
         <div className="grid grid-cols-3 gap-6">
           {LOCATIONS.map((location, i) => {
-            const details = CONTACT_DETAILS[location.id];
             return (
               <Reveal
                 key={location.id}
@@ -80,16 +42,16 @@ export function BranchList() {
 
                   <div className="flex flex-col gap-2">
                     <ContactRow icon={Phone}>
-                      <a href={`tel:${details.phone}`} className="hover:text-ink">
-                        {details.phone}
+                      <a href={`tel:${location.phone.replace(/\s+/g, "")}`} className="hover:text-ink">
+                        {location.phone}
                       </a>
                     </ContactRow>
                     <ContactRow icon={Mail}>
-                      <a href={`mailto:${details.email}`} className="hover:text-ink">
-                        {details.email}
+                      <a href={`mailto:${location.email}`} className="hover:text-ink">
+                        {location.email}
                       </a>
                     </ContactRow>
-                    <ContactRow icon={MapPin}>{details.address}</ContactRow>
+                    <ContactRow icon={MapPin}>{location.address}</ContactRow>
                   </div>
                 </div>
               </Reveal>
