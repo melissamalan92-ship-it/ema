@@ -1,9 +1,11 @@
 import Image from "next/image";
 import { Reveal } from "@/components/home/reveal";
+import { Container } from "@/components/ui/container";
 
 export function ScholarMessageSection() {
   return (
     <section className="bg-bg-warm px-10 py-20">
+      <Container>
       <div className="relative mr-24 rounded-r-[32px] bg-shoe-blue p-14 pl-10">
         <div className="grid grid-cols-2 items-center gap-16">
           <Reveal className="flex flex-col items-start gap-6 text-left">
@@ -42,6 +44,7 @@ export function ScholarMessageSection() {
           </Reveal>
         </div>
       </div>
+      </Container>
     </section>
   );
 }
