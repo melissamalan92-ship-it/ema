@@ -1,10 +1,11 @@
 import Image from "next/image";
 import { Reveal } from "@/components/home/reveal";
+import { Container } from "@/components/ui/container";
 
 export function AboutSection() {
   return (
     <section className="bg-bg-warm px-10 py-24">
-      <div className="mx-auto grid max-w-[1200px] grid-cols-[0.9fr_1.1fr] items-center gap-16">
+      <Container className="grid grid-cols-[0.9fr_1.1fr] items-center gap-16">
         <Reveal className="flex flex-col items-center text-center">
           <span className="font-display text-[110px] font-normal leading-none text-blue-accent">
             42
@@ -45,7 +46,7 @@ export function AboutSection() {
             </strong>
           </p>
         </Reveal>
-      </div>
+      </Container>
     </section>
   );
 }

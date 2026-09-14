@@ -14,6 +14,13 @@
   --font-hand: var(--font-hand);
   --font-heading: var(--font-sans);
   --font-display: var(--font-display);
+  --text-heading-xl: 54px;
+  --text-heading-lg: 42px;
+  --text-heading-md: 32px;
+  --text-heading-sm: 22px;
+  --text-body-lg: 19px;
+  --text-body-md: 16px;
+  --text-body-sm: 14px;
   --color-navy-primary: var(--navy-primary);
   --color-navy-dark: var(--navy-dark);
   --color-navy-secondary: var(--navy-secondary);

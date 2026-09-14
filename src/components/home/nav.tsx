@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Logo } from "./logo";
+import { Container } from "@/components/ui/container";
 
 const links = [
   { href: "/", label: "home" },
@@ -30,7 +31,7 @@ export function Nav() {
           : "py-4 shadow-none"
       }`}
     >
-      <div className="relative mx-auto flex max-w-[1200px] items-center">
+      <Container className="flex items-center">
         <Link href="/" aria-label="EMA home">
           <Logo variant="light" />
         </Link>
@@ -46,7 +47,7 @@ export function Nav() {
             </Link>
           ))}
         </div>
-      </div>
+      </Container>
     </nav>
   );
 }

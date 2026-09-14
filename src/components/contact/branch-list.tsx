@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { Reveal } from "@/components/home/reveal";
+import { Container } from "@/components/ui/container";
 import { LOCATIONS } from "@/components/home/locations-data";
 
 const CONTACT_DETAILS: Record<
@@ -43,12 +44,12 @@ const CONTACT_DETAILS: Record<
 export function BranchList() {
   return (
     <section className="bg-bg-warm px-10 py-20">
-      <div className="mx-auto max-w-[1160px]">
+      <Container>
         <Reveal className="mx-auto mb-14 flex max-w-[560px] flex-col items-center gap-3 text-center">
           <span className="font-body text-[16px] text-ink-soft/70">
             Where to find us
           </span>
-          <h2 className="font-serif text-[40px] font-normal leading-[1.15] tracking-[-0.01em] text-ink">
+          <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-ink">
             Our <em className="italic text-blue-accent">branches</em>.
           </h2>
         </Reveal>
@@ -95,7 +96,7 @@ export function BranchList() {
             );
           })}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

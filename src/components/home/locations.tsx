@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Reveal } from "./reveal";
 import { CtaLink } from "./cta-link";
+import { Container } from "@/components/ui/container";
 import { LocationsBento } from "./locations-bento";
 import { LocationCard } from "./location-card";
 import { LOCATIONS } from "./locations-data";
@@ -13,14 +14,14 @@ export function Locations() {
 
   return (
     <section id="locations" className="bg-bg-warm px-10 py-28">
-      <div className="relative mx-auto max-w-[1200px]">
+      <Container>
       <div className="relative mr-24 rounded-r-[32px] bg-navy-primary p-14 pl-10">
         <div className="grid grid-cols-2 items-start gap-16">
           <Reveal className="flex h-full flex-col items-start justify-center gap-4 text-left">
             <span className="font-body text-[16px] text-cream/60">
               Where to find us
             </span>
-            <h2 className="font-serif text-[42px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
+            <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-cream">
               Our <em className="italic text-blue-accent">locations</em>.
             </h2>
             <p className="max-w-[400px] font-body text-[19px] leading-[1.5] text-cream/70">
@@ -47,7 +48,7 @@ export function Locations() {
           </Reveal>
         </div>
       </div>
-      </div>
+      </Container>
     </section>
   );
 }

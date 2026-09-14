@@ -1,15 +1,16 @@
 import Image from "next/image";
 import { Reveal } from "@/components/home/reveal";
 import { CtaLink } from "@/components/home/cta-link";
+import { Container } from "@/components/ui/container";
 
 export function TrainingSection() {
   return (
     <section className="bg-bg-warm px-10 py-20">
-      <div className="relative mx-auto max-w-[1200px]">
+      <Container>
       <div className="relative mr-24 rounded-r-[32px] bg-navy-primary p-14 pl-10">
         <div className="grid grid-cols-2 items-center gap-16">
           <Reveal className="flex flex-col items-start gap-1 text-left">
-            <h2 className="font-serif text-[42px] font-normal leading-[1.1] tracking-[-0.01em] text-cream">
+            <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-cream">
               Building
               <br />
               <em className="italic text-blue-accent">experience</em>
@@ -49,7 +50,7 @@ export function TrainingSection() {
           </Reveal>
         </div>
       </div>
-      </div>
+      </Container>
     </section>
   );
 }

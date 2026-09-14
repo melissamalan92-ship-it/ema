@@ -1,5 +1,6 @@
 import { Reveal } from "./reveal";
 import { CtaLink } from "./cta-link";
+import { Container } from "@/components/ui/container";
 
 export const SERVICES = [
   {
@@ -120,7 +121,7 @@ export const SERVICES = [
 export function Services() {
   return (
     <section id="services" className="border-t border-ink/10 bg-bg-warm px-10 py-28">
-      <div className="mx-auto grid max-w-[1200px] grid-cols-[1.2fr_1fr] items-stretch gap-12">
+      <Container className="grid grid-cols-[1.2fr_1fr] items-stretch gap-12">
         <div className="grid grid-cols-2 gap-x-8 gap-y-10">
           {SERVICES.map((service, i) => (
             <Reveal
@@ -147,7 +148,7 @@ export function Services() {
           delay={150}
           className="flex flex-col items-start justify-center gap-6 border-l border-blue-accent/20 pl-12 text-left"
         >
-          <h2 className="font-serif text-[42px] font-normal leading-[1.15] tracking-[-0.01em] text-ink">
+          <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-ink">
             Everything your{" "}
             <em className="italic text-blue-accent">business</em> needs to{" "}
             <em className="italic text-blue-accent">grow</em>.
@@ -163,7 +164,7 @@ export function Services() {
             direction.
           </p>
         </Reveal>
-      </div>
+      </Container>
     </section>
   );
 }

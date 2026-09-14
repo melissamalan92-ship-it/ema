@@ -1,16 +1,17 @@
 import { Reveal } from "@/components/home/reveal";
 import { CtaLink } from "@/components/home/cta-link";
+import { Container } from "@/components/ui/container";
 import { MediaPlaceholder } from "./media-placeholder";
 
 export function DecadesSection() {
   return (
     <section className="bg-navy-primary px-10 py-24">
-      <div className="mx-auto grid max-w-[1200px] grid-cols-2 items-center gap-16">
+      <Container className="grid grid-cols-2 items-center gap-16">
         <Reveal className="flex flex-col items-start gap-4 text-left">
           <span className="font-body text-[16px] text-cream/60">
             Our story
           </span>
-          <h2 className="font-serif text-[42px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
+          <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-cream">
             Decades of experience.
             <br />
             Built for <em className="italic text-blue-accent">today</em>.
@@ -30,7 +31,7 @@ export function DecadesSection() {
             many relationships strong for over twenty years.
           </p>
         </Reveal>
-      </div>
+      </Container>
     </section>
   );
 }
@@ -38,7 +39,7 @@ export function DecadesSection() {
 export function ExpertiseSection() {
   return (
     <section className="bg-bg-warm px-10 py-24">
-      <div className="mx-auto grid max-w-[1200px] grid-cols-2 items-center gap-16">
+      <Container className="grid grid-cols-2 items-center gap-16">
         <Reveal className="-ml-10">
           <MediaPlaceholder
             kind="image"
@@ -52,7 +53,7 @@ export function ExpertiseSection() {
           <span className="font-body text-[16px] text-ink-soft">
             More than just accounting
           </span>
-          <h2 className="font-serif text-[42px] font-normal leading-[1.15] tracking-[-0.01em] text-ink">
+          <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-ink">
             More expertise,{" "}
             <br />
             <em className="italic text-blue-accent">under one roof.</em>
@@ -64,7 +65,7 @@ export function ExpertiseSection() {
             support.
           </p>
         </Reveal>
-      </div>
+      </Container>
     </section>
   );
 }

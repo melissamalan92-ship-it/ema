@@ -1,4 +1,5 @@
 import { Reveal } from "@/components/home/reveal";
+import { Container } from "@/components/ui/container";
 
 const FIELDS = [
   { name: "name", label: "Name", type: "input" },
@@ -9,9 +10,9 @@ const FIELDS = [
 export function ContactFormSection() {
   return (
     <section className="bg-navy-primary px-10 py-28">
-      <div className="mx-auto grid max-w-[1160px] grid-cols-2 items-center gap-16">
+      <Container className="grid grid-cols-2 items-center gap-16">
         <Reveal className="flex flex-col items-start gap-6 text-left">
-          <h2 className="font-serif text-[54px] font-normal leading-[1.1] tracking-[-0.01em] text-cream">
+          <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-cream">
             Let&apos;s talk
             <br />
             <em className="italic text-blue-accent">business.</em>
@@ -60,7 +61,7 @@ export function ContactFormSection() {
             </button>
           </form>
         </Reveal>
-      </div>
+      </Container>
     </section>
   );
 }
