@@ -1,6 +1,7 @@
 import { CalendarCheck, MapPin, ShieldCheck } from "lucide-react";
 import { Reveal } from "@/components/home/reveal";
 import { HeroVideo } from "@/components/home/hero-video";
+import { Container } from "@/components/ui/container";
 
 const STATS = [
   {
@@ -27,7 +28,7 @@ export function AboutHero() {
   return (
     <>
       <section className="relative z-10 bg-navy-primary px-10 pb-16 pt-24">
-        <div className="mx-auto grid max-w-[1200px] grid-cols-[1fr_1.15fr] items-center gap-16">
+        <Container className="grid grid-cols-[1fr_1.15fr] items-center gap-16">
           <Reveal className="flex flex-col items-start gap-5 text-left">
             <span className="font-body text-[18px] text-cream/70">
               E Malan &amp; Associates
@@ -44,7 +45,7 @@ export function AboutHero() {
           <Reveal delay={120} className="relative -mb-24">
             <HeroVideo />
           </Reveal>
-        </div>
+        </Container>
       </section>
 
       <section className="bg-bg-warm px-10 pb-16 pt-24">
