@@ -24,7 +24,7 @@ export function Hero() {
     <section id="hero" className="relative z-10 bg-navy-primary px-10 pb-28 pt-24">
       <div className="relative flex items-start gap-16">
         <div
-          className="flex w-[420px] shrink-0 flex-col items-start gap-5 text-left opacity-0"
+          className="flex flex-1 flex-col items-start gap-5 text-left opacity-0"
           style={{ animation: "reveal-up 900ms cubic-bezier(0.16,1,0.3,1) 100ms both" }}
         >
           <span className="font-body text-[18px] text-cream/70">E Malan &amp; Associates</span>
