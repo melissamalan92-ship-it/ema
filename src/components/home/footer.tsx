@@ -2,13 +2,25 @@ import Link from "next/link";
 import { Container } from "@/components/ui/container";
 
 function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
+  const className =
+    "group/flink relative w-fit text-[17px] text-cream/80 transition-colors hover:text-cream";
+  const underline = (
+    <span className="absolute bottom-0 left-0 h-px w-0 bg-blue-accent transition-all duration-300 ease-out group-hover/flink:w-full" />
+  );
+
+  if (href.startsWith("http")) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+        {children}
+        {underline}
+      </a>
+    );
+  }
+
   return (
-    <Link
-      href={href}
-      className="group/flink relative w-fit text-[17px] text-cream/80 transition-colors hover:text-cream"
-    >
+    <Link href={href} className={className}>
       {children}
-      <span className="absolute bottom-0 left-0 h-px w-0 bg-blue-accent transition-all duration-300 ease-out group-hover/flink:w-full" />
+      {underline}
     </Link>
   );
 }
@@ -43,7 +55,9 @@ export function Footer() {
           <FooterLink href="/services">Services</FooterLink>
           <FooterLink href="/shoe-foundation">Shoe Foundation</FooterLink>
           <FooterLink href="/contact">Contact</FooterLink>
-          <FooterLink href="/careers">Careers</FooterLink>
+          <FooterLink href="https://www.linkedin.com/company/emalan&associates/jobs/">
+            Careers
+          </FooterLink>
         </div>
       </Container>
 
