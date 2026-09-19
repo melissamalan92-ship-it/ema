@@ -4,13 +4,10 @@ import { CtaLink } from "@/components/home/cta-link";
 
 export function ShoeContactSection() {
   return (
-    <section className="bg-shoe-blue px-10 py-24">
+    <section className="bg-shoe-blue px-20 py-24">
       <Reveal className="mx-auto flex max-w-[720px] flex-col items-center gap-5 text-center">
-        <span className="font-display text-[28px] text-cream/70">
-          Contact
-        </span>
-        <h2 className="font-display text-[32px] font-normal text-blue-accent">
-          The Shoe Foundation
+        <h2 className="whitespace-nowrap font-display text-[48px] font-normal leading-[1.15] text-blue-accent">
+          <span className="text-cream/70">Contact</span> The Shoe Foundation
         </h2>
         <p className="max-w-[560px] font-body text-[17px] leading-[1.6] text-cream">
           The Shoe Foundation operates under E Malan &amp; Associates. Our
@@ -29,17 +26,17 @@ export function ShoeContactSection() {
 
       <Reveal
         delay={150}
-        className="mx-auto mt-20 flex max-w-[960px] flex-col items-center gap-4 text-center"
+        className="mx-auto mt-16 flex max-w-[960px] flex-col items-center gap-4 text-center"
       >
         <Image
-          src="/images/shoes.png"
+          src="/images/shoes-trimmed.png"
           alt=""
-          width={500}
-          height={500}
-          className="w-[130px]"
+          width={433}
+          height={176}
+          className="w-[180px]"
           aria-hidden
         />
-        <p className="whitespace-nowrap font-display text-[20px] leading-[1.5] text-shoe-yellow">
+        <p className="font-display text-[20px] leading-[1.5] text-shoe-yellow">
           In memory of [Name] &mdash; a legacy carried forward through
           opportunity and education.
         </p>

@@ -42,3 +42,6 @@ next-env.d.ts
 
 # Local Netlify folder
 .netlify
+
+# Large video masters — the web-ready .mp4 exports are committed instead
+*.mov

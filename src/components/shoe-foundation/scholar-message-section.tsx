@@ -4,9 +4,9 @@ import { Container } from "@/components/ui/container";
 
 export function ScholarMessageSection() {
   return (
-    <section className="bg-bg-warm px-10 py-20">
+    <section className="bg-bg-warm px-20 py-20">
       <Container>
-      <div className="relative mr-24 rounded-r-[32px] bg-shoe-blue p-14 pl-10">
+      <div className="relative mr-24 rounded-[32px] bg-shoe-blue pb-14 pl-10 pr-14 pt-10">
         <div className="grid grid-cols-2 items-center gap-16">
           <Reveal className="flex flex-col items-start gap-6 text-left">
             <h2 className="font-display text-[34px] font-normal leading-[1.2] text-cream">
@@ -32,7 +32,11 @@ export function ScholarMessageSection() {
 
           <Reveal
             delay={120}
-            className="relative -mb-14 -mr-20 ml-auto w-[calc(100%+5rem)]"
+            // self-start pins the photo to the top of the row so its position
+            // no longer depends on its own height; the text column now sets the
+            // banner height, and the negative margin keeps the photo out of that
+            // calculation so it can hang past the bottom edge.
+            className="relative -mb-[88px] -mr-20 ml-auto w-[calc(100%-35px)] self-start"
           >
             <Image
               src="/images/Nontsikelelo%20Fokazi.jpg"

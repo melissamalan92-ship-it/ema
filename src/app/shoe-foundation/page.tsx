@@ -33,9 +33,11 @@ export default function ShoeFoundationPage() {
         <ShoeFoundationHero />
         <AboutSection />
         <DonationMeaningSection />
-        <DonateOptionsSection />
-        <ScholarMessageSection />
-        <TestimonialsSection />
+        <div className="bg-bg-warm">
+          <DonateOptionsSection />
+          <ScholarMessageSection />
+          <TestimonialsSection />
+        </div>
         <ShoeContactSection />
         <Footer />
       </div>

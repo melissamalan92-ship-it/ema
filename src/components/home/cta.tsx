@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Cta() {
   return (
-    <section className="relative px-10 py-20 text-center">
+    <section className="relative px-20 py-20 text-center">
       <div className="mx-auto flex max-w-[640px] flex-col items-center gap-6">
         <h2 className="font-serif text-heading-lg font-normal leading-[1.2] text-bg-warm">
           Looking for a trusted partner.

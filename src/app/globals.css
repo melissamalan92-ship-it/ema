@@ -80,6 +80,16 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+  /* AC Real Adult draws small for its em, so scale the glyphs up 15% here
+     rather than touching every font-size that uses it. */
+  size-adjust: 115%;
+}
+
+/* No bold cut exists, so thicken the strokes optically. The width is in em so
+   it stays proportional from 14px captions up to the 110px display numbers. */
+.font-display {
+  -webkit-text-stroke: 0.02em currentColor;
+  paint-order: stroke fill;
 }
 
 :root {
@@ -188,6 +198,17 @@
   }
 }
 
+@keyframes testimonial-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes reveal-up {
   from {
     opacity: 0;
@@ -196,5 +217,37 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.heading-glow {
+  opacity: 0.12;
+  transition: opacity 1400ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.heading-glow.is-lit {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heading-glow {
+    opacity: 1;
+    transition: none;
+  }
+}
+
+.reveal-group > :not(h1):not(h2):not([data-glow]) {
+  opacity: 0;
+}
+
+.reveal-group.is-visible > :not(h1):not(h2):not([data-glow]) {
+  animation: reveal-up var(--reveal-duration, 800ms)
+    cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-group > :not(h1):not(h2):not([data-glow]) {
+    opacity: 1;
+    animation: none;
   }
 }

@@ -6,7 +6,7 @@ import { LOCATIONS } from "@/components/home/locations-data";
 
 export function BranchList() {
   return (
-    <section className="bg-bg-warm px-10 py-20">
+    <section className="bg-bg-warm px-20 py-20">
       <Container>
         <Reveal className="mx-auto mb-14 flex max-w-[560px] flex-col items-center gap-3 text-center">
           <span className="font-body text-[16px] text-ink-soft/70">

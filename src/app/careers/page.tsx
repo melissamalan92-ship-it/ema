@@ -13,7 +13,7 @@ export default function CareersPage() {
   return (
     <main className="min-w-[1040px] overflow-x-hidden">
       <Nav />
-      <section className="flex min-h-[560px] items-center justify-center bg-navy-primary px-10">
+      <section className="flex min-h-[560px] items-center justify-center bg-navy-primary px-20">
         <Reveal className="mx-auto flex max-w-[720px] flex-col items-center gap-6 text-center">
           <h1 className="font-serif text-[56px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
             Work with <em className="italic text-blue-accent">us</em>.

@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 
+// The rise animation is applied to the children rather than the wrapper, so
+// headings can opt out of it — they get the scroll glow instead.
 export function Reveal({
   children,
   className,
@@ -35,14 +37,8 @@ export function Reveal({
   return (
     <div
       ref={ref}
-      className={cn(!visible && "opacity-0", className)}
-      style={
-        visible
-          ? {
-              animation: `reveal-up 800ms cubic-bezier(0.16,1,0.3,1) ${delay}ms both`,
-            }
-          : undefined
-      }
+      className={cn("reveal-group", visible && "is-visible", className)}
+      style={{ "--reveal-delay": `${delay}ms` } as React.CSSProperties}
       {...rest}
     >
       {children}

@@ -30,11 +30,13 @@ export default function Home() {
       <div className="relative">
         <Nav />
         <Hero />
-        <About />
-        <Locations />
-        <Services />
-        <AppPreview />
-        <ShoeFoundation />
+        <div className="bg-bg-warm">
+          <About />
+          <Locations />
+          <Services />
+          <AppPreview />
+          <ShoeFoundation />
+        </div>
         <Footer />
       </div>
     </main>

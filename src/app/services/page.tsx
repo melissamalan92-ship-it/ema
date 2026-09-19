@@ -27,8 +27,10 @@ export default function ServicesPage() {
       <div className="relative">
         <Nav />
         <ServicesHero />
-        <ServicesGrid />
-        <TrainingSection />
+        <div className="bg-bg-warm">
+          <ServicesGrid />
+          <TrainingSection />
+        </div>
         <Footer />
       </div>
     </main>

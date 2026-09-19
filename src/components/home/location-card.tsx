@@ -15,8 +15,8 @@ export function LocationCard({
   )}`;
 
   return (
-    <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
-      <div className="pointer-events-auto relative flex h-[190px] w-[220px] flex-col gap-3 rounded-[14px] bg-white p-5 shadow-[0_24px_48px_-16px_rgba(0,0,0,0.4)]">
+    <div className="pointer-events-none absolute inset-0 z-10 flex items-end justify-end">
+      <div className="pointer-events-auto relative flex h-[205px] w-[220px] shrink-0 flex-col gap-3 rounded-[14px] bg-white p-5 shadow-[0_24px_48px_-16px_rgba(0,0,0,0.4)]">
         <button
           type="button"
           onClick={onClose}
@@ -46,7 +46,7 @@ export function LocationCard({
               href={mapsHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="line-clamp-2 hover:text-ink"
+              className="line-clamp-3 hover:text-ink"
             >
               {location.address}
             </a>

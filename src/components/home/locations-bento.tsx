@@ -31,12 +31,12 @@ export function LocationsBento({ active, onSelect }: Props) {
         <div
           key={loc.id}
           style={{ gridArea: AREAS[loc.id] }}
-          className="group relative overflow-hidden rounded-[14px]"
+          className={`group relative ${active === loc.id ? "z-20" : ""}`}
         >
           <button
             type="button"
             onClick={() => onSelect(loc.id)}
-            className="absolute inset-0 h-full w-full text-left"
+            className="absolute inset-0 h-full w-full overflow-hidden rounded-[14px] text-left"
           >
             <Image
               src={loc.image}

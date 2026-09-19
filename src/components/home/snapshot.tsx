@@ -26,7 +26,7 @@ export function Snapshot() {
   };
 
   return (
-    <section id="snapshot" className="px-10 py-[120px]">
+    <section id="snapshot" className="px-20 py-[120px]">
       <div className="mx-auto flex max-w-[720px] flex-col items-center gap-6 text-center">
         <span className="font-mono text-xs font-medium tracking-[0.1em] text-[#cddaf0]">
           [ See It In Numbers ]

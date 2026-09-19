@@ -53,7 +53,7 @@ const PILLARS = [
 
 export function WhyEma() {
   return (
-    <section className="bg-navy-secondary px-10 py-24">
+    <section className="bg-navy-secondary px-20 py-24">
       <div className="mx-auto flex max-w-[1180px] flex-col items-start gap-4 pb-16 text-left">
         <span className="font-mono text-xs font-medium tracking-[0.1em] text-blue-accent">
           [ Why EMA ]

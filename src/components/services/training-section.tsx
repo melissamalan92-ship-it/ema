@@ -5,29 +5,29 @@ import { Container } from "@/components/ui/container";
 
 export function TrainingSection() {
   return (
-    <section className="bg-bg-warm px-10 py-20">
+    <section className="bg-bg-warm px-20 pb-20 pt-14">
       <Container>
-      <div className="relative mr-24 rounded-r-[32px] bg-navy-primary p-14 pl-10">
+      <div className="relative mr-24 rounded-[32px] bg-navy-primary p-11 pl-[102px]">
         <div className="grid grid-cols-2 items-center gap-16">
-          <Reveal className="flex flex-col items-start gap-1 text-left">
-            <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-cream">
+          <Reveal className="flex flex-col items-start text-left">
+            <span className="font-body text-[13px] text-cream/60">
+              SAIPA Training &amp; Learnerships
+            </span>
+            <h2 className="mt-2 font-serif text-[34px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
               Building
               <br />
               <em className="italic text-blue-accent">experience</em>
             </h2>
-            <p className="font-serif text-[22px] font-bold text-cream">
-              SAIPA Training &amp; Learnerships
-            </p>
 
             <div className="mt-5 flex flex-col gap-3">
-              <p className="max-w-[480px] font-body text-[22px] leading-[1.5] text-cream/85">
+              <p className="max-w-[460px] font-body text-[14px] leading-[1.6] text-cream/80">
                 <strong className="font-semibold text-cream">
                   As a SAIPA Accredited Training Centre,
                 </strong>{" "}
                 EMA gives aspiring Professional Accountants the practical
                 experience to build their careers.
               </p>
-              <p className="max-w-[480px] font-body text-[22px] leading-[1.5] text-cream/85">
+              <p className="max-w-[460px] font-body text-[14px] leading-[1.6] text-cream/80">
                 Our structured learnership combines hands-on experience,
                 professional development and mentorship, helping trainees
                 turn knowledge into real-world expertise.
@@ -39,7 +39,7 @@ export function TrainingSection() {
             </CtaLink>
           </Reveal>
 
-          <Reveal delay={120} className="relative -mb-24 -mr-24 ml-auto w-[85%]">
+          <Reveal delay={120} className="relative -mb-[77px] -mr-[77px] ml-auto w-[63%]">
             <Image
               src="/images/Saipa.png"
               alt="SAIPA accredited training centre"

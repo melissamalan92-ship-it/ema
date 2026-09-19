@@ -5,9 +5,9 @@ import { Container } from "@/components/ui/container";
 
 export function ShoeFoundation() {
   return (
-    <section id="shoe-foundation" className="bg-bg-warm px-10 py-24">
+    <section id="shoe-foundation" className="bg-bg-warm px-20 py-20">
       <Container className="grid grid-cols-2 items-center gap-16">
-        <Reveal className="flex flex-col items-start gap-5 text-left">
+        <Reveal className="flex flex-col items-start gap-5 pl-9 text-left">
           <span className="font-body text-[16px] text-ink-soft">
             More than just accounting
           </span>
@@ -25,18 +25,20 @@ export function ShoeFoundation() {
           </CtaLink>
         </Reveal>
 
-        <Reveal
-          delay={120}
-          className="group relative ml-auto aspect-[4/5] w-[380px] max-w-full overflow-hidden rounded-2xl shadow-[0_30px_60px_-25px_rgba(16,38,62,0.35)]"
-        >
-          <Image
-            src="/images/Charity-colour.png"
-            alt="Child walking to school, supported by The Shoe Foundation"
-            fill
-            className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-            sizes="480px"
-          />
-        </Reveal>
+        <div className="h-full border-l border-ink/20">
+          <Reveal
+            delay={120}
+            className="group relative ml-auto mr-[57px] aspect-[4/5] w-[380px] max-w-full overflow-hidden rounded-2xl shadow-[0_30px_60px_-25px_rgba(16,38,62,0.35)]"
+          >
+            <Image
+              src="/images/Charity-colour.png"
+              alt="Child walking to school, supported by The Shoe Foundation"
+              fill
+              className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+              sizes="480px"
+            />
+          </Reveal>
+        </div>
       </Container>
     </section>
   );

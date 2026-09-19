@@ -25,14 +25,14 @@ const OPTIONS = [
 
 export function DonateOptionsSection() {
   return (
-    <section className="bg-bg-warm px-10 py-24">
-      <Reveal className="mx-auto mb-14 flex max-w-[640px] flex-col items-center gap-3 text-center">
+    <section className="bg-bg-warm px-20 py-24">
+      <Reveal className="mx-auto mb-14 flex max-w-[720px] flex-col items-center gap-3 text-center">
         <h2 className="font-display text-[48px] font-normal leading-[1.15] text-shoe-blue">
           How can you donate?
         </h2>
         <p className="font-body text-[18px] leading-[1.5] text-ink">
-          Every contribution creates opportunity. Choose how you&rsquo;d
-          like to make a difference.
+          Every contribution creates opportunity. Choose how you&rsquo;d like
+          to make a difference.
         </p>
       </Reveal>
 

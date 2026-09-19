@@ -4,23 +4,23 @@ import { Container } from "@/components/ui/container";
 
 export function AboutSection() {
   return (
-    <section className="bg-bg-warm px-10 py-24">
-      <Container className="grid grid-cols-[0.9fr_1.1fr] items-center gap-16">
-        <Reveal className="flex flex-col items-center text-center">
+    <section className="bg-bg-warm px-20 py-24">
+      <Container className="grid grid-cols-[0.9fr_1.1fr] items-start gap-16">
+        <Reveal className="flex flex-col items-center gap-4 text-center">
           <span className="font-display text-[110px] font-normal leading-none text-blue-accent">
             42
           </span>
-          <div className="relative -mt-2 flex items-center justify-center">
-            <Image
-              src="/images/shoes.png"
-              alt=""
-              width={500}
-              height={500}
-              className="w-[220px]"
-              aria-hidden
-            />
-          </div>
-          <p className="-mt-4 max-w-[280px] font-display text-[28px] leading-[1.15] text-blue-accent">
+          {/* shoes-trimmed.png is shoes.png with its transparent padding cropped
+              off, so the stack spaces on the artwork rather than on dead pixels. */}
+          <Image
+            src="/images/shoes-trimmed.png"
+            alt=""
+            width={433}
+            height={176}
+            className="w-[248px]"
+            aria-hidden
+          />
+          <p className="whitespace-nowrap font-display text-[28px] leading-[1.15] text-blue-accent">
             learners being put through school and counting
           </p>
         </Reveal>

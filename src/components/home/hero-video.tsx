@@ -1,11 +1,12 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { cn } from "@/lib/utils";
 
 const DECADES = ["1980s", "1990s", "2000s"];
 const SEGMENT_SECONDS = 8;
 
-export function HeroVideo() {
+export function HeroVideo({ className }: { className?: string }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [active, setActive] = useState(0);
 
@@ -15,7 +16,7 @@ export function HeroVideo() {
   };
 
   return (
-    <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl shadow-[0_40px_80px_-20px_rgba(0,0,0,0.55)]">
+    <div className={cn("relative overflow-hidden", className)}>
       <video
         ref={videoRef}
         src="/images/Decades%20video%20colour.mp4"

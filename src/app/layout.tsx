@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans, IBM_Plex_Mono, Libre_Baskerville, Alike, Caveat } from "next/font/google";
 import "./globals.css";
+import { HeadingGlow } from "@/components/ui/heading-glow";
 
 const plexSans = IBM_Plex_Sans({
   variable: "--font-sans",
@@ -45,7 +46,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${plexSans.variable} ${plexMono.variable} ${libreBaskerville.variable} ${alike.variable} ${caveat.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <HeadingGlow />
+      </body>
     </html>
   );
 }

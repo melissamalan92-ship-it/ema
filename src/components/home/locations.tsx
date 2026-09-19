@@ -10,11 +10,11 @@ export function Locations() {
   const [active, setActive] = useState<string | null>(null);
 
   return (
-    <section id="locations" className="bg-bg-warm px-10 py-24">
+    <section id="locations" className="bg-bg-warm px-20 py-20">
       <Container>
-      <div className="relative mr-24 rounded-r-[32px] bg-navy-primary p-12 pl-10">
+      <div className="relative mr-24 rounded-[32px] bg-navy-primary p-12">
         <div className="grid grid-cols-2 items-start gap-16">
-          <Reveal className="flex h-full flex-col items-start justify-center gap-4 text-left">
+          <Reveal className="flex h-full flex-col items-start justify-start gap-4 text-left">
             <span className="font-body text-[16px] text-cream/60">
               Where to find us
             </span>
@@ -23,9 +23,13 @@ export function Locations() {
             </h2>
             <p className="max-w-[400px] font-body text-[16px] leading-[1.6] text-cream/70">
               Contact your nearest branch for more information on how we can
-              help you, or click a photo to find out more.
+              help you, or click a photo to find out more. Each office is run by
+              people who work with businesses in that area every day, so
+              you&rsquo;re dealing with someone who knows your market. We&rsquo;re
+              glad to meet in person, or to handle everything remotely if that
+              suits you better.
             </p>
-            <CtaLink href="/contact" variant="cream">
+            <CtaLink href="/contact" variant="cream" className="mt-auto">
               Contact Us
             </CtaLink>
           </Reveal>

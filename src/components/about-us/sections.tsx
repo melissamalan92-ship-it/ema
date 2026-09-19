@@ -1,28 +1,30 @@
+import Image from "next/image";
 import { Reveal } from "@/components/home/reveal";
 import { CtaLink } from "@/components/home/cta-link";
 import { Container } from "@/components/ui/container";
-import { MediaPlaceholder } from "./media-placeholder";
 
 export function DecadesSection() {
   return (
-    <section className="bg-navy-primary px-10 py-24">
-      <Container className="grid grid-cols-2 items-center gap-16">
-        <Reveal className="flex flex-col items-start gap-4 text-left">
-          <span className="font-body text-[16px] text-cream/60">
+    <section className="bg-bg-warm px-20 py-32">
+      <Container className="grid grid-cols-2 items-stretch gap-16">
+        <Reveal className="flex w-[67%] flex-col items-start gap-4 border-r border-ink/20 text-left">
+          <span className="font-body text-[16px] text-ink-soft">
             Our story
           </span>
-          <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-cream">
-            Decades of experience.
+          <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-ink">
+            Decades of
             <br />
-            Built for <em className="italic text-blue-accent">today</em>.
+            <em className="italic text-blue-accent">experience.</em>
+            <br />
+            Built for <em className="italic text-blue-accent">today.</em>
           </h2>
-          <CtaLink href="/contact" variant="cream" className="mt-2">
+          <CtaLink href="/contact" variant="dark" className="mt-auto">
             Contact Us
           </CtaLink>
         </Reveal>
 
-        <Reveal delay={120} className="text-left">
-          <p className="max-w-[460px] font-body text-[19px] leading-[1.6] text-cream/70">
+        <Reveal delay={120} className="-ml-[127px] flex flex-col gap-4 text-left">
+          <p className="max-w-[590px] font-body text-[19px] leading-[1.6] text-ink-soft">
             Established in 1983, EMA has worked across South Africa
             providing accounting, tax and advisory services to businesses
             of every size. We are a member of the South African Institute
@@ -30,40 +32,64 @@ export function DecadesSection() {
             understanding each client&rsquo;s individual needs has kept
             many relationships strong for over twenty years.
           </p>
+          <p className="max-w-[590px] font-body text-[19px] leading-[1.6] text-ink-soft">
+            What began as a single practice has grown steadily rather than
+            quickly &mdash; opening offices where clients needed them, and
+            adding specialists as the work asked for it. In that time
+            we&rsquo;ve seen businesses through changing tax regimes, new
+            company law and the move from paper ledgers to cloud software,
+            adapting each time without changing the way we prefer to work.
+          </p>
         </Reveal>
       </Container>
     </section>
   );
 }
 
-export function ExpertiseSection() {
-  return (
-    <section className="bg-bg-warm px-10 py-24">
-      <Container className="grid grid-cols-2 items-center gap-16">
-        <Reveal className="-ml-10">
-          <MediaPlaceholder
-            kind="image"
-            label="Team / office photo placeholder"
-            tone="light"
-            className="aspect-[4/5] w-full overflow-hidden rounded-2xl"
-          />
-        </Reveal>
+const OFFICE_PHOTOS = [
+  { src: "/images/accounting-office-1.png", alt: "A client arriving at an EMA reception desk" },
+  { src: "/images/accounting-office-2.png", alt: "EMA accountants working through figures together" },
+  { src: "/images/accounting-office-3.png", alt: "The EMA team at work in the office" },
+];
 
-        <Reveal delay={120} className="flex flex-col items-start gap-4 text-left">
-          <span className="font-body text-[16px] text-ink-soft">
-            More than just accounting
-          </span>
-          <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-ink">
+export function ApproachSection() {
+  return (
+    <section className="relative z-10 bg-navy-primary px-20 pb-32 pt-20">
+      <Container>
+        <Reveal className="mx-auto mb-16 flex max-w-[1000px] flex-col items-center gap-5 text-center">
+          <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-cream">
             More expertise,{" "}
             <br />
             <em className="italic text-blue-accent">under one roof.</em>
           </h2>
-          <p className="max-w-[440px] font-body text-[19px] leading-[1.5] text-ink-soft">
-            As EMA has grown, so has the expertise behind it. Our group
-            brings together specialised teams across multiple branches,
-            working together to provide integrated financial and business
-            support.
+          <p className="font-body text-[19px] leading-[1.5] text-cream/70">
+            As EMA has grown, so has the expertise behind it. Our group brings
+            together specialised teams across multiple branches, working
+            together to provide integrated financial and business support.
           </p>
+          <p className="font-body text-[19px] leading-[1.5] text-cream/70">
+            It means you can draw on a tax specialist, a payroll team or a
+            company secretarial expert without starting a new relationship each
+            time. The people who already know your business stay involved, and
+            the right expertise is brought in around them.
+          </p>
+        </Reveal>
+
+        <Reveal className="-mx-[15%] -mb-56 grid grid-cols-3 gap-5">
+          {OFFICE_PHOTOS.map((photo) => (
+            // The wrapper carries the scroll reveal so the image is free to
+            // own the hover transform.
+            <div key={photo.src}>
+              <Image
+                src={photo.src}
+                alt={photo.alt}
+                width={673}
+                height={512}
+                sizes="460px"
+                className="aspect-[13/10] w-full object-cover transition-transform duration-500 ease-out hover:-translate-y-2 hover:scale-[1.02]"
+              />
+            </div>
+          ))}
         </Reveal>
       </Container>
     </section>

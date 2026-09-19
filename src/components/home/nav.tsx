@@ -25,7 +25,7 @@ export function Nav() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 bg-navy-primary px-10 transition-all duration-300 ${
+      className={`sticky top-0 z-50 bg-navy-primary px-20 transition-all duration-300 ${
         scrolled
           ? "py-3 shadow-[0_10px_30px_-15px_rgba(0,0,0,0.6)]"
           : "py-4 shadow-none"

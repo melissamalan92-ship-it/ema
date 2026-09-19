@@ -16,7 +16,7 @@ export function CtaLink({
     <Link
       href={href}
       className={cn(
-        "inline-flex items-center justify-center rounded-[19px] px-12 py-4 text-[18px] font-bold shadow-sm transition-opacity duration-300 ease-out hover:opacity-90",
+        "inline-flex items-center justify-center rounded-[17px] px-[43px] py-[14.4px] text-[16.2px] font-bold shadow-sm transition-opacity duration-300 ease-out hover:opacity-90",
         variant === "dark" && "bg-button-navy text-cream",
         variant === "cream" && "bg-cream text-ink",
         className

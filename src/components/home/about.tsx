@@ -4,9 +4,9 @@ import { Container } from "@/components/ui/container";
 
 export function About() {
   return (
-    <section id="about" className="bg-bg-warm px-10 py-24">
-      <Container className="grid grid-cols-[0.58fr_1fr] items-stretch gap-12">
-        <Reveal className="flex flex-col items-start gap-4 text-left">
+    <section id="about" className="bg-bg-warm px-20 pb-20 pt-[120px]">
+      <Container className="grid grid-cols-[0.45fr_1fr] items-stretch gap-12">
+        <Reveal className="flex flex-col items-start gap-4 pl-[58px] text-left">
           <span className="font-body text-[17px] text-ink-soft">
             Trusted expertise since 1983
           </span>
@@ -22,13 +22,29 @@ export function About() {
 
         <Reveal
           delay={120}
-          className="flex flex-col items-start justify-center gap-6 border-l border-ink/20 pl-16 text-left"
+          className="flex flex-col items-start justify-center gap-6 border-l border-ink/20 pl-[60px] text-left"
         >
-          <p className="max-w-[500px] font-body text-[16px] leading-[1.6] text-ink">
+          <p className="max-w-[640px] font-body text-[16px] leading-[1.6] text-ink">
             For over{" "}
             <em className="italic text-blue-accent">four decades</em>,
             we&rsquo;ve worked alongside businesses to navigate change, seize
-            opportunities and build stronger futures.
+            opportunities and build stronger futures. What started in 1983 as a
+            single practice now runs from offices across South Africa, with the
+            same people-first approach it began with.
+          </p>
+          <p className="max-w-[640px] font-body text-[16px] leading-[1.6] text-ink-soft">
+            Our work covers the full picture &mdash; bookkeeping and annual
+            financial statements, tax and payroll, company secretarial matters,
+            and the advice that sits behind bigger decisions. Much of it is
+            deliberately unremarkable: returns filed on time, reconciliations
+            that balance, and records that hold up when a bank or SARS asks
+            questions.
+          </p>
+          <p className="max-w-[640px] font-body text-[16px] leading-[1.6] text-ink-soft">
+            Clients stay with us because they deal with people who know their
+            business, not a call centre and not a template. As a SAIPA-registered
+            practice and accredited training centre, we also help bring through
+            the next generation of professional accountants.
           </p>
         </Reveal>
       </Container>

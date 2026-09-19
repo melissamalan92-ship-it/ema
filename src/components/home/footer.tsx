@@ -27,8 +27,8 @@ function FooterLink({ href, children }: { href: string; children: React.ReactNod
 
 export function Footer() {
   return (
-    <footer className="bg-navy-primary px-10 pb-8 pt-16">
-      <Container className="flex flex-col justify-between gap-12 pb-12 sm:flex-row">
+    <footer className="bg-navy-primary px-20 pb-6 pt-12">
+      <Container className="flex flex-col justify-between gap-12 pb-8 sm:flex-row">
         <div className="flex max-w-[280px] flex-col gap-3.5">
           <div className="flex items-start gap-2.5">
             <div className="w-[2px] self-stretch bg-cream" />
@@ -46,10 +46,7 @@ export function Footer() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-3">
-          <span className="font-body text-[17px] text-cream/60">
-            Quick Links
-          </span>
+        <div className="grid grid-cols-2 gap-x-14 gap-y-3">
           <FooterLink href="/">Home</FooterLink>
           <FooterLink href="/about-us">About Us</FooterLink>
           <FooterLink href="/services">Services</FooterLink>

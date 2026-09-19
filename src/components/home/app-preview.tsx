@@ -27,15 +27,15 @@ function PlayIcon() {
 
 export function AppPreview() {
   return (
-    <section className="bg-bg-warm px-10 py-24">
+    <section className="bg-bg-warm px-20 py-20">
       <Container>
-      <div className="relative ml-24 rounded-l-[32px] bg-navy-primary p-12 pr-10">
+      <div className="relative ml-24 rounded-[32px] bg-navy-primary p-12">
         <div
           className="pointer-events-none absolute -bottom-32 right-0 h-[480px] w-[480px] rounded-full opacity-[0.12] blur-[120px]"
           style={{ background: "var(--blue-accent)" }}
         />
         <div className="relative grid grid-cols-[0.8fr_1.2fr] items-center gap-16">
-          <Reveal className="relative -ml-[152px] w-[400px]">
+          <Reveal className="relative -ml-[129px] w-[312px]">
             <div className="group transition-transform duration-500 ease-out hover:-translate-y-2">
               <Image
                 src="/images/phone%20colour.png"
@@ -56,10 +56,13 @@ export function AppPreview() {
           </h2>
           <p className="max-w-[420px] font-body text-[16px] leading-[1.6] text-cream/70">
             We&rsquo;re building an app that brings the same clarity we
-            bring to every client relationship straight to your phone.
+            bring to every client relationship straight to your phone. It will
+            put your numbers, key documents and upcoming deadlines in one
+            place, so you can see where things stand without having to ask.
+            We&rsquo;ll let you know the moment it&rsquo;s ready to download.
           </p>
 
-          <div className="mt-2 flex flex-wrap items-center gap-3">
+          <div className="mt-10 flex flex-wrap items-center gap-3">
             <span className="inline-flex items-center gap-3 rounded-xl bg-black px-5 py-3 text-cream transition-all duration-300 hover:-translate-y-0.5 hover:bg-black/80 hover:shadow-lg">
               <AppleIcon />
               <span className="flex flex-col items-start leading-tight">
