@@ -4,12 +4,12 @@ import { Container } from "@/components/ui/container";
 
 export function ScholarMessageSection() {
   return (
-    <section className="bg-bg-warm px-20 py-20">
+    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-20">
       <Container>
-      <div className="relative mr-24 rounded-[32px] bg-shoe-blue pb-14 pl-10 pr-14 pt-10">
-        <div className="grid grid-cols-2 items-center gap-16">
+      <div className="relative lg:mr-24 rounded-[32px] bg-shoe-blue pb-14 pl-10 pr-14 pt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-16">
           <Reveal className="flex flex-col items-start gap-6 text-left">
-            <h2 className="font-display text-[34px] font-normal leading-[1.2] text-cream">
+            <h2 className="font-display text-[25px] sm:text-[30px] lg:text-[34px] font-normal leading-[1.2] text-cream">
               A message from our
               <br />
               <em className="italic text-shoe-yellow">First Scholar</em>
@@ -36,7 +36,7 @@ export function ScholarMessageSection() {
             // no longer depends on its own height; the text column now sets the
             // banner height, and the negative margin keeps the photo out of that
             // calculation so it can hang past the bottom edge.
-            className="relative -mb-[88px] -mr-20 ml-auto w-[calc(100%-35px)] self-start"
+            className="relative mx-auto w-full max-w-[420px] lg:-mb-[88px] lg:-mr-20 lg:ml-auto lg:w-[calc(100%-35px)] lg:self-start"
           >
             <Image
               src="/images/Nontsikelelo%20Fokazi.jpg"

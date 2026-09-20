@@ -22,9 +22,9 @@ const FEATURES = [
 export function Hero() {
   return (
     <section id="hero" className="relative z-10 bg-navy-primary pb-[104px]">
-      <div className="relative grid grid-cols-2 items-stretch">
+      <div className="relative grid grid-cols-1 lg:grid-cols-2 items-stretch">
         <div
-          className="reveal-group is-visible flex flex-col items-start justify-center gap-5 py-24 pl-20 pr-16 text-left"
+          className="reveal-group is-visible flex flex-col items-start justify-center gap-5 px-5 py-14 sm:px-8 lg:py-24 lg:pl-20 lg:pr-16 text-left"
           style={
             {
               "--reveal-duration": "900ms",
@@ -33,17 +33,17 @@ export function Hero() {
           }
         >
           <span className="font-body text-[18px] text-cream/70">E Malan &amp; Associates</span>
-          <h1 className="max-w-[480px] font-serif text-[38px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
+          <h1 className="max-w-[480px] font-serif text-[27px] sm:text-[32px] lg:text-[38px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
             Accounting services{" "}
             <em className="italic text-blue-accent">designed</em> for{" "}
             <em className="italic text-blue-accent">growth</em>.
           </h1>
 
-          <div className="mt-20 grid w-full grid-cols-3 gap-5 border-t border-cream/15 pt-5">
+          <div className="mt-10 grid w-full grid-cols-1 gap-5 border-t border-cream/15 pt-5 sm:mt-20 sm:grid-cols-3">
             {FEATURES.map((feature) => (
               <div
                 key={feature.title}
-                className="flex flex-col items-start gap-2 border-l border-cream/15 pl-4 first:border-l-0 first:pl-0"
+                className="flex flex-col items-start gap-2 sm:border-l sm:border-cream/15 sm:pl-4 sm:first:border-l-0 sm:first:pl-0"
               >
                 <feature.icon className="size-5 text-blue-accent" strokeWidth={1.75} />
                 <h3 className="text-[15px] font-semibold leading-tight text-cream">
@@ -58,7 +58,7 @@ export function Hero() {
         </div>
 
         <div
-          className="reveal-group is-visible relative"
+          className="reveal-group is-visible relative h-[260px] sm:h-[380px] lg:h-auto"
           style={
             {
               "--reveal-duration": "1000ms",

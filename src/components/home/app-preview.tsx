@@ -27,14 +27,14 @@ function PlayIcon() {
 
 export function AppPreview() {
   return (
-    <section className="bg-bg-warm px-20 py-20">
+    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-20">
       <Container>
       <div className="relative ml-24 rounded-[32px] bg-navy-primary p-12">
         <div
           className="pointer-events-none absolute -bottom-32 right-0 h-[480px] w-[480px] rounded-full opacity-[0.12] blur-[120px]"
           style={{ background: "var(--blue-accent)" }}
         />
-        <div className="relative grid grid-cols-[0.8fr_1.2fr] items-center gap-16">
+        <div className="relative grid grid-cols-[0.8fr_1.2fr] items-center gap-10 lg:gap-16">
           <Reveal className="relative -ml-[129px] w-[312px]">
             <div className="group transition-transform duration-500 ease-out hover:-translate-y-2">
               <Image
@@ -49,7 +49,7 @@ export function AppPreview() {
           </Reveal>
 
           <Reveal delay={120} className="flex flex-col items-start gap-6 text-left">
-          <h2 className="font-serif text-[38px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
+          <h2 className="font-serif text-[27px] sm:text-[32px] lg:text-[38px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
             Your accountants{" "}
             <br />
             in your <em className="italic text-blue-accent">pocket</em>.

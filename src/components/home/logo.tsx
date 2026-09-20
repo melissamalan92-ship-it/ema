@@ -6,7 +6,7 @@ export function Logo({
   variant?: "dark" | "light" | "blue";
 }) {
   const wordmark =
-    size === "sm" ? "text-[17px]" : size === "lg" ? "text-[34px]" : "text-[22px]";
+    size === "sm" ? "text-[17px]" : size === "lg" ? "text-[25px] sm:text-[30px] lg:text-[34px]" : "text-[22px]";
   const subline =
     size === "sm"
       ? "text-[7px] tracking-[0.16em]"

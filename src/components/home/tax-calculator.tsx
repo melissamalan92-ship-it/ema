@@ -59,12 +59,12 @@ export function TaxCalculator() {
   const marginal = marginalRate(annualIncome) * 100;
 
   return (
-    <section id="application" className="px-20 py-[120px]">
+    <section id="application" className="px-5 sm:px-8 lg:px-20 py-[120px]">
       <div className="mx-auto flex max-w-[720px] flex-col items-center gap-6 text-center">
         <span className="font-mono text-xs font-medium tracking-[0.1em] text-[#cddaf0]">
           [ Free Tool ]
         </span>
-        <h2 className="text-[38px] font-semibold leading-[1.25] text-bg-warm">
+        <h2 className="text-[27px] sm:text-[32px] lg:text-[38px] font-semibold leading-[1.25] text-bg-warm">
           Know exactly what you&rsquo;ll{" "}
           <em className="font-serif font-normal italic text-[#8fb0ff]">
             take home
@@ -104,7 +104,7 @@ export function TaxCalculator() {
             ))}
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <label className="col-span-2 flex flex-col gap-1.5 sm:col-span-1">
               <span className="text-[13px] font-semibold text-ink-soft">
                 {period === "monthly" ? "Monthly" : "Annual"} income (ZAR)
@@ -134,7 +134,7 @@ export function TaxCalculator() {
             </label>
           </div>
 
-          <div className="mt-6 grid grid-cols-2 gap-x-4 gap-y-5 border-t border-[#b9cdcb] pt-6">
+          <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-5 border-t border-[#b9cdcb] pt-6">
             <Stat label="TAX PAYABLE" value={rand(period === "monthly" ? tax / 12 : tax)} />
             <Stat label="NET PAY" value={rand(period === "monthly" ? netAnnual / 12 : netAnnual)} accent />
             <Stat label="EFFECTIVE RATE" value={`${effectiveRate.toFixed(1)}%`} />

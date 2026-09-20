@@ -11,7 +11,7 @@ import {
 export function BranchList() {
   return (
     <BranchContactProvider>
-      <section className="bg-bg-warm px-20 py-20">
+      <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-20">
         <Container>
           <Reveal className="mx-auto mb-14 flex max-w-[560px] flex-col items-center gap-3 text-center">
             <span className="font-body text-[16px] text-ink-soft/70">
@@ -22,7 +22,7 @@ export function BranchList() {
             </h2>
           </Reveal>
 
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {LOCATIONS.map((location, i) => {
               return (
                 <Reveal

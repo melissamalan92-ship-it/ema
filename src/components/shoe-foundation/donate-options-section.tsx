@@ -25,9 +25,9 @@ const OPTIONS = [
 
 export function DonateOptionsSection() {
   return (
-    <section className="bg-bg-warm px-20 py-24">
+    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-14 lg:py-24">
       <Reveal className="mx-auto mb-14 flex max-w-[720px] flex-col items-center gap-3 text-center">
-        <h2 className="font-display text-[48px] font-normal leading-[1.15] text-shoe-blue">
+        <h2 className="font-display text-[30px] sm:text-[38px] lg:text-[48px] font-normal leading-[1.15] text-shoe-blue">
           How can you donate?
         </h2>
         <p className="font-body text-[18px] leading-[1.5] text-ink">
@@ -36,7 +36,7 @@ export function DonateOptionsSection() {
         </p>
       </Reveal>
 
-      <div className="mx-auto grid max-w-[1100px] grid-cols-3 gap-8">
+      <div className="mx-auto grid max-w-[1100px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {OPTIONS.map((option, i) => (
           <Reveal
             key={option.title}

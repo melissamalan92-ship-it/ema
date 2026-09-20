@@ -10,10 +10,10 @@ export function Locations() {
   const [active, setActive] = useState<string | null>(null);
 
   return (
-    <section id="locations" className="bg-bg-warm px-20 py-20">
+    <section id="locations" className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-20">
       <Container>
       <div className="relative mr-24 rounded-[32px] bg-navy-primary p-12">
-        <div className="grid grid-cols-2 items-start gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-10 lg:gap-16">
           <Reveal className="flex h-full flex-col items-start justify-start gap-4 text-left">
             <span className="font-body text-[16px] text-cream/60">
               Where to find us

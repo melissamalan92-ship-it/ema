@@ -5,9 +5,9 @@ import { Container } from "@/components/ui/container";
 
 export function DecadesSection() {
   return (
-    <section className="bg-bg-warm px-20 py-32">
-      <Container className="grid grid-cols-2 items-stretch gap-16">
-        <Reveal className="flex w-[67%] flex-col items-start gap-4 border-r border-ink/20 text-left">
+    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-16 lg:py-32">
+      <Container className="grid grid-cols-1 lg:grid-cols-2 items-stretch gap-10 lg:gap-16">
+        <Reveal className="flex w-full lg:w-[67%] flex-col items-start gap-4 lg:border-r lg:border-ink/20 text-left">
           <span className="font-body text-[16px] text-ink-soft">
             Our story
           </span>
@@ -23,7 +23,7 @@ export function DecadesSection() {
           </CtaLink>
         </Reveal>
 
-        <Reveal delay={120} className="-ml-[127px] flex flex-col gap-4 text-left">
+        <Reveal delay={120} className="lg:-ml-[127px] flex flex-col gap-4 text-left">
           <p className="max-w-[590px] font-body text-[19px] leading-[1.6] text-ink-soft">
             Established in 1983, EMA has worked across South Africa
             providing accounting, tax and advisory services to businesses
@@ -54,7 +54,7 @@ const OFFICE_PHOTOS = [
 
 export function ApproachSection() {
   return (
-    <section className="relative z-10 bg-navy-primary px-20 pb-32 pt-20">
+    <section className="relative z-10 bg-navy-primary px-5 sm:px-8 lg:px-20 pb-16 lg:pb-32 pt-20">
       <Container>
         <Reveal className="mx-auto mb-16 flex max-w-[1000px] flex-col items-center gap-5 text-center">
           <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-cream">
@@ -75,7 +75,7 @@ export function ApproachSection() {
           </p>
         </Reveal>
 
-        <Reveal className="-mx-[15%] -mb-56 grid grid-cols-3 gap-5">
+        <Reveal className="-mx-0 -mb-16 lg:-mx-[15%] lg:-mb-56 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {OFFICE_PHOTOS.map((photo) => (
             // The wrapper carries the scroll reveal so the image is free to
             // own the hover transform.

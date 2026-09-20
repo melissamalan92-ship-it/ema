@@ -19,7 +19,7 @@ const GRAIN =
 export default function AboutUsPage() {
   return (
     <main
-      className="relative min-w-[1040px] overflow-x-hidden"
+      className="relative overflow-x-hidden"
       style={{ backgroundColor: "#243f4a" }}
     >
       <div

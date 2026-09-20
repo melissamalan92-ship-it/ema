@@ -22,7 +22,7 @@ const GRAIN =
 export default function ShoeFoundationPage() {
   return (
     <main
-      className="relative min-w-[1040px] overflow-x-hidden"
+      className="relative overflow-x-hidden"
       style={{ backgroundColor: "#496c74" }}
     >
       <div

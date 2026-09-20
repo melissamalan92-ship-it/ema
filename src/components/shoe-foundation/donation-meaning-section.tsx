@@ -3,9 +3,9 @@ import { ShoeContactButton } from "./contact-modal";
 
 export function DonationMeaningSection() {
   return (
-    <section className="bg-shoe-blue px-20 py-24">
+    <section className="bg-shoe-blue px-5 sm:px-8 lg:px-20 py-14 lg:py-24">
       <Reveal className="mx-auto flex max-w-[800px] flex-col items-center gap-8 text-center">
-        <h2 className="font-display text-[56px] font-normal leading-[1.1] text-shoe-yellow">
+        <h2 className="font-display text-[32px] sm:text-[42px] lg:text-[56px] font-normal leading-[1.1] text-shoe-yellow">
           What does your donation mean?
         </h2>
 

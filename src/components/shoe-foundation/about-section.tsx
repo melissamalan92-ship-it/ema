@@ -4,10 +4,10 @@ import { Container } from "@/components/ui/container";
 
 export function AboutSection() {
   return (
-    <section className="bg-bg-warm px-20 py-24">
-      <Container className="grid grid-cols-[0.9fr_1.1fr] items-start gap-16">
+    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-14 lg:py-24">
+      <Container className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] items-start gap-10 lg:gap-16">
         <Reveal className="flex flex-col items-center gap-4 text-center">
-          <span className="font-display text-[110px] font-normal leading-none text-blue-accent">
+          <span className="font-display text-[72px] lg:text-[110px] font-normal leading-none text-blue-accent">
             42
           </span>
           {/* shoes-trimmed.png is shoes.png with its transparent padding cropped
@@ -20,7 +20,7 @@ export function AboutSection() {
             className="w-[248px]"
             aria-hidden
           />
-          <p className="whitespace-nowrap font-display text-[28px] leading-[1.15] text-blue-accent">
+          <p className="lg:whitespace-nowrap font-display text-[28px] leading-[1.15] text-blue-accent">
             learners being put through school and counting
           </p>
         </Reveal>
@@ -29,7 +29,7 @@ export function AboutSection() {
           delay={120}
           className="flex flex-col items-start gap-5 text-left"
         >
-          <h2 className="font-display text-[40px] font-normal leading-[1.15] tracking-[-0.01em] text-shoe-blue">
+          <h2 className="font-display text-[27px] sm:text-[33px] lg:text-[40px] font-normal leading-[1.15] tracking-[-0.01em] text-shoe-blue">
             About The Shoe Foundation
           </h2>
           <p className="max-w-[520px] font-body text-[17px] leading-[1.6] text-ink">

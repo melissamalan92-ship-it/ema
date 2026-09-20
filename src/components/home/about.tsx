@@ -4,9 +4,9 @@ import { Container } from "@/components/ui/container";
 
 export function About() {
   return (
-    <section id="about" className="bg-bg-warm px-20 pb-20 pt-[120px]">
-      <Container className="grid grid-cols-[0.45fr_1fr] items-stretch gap-12">
-        <Reveal className="flex flex-col items-start gap-4 pl-[58px] text-left">
+    <section id="about" className="bg-bg-warm px-5 sm:px-8 lg:px-20 pb-20 pt-[120px]">
+      <Container className="grid grid-cols-1 lg:grid-cols-[0.45fr_1fr] items-stretch gap-8 lg:gap-12">
+        <Reveal className="flex flex-col items-start gap-4 lg:pl-[58px] text-left">
           <span className="font-body text-[17px] text-ink-soft">
             Trusted expertise since 1983
           </span>
@@ -22,7 +22,7 @@ export function About() {
 
         <Reveal
           delay={120}
-          className="flex flex-col items-start justify-center gap-6 border-l border-ink/20 pl-[60px] text-left"
+          className="flex flex-col items-start justify-center gap-6 lg:border-l lg:border-ink/20 lg:pl-[60px] text-left"
         >
           <p className="max-w-[640px] font-body text-[16px] leading-[1.6] text-ink">
             For over{" "}

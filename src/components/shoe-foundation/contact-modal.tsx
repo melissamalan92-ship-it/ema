@@ -133,7 +133,7 @@ function ContactModal({ onClose }: { onClose: () => void }) {
           <div className="flex min-h-[260px] flex-col items-center justify-center gap-3 text-center">
             <h2
               id="shoe-contact-title"
-              className="font-display text-[34px] font-normal text-shoe-blue"
+              className="font-display text-[25px] sm:text-[30px] lg:text-[34px] font-normal text-shoe-blue"
             >
               Thank you
             </h2>
@@ -153,7 +153,7 @@ function ContactModal({ onClose }: { onClose: () => void }) {
           <>
             <h2
               id="shoe-contact-title"
-              className="font-display text-[34px] font-normal leading-[1.15] text-shoe-blue"
+              className="font-display text-[25px] sm:text-[30px] lg:text-[34px] font-normal leading-[1.15] text-shoe-blue"
             >
               Get in touch
             </h2>

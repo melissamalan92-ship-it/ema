@@ -2,7 +2,7 @@ import { Reveal } from "@/components/home/reveal";
 
 export function ServicesHero() {
   return (
-    <section className="bg-navy-primary px-20 pb-28 pt-32">
+    <section className="bg-navy-primary px-5 sm:px-8 lg:px-20 pb-28 pt-16 lg:pt-32">
       <Reveal className="mx-auto flex max-w-[900px] flex-col items-center gap-6 text-center">
         <h1 className="font-serif text-heading-xl font-normal leading-[1.15] tracking-[-0.01em] text-cream">
           Everything your{" "}

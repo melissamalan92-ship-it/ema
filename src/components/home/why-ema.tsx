@@ -53,12 +53,12 @@ const PILLARS = [
 
 export function WhyEma() {
   return (
-    <section className="bg-navy-secondary px-20 py-24">
+    <section className="bg-navy-secondary px-5 sm:px-8 lg:px-20 py-14 lg:py-24">
       <div className="mx-auto flex max-w-[1180px] flex-col items-start gap-4 pb-16 text-left">
         <span className="font-mono text-xs font-medium tracking-[0.1em] text-blue-accent">
           [ Why EMA ]
         </span>
-        <h2 className="max-w-[560px] text-[38px] font-semibold leading-[1.25] text-bg-warm">
+        <h2 className="max-w-[560px] text-[27px] sm:text-[32px] lg:text-[38px] font-semibold leading-[1.25] text-bg-warm">
           Experience behind you.{" "}
           <em className="font-serif font-normal italic text-blue-accent">
             Forward thinking beside you.
@@ -72,7 +72,7 @@ export function WhyEma() {
         </p>
       </div>
 
-      <div className="mx-auto grid max-w-[1180px] grid-cols-3 gap-12">
+      <div className="mx-auto grid max-w-[1180px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
         {PILLARS.map((pillar) => (
           <div key={pillar.title} className="flex flex-col gap-3">
             <span className="text-bg-warm">

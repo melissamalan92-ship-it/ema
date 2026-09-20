@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Sans, IBM_Plex_Mono, Libre_Baskerville, Alike, Caveat } from "next/font/google";
 import "./globals.css";
 import { HeadingGlow } from "@/components/ui/heading-glow";
@@ -33,6 +33,11 @@ const caveat = Caveat({
   subsets: ["latin"],
   weight: ["500", "600", "700"],
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   title: "EMA | E Malan and Associates",

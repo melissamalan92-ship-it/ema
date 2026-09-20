@@ -5,8 +5,8 @@ import { ShoeFoundationVideo } from "./shoe-foundation-video";
 
 export function ShoeFoundationHero() {
   return (
-    <section className="bg-shoe-blue px-20 pb-20 pt-20">
-      <Container className="grid grid-cols-[0.6fr_1.4fr] items-center gap-12">
+    <section className="bg-shoe-blue px-5 sm:px-8 lg:px-20 pb-20 pt-20">
+      <Container className="grid grid-cols-1 lg:grid-cols-[0.6fr_1.4fr] items-center gap-8 lg:gap-12">
         <Reveal className="flex flex-col items-center gap-5">
           <Image
             src="/images/shoe%20foundation%20logo.png"
@@ -16,12 +16,12 @@ export function ShoeFoundationHero() {
             className="w-full max-w-[200px]"
             priority
           />
-          <p className="whitespace-nowrap text-center font-display text-[22px] leading-[1.35] text-shoe-yellow">
+          <p className="lg:whitespace-nowrap text-center font-display text-[22px] leading-[1.35] text-shoe-yellow">
             Supporting learners through school
           </p>
         </Reveal>
 
-        <Reveal delay={120} className="relative -mr-10 w-[calc(100%+2.5rem)]">
+        <Reveal delay={120} className="relative w-full lg:-mr-10 lg:w-[calc(100%+2.5rem)]">
           <ShoeFoundationVideo />
         </Reveal>
       </Container>

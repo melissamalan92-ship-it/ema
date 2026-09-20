@@ -5,8 +5,8 @@ import { Container } from "@/components/ui/container";
 
 export function ShoeFoundation() {
   return (
-    <section id="shoe-foundation" className="bg-bg-warm px-20 py-20">
-      <Container className="grid grid-cols-2 items-center gap-16">
+    <section id="shoe-foundation" className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-20">
+      <Container className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-16">
         <Reveal className="flex flex-col items-start gap-5 pl-9 text-left">
           <span className="font-body text-[16px] text-ink-soft">
             More than just accounting
