@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Netlify form declarations</title>
+  </head>
+  <body>
+    <!--
+      Netlify discovers forms by scanning static HTML at deploy time. The real
+      form lives in a React modal that doesn't exist until a visitor opens it,
+      so it declares its fields here instead. The modal POSTs back to this file.
+      Field names must stay in sync with contact-modal.tsx.
+    -->
+    <form name="shoe-foundation-enquiry" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="shoe-foundation-enquiry" />
+      <input type="text" name="bot-field" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
+  </body>
+</html>

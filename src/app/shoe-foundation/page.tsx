@@ -8,6 +8,7 @@ import { DonateOptionsSection } from "@/components/shoe-foundation/donate-option
 import { ScholarMessageSection } from "@/components/shoe-foundation/scholar-message-section";
 import { TestimonialsSection } from "@/components/shoe-foundation/testimonials-section";
 import { ShoeContactSection } from "@/components/shoe-foundation/shoe-contact-section";
+import { ShoeContactProvider } from "@/components/shoe-foundation/contact-modal";
 
 export const metadata: Metadata = {
   title: "The Shoe Foundation | EMA",
@@ -28,19 +29,21 @@ export default function ShoeFoundationPage() {
         className="pointer-events-none absolute inset-0 opacity-[0.2] mix-blend-overlay"
         style={{ backgroundImage: `url("${GRAIN}")` }}
       />
-      <div className="relative">
-        <Nav />
-        <ShoeFoundationHero />
-        <AboutSection />
-        <DonationMeaningSection />
-        <div className="bg-bg-warm">
-          <DonateOptionsSection />
-          <ScholarMessageSection />
-          <TestimonialsSection />
+      <ShoeContactProvider>
+        <div className="relative">
+          <Nav />
+          <ShoeFoundationHero />
+          <AboutSection />
+          <DonationMeaningSection />
+          <div className="bg-bg-warm">
+            <DonateOptionsSection />
+            <ScholarMessageSection />
+            <TestimonialsSection />
+          </div>
+          <ShoeContactSection />
+          <Footer />
         </div>
-        <ShoeContactSection />
-        <Footer />
-      </div>
+      </ShoeContactProvider>
     </main>
   );
 }

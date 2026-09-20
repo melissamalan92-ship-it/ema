@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Reveal } from "@/components/home/reveal";
-import { CtaLink } from "@/components/home/cta-link";
+import { ShoeContactButton } from "./contact-modal";
 
 export function ShoeContactSection() {
   return (
@@ -16,12 +16,12 @@ export function ShoeContactSection() {
           throughout their journey.
         </p>
         <p className="font-body text-[17px] font-bold leading-[1.6] text-cream">
-          For donations, sponsorships or general enquiries, get in touch
-          with Zubeida.
+          For donations, sponsorships or general enquiries, get in touch with
+          Zubeida.
         </p>
-        <CtaLink href="/contact" variant="cream" className="mt-2">
+        <ShoeContactButton variant="cream" className="mt-2">
           Contact Us
-        </CtaLink>
+        </ShoeContactButton>
       </Reveal>
 
       <Reveal

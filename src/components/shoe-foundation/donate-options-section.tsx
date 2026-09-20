@@ -1,6 +1,6 @@
 import { HandCoins, Gift, GraduationCap } from "lucide-react";
 import { Reveal } from "@/components/home/reveal";
-import { CtaLink } from "@/components/home/cta-link";
+import { ShoeContactButton } from "./contact-modal";
 
 const OPTIONS = [
   {
@@ -31,8 +31,8 @@ export function DonateOptionsSection() {
           How can you donate?
         </h2>
         <p className="font-body text-[18px] leading-[1.5] text-ink">
-          Every contribution creates opportunity. Choose how you&rsquo;d like
-          to make a difference.
+          Every contribution creates opportunity. Choose how you&rsquo;d like to
+          make a difference.
         </p>
       </Reveal>
 
@@ -57,9 +57,7 @@ export function DonateOptionsSection() {
       </div>
 
       <div className="mt-14 flex justify-center">
-        <CtaLink href="/contact" variant="dark">
-          Contact Us
-        </CtaLink>
+        <ShoeContactButton variant="dark">Contact Us</ShoeContactButton>
       </div>
     </section>
   );

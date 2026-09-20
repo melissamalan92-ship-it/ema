@@ -1,5 +1,5 @@
 import { Reveal } from "@/components/home/reveal";
-import { CtaLink } from "@/components/home/cta-link";
+import { ShoeContactButton } from "./contact-modal";
 
 export function DonationMeaningSection() {
   return (
@@ -15,26 +15,23 @@ export function DonationMeaningSection() {
             school journey.
           </p>
           <p className="font-body text-[19px] leading-[1.6] text-cream">
-            In partnership with Camps Bay High School, we provide five years
-            of support from Grade 8 to Matric, covering school fees,
-            uniforms, books, stationery, transport and other essential
-            needs.
+            In partnership with Camps Bay High School, we provide five years of
+            support from Grade 8 to Matric, covering school fees, uniforms,
+            books, stationery, transport and other essential needs.
           </p>
           <p className="font-body text-[19px] leading-[1.6] text-cream">
-            We stay connected with our learners and their families
-            throughout, supporting their progress both in and beyond the
-            classroom.
+            We stay connected with our learners and their families throughout,
+            supporting their progress both in and beyond the classroom.
           </p>
           <p className="font-body text-[19px] leading-[1.6] text-cream">
             When you give to The Shoe Foundation, you&rsquo;re not simply
-            donating &mdash; you&rsquo;re investing in a child&rsquo;s
-            future.
+            donating &mdash; you&rsquo;re investing in a child&rsquo;s future.
           </p>
         </div>
 
-        <CtaLink href="/contact" variant="cream" className="mt-2">
+        <ShoeContactButton variant="cream" className="mt-2">
           Contact Us
-        </CtaLink>
+        </ShoeContactButton>
       </Reveal>
     </section>
   );
