@@ -39,19 +39,26 @@ export function Hero() {
             <em className="italic text-blue-accent">growth</em>.
           </h1>
 
-          <div className="mt-10 grid w-full grid-cols-1 gap-5 border-t border-cream/15 pt-5 sm:mt-20 sm:grid-cols-3">
+          <div className="mt-6 grid w-full grid-cols-1 gap-3 border-t border-cream/15 pt-4 sm:mt-20 sm:grid-cols-3 sm:gap-5 sm:pt-5">
             {FEATURES.map((feature) => (
+              // On phones the icon sits inline with the title so each feature
+              // is two tight rows instead of three stacked ones.
               <div
                 key={feature.title}
-                className="flex flex-col items-start gap-2 sm:border-l sm:border-cream/15 sm:pl-4 sm:first:border-l-0 sm:first:pl-0"
+                className="flex items-start gap-2.5 sm:flex-col sm:items-start sm:gap-2 sm:border-l sm:border-cream/15 sm:pl-4 sm:first:border-l-0 sm:first:pl-0"
               >
-                <feature.icon className="size-5 text-blue-accent" strokeWidth={1.75} />
-                <h3 className="text-[15px] font-semibold leading-tight text-cream">
-                  {feature.title}
-                </h3>
-                <p className="w-[70%] font-body text-[13px] leading-[1.4] text-cream/70">
-                  {feature.body}
-                </p>
+                <feature.icon
+                  className="mt-[2px] size-4 shrink-0 text-blue-accent sm:mt-0 sm:size-5"
+                  strokeWidth={1.75}
+                />
+                <div className="flex flex-col gap-0.5 sm:gap-2">
+                  <h3 className="text-[13px] font-semibold leading-tight text-cream sm:text-[15px]">
+                    {feature.title}
+                  </h3>
+                  <p className="font-body text-[12px] leading-[1.4] text-cream/70 sm:w-[70%] sm:text-[13px]">
+                    {feature.body}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
