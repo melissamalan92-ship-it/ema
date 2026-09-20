@@ -7,7 +7,7 @@ export function ShoeFoundation() {
   return (
     <section id="shoe-foundation" className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-20">
       <Container className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-16">
-        <Reveal className="flex flex-col items-start gap-5 pl-9 text-left">
+        <Reveal className="flex flex-col items-start gap-5 text-left lg:pl-9">
           <span className="font-body text-[14px] lg:text-[16px] text-ink-soft">
             More than just accounting
           </span>
@@ -25,10 +25,10 @@ export function ShoeFoundation() {
           </CtaLink>
         </Reveal>
 
-        <div className="h-full border-l border-ink/20">
+        <div className="h-full lg:border-l lg:border-ink/20">
           <Reveal
             delay={120}
-            className="group relative ml-auto mr-[57px] aspect-[4/5] w-[380px] max-w-full overflow-hidden rounded-2xl shadow-[0_30px_60px_-25px_rgba(16,38,62,0.35)]"
+            className="group relative mx-auto aspect-[4/5] w-1/2 overflow-hidden rounded-2xl shadow-[0_30px_60px_-25px_rgba(16,38,62,0.35)] lg:ml-auto lg:mr-[57px] lg:w-[380px] lg:max-w-full"
           >
             <Image
               src="/images/Charity-colour.png"
