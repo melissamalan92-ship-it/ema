@@ -37,8 +37,8 @@ export function ShoeContactSection() {
           aria-hidden
         />
         <p className="font-display text-[20px] leading-[1.5] text-shoe-yellow">
-          In memory of [Name] &mdash; a legacy carried forward through
-          opportunity and education.
+          In memory of Dana, a legacy carried forward through opportunity and
+          education.
         </p>
       </Reveal>
     </section>
