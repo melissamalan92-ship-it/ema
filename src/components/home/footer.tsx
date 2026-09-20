@@ -33,7 +33,7 @@ export function Footer() {
           <div className="flex items-start gap-2.5">
             <div className="w-[2px] self-stretch bg-cream" />
             <div className="flex flex-col gap-0.5">
-              <span className="text-[22px] font-bold leading-none tracking-[0.02em] text-cream">
+              <span className="text-[19px] lg:text-[22px] font-bold leading-none tracking-[0.02em] text-cream">
                 EMA
               </span>
               <span className="whitespace-nowrap text-[9px] font-medium tracking-[0.18em] text-cream/60">

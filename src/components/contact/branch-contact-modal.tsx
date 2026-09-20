@@ -119,17 +119,17 @@ function BranchModal({
           <div className="flex min-h-[260px] flex-col items-center justify-center gap-3 text-center">
             <h2
               id="branch-contact-title"
-              className="font-serif text-[30px] font-normal text-ink"
+              className="font-serif text-[21px] lg:text-[30px] font-normal text-ink"
             >
               Message sent
             </h2>
-            <p className="max-w-[340px] font-body text-[15px] leading-[1.6] text-ink-soft">
+            <p className="max-w-[340px] font-body text-[13px] lg:text-[15px] leading-[1.6] text-ink-soft">
               {branch.name} has your message and will be in touch shortly.
             </p>
             <button
               type="button"
               onClick={onClose}
-              className="mt-3 rounded-[19px] bg-ink px-8 py-3.5 font-body text-[16px] font-bold text-cream transition-opacity hover:opacity-90"
+              className="mt-3 rounded-[19px] bg-ink px-8 py-3.5 font-body text-[14px] lg:text-[16px] font-bold text-cream transition-opacity hover:opacity-90"
             >
               Close
             </button>
@@ -138,11 +138,11 @@ function BranchModal({
           <>
             <h2
               id="branch-contact-title"
-              className="font-serif text-[30px] font-normal leading-[1.15] text-ink"
+              className="font-serif text-[21px] lg:text-[30px] font-normal leading-[1.15] text-ink"
             >
               Email {branch.name}
             </h2>
-            <p className="mt-2 font-body text-[15px] leading-[1.6] text-ink-soft">
+            <p className="mt-2 font-body text-[13px] lg:text-[15px] leading-[1.6] text-ink-soft">
               Your message goes straight to {branch.email}.
             </p>
 
@@ -162,7 +162,7 @@ function BranchModal({
                   name="name"
                   type="text"
                   required
-                  className="border-b border-ink/20 bg-transparent py-2 font-body text-[15px] text-ink outline-none transition-colors focus:border-blue-accent"
+                  className="border-b border-ink/20 bg-transparent py-2 font-body text-[13px] lg:text-[15px] text-ink outline-none transition-colors focus:border-blue-accent"
                 />
               </label>
 
@@ -172,7 +172,7 @@ function BranchModal({
                   name="email"
                   type="email"
                   required
-                  className="border-b border-ink/20 bg-transparent py-2 font-body text-[15px] text-ink outline-none transition-colors focus:border-blue-accent"
+                  className="border-b border-ink/20 bg-transparent py-2 font-body text-[13px] lg:text-[15px] text-ink outline-none transition-colors focus:border-blue-accent"
                 />
               </label>
 
@@ -182,7 +182,7 @@ function BranchModal({
                   name="message"
                   rows={4}
                   required
-                  className="resize-none rounded-md border border-ink/20 bg-transparent p-3 font-body text-[15px] text-ink outline-none transition-colors focus:border-blue-accent"
+                  className="resize-none rounded-md border border-ink/20 bg-transparent p-3 font-body text-[13px] lg:text-[15px] text-ink outline-none transition-colors focus:border-blue-accent"
                 />
               </label>
 
@@ -202,7 +202,7 @@ function BranchModal({
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="mt-1 self-start rounded-[19px] bg-ink px-8 py-3.5 font-body text-[16px] font-bold text-cream transition-opacity hover:opacity-90 disabled:opacity-60"
+                className="mt-1 self-start rounded-[19px] bg-ink px-8 py-3.5 font-body text-[14px] lg:text-[16px] font-bold text-cream transition-opacity hover:opacity-90 disabled:opacity-60"
               >
                 {status === "sending" ? "Sending…" : "Send"}
               </button>

@@ -51,7 +51,7 @@ export function ShoeContactButton({
       type="button"
       onClick={show ?? undefined}
       className={cn(
-        "inline-flex items-center justify-center rounded-[17px] px-[43px] py-[14.4px] text-[16.2px] font-bold shadow-sm transition-opacity duration-300 ease-out hover:opacity-90",
+        "inline-flex items-center justify-center rounded-[14px] px-[34px] py-[11.5px] text-[13px] font-bold shadow-sm transition-opacity duration-300 ease-out hover:opacity-90 lg:rounded-[17px] lg:px-[43px] lg:py-[14.4px] lg:text-[16.2px]",
         variant === "dark" && "bg-button-navy text-cream",
         variant === "cream" && "bg-cream text-ink",
         className
@@ -137,7 +137,7 @@ function ContactModal({ onClose }: { onClose: () => void }) {
             >
               Thank you
             </h2>
-            <p className="max-w-[340px] font-body text-[15px] leading-[1.6] text-ink-soft">
+            <p className="max-w-[340px] font-body text-[13px] lg:text-[15px] leading-[1.6] text-ink-soft">
               Your message is on its way to Zubeida. She&rsquo;ll be in touch
               as soon as she can.
             </p>
@@ -157,7 +157,7 @@ function ContactModal({ onClose }: { onClose: () => void }) {
             >
               Get in touch
             </h2>
-            <p className="mt-2 font-body text-[15px] leading-[1.6] text-ink-soft">
+            <p className="mt-2 font-body text-[13px] lg:text-[15px] leading-[1.6] text-ink-soft">
               Send a message straight to Zubeida about donations, sponsorships
               or general enquiries.
             </p>
@@ -178,7 +178,7 @@ function ContactModal({ onClose }: { onClose: () => void }) {
                   name="name"
                   type="text"
                   required
-                  className="border-b border-ink/20 bg-transparent py-2 font-body text-[15px] text-ink outline-none transition-colors focus:border-shoe-blue"
+                  className="border-b border-ink/20 bg-transparent py-2 font-body text-[13px] lg:text-[15px] text-ink outline-none transition-colors focus:border-shoe-blue"
                 />
               </label>
 
@@ -188,7 +188,7 @@ function ContactModal({ onClose }: { onClose: () => void }) {
                   name="email"
                   type="email"
                   required
-                  className="border-b border-ink/20 bg-transparent py-2 font-body text-[15px] text-ink outline-none transition-colors focus:border-shoe-blue"
+                  className="border-b border-ink/20 bg-transparent py-2 font-body text-[13px] lg:text-[15px] text-ink outline-none transition-colors focus:border-shoe-blue"
                 />
               </label>
 
@@ -198,7 +198,7 @@ function ContactModal({ onClose }: { onClose: () => void }) {
                   name="message"
                   rows={4}
                   required
-                  className="resize-none rounded-md border border-ink/20 bg-transparent p-3 font-body text-[15px] text-ink outline-none transition-colors focus:border-shoe-blue"
+                  className="resize-none rounded-md border border-ink/20 bg-transparent p-3 font-body text-[13px] lg:text-[15px] text-ink outline-none transition-colors focus:border-shoe-blue"
                 />
               </label>
 

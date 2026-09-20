@@ -9,13 +9,13 @@ export function ShoeContactSection() {
         <h2 className="lg:whitespace-nowrap font-display text-[30px] sm:text-[38px] lg:text-[48px] font-normal leading-[1.15] text-blue-accent">
           <span className="text-cream/70">Contact</span> The Shoe Foundation
         </h2>
-        <p className="max-w-[560px] font-body text-[17px] leading-[1.6] text-cream">
+        <p className="max-w-[560px] font-body text-[14px] lg:text-[17px] leading-[1.6] text-cream">
           The Shoe Foundation operates under E Malan &amp; Associates. Our
           coordinator Zubeida works closely with our learners, families and
           donors, ensuring every scholar receives the support they need
           throughout their journey.
         </p>
-        <p className="font-body text-[17px] font-bold leading-[1.6] text-cream">
+        <p className="font-body text-[14px] lg:text-[17px] font-bold leading-[1.6] text-cream">
           For donations, sponsorships or general enquiries, get in touch with
           Zubeida.
         </p>
@@ -36,7 +36,7 @@ export function ShoeContactSection() {
           className="w-[180px]"
           aria-hidden
         />
-        <p className="font-display text-[20px] leading-[1.5] text-shoe-yellow">
+        <p className="font-display text-[17px] lg:text-[20px] leading-[1.5] text-shoe-yellow">
           In memory of Dana, a legacy carried forward through opportunity and
           education.
         </p>

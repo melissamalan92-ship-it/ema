@@ -70,11 +70,11 @@ export function TestimonialsCarousel() {
             key={index}
             className="flex animate-[testimonial-in_450ms_cubic-bezier(0.16,1,0.3,1)_both] flex-col items-center gap-5"
           >
-            <p className="font-body text-[15px] leading-[1.65] text-ink">
+            <p className="font-body text-[13px] lg:text-[15px] leading-[1.65] text-ink">
               {active.quote}
             </p>
             <div className="flex flex-col items-center gap-0.5">
-              <span className="font-display text-[23px] leading-tight text-shoe-blue">
+              <span className="font-display text-[20px] lg:text-[23px] leading-tight text-shoe-blue">
                 {active.author}
               </span>
               <span className="font-body text-[13px] text-ink-soft">

@@ -8,7 +8,7 @@ export function TestimonialsSection() {
         <h2 className="font-display text-[27px] sm:text-[33px] lg:text-[40px] font-normal leading-[1.15] text-shoe-blue">
           Testimonials
         </h2>
-        <p className="font-body text-[17px] leading-[1.5] text-ink-soft">
+        <p className="font-body text-[14px] lg:text-[17px] leading-[1.5] text-ink-soft">
           Stories from the learners and families The Shoe Foundation has
           supported.
         </p>

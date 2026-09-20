@@ -7,7 +7,7 @@ export function About() {
     <section id="about" className="bg-bg-warm px-5 sm:px-8 lg:px-20 pb-20 pt-[120px]">
       <Container className="grid grid-cols-1 lg:grid-cols-[0.45fr_1fr] items-stretch gap-8 lg:gap-12">
         <Reveal className="flex flex-col items-start gap-4 lg:pl-[58px] text-left">
-          <span className="font-body text-[17px] text-ink-soft">
+          <span className="font-body text-[14px] lg:text-[17px] text-ink-soft">
             Trusted expertise since 1983
           </span>
           <h2 className="font-serif text-[29px] lg:text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-ink">
@@ -57,7 +57,6 @@ export function About() {
           <CtaLink
             href="/contact"
             variant="dark"
-            className="rounded-[14px] px-[34px] py-[11.5px] text-[13px]"
           >
             Contact Us
           </CtaLink>

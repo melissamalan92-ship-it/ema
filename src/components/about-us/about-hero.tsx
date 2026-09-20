@@ -25,7 +25,7 @@ export function AboutHero() {
     <section className="relative z-10 bg-navy-primary px-5 sm:px-8 lg:px-20 pb-20 lg:pb-44 pt-20 lg:pt-44">
       <Container className="grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] items-center gap-10 lg:gap-16">
         <Reveal className="flex flex-col items-start gap-5 text-left">
-          <span className="font-body text-[18px] text-cream/70">
+          <span className="font-body text-[15px] lg:text-[18px] text-cream/70">
             E Malan &amp; Associates
           </span>
           <h1 className="font-serif text-[32px] sm:text-[42px] lg:text-[54px] font-normal leading-[1.1] tracking-[-0.01em] text-cream">
@@ -47,7 +47,7 @@ export function AboutHero() {
               className="flex flex-col items-start gap-2 border-l border-cream/15 pl-4 first:border-l-0 first:pl-0"
             >
               <stat.icon className="size-5 text-blue-accent" strokeWidth={1.75} />
-              <h3 className="text-[15px] font-semibold leading-tight text-cream">
+              <h3 className="text-[13px] lg:text-[15px] font-semibold leading-tight text-cream">
                 {stat.title}
               </h3>
               <p className="font-body text-[13px] leading-[1.5] text-cream/70">

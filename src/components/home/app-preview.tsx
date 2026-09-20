@@ -54,7 +54,7 @@ export function AppPreview() {
             <br />
             in your <em className="italic text-blue-accent">pocket</em>.
           </h2>
-          <p className="max-w-[420px] font-body text-[16px] leading-[1.6] text-cream/70">
+          <p className="max-w-[420px] font-body text-[14px] lg:text-[16px] leading-[1.6] text-cream/70">
             We&rsquo;re building an app that brings the same clarity we
             bring to every client relationship straight to your phone. It will
             put your numbers, key documents and upcoming deadlines in one

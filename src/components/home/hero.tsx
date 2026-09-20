@@ -32,7 +32,7 @@ export function Hero() {
             } as React.CSSProperties
           }
         >
-          <span className="font-body text-[18px] text-cream/70">E Malan &amp; Associates</span>
+          <span className="font-body text-[15px] lg:text-[18px] text-cream/70">E Malan &amp; Associates</span>
           <h1 className="max-w-[480px] font-serif text-[27px] sm:text-[32px] lg:text-[38px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
             Accounting services{" "}
             <em className="italic text-blue-accent">designed</em> for{" "}

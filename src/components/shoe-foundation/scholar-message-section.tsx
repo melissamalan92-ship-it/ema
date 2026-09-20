@@ -14,7 +14,7 @@ export function ScholarMessageSection() {
               <br />
               <em className="italic text-shoe-yellow">First Scholar</em>
             </h2>
-            <p className="max-w-[440px] font-body text-[16px] leading-[1.7] text-cream/90">
+            <p className="max-w-[440px] font-body text-[14px] lg:text-[16px] leading-[1.7] text-cream/90">
               During my time with The Shoe Foundation, I recieved such
               genuine support, guidance, and encouragement to help me become
               the best version of myself. Their support turned a stressful
@@ -25,7 +25,7 @@ export function ScholarMessageSection() {
               it&rsquo;s about lifting people up with kindness and real
               support. Thank you to The Shoe foundation.
             </p>
-            <p className="self-end font-display text-[30px] text-shoe-yellow">
+            <p className="self-end font-display text-[21px] lg:text-[30px] text-shoe-yellow">
               Nontsikelelo Fokasi
             </p>
           </Reveal>

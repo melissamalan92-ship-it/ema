@@ -40,10 +40,10 @@ export function ContactForm() {
   if (status === "sent") {
     return (
       <div className="flex min-h-[420px] flex-col items-center justify-center gap-3 text-center">
-        <h3 className="font-serif text-[32px] font-normal text-ink">
+        <h3 className="font-serif text-[22px] lg:text-[32px] font-normal text-ink">
           Thank you
         </h3>
-        <p className="max-w-[320px] font-body text-[16px] leading-[1.6] text-ink-soft">
+        <p className="max-w-[320px] font-body text-[14px] lg:text-[16px] leading-[1.6] text-ink-soft">
           We&rsquo;ve got your message and someone will come back to you
           shortly.
         </p>
@@ -63,25 +63,25 @@ export function ContactForm() {
 
       {FIELDS.map((field) => (
         <label key={field.name} className="flex flex-col gap-2">
-          <span className="font-body text-[18px] text-ink">
+          <span className="font-body text-[15px] lg:text-[18px] text-ink">
             {field.label}
           </span>
           <input
             type={field.type}
             name={field.name}
             required={field.required}
-            className="border-b border-ink/20 bg-transparent py-2 font-body text-[15px] text-ink outline-none transition-colors focus:border-blue-accent"
+            className="border-b border-ink/20 bg-transparent py-2 font-body text-[13px] lg:text-[15px] text-ink outline-none transition-colors focus:border-blue-accent"
           />
         </label>
       ))}
 
       <label className="flex flex-col gap-2">
-        <span className="font-body text-[18px] text-ink">Message</span>
+        <span className="font-body text-[15px] lg:text-[18px] text-ink">Message</span>
         <textarea
           name="message"
           rows={5}
           required
-          className="resize-none rounded-md border border-ink/20 bg-transparent p-3 font-body text-[15px] text-ink outline-none transition-colors focus:border-blue-accent"
+          className="resize-none rounded-md border border-ink/20 bg-transparent p-3 font-body text-[13px] lg:text-[15px] text-ink outline-none transition-colors focus:border-blue-accent"
         />
       </label>
 
@@ -101,7 +101,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="mt-2 self-start rounded-[19px] bg-ink px-8 py-3.5 font-body text-[16px] font-bold text-cream transition-opacity hover:opacity-90 disabled:opacity-60"
+        className="mt-2 self-start rounded-[19px] bg-ink px-8 py-3.5 font-body text-[14px] lg:text-[16px] font-bold text-cream transition-opacity hover:opacity-90 disabled:opacity-60"
       >
         {status === "sending" ? "Sending…" : "Submit"}
       </button>

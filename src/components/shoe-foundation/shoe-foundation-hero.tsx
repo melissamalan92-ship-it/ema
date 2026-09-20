@@ -16,7 +16,7 @@ export function ShoeFoundationHero() {
             className="w-full max-w-[200px]"
             priority
           />
-          <p className="lg:whitespace-nowrap text-center font-display text-[22px] leading-[1.35] text-shoe-yellow">
+          <p className="lg:whitespace-nowrap text-center font-display text-[19px] lg:text-[22px] leading-[1.35] text-shoe-yellow">
             Supporting learners through school
           </p>
         </Reveal>
@@ -32,7 +32,7 @@ export function ShoeFoundationHero() {
       >
         <p
           data-glow
-          className="font-body text-[18px] font-bold leading-[1.6] text-cream"
+          className="font-body text-[15px] lg:text-[18px] font-bold leading-[1.6] text-cream"
         >
           &ldquo;Education is the most powerful weapon which you can use to
           change the world.&rdquo; Nelson Mandela

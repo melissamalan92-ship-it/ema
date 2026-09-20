@@ -12,7 +12,7 @@ export function ContactFormSection() {
             <br />
             <em className="italic text-blue-accent">business.</em>
           </h2>
-          <p className="max-w-[420px] font-body text-[22px] leading-[1.5] text-cream/85">
+          <p className="max-w-[420px] font-body text-[19px] lg:text-[22px] leading-[1.5] text-cream/85">
             Not sure which branch to reach out to?{" "}
             <strong className="font-bold text-cream">
               Contact us here for general enquiries

@@ -10,20 +10,20 @@ export function DonationMeaningSection() {
         </h2>
 
         <div className="flex flex-col gap-5">
-          <p className="font-body text-[19px] leading-[1.6] text-cream">
+          <p className="font-body text-[16px] lg:text-[19px] leading-[1.6] text-cream">
             Your donation directly supports a learner throughout their high
             school journey.
           </p>
-          <p className="font-body text-[19px] leading-[1.6] text-cream">
+          <p className="font-body text-[16px] lg:text-[19px] leading-[1.6] text-cream">
             In partnership with Camps Bay High School, we provide five years of
             support from Grade 8 to Matric, covering school fees, uniforms,
             books, stationery, transport and other essential needs.
           </p>
-          <p className="font-body text-[19px] leading-[1.6] text-cream">
+          <p className="font-body text-[16px] lg:text-[19px] leading-[1.6] text-cream">
             We stay connected with our learners and their families throughout,
             supporting their progress both in and beyond the classroom.
           </p>
-          <p className="font-body text-[19px] leading-[1.6] text-cream">
+          <p className="font-body text-[16px] lg:text-[19px] leading-[1.6] text-cream">
             When you give to The Shoe Foundation, you&rsquo;re not simply
             donating &mdash; you&rsquo;re investing in a child&rsquo;s future.
           </p>

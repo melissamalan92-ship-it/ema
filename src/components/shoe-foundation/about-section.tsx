@@ -20,7 +20,7 @@ export function AboutSection() {
             className="w-[248px]"
             aria-hidden
           />
-          <p className="lg:whitespace-nowrap font-display text-[28px] leading-[1.15] text-blue-accent">
+          <p className="lg:whitespace-nowrap font-display text-[20px] lg:text-[28px] leading-[1.15] text-blue-accent">
             learners being put through school and counting
           </p>
         </Reveal>
@@ -32,12 +32,12 @@ export function AboutSection() {
           <h2 className="font-display text-[27px] sm:text-[33px] lg:text-[40px] font-normal leading-[1.15] tracking-[-0.01em] text-shoe-blue">
             About The Shoe Foundation
           </h2>
-          <p className="max-w-[520px] font-body text-[17px] leading-[1.6] text-ink">
+          <p className="max-w-[520px] font-body text-[14px] lg:text-[17px] leading-[1.6] text-ink">
             The Shoe Foundation began in 2012 with just one student, raising
             the funds needed to support her throughout five years of high
             school and on to university.
           </p>
-          <p className="max-w-[520px] font-body text-[17px] leading-[1.6] text-ink">
+          <p className="max-w-[520px] font-body text-[14px] lg:text-[17px] leading-[1.6] text-ink">
             More than 13 years later, the Foundation continues to help
             learners complete their secondary education, providing the
             support and opportunities they need to{" "}

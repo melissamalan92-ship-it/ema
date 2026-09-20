@@ -30,7 +30,7 @@ export function DonateOptionsSection() {
         <h2 className="font-display text-[30px] sm:text-[38px] lg:text-[48px] font-normal leading-[1.15] text-shoe-blue">
           How can you donate?
         </h2>
-        <p className="font-body text-[18px] leading-[1.5] text-ink">
+        <p className="font-body text-[15px] lg:text-[18px] leading-[1.5] text-ink">
           Every contribution creates opportunity. Choose how you&rsquo;d like to
           make a difference.
         </p>
@@ -46,7 +46,7 @@ export function DonateOptionsSection() {
             <span className="flex size-11 items-center justify-center rounded-lg bg-blue-accent/15 text-blue-accent transition-colors duration-300 group-hover:bg-shoe-yellow group-hover:text-shoe-blue">
               <option.icon className="size-5" strokeWidth={1.75} />
             </span>
-            <h3 className="font-body text-[19px] font-bold text-shoe-blue">
+            <h3 className="font-body text-[16px] lg:text-[19px] font-bold text-shoe-blue">
               {option.title}
             </h3>
             <p className="max-w-[280px] font-body text-[14px] leading-[1.6] text-blue-accent">

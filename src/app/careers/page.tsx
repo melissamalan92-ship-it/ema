@@ -18,7 +18,7 @@ export default function CareersPage() {
           <h1 className="font-serif text-[32px] sm:text-[42px] lg:text-[56px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
             Work with <em className="italic text-blue-accent">us</em>.
           </h1>
-          <p className="max-w-[560px] font-body text-[19px] leading-[1.6] text-cream/80">
+          <p className="max-w-[560px] font-body text-[16px] lg:text-[19px] leading-[1.6] text-cream/80">
             We&rsquo;re not currently advertising any open roles, but
             we&rsquo;re always glad to hear from good people. Send us your
             CV and a note about what you&rsquo;re looking for, and

@@ -14,7 +14,7 @@ export function BranchList() {
       <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-20">
         <Container>
           <Reveal className="mx-auto mb-14 flex max-w-[560px] flex-col items-center gap-3 text-center">
-            <span className="font-body text-[16px] text-ink-soft/70">
+            <span className="font-body text-[14px] lg:text-[16px] text-ink-soft/70">
               Where to find us
             </span>
             <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-ink">
@@ -41,7 +41,7 @@ export function BranchList() {
                   </div>
 
                   <div className="flex flex-col items-start gap-3 p-6">
-                    <h3 className="font-serif text-[20px] font-normal leading-[1.2] text-ink">
+                    <h3 className="font-serif text-[17px] lg:text-[20px] font-normal leading-[1.2] text-ink">
                       {location.name}
                     </h3>
 
