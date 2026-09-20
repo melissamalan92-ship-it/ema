@@ -21,10 +21,10 @@ const FEATURES = [
 
 export function Hero() {
   return (
-    <section id="hero" className="relative z-10 bg-navy-primary pb-[104px]">
+    <section id="hero" className="relative z-10 bg-navy-primary pb-4 lg:pb-[104px]">
       <div className="relative grid grid-cols-1 lg:grid-cols-2 items-stretch">
         <div
-          className="reveal-group is-visible flex flex-col items-start justify-center gap-5 px-5 py-14 sm:px-8 lg:py-24 lg:pl-20 lg:pr-16 text-left"
+          className="reveal-group is-visible flex flex-col items-start justify-center gap-5 px-5 py-8 sm:px-8 lg:py-24 lg:pl-20 lg:pr-16 text-left"
           style={
             {
               "--reveal-duration": "900ms",
@@ -65,7 +65,7 @@ export function Hero() {
         </div>
 
         <div
-          className="reveal-group is-visible relative h-[260px] sm:h-[380px] lg:h-auto"
+          className="reveal-group is-visible relative h-[240px] sm:h-[380px] lg:h-auto"
           style={
             {
               "--reveal-duration": "1000ms",
