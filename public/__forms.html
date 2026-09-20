@@ -11,11 +11,23 @@
       so it declares its fields here instead. The modal POSTs back to this file.
       Field names must stay in sync with contact-modal.tsx.
     -->
+    <!-- Shoe Foundation popup -> Zubeida@ema.co.za -->
     <form name="shoe-foundation-enquiry" data-netlify="true" netlify-honeypot="bot-field" hidden>
       <input type="hidden" name="form-name" value="shoe-foundation-enquiry" />
       <input type="text" name="bot-field" />
       <input type="text" name="name" />
       <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
+
+    <!-- Contact page form -> info@ema.co.za -->
+    <form name="general-enquiry" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="general-enquiry" />
+      <input type="text" name="bot-field" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="business" />
+      <input type="text" name="subject" />
       <textarea name="message"></textarea>
     </form>
   </body>

@@ -1,11 +1,6 @@
 import { Reveal } from "@/components/home/reveal";
+import { ContactForm } from "./contact-form";
 import { Container } from "@/components/ui/container";
-
-const FIELDS = [
-  { name: "name", label: "Name", type: "input" },
-  { name: "business", label: "Business Name", type: "input" },
-  { name: "subject", label: "Subject", type: "input" },
-] as const;
 
 export function ContactFormSection() {
   return (
@@ -30,36 +25,7 @@ export function ContactFormSection() {
           delay={120}
           className="rounded-[28px] bg-bg-warm p-10 shadow-[0_40px_80px_-24px_rgba(0,0,0,0.4)]"
         >
-          <form className="flex flex-col gap-8">
-            {FIELDS.map((field) => (
-              <label key={field.name} className="flex flex-col gap-2">
-                <span className="font-body text-[18px] text-ink">
-                  {field.label}
-                </span>
-                <input
-                  type="text"
-                  name={field.name}
-                  className="border-b border-ink/20 bg-transparent py-2 font-body text-[15px] text-ink outline-none transition-colors focus:border-blue-accent"
-                />
-              </label>
-            ))}
-
-            <label className="flex flex-col gap-2">
-              <span className="font-body text-[18px] text-ink">Message</span>
-              <textarea
-                name="message"
-                rows={5}
-                className="resize-none rounded-md border border-ink/20 bg-transparent p-3 font-body text-[15px] text-ink outline-none transition-colors focus:border-blue-accent"
-              />
-            </label>
-
-            <button
-              type="submit"
-              className="mt-2 self-start rounded-[19px] bg-ink px-8 py-3.5 font-body text-[16px] font-bold text-cream transition-opacity hover:opacity-90"
-            >
-              Submit
-            </button>
-          </form>
+          <ContactForm />
         </Reveal>
       </Container>
     </section>
