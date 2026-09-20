@@ -104,7 +104,7 @@ export function Services() {
       id="services"
       className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-20"
     >
-      <Container className="grid grid-cols-[1.2fr_1fr] items-stretch gap-8 lg:gap-12">
+      <Container className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-[1.2fr_1fr] lg:gap-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           {SERVICES.map((service, i) => {
             const Motif = service.motif;
@@ -115,7 +115,7 @@ export function Services() {
                 <Reveal
                   key={service.title}
                   delay={i * 60}
-                  className="col-span-2"
+                  className="lg:col-span-2"
                 >
                   <Link
                     href={`/services#${serviceSlug(service.title)}`}

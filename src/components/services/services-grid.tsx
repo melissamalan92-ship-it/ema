@@ -194,7 +194,7 @@ export function ServicesGrid() {
           </p>
         </Reveal>
 
-        <div className="grid grid-cols-6 gap-5">
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-6 lg:gap-5">
           {SERVICES.map((service, i) => {
             const Motif = service.motif;
             const t = TONES[service.tone];
@@ -207,12 +207,12 @@ export function ServicesGrid() {
                   key={service.title}
                   delay={(i % 3) * 80}
                   className={
-                    service.span === "full" ? "col-span-6" : "col-span-3"
+                    service.span === "full" ? "lg:col-span-6" : "lg:col-span-3"
                   }
                 >
                   <article
                     id={serviceSlug(service.title)}
-                    className={`group relative flex h-full scroll-mt-32 items-stretch gap-6 overflow-hidden rounded-[24px] p-6 transition-all duration-500 hover:-translate-y-1 ${t.card}`}
+                    className={`group relative flex h-full scroll-mt-32 items-stretch gap-6 overflow-hidden rounded-[24px] p-5 transition-all duration-500 hover:-translate-y-1 lg:p-6 ${t.card}`}
                   >
                     {t.glow && (
                       <div
@@ -241,7 +241,7 @@ export function ServicesGrid() {
                         <Chips items={service.items} className={t.chip} />
                       </div>
                     </div>
-                    <div className="relative w-[36%] shrink-0">
+                    <div className="relative hidden w-[36%] shrink-0 lg:block">
                       <div
                         className={`absolute inset-0 rounded-[18px] border p-3 ${t.panel} ${t.motif}`}
                       >
@@ -258,7 +258,7 @@ export function ServicesGrid() {
                 key={service.title}
                 delay={(i % 3) * 80}
                 className={
-                  service.span === "half" ? "col-span-3" : "col-span-2"
+                  service.span === "half" ? "lg:col-span-3" : "lg:col-span-2"
                 }
               >
                 <article
@@ -266,16 +266,16 @@ export function ServicesGrid() {
                   className={`group relative flex h-full scroll-mt-32 flex-col overflow-hidden rounded-[24px] transition-all duration-500 hover:-translate-y-1 ${t.card}`}
                 >
                   <div
-                    className={`relative shrink-0 border-b px-5 pb-1.5 pt-2.5 ${t.panel} ${t.motif}`}
+                    className={`relative hidden shrink-0 border-b px-5 pb-1.5 pt-2.5 lg:block ${t.panel} ${t.motif}`}
                   >
                     <div className="mx-auto h-[84px] w-full">
                       <Motif />
                     </div>
-                    <span className="absolute left-6 top-4">
+                    <span className="absolute left-6 top-4 hidden lg:block">
                       <Index n={i + 1} className={t.index} />
                     </span>
                   </div>
-                  <div className="flex flex-1 flex-col items-start gap-2 px-6 pb-5 pt-4">
+                  <div className="flex flex-1 flex-col items-start gap-2 px-5 pb-5 pt-5 lg:px-6 lg:pt-4">
                     <h3
                       className={`font-serif text-[20px] font-normal leading-[1.2] ${t.title} ${t.titleHover}`}
                     >
