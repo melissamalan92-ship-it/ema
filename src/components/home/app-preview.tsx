@@ -29,13 +29,13 @@ export function AppPreview() {
   return (
     <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-20">
       <Container>
-      <div className="relative ml-24 rounded-[32px] bg-navy-primary p-12">
+      <div className="relative -mx-5 rounded-[24px] bg-navy-primary p-6 sm:-mx-8 lg:mx-0 lg:ml-24 lg:rounded-[32px] lg:p-12">
         <div
           className="pointer-events-none absolute -bottom-32 right-0 h-[480px] w-[480px] rounded-full opacity-[0.12] blur-[120px]"
           style={{ background: "var(--blue-accent)" }}
         />
-        <div className="relative grid grid-cols-[0.8fr_1.2fr] items-center gap-10 lg:gap-16">
-          <Reveal className="relative -ml-[129px] w-[312px]">
+        <div className="relative grid grid-cols-1 items-start gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-center lg:gap-16">
+          <Reveal className="relative w-[125px] lg:-ml-[129px] lg:w-[312px]">
             <div className="group transition-transform duration-500 ease-out hover:-translate-y-2">
               <Image
                 src="/images/phone%20colour.png"
@@ -62,7 +62,7 @@ export function AppPreview() {
             We&rsquo;ll let you know the moment it&rsquo;s ready to download.
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center gap-3">
+          <div className="mt-6 flex flex-wrap items-center gap-3 lg:mt-10">
             <span className="inline-flex items-center gap-3 rounded-xl bg-black px-5 py-3 text-cream transition-all duration-300 hover:-translate-y-0.5 hover:bg-black/80 hover:shadow-lg">
               <AppleIcon />
               <span className="flex flex-col items-start leading-tight">
