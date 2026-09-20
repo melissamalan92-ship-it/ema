@@ -20,7 +20,11 @@ export function ShoeFoundation() {
             Through The Shoe Foundation, we&rsquo;re committed to making a
             positive impact in the communities where we live and work.
           </p>
-          <CtaLink href="/shoe-foundation" variant="dark" className="mt-2">
+          <CtaLink
+            href="/shoe-foundation"
+            variant="dark"
+            className="mt-2 hidden lg:inline-flex"
+          >
             Learn More
           </CtaLink>
         </Reveal>
@@ -39,6 +43,13 @@ export function ShoeFoundation() {
             />
           </Reveal>
         </div>
+
+        {/* On phones the CTA follows the image and sits centred under it. */}
+        <Reveal delay={180} className="flex justify-center lg:hidden">
+          <CtaLink href="/shoe-foundation" variant="dark">
+            Learn More
+          </CtaLink>
+        </Reveal>
       </Container>
     </section>
   );
