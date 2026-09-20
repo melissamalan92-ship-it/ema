@@ -144,7 +144,7 @@ function ContactModal({ onClose }: { onClose: () => void }) {
             <button
               type="button"
               onClick={onClose}
-              className="mt-3 rounded-[17px] bg-button-navy px-[43px] py-[14.4px] text-[16.2px] font-bold text-cream transition-opacity hover:opacity-90"
+              className="mt-3 rounded-[14px] px-[34px] py-[11.5px] text-[13px] bg-button-navy font-bold text-cream transition-opacity hover:opacity-90 lg:rounded-[17px] lg:px-[43px] lg:py-[14.4px] lg:text-[16.2px]"
             >
               Close
             </button>
@@ -221,7 +221,7 @@ function ContactModal({ onClose }: { onClose: () => void }) {
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="mt-1 self-start rounded-[17px] bg-button-navy px-[43px] py-[14.4px] text-[16.2px] font-bold text-cream shadow-sm transition-opacity duration-300 hover:opacity-90 disabled:opacity-60"
+                className="mt-1 self-start rounded-[14px] px-[34px] py-[11.5px] text-[13px] bg-button-navy font-bold text-cream shadow-sm transition-opacity duration-300 hover:opacity-90 disabled:opacity-60 lg:rounded-[17px] lg:px-[43px] lg:py-[14.4px] lg:text-[16.2px]"
               >
                 {status === "sending" ? "Sending…" : "Send"}
               </button>
