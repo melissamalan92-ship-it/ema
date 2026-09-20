@@ -5,7 +5,7 @@ import { ShoeFoundationVideo } from "./shoe-foundation-video";
 
 export function ShoeFoundationHero() {
   return (
-    <section className="bg-shoe-blue px-5 sm:px-8 lg:px-20 pb-20 pt-20">
+    <section className="bg-shoe-blue px-5 sm:px-8 lg:px-20 pb-10 lg:pb-20 pt-10 lg:pt-20">
       <Container className="grid grid-cols-1 lg:grid-cols-[0.6fr_1.4fr] items-center gap-8 lg:gap-12">
         <Reveal className="flex flex-col items-center gap-5">
           <Image

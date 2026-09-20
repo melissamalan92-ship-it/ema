@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/container";
 
 export function TrainingSection() {
   return (
-    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 pb-20 pt-14">
+    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 pb-10 lg:pb-20 pt-14">
       <Container>
       <div className="relative mr-24 rounded-[32px] bg-navy-primary p-11 pl-[102px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-16">

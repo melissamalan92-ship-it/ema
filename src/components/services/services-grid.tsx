@@ -181,7 +181,7 @@ function Chips({ items, className }: { items: string[]; className: string }) {
 
 export function ServicesGrid() {
   return (
-    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 pb-16 pt-20">
+    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 pb-9 lg:pb-16 pt-10 lg:pt-20">
       <Container>
         <Reveal className="mx-auto mb-14 flex max-w-[620px] flex-col items-center gap-3 text-center">
           <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-ink">

@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/container";
 
 export function ShoeFoundation() {
   return (
-    <section id="shoe-foundation" className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-20">
+    <section id="shoe-foundation" className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-10 lg:py-20">
       <Container className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-16">
         <Reveal className="flex flex-col items-start gap-5 text-left lg:pl-9">
           <span className="font-body text-[14px] lg:text-[16px] text-ink-soft">

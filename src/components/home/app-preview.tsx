@@ -57,7 +57,7 @@ function StoreBadges({ compact = false }: { compact?: boolean }) {
 
 export function AppPreview() {
   return (
-    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-20">
+    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-10 lg:py-20">
       <Container>
         <div className="relative -mx-5 rounded-[24px] bg-navy-primary p-6 sm:-mx-8 lg:mx-0 lg:ml-24 lg:rounded-[32px] lg:p-12">
           <div

@@ -22,7 +22,7 @@ const STATS = [
 
 export function AboutHero() {
   return (
-    <section className="relative z-10 bg-navy-primary px-5 sm:px-8 lg:px-20 pb-20 lg:pb-44 pt-20 lg:pt-44">
+    <section className="relative z-10 bg-navy-primary px-5 sm:px-8 lg:px-20 pb-10 lg:pb-20 lg:pb-44 pt-10 lg:pt-20 lg:pt-44">
       <Container className="grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] items-center gap-10 lg:gap-16">
         <Reveal className="flex flex-col items-start gap-5 text-left">
           <span className="font-body text-[15px] lg:text-[18px] text-cream/70">

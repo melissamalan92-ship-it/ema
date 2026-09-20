@@ -4,7 +4,7 @@ import { Container } from "@/components/ui/container";
 
 export function About() {
   return (
-    <section id="about" className="bg-bg-warm px-5 sm:px-8 lg:px-20 pb-20 pt-[120px]">
+    <section id="about" className="bg-bg-warm px-5 sm:px-8 lg:px-20 pb-10 lg:pb-20 pt-12 lg:pt-[120px]">
       <Container className="grid grid-cols-1 lg:grid-cols-[0.45fr_1fr] items-stretch gap-8 lg:gap-12">
         <Reveal className="flex flex-col items-start gap-4 lg:pl-[58px] text-left">
           <span className="font-body text-[14px] lg:text-[17px] text-ink-soft">

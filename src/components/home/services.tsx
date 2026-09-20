@@ -102,7 +102,7 @@ export function Services() {
   return (
     <section
       id="services"
-      className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-20"
+      className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-10 lg:py-20"
     >
       <Container className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-[1.2fr_1fr] lg:gap-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">

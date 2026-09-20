@@ -4,7 +4,7 @@ import { Container } from "@/components/ui/container";
 
 export function ScholarMessageSection() {
   return (
-    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-20">
+    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-10 lg:py-20">
       <Container>
       <div className="relative lg:mr-24 rounded-[32px] bg-shoe-blue pb-14 pl-10 pr-14 pt-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-16">

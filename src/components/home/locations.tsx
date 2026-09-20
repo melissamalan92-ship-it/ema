@@ -10,7 +10,7 @@ export function Locations() {
   const [active, setActive] = useState<string | null>(null);
 
   return (
-    <section id="locations" className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-20">
+    <section id="locations" className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-10 lg:py-20">
       <Container>
       <div className="relative -mx-5 rounded-[24px] bg-navy-primary p-6 sm:-mx-8 lg:mx-0 lg:mr-24 lg:rounded-[32px] lg:p-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-10 lg:gap-16">
