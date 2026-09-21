@@ -305,7 +305,7 @@ export function ServicesGrid() {
           delay={160}
           className="mx-auto mt-20 flex max-w-[620px] flex-col items-center gap-3 text-center"
         >
-          <h2 className="font-serif text-heading-md font-normal leading-[1.15] tracking-[-0.01em] text-ink">
+          <h2 className="font-serif text-[29px] lg:text-heading-md font-normal leading-[1.15] tracking-[-0.01em] text-ink">
             Not sure which{" "}
             <em className="italic text-blue-accent">service</em> you need?
           </h2>

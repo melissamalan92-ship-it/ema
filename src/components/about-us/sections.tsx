@@ -24,7 +24,7 @@ export function DecadesSection() {
         </Reveal>
 
         <Reveal delay={120} className="lg:-ml-[127px] flex flex-col gap-4 text-left">
-          <p className="max-w-[590px] font-body text-[16px] lg:text-[19px] leading-[1.6] text-ink-soft">
+          <p className="max-w-[590px] font-body text-[14px] lg:text-[19px] leading-[1.6] text-ink-soft">
             Established in 1983, EMA has worked across South Africa
             providing accounting, tax and advisory services to businesses
             of every size. We are a member of the South African Institute
@@ -32,7 +32,7 @@ export function DecadesSection() {
             understanding each client&rsquo;s individual needs has kept
             many relationships strong for over twenty years.
           </p>
-          <p className="max-w-[590px] font-body text-[16px] lg:text-[19px] leading-[1.6] text-ink-soft">
+          <p className="max-w-[590px] font-body text-[14px] lg:text-[19px] leading-[1.6] text-ink-soft">
             What began as a single practice has grown steadily rather than
             quickly &mdash; opening offices where clients needed them, and
             adding specialists as the work asked for it. In that time
@@ -62,12 +62,12 @@ export function ApproachSection() {
             <br />
             <em className="italic text-blue-accent">under one roof.</em>
           </h2>
-          <p className="font-body text-[16px] lg:text-[19px] leading-[1.5] text-cream/70">
+          <p className="font-body text-[14px] lg:text-[19px] leading-[1.5] text-cream/70">
             As EMA has grown, so has the expertise behind it. Our group brings
             together specialised teams across multiple branches, working
             together to provide integrated financial and business support.
           </p>
-          <p className="font-body text-[16px] lg:text-[19px] leading-[1.5] text-cream/70">
+          <p className="font-body text-[14px] lg:text-[19px] leading-[1.5] text-cream/70">
             It means you can draw on a tax specialist, a payroll team or a
             company secretarial expert without starting a new relationship each
             time. The people who already know your business stay involved, and

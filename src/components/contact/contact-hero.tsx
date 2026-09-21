@@ -7,7 +7,7 @@ export function ContactHero() {
         <h1 className="font-serif text-[38px] sm:text-[52px] lg:text-[72px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
           Find your <em className="italic text-blue-accent">practice</em>
         </h1>
-        <p className="max-w-[640px] font-body text-[19px] lg:text-[22px] leading-[1.6] tracking-[0.02em] text-cream">
+        <p className="max-w-[640px] font-body text-[16px] lg:text-[22px] leading-[1.6] tracking-[0.02em] text-cream">
           Reach out to your nearest branch, or get in touch for general
           enquiries — we&rsquo;re here to help.
         </p>

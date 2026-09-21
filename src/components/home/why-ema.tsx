@@ -58,7 +58,7 @@ export function WhyEma() {
         <span className="font-mono text-xs font-medium tracking-[0.1em] text-blue-accent">
           [ Why EMA ]
         </span>
-        <h2 className="max-w-[560px] text-[27px] sm:text-[32px] lg:text-[38px] font-semibold leading-[1.25] text-bg-warm">
+        <h2 className="max-w-[560px] text-[29px] sm:text-[32px] lg:text-[38px] font-semibold leading-[1.25] text-bg-warm">
           Experience behind you.{" "}
           <em className="font-serif font-normal italic text-blue-accent">
             Forward thinking beside you.

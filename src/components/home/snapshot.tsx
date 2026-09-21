@@ -31,7 +31,7 @@ export function Snapshot() {
         <span className="font-mono text-xs font-medium tracking-[0.1em] text-[#cddaf0]">
           [ See It In Numbers ]
         </span>
-        <h2 className="text-[27px] sm:text-[32px] lg:text-[38px] font-bold leading-[1.2] text-bg-warm">
+        <h2 className="text-[29px] sm:text-[32px] lg:text-[38px] font-bold leading-[1.2] text-bg-warm">
           A quick look at where you stand.
         </h2>
         <p className="max-w-[520px] text-base leading-[1.7] text-[#cddaf0]">

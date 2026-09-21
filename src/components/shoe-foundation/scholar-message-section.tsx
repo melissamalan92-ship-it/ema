@@ -9,7 +9,7 @@ export function ScholarMessageSection() {
       <div className="relative lg:mr-24 rounded-[32px] bg-shoe-blue pb-14 pl-10 pr-14 pt-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-16">
           <Reveal className="flex flex-col items-start gap-6 text-left">
-            <h2 className="font-display text-[25px] sm:text-[30px] lg:text-[34px] font-normal leading-[1.2] text-cream">
+            <h2 className="font-display text-[29px] sm:text-[30px] lg:text-[34px] font-normal leading-[1.2] text-cream">
               A message from our
               <br />
               <em className="italic text-shoe-yellow">First Scholar</em>

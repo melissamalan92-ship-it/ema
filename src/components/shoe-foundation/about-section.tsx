@@ -29,7 +29,7 @@ export function AboutSection() {
           delay={120}
           className="flex flex-col items-start gap-5 text-left"
         >
-          <h2 className="font-display text-[27px] sm:text-[33px] lg:text-[40px] font-normal leading-[1.15] tracking-[-0.01em] text-shoe-blue">
+          <h2 className="font-display text-[29px] sm:text-[33px] lg:text-[40px] font-normal leading-[1.15] tracking-[-0.01em] text-shoe-blue">
             About The Shoe Foundation
           </h2>
           <p className="max-w-[520px] font-body text-[14px] lg:text-[17px] leading-[1.6] text-ink">

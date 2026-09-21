@@ -89,7 +89,7 @@ export function AppPreview() {
               delay={120}
               className="flex flex-col items-start gap-6 text-left"
             >
-              <h2 className="font-serif text-[27px] sm:text-[32px] lg:text-[38px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
+              <h2 className="font-serif text-[29px] sm:text-[32px] lg:text-[38px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
                 Your accountants <br />
                 in your <em className="italic text-blue-accent">pocket</em>.
               </h2>

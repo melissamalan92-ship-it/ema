@@ -13,7 +13,7 @@ export function TrainingSection() {
             <span className="font-body text-[13px] text-cream/60">
               SAIPA Training &amp; Learnerships
             </span>
-            <h2 className="mt-2 font-serif text-[25px] sm:text-[30px] lg:text-[34px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
+            <h2 className="mt-2 font-serif text-[29px] sm:text-[30px] lg:text-[34px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
               Building
               <br />
               <em className="italic text-blue-accent">experience</em>

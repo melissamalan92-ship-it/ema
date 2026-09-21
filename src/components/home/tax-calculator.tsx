@@ -64,7 +64,7 @@ export function TaxCalculator() {
         <span className="font-mono text-xs font-medium tracking-[0.1em] text-[#cddaf0]">
           [ Free Tool ]
         </span>
-        <h2 className="text-[27px] sm:text-[32px] lg:text-[38px] font-semibold leading-[1.25] text-bg-warm">
+        <h2 className="text-[29px] sm:text-[32px] lg:text-[38px] font-semibold leading-[1.25] text-bg-warm">
           Know exactly what you&rsquo;ll{" "}
           <em className="font-serif font-normal italic text-[#8fb0ff]">
             take home
