@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/container";
 
 export function DecadesSection() {
   return (
-    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-9 lg:py-16 lg:py-32">
+    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-9 lg:py-32">
       <Container className="grid grid-cols-1 lg:grid-cols-2 items-stretch gap-10 lg:gap-16">
         <Reveal className="flex w-full lg:w-[67%] flex-col items-start gap-4 lg:border-r lg:border-ink/20 text-left">
           <span className="font-body text-[14px] lg:text-[16px] text-ink-soft">
@@ -54,7 +54,7 @@ const OFFICE_PHOTOS = [
 
 export function ApproachSection() {
   return (
-    <section className="relative z-10 bg-navy-primary px-5 sm:px-8 lg:px-20 pb-9 lg:pb-16 lg:pb-32 pt-10 lg:pt-20">
+    <section className="relative z-10 bg-navy-primary px-5 sm:px-8 lg:px-20 pb-9 lg:pb-32 pt-10 lg:pt-20">
       <Container>
         <Reveal className="mx-auto mb-16 flex max-w-[1000px] flex-col items-center gap-5 text-center">
           <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-cream">
