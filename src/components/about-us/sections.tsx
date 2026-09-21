@@ -86,7 +86,7 @@ export function ApproachSection() {
           </p>
         </Reveal>
 
-        <Reveal className="-mx-0 -mb-8 grid grid-cols-3 gap-2 sm:gap-3 lg:-mx-[15%] lg:-mb-56 lg:gap-5">
+        <Reveal className="-mx-2 -mb-14 grid grid-cols-3 gap-2 sm:gap-3 lg:-mx-[15%] lg:-mb-56 lg:gap-5">
           {OFFICE_PHOTOS.map((photo) => (
             // The wrapper carries the scroll reveal so the image is free to
             // own the hover transform.
