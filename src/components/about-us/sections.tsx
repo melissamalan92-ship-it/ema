@@ -18,7 +18,11 @@ export function DecadesSection() {
             <br />
             Built for <em className="italic text-blue-accent">today.</em>
           </h2>
-          <CtaLink href="/contact" variant="dark" className="mt-auto">
+          <CtaLink
+            href="/contact"
+            variant="dark"
+            className="mt-auto hidden lg:inline-flex"
+          >
             Contact Us
           </CtaLink>
         </Reveal>
@@ -40,6 +44,13 @@ export function DecadesSection() {
             company law and the move from paper ledgers to cloud software,
             adapting each time without changing the way we prefer to work.
           </p>
+        </Reveal>
+
+        {/* On phones the CTA follows the story rather than interrupting it. */}
+        <Reveal delay={180} className="lg:hidden">
+          <CtaLink href="/contact" variant="dark">
+            Contact Us
+          </CtaLink>
         </Reveal>
       </Container>
     </section>
