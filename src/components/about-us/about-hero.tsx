@@ -39,12 +39,12 @@ export function AboutHero() {
 
         <Reveal
           delay={120}
-          className="grid grid-cols-1 gap-3 border-t border-cream/15 pt-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5 lg:pt-5"
+          className="grid grid-cols-1 gap-2 border-t border-cream/15 pt-3 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5 lg:pt-5"
         >
           {STATS.map((stat) => (
             <div
               key={stat.title}
-              className="flex flex-col items-start gap-1.5 border-l border-cream/15 pl-4 first:border-l-0 first:pl-0 lg:gap-2"
+              className="flex flex-col items-start gap-1 lg:gap-2 lg:border-l lg:border-cream/15 lg:pl-4 lg:first:border-l-0 lg:first:pl-0"
             >
               <stat.icon className="size-4 text-blue-accent lg:size-5" strokeWidth={1.75} />
               <h3 className="text-[12px] lg:text-[15px] font-semibold leading-tight text-cream">
