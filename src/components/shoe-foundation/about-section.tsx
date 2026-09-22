@@ -10,14 +10,15 @@ export function AboutSection() {
           <span className="font-display text-[72px] lg:text-[110px] font-normal leading-none text-blue-accent">
             42
           </span>
-          {/* shoes-trimmed.png is shoes.png with its transparent padding cropped
+          {/* Decorative only, and too dominant on a phone — desktop keeps it.
+              shoes-trimmed.png is shoes.png with its transparent padding cropped
               off, so the stack spaces on the artwork rather than on dead pixels. */}
           <Image
             src="/images/shoes-trimmed.png"
             alt=""
             width={433}
             height={176}
-            className="w-[248px]"
+            className="hidden w-[248px] lg:block"
             aria-hidden
           />
           <p className="lg:whitespace-nowrap font-display text-[20px] lg:text-[28px] leading-[1.15] text-blue-accent">
