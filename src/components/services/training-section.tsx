@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/container";
 
 export function TrainingSection() {
   return (
-    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 pb-20 pt-14 lg:pb-20">
+    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 pb-24 pt-14 lg:pb-20">
       <Container>
       <div className="relative -mx-5 rounded-[24px] bg-navy-primary p-6 sm:-mx-8 lg:mx-0 lg:mr-24 lg:rounded-[32px] lg:p-11 lg:pl-[102px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-16">
@@ -39,7 +39,7 @@ export function TrainingSection() {
             </CtaLink>
           </Reveal>
 
-          <Reveal delay={120} className="absolute -bottom-16 right-6 w-[95px] lg:relative lg:bottom-auto lg:right-auto lg:-mb-[77px] lg:-mr-[77px] lg:ml-auto lg:w-[63%]">
+          <Reveal delay={120} className="absolute -bottom-[78px] right-6 w-[109px] lg:relative lg:bottom-auto lg:right-auto lg:-mb-[77px] lg:-mr-[77px] lg:ml-auto lg:w-[63%]">
             <Image
               src="/images/Saipa.png"
               alt="SAIPA accredited training centre"
