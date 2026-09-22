@@ -39,13 +39,13 @@ export function TrainingSection() {
             </CtaLink>
           </Reveal>
 
-          <Reveal delay={120} className="relative mx-auto w-[58%] lg:-mb-[77px] lg:-mr-[77px] lg:ml-auto lg:w-[63%]">
+          <Reveal delay={120} className="relative ml-auto w-[29%] lg:-mb-[77px] lg:-mr-[77px] lg:w-[63%]">
             <Image
               src="/images/Saipa.png"
               alt="SAIPA accredited training centre"
               width={476}
               height={722}
-              className="w-full rounded-2xl bg-white p-5 shadow-[0_40px_80px_-20px_rgba(0,0,0,0.5)] lg:p-10"
+              className="w-full rounded-2xl bg-white p-3 shadow-[0_40px_80px_-20px_rgba(0,0,0,0.5)] lg:p-10"
             />
           </Reveal>
         </div>
