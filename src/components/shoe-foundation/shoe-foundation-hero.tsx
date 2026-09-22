@@ -24,7 +24,7 @@ export function ShoeFoundationHero() {
             alt="The Shoe Foundation"
             width={280}
             height={343}
-            className="w-full max-w-[150px] lg:max-w-[200px]"
+            className="w-full max-w-[119px] lg:max-w-[200px]"
             priority
           />
           <p className="text-center font-display text-[16px] leading-[1.35] text-shoe-yellow lg:whitespace-nowrap lg:text-[22px]">
