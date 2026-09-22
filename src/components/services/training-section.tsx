@@ -7,7 +7,7 @@ export function TrainingSection() {
   return (
     <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 pb-10 lg:pb-20 pt-14">
       <Container>
-      <div className="relative mr-24 rounded-[32px] bg-navy-primary p-11 pl-[102px]">
+      <div className="relative -mx-5 rounded-[24px] bg-navy-primary p-6 sm:-mx-8 lg:mx-0 lg:mr-24 lg:rounded-[32px] lg:p-11 lg:pl-[102px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-16">
           <Reveal className="flex flex-col items-start text-left">
             <span className="font-body text-[13px] text-cream/60">
@@ -20,14 +20,14 @@ export function TrainingSection() {
             </h2>
 
             <div className="mt-5 flex flex-col gap-3">
-              <p className="max-w-[460px] font-body text-[14px] leading-[1.6] text-cream/80">
+              <p className="font-body text-[14px] leading-[1.6] text-cream/80 lg:max-w-[460px]">
                 <strong className="font-semibold text-cream">
                   As a SAIPA Accredited Training Centre,
                 </strong>{" "}
                 EMA gives aspiring Professional Accountants the practical
                 experience to build their careers.
               </p>
-              <p className="max-w-[460px] font-body text-[14px] leading-[1.6] text-cream/80">
+              <p className="font-body text-[14px] leading-[1.6] text-cream/80 lg:max-w-[460px]">
                 Our structured learnership combines hands-on experience,
                 professional development and mentorship, helping trainees
                 turn knowledge into real-world expertise.
@@ -39,13 +39,13 @@ export function TrainingSection() {
             </CtaLink>
           </Reveal>
 
-          <Reveal delay={120} className="relative -mb-[77px] -mr-[77px] ml-auto w-[63%]">
+          <Reveal delay={120} className="relative mx-auto w-[58%] lg:-mb-[77px] lg:-mr-[77px] lg:ml-auto lg:w-[63%]">
             <Image
               src="/images/Saipa.png"
               alt="SAIPA accredited training centre"
               width={476}
               height={722}
-              className="w-full rounded-2xl bg-white p-10 shadow-[0_40px_80px_-20px_rgba(0,0,0,0.5)]"
+              className="w-full rounded-2xl bg-white p-5 shadow-[0_40px_80px_-20px_rgba(0,0,0,0.5)] lg:p-10"
             />
           </Reveal>
         </div>
