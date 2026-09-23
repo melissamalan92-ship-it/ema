@@ -4,7 +4,7 @@ import { Container } from "@/components/ui/container";
 
 export function ScholarMessageSection() {
   return (
-    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-10 lg:py-20">
+    <section className="bg-bg-warm px-5 pb-14 pt-10 sm:px-8 lg:px-20 lg:py-20">
       <Container>
       <div className="relative rounded-[24px] bg-shoe-blue p-6 lg:mr-24 lg:rounded-[32px] lg:pb-14 lg:pl-10 lg:pr-14 lg:pt-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-16">
@@ -39,7 +39,7 @@ export function ScholarMessageSection() {
             // no longer depends on its own height; the text column now sets the
             // banner height, and the negative margin keeps the photo out of that
             // calculation so it can hang past the bottom edge.
-            className="relative mx-auto w-full max-w-[215px] lg:-mb-[88px] lg:-mr-20 lg:ml-auto lg:max-w-[420px] lg:w-[calc(100%-35px)] lg:self-start"
+            className="relative mx-auto -mb-[54px] w-full max-w-[215px] lg:mb-0 lg:-mb-[88px] lg:-mr-20 lg:ml-auto lg:max-w-[420px] lg:w-[calc(100%-35px)] lg:self-start"
           >
             <Image
               src="/images/Nontsikelelo%20Fokazi.jpg"
