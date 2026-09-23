@@ -6,25 +6,24 @@ export function AboutSection() {
   return (
     <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-14 lg:py-24">
       <Container className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] items-start gap-10 lg:gap-16">
-        {/* Phones read this as an inline stat — number beside its label, left
-            aligned with the copy below. Desktop keeps the centred lockup with
-            the shoes illustration between the two. */}
-        <Reveal className="flex flex-row items-center gap-4 text-left lg:flex-col lg:items-center lg:gap-4 lg:text-center">
-          <span className="font-display text-[56px] font-normal leading-none text-blue-accent lg:text-[110px]">
-            42
-          </span>
-          {/* Decorative only, and too dominant on a phone — desktop keeps it.
-              shoes-trimmed.png is shoes.png with its transparent padding cropped
-              off, so the stack spaces on the artwork rather than on dead pixels. */}
+        {/* Phones: shoes and 42 share a row at matching height, caption
+            beneath, all left aligned with the copy below. Desktop keeps the
+            centred lockup with the shoes between the number and the caption. */}
+        <Reveal className="flex flex-wrap items-center gap-x-4 gap-y-3 text-left lg:flex-col lg:flex-nowrap lg:items-center lg:gap-4 lg:text-center">
+          {/* shoes-trimmed.png is shoes.png with its transparent padding cropped
+              off, so it sizes on the artwork rather than on dead pixels. */}
           <Image
             src="/images/shoes-trimmed.png"
             alt=""
             width={433}
             height={176}
-            className="hidden w-[248px] lg:block"
+            className="order-1 h-[56px] w-auto lg:order-2 lg:h-auto lg:w-[248px]"
             aria-hidden
           />
-          <p className="max-w-[210px] font-display text-[18px] leading-[1.25] text-blue-accent lg:max-w-none lg:whitespace-nowrap lg:text-[28px] lg:leading-[1.15]">
+          <span className="order-2 font-display text-[56px] font-normal leading-none text-blue-accent lg:order-1 lg:text-[110px]">
+            42
+          </span>
+          <p className="order-3 w-full font-display text-[18px] leading-[1.25] text-blue-accent lg:w-auto lg:whitespace-nowrap lg:text-[28px] lg:leading-[1.15]">
             learners being put through school and counting
           </p>
         </Reveal>
