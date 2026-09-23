@@ -41,26 +41,68 @@ const ARROW =
 
 export function TestimonialsCarousel() {
   const [index, setIndex] = useState(0);
+  const [expanded, setExpanded] = useState(false);
   const total = TESTIMONIALS.length;
-  const go = (step: number) => setIndex((i) => (i + step + total) % total);
+  const go = (step: number) => {
+    setIndex((i) => (i + step + total) % total);
+    setExpanded(false);
+  };
+  const show = (i: number) => {
+    setIndex(i);
+    setExpanded(false);
+  };
   const active = TESTIMONIALS[index];
 
-  return (
-    <div className="mx-auto mt-12 flex max-w-[720px] items-center gap-5">
-      <button
-        type="button"
-        onClick={() => go(-1)}
-        className={ARROW}
-        aria-label="Previous testimonial"
-      >
-        <ChevronLeft className="size-5" strokeWidth={1.75} />
-      </button>
+  const dots = (
+    <div className="flex items-center gap-2">
+      {TESTIMONIALS.map((testimonial, i) => (
+        <button
+          key={testimonial.author}
+          type="button"
+          onClick={() => show(i)}
+          aria-label={`Show testimonial from ${testimonial.author}`}
+          aria-current={i === index}
+          className={`size-2 rounded-full transition-colors duration-200 ${
+            i === index ? "bg-shoe-blue" : "bg-shoe-blue/25"
+          }`}
+        />
+      ))}
+    </div>
+  );
 
-      <div className="flex-1 rounded-[20px] border border-shoe-blue/10 bg-white px-9 py-9 shadow-[0_18px_46px_-34px_rgba(36,63,74,0.5)]">
-        {/* min-height is set to the tallest quote so stepping through the
-            testimonials doesn't make the section jump. */}
+  const prev = (
+    <button
+      type="button"
+      onClick={() => go(-1)}
+      className={ARROW}
+      aria-label="Previous testimonial"
+    >
+      <ChevronLeft className="size-5" strokeWidth={1.75} />
+    </button>
+  );
+
+  const next = (
+    <button
+      type="button"
+      onClick={() => go(1)}
+      className={ARROW}
+      aria-label="Next testimonial"
+    >
+      <ChevronRight className="size-5" strokeWidth={1.75} />
+    </button>
+  );
+
+  return (
+    <div className="mx-auto mt-6 flex max-w-[720px] items-center gap-5 lg:mt-12">
+      {/* Arrows flank the card on desktop; on phones they would eat half the
+          width, so they move into the footer row beside the dots. */}
+      <span className="hidden lg:block">{prev}</span>
+
+      <div className="flex-1 rounded-[20px] border border-shoe-blue/10 bg-white px-5 py-6 shadow-[0_18px_46px_-34px_rgba(36,63,74,0.5)] lg:px-9 lg:py-9">
+        {/* The min-height only applies once the full quote is always shown;
+            on phones the clamp keeps collapsed cards the same height. */}
         <div
-          className="flex min-h-[358px] flex-col items-center justify-center gap-4 text-center"
+          className="flex flex-col items-center justify-center gap-4 text-center lg:min-h-[358px]"
           aria-live="polite"
         >
           <Quote className="size-6 shrink-0 text-shoe-blue/30" strokeWidth={1.5} />
@@ -68,13 +110,27 @@ export function TestimonialsCarousel() {
           {/* Keyed on the index so each testimonial fades in as it arrives. */}
           <div
             key={index}
-            className="flex animate-[testimonial-in_450ms_cubic-bezier(0.16,1,0.3,1)_both] flex-col items-center gap-5"
+            className="flex animate-[testimonial-in_450ms_cubic-bezier(0.16,1,0.3,1)_both] flex-col items-center gap-3 lg:gap-5"
           >
-            <p className="font-body text-[13px] lg:text-[15px] leading-[1.65] text-ink">
+            <p
+              className={`font-body text-[13px] leading-[1.65] text-ink lg:line-clamp-none lg:text-[15px] ${
+                expanded ? "" : "line-clamp-4"
+              }`}
+            >
               {active.quote}
             </p>
+
+            <button
+              type="button"
+              onClick={() => setExpanded((v) => !v)}
+              aria-expanded={expanded}
+              className="font-body text-[12px] font-semibold text-shoe-blue underline underline-offset-2 lg:hidden"
+            >
+              {expanded ? "See less" : "See more"}
+            </button>
+
             <div className="flex flex-col items-center gap-0.5">
-              <span className="font-display text-[20px] lg:text-[23px] leading-tight text-shoe-blue">
+              <span className="font-display text-[20px] leading-tight text-shoe-blue lg:text-[23px]">
                 {active.author}
               </span>
               <span className="font-body text-[13px] text-ink-soft">
@@ -84,30 +140,14 @@ export function TestimonialsCarousel() {
           </div>
         </div>
 
-        <div className="mt-6 flex items-center justify-center gap-2">
-          {TESTIMONIALS.map((testimonial, i) => (
-            <button
-              key={testimonial.author}
-              type="button"
-              onClick={() => setIndex(i)}
-              aria-label={`Show testimonial from ${testimonial.author}`}
-              aria-current={i === index}
-              className={`size-2 rounded-full transition-colors duration-200 ${
-                i === index ? "bg-shoe-blue" : "bg-shoe-blue/25"
-              }`}
-            />
-          ))}
+        <div className="mt-5 flex items-center justify-center gap-4 lg:mt-6">
+          <span className="lg:hidden">{prev}</span>
+          {dots}
+          <span className="lg:hidden">{next}</span>
         </div>
       </div>
 
-      <button
-        type="button"
-        onClick={() => go(1)}
-        className={ARROW}
-        aria-label="Next testimonial"
-      >
-        <ChevronRight className="size-5" strokeWidth={1.75} />
-      </button>
+      <span className="hidden lg:block">{next}</span>
     </div>
   );
 }
