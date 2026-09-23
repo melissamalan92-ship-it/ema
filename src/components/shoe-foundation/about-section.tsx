@@ -6,8 +6,11 @@ export function AboutSection() {
   return (
     <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-14 lg:py-24">
       <Container className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] items-start gap-10 lg:gap-16">
-        <Reveal className="flex flex-col items-center gap-4 text-center">
-          <span className="font-display text-[72px] lg:text-[110px] font-normal leading-none text-blue-accent">
+        {/* Phones read this as an inline stat — number beside its label, left
+            aligned with the copy below. Desktop keeps the centred lockup with
+            the shoes illustration between the two. */}
+        <Reveal className="flex flex-row items-center gap-4 text-left lg:flex-col lg:items-center lg:gap-4 lg:text-center">
+          <span className="font-display text-[56px] font-normal leading-none text-blue-accent lg:text-[110px]">
             42
           </span>
           {/* Decorative only, and too dominant on a phone — desktop keeps it.
@@ -21,7 +24,7 @@ export function AboutSection() {
             className="hidden w-[248px] lg:block"
             aria-hidden
           />
-          <p className="lg:whitespace-nowrap font-display text-[20px] lg:text-[28px] leading-[1.15] text-blue-accent">
+          <p className="max-w-[210px] font-display text-[18px] leading-[1.25] text-blue-accent lg:max-w-none lg:whitespace-nowrap lg:text-[28px] lg:leading-[1.15]">
             learners being put through school and counting
           </p>
         </Reveal>
