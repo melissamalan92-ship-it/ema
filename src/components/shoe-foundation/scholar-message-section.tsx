@@ -4,7 +4,7 @@ import { Container } from "@/components/ui/container";
 
 export function ScholarMessageSection() {
   return (
-    <section className="bg-bg-warm px-5 pb-10 pt-10 sm:px-8 lg:px-20 lg:py-20">
+    <section className="bg-bg-warm px-5 pb-10 pt-12 sm:px-8 lg:px-20 lg:py-20">
       <Container>
         <div className="relative rounded-[24px] bg-shoe-blue p-6 lg:mr-24 lg:rounded-[32px] lg:pb-14 lg:pl-10 lg:pr-14 lg:pt-10">
           {/* Phones: heading and photo share the top row, quote spans beneath.
@@ -13,7 +13,9 @@ export function ScholarMessageSection() {
           <div className="grid grid-cols-[1fr_auto] items-start gap-x-4 gap-y-5 lg:grid-cols-2 lg:items-center lg:gap-16">
             <Reveal className="col-start-1 row-start-1 text-left">
               <h2 className="font-display text-[26px] font-normal leading-[1.2] text-cream sm:text-[30px] lg:text-[34px]">
-                A message from our
+                A message{" "}
+                <br className="lg:hidden" />
+                from our
                 <br />
                 <em className="italic text-shoe-yellow">First Scholar</em>
               </h2>
@@ -21,7 +23,7 @@ export function ScholarMessageSection() {
 
             <Reveal
               delay={120}
-              className="relative col-start-2 row-start-1 w-[120px] lg:col-start-2 lg:row-span-2 lg:-mb-[88px] lg:-mr-20 lg:ml-auto lg:w-[calc(100%-35px)] lg:max-w-[420px] lg:self-start"
+              className="relative col-start-2 row-start-1 -mr-6 -mt-[44px] w-[156px] lg:mr-0 lg:mt-0 lg:col-start-2 lg:row-span-2 lg:-mb-[88px] lg:-mr-20 lg:ml-auto lg:w-[calc(100%-35px)] lg:max-w-[420px] lg:self-start"
             >
               <Image
                 src="/images/Nontsikelelo%20Fokazi.jpg"
