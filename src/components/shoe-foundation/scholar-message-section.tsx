@@ -24,7 +24,7 @@ export function ScholarMessageSection() {
               Foundation&rsquo;s heart, it&rsquo;s not just about funding,
               it&rsquo;s about lifting people up with kindness and real
               support. Thank you to The Shoe foundation.{" "}
-              <span className="font-display text-[19.3px] text-shoe-yellow lg:hidden">
+              <span className="ml-[70px] font-display text-[19.3px] text-shoe-yellow lg:hidden">
                 Nontsikelelo Fokasi
               </span>
             </p>
