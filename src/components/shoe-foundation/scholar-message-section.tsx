@@ -39,7 +39,7 @@ export function ScholarMessageSection() {
             // no longer depends on its own height; the text column now sets the
             // banner height, and the negative margin keeps the photo out of that
             // calculation so it can hang past the bottom edge.
-            className="relative mx-auto w-full max-w-[420px] lg:-mb-[88px] lg:-mr-20 lg:ml-auto lg:w-[calc(100%-35px)] lg:self-start"
+            className="relative mx-auto w-full max-w-[215px] lg:-mb-[88px] lg:-mr-20 lg:ml-auto lg:max-w-[420px] lg:w-[calc(100%-35px)] lg:self-start"
           >
             <Image
               src="/images/Nontsikelelo%20Fokazi.jpg"
