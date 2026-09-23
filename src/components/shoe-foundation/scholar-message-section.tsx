@@ -46,7 +46,7 @@ export function ScholarMessageSection() {
               alt="Nontsikelelo Fokasi, The Shoe Foundation's first scholar"
               width={1200}
               height={900}
-              className="w-full rounded-2xl object-cover shadow-[0_40px_80px_-25px_rgba(0,0,0,0.55)]"
+              className="aspect-[215/230] w-full rounded-2xl object-cover object-bottom shadow-[0_40px_80px_-25px_rgba(0,0,0,0.55)] lg:aspect-auto lg:object-center"
             />
           </Reveal>
         </div>
