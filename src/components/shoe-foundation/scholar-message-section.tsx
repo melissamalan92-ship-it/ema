@@ -6,7 +6,7 @@ export function ScholarMessageSection() {
   return (
     <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-10 lg:py-20">
       <Container>
-      <div className="relative lg:mr-24 rounded-[32px] bg-shoe-blue pb-14 pl-10 pr-14 pt-10">
+      <div className="relative rounded-[24px] bg-shoe-blue p-6 lg:mr-24 lg:rounded-[32px] lg:pb-14 lg:pl-10 lg:pr-14 lg:pt-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-16">
           <Reveal className="flex flex-col items-start gap-6 text-left">
             <h2 className="font-display text-[29px] sm:text-[30px] lg:text-[34px] font-normal leading-[1.2] text-cream">
@@ -14,7 +14,7 @@ export function ScholarMessageSection() {
               <br />
               <em className="italic text-shoe-yellow">First Scholar</em>
             </h2>
-            <p className="max-w-[440px] font-body text-[14px] lg:text-[16px] leading-[1.7] text-cream/90">
+            <p className="font-body text-[14px] leading-[1.7] text-cream/90 lg:max-w-[440px] lg:text-[16px]">
               During my time with The Shoe Foundation, I recieved such
               genuine support, guidance, and encouragement to help me become
               the best version of myself. Their support turned a stressful
@@ -25,7 +25,7 @@ export function ScholarMessageSection() {
               it&rsquo;s about lifting people up with kindness and real
               support. Thank you to The Shoe foundation.
             </p>
-            <p className="self-end font-display text-[21px] lg:text-[30px] text-shoe-yellow">
+            <p className="-mt-3 self-start font-display text-[21px] text-shoe-yellow lg:mt-0 lg:self-end lg:text-[30px]">
               Nontsikelelo Fokasi
             </p>
           </Reveal>
