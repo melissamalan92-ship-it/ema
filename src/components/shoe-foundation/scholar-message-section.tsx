@@ -23,9 +23,12 @@ export function ScholarMessageSection() {
               kind of care is a true reflection of The Shoe
               Foundation&rsquo;s heart, it&rsquo;s not just about funding,
               it&rsquo;s about lifting people up with kindness and real
-              support. Thank you to The Shoe foundation.
+              support. Thank you to The Shoe foundation.{" "}
+              <span className="font-display text-[19.3px] text-shoe-yellow lg:hidden">
+                Nontsikelelo Fokasi
+              </span>
             </p>
-            <p className="-mt-3 self-start font-display text-[21px] text-shoe-yellow lg:mt-0 lg:self-end lg:text-[30px]">
+            <p className="hidden font-display text-shoe-yellow lg:block lg:self-end lg:text-[30px]">
               Nontsikelelo Fokasi
             </p>
           </Reveal>
