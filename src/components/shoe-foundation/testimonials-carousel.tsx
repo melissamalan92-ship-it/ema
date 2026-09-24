@@ -122,7 +122,7 @@ export function TestimonialsCarousel() {
           </div>
         </div>
 
-        <div className="mt-5 flex items-center justify-center gap-2 lg:mt-6">
+        <div className="mt-5 hidden items-center justify-center gap-2 lg:mt-6 lg:flex">
           {TESTIMONIALS.map((testimonial, i) => (
             <button
               key={testimonial.author}
