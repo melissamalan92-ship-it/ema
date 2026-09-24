@@ -4,7 +4,7 @@ import { Container } from "@/components/ui/container";
 
 export function ScholarMessageSection() {
   return (
-    <section className="bg-bg-warm px-5 pb-10 pt-12 sm:px-8 lg:px-20 lg:py-20">
+    <section className="bg-bg-warm px-5 pb-6 pt-12 sm:px-8 lg:px-20 lg:py-20">
       <Container>
         <div className="relative rounded-[24px] bg-shoe-blue p-6 lg:mr-24 lg:rounded-[32px] lg:pb-14 lg:pl-10 lg:pr-14 lg:pt-10">
           {/* Phones: heading and photo share the top row, quote spans beneath.
