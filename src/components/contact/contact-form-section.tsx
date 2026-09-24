@@ -1,5 +1,6 @@
 import { Reveal } from "@/components/home/reveal";
 import { ContactForm } from "./contact-form";
+import { ContactFormLauncher } from "./contact-form-launcher";
 import { Container } from "@/components/ui/container";
 
 export function ContactFormSection() {
@@ -21,9 +22,14 @@ export function ContactFormSection() {
           </p>
         </Reveal>
 
+        {/* Phones open the form in a sheet; desktop keeps it inline. */}
+        <Reveal delay={120}>
+          <ContactFormLauncher />
+        </Reveal>
+
         <Reveal
           delay={120}
-          className="rounded-[20px] bg-bg-warm p-5 shadow-[0_40px_80px_-24px_rgba(0,0,0,0.4)] lg:rounded-[28px] lg:p-10"
+          className="hidden rounded-[28px] bg-bg-warm p-10 shadow-[0_40px_80px_-24px_rgba(0,0,0,0.4)] lg:block"
         >
           <ContactForm />
         </Reveal>

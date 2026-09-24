@@ -9,8 +9,6 @@ const FORM_NAME = "general-enquiry";
 const FIELDS = [
   { name: "name", label: "Name", type: "text", required: true },
   { name: "email", label: "Email", type: "email", required: true },
-  { name: "business", label: "Business Name", type: "text", required: false },
-  { name: "subject", label: "Subject", type: "text", required: false },
 ] as const;
 
 type Status = "idle" | "sending" | "sent" | "error";
