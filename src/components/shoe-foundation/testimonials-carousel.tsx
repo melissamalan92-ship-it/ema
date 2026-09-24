@@ -36,8 +36,13 @@ const TESTIMONIALS: Testimonial[] = [
   },
 ];
 
+// Circled on desktop, where the arrows flank the whole card; bare on phones,
+// where they sit either side of the name.
 const ARROW =
   "flex size-10 shrink-0 items-center justify-center rounded-full border border-shoe-blue/25 text-shoe-blue transition-colors duration-200 hover:bg-shoe-blue hover:text-cream focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shoe-blue";
+
+const ARROW_BARE =
+  "flex size-9 shrink-0 items-center justify-center text-shoe-blue/60 transition-colors duration-200 hover:text-shoe-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-shoe-blue";
 
 export function TestimonialsCarousel() {
   const [index, setIndex] = useState(0);
@@ -53,50 +58,24 @@ export function TestimonialsCarousel() {
   };
   const active = TESTIMONIALS[index];
 
-  const dots = (
-    <div className="flex items-center gap-2">
-      {TESTIMONIALS.map((testimonial, i) => (
-        <button
-          key={testimonial.author}
-          type="button"
-          onClick={() => show(i)}
-          aria-label={`Show testimonial from ${testimonial.author}`}
-          aria-current={i === index}
-          className={`size-2 rounded-full transition-colors duration-200 ${
-            i === index ? "bg-shoe-blue" : "bg-shoe-blue/25"
-          }`}
-        />
-      ))}
-    </div>
-  );
-
-  const prev = (
+  const arrow = (step: number, className: string) => (
     <button
       type="button"
-      onClick={() => go(-1)}
-      className={ARROW}
-      aria-label="Previous testimonial"
+      onClick={() => go(step)}
+      className={className}
+      aria-label={step < 0 ? "Previous testimonial" : "Next testimonial"}
     >
-      <ChevronLeft className="size-5" strokeWidth={1.75} />
-    </button>
-  );
-
-  const next = (
-    <button
-      type="button"
-      onClick={() => go(1)}
-      className={ARROW}
-      aria-label="Next testimonial"
-    >
-      <ChevronRight className="size-5" strokeWidth={1.75} />
+      {step < 0 ? (
+        <ChevronLeft className="size-5" strokeWidth={1.75} />
+      ) : (
+        <ChevronRight className="size-5" strokeWidth={1.75} />
+      )}
     </button>
   );
 
   return (
     <div className="mx-auto mt-6 flex max-w-[720px] items-center gap-5 lg:mt-12">
-      {/* Arrows flank the card on desktop; on phones they would eat half the
-          width, so they move into the footer row beside the dots. */}
-      <span className="hidden lg:block">{prev}</span>
+      <span className="hidden lg:block">{arrow(-1, ARROW)}</span>
 
       <div className="flex-1 rounded-[20px] border border-shoe-blue/10 bg-white px-5 py-6 shadow-[0_18px_46px_-34px_rgba(36,63,74,0.5)] lg:px-9 lg:py-9">
         {/* The min-height only applies once the full quote is always shown;
@@ -109,8 +88,8 @@ export function TestimonialsCarousel() {
 
           {/* Keyed on the index so each testimonial fades in as it arrives. */}
           <div
-            key={index}
-            className="flex animate-[testimonial-in_450ms_cubic-bezier(0.16,1,0.3,1)_both] flex-col items-center gap-3 lg:gap-5"
+            key={`quote-${index}`}
+            className="flex animate-[testimonial-in_450ms_cubic-bezier(0.16,1,0.3,1)_both] flex-col items-center gap-3"
           >
             <p
               className={`font-body text-[13px] leading-[1.65] text-ink lg:line-clamp-none lg:text-[15px] ${
@@ -128,26 +107,38 @@ export function TestimonialsCarousel() {
             >
               {expanded ? "See less" : "See more"}
             </button>
+          </div>
 
-            <div className="flex flex-col items-center gap-0.5">
-              <span className="font-display text-[20px] leading-tight text-shoe-blue lg:text-[23px]">
-                {active.author}
-              </span>
-              <span className="font-body text-[13px] text-ink-soft">
-                {active.role}
-              </span>
-            </div>
+          {/* Phones put the arrows either side of the name. */}
+          <div className="flex items-center justify-center gap-2 lg:gap-0">
+            <span className="lg:hidden">{arrow(-1, ARROW_BARE)}</span>
+            <span
+              key={`author-${index}`}
+              className="animate-[testimonial-in_450ms_cubic-bezier(0.16,1,0.3,1)_both] font-display text-[20px] leading-tight text-shoe-blue lg:text-[23px]"
+            >
+              {active.author}
+            </span>
+            <span className="lg:hidden">{arrow(1, ARROW_BARE)}</span>
           </div>
         </div>
 
-        <div className="mt-5 flex items-center justify-center gap-4 lg:mt-6">
-          <span className="lg:hidden">{prev}</span>
-          {dots}
-          <span className="lg:hidden">{next}</span>
+        <div className="mt-5 flex items-center justify-center gap-2 lg:mt-6">
+          {TESTIMONIALS.map((testimonial, i) => (
+            <button
+              key={testimonial.author}
+              type="button"
+              onClick={() => show(i)}
+              aria-label={`Show testimonial from ${testimonial.author}`}
+              aria-current={i === index}
+              className={`size-2 rounded-full transition-colors duration-200 ${
+                i === index ? "bg-shoe-blue" : "bg-shoe-blue/25"
+              }`}
+            />
+          ))}
         </div>
       </div>
 
-      <span className="hidden lg:block">{next}</span>
+      <span className="hidden lg:block">{arrow(1, ARROW)}</span>
     </div>
   );
 }
