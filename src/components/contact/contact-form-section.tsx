@@ -23,7 +23,7 @@ export function ContactFormSection() {
 
         <Reveal
           delay={120}
-          className="rounded-[28px] bg-bg-warm p-10 shadow-[0_40px_80px_-24px_rgba(0,0,0,0.4)]"
+          className="rounded-[20px] bg-bg-warm p-5 shadow-[0_40px_80px_-24px_rgba(0,0,0,0.4)] lg:rounded-[28px] lg:p-10"
         >
           <ContactForm />
         </Reveal>

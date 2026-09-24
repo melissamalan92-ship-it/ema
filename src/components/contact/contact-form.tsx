@@ -52,7 +52,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-8">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-4 lg:gap-8">
       {/* Honeypot: real people never fill this in, bots usually do. */}
       <p className="hidden">
         <label>
@@ -62,7 +62,7 @@ export function ContactForm() {
       </p>
 
       {FIELDS.map((field) => (
-        <label key={field.name} className="flex flex-col gap-2">
+        <label key={field.name} className="flex flex-col gap-1 lg:gap-2">
           <span className="font-body text-[15px] lg:text-[18px] text-ink">
             {field.label}
           </span>
@@ -75,13 +75,13 @@ export function ContactForm() {
         </label>
       ))}
 
-      <label className="flex flex-col gap-2">
+      <label className="flex flex-col gap-1 lg:gap-2">
         <span className="font-body text-[15px] lg:text-[18px] text-ink">Message</span>
         <textarea
           name="message"
           rows={5}
           required
-          className="resize-none rounded-md border border-ink/20 bg-transparent p-3 font-body text-[13px] lg:text-[15px] text-ink outline-none transition-colors focus:border-blue-accent"
+          className="h-[92px] resize-none rounded-md border border-ink/20 bg-transparent p-3 font-body text-[13px] text-ink outline-none transition-colors focus:border-blue-accent lg:h-auto lg:text-[15px]"
         />
       </label>
 
