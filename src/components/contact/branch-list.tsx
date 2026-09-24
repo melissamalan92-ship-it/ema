@@ -22,7 +22,7 @@ export function BranchList() {
             </h2>
           </Reveal>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
             {LOCATIONS.map((location, i) => {
               return (
                 <Reveal
@@ -30,18 +30,26 @@ export function BranchList() {
                   delay={(i % 3) * 80}
                   className="group flex flex-col overflow-hidden rounded-xl border border-ink/10 bg-white text-left transition-all duration-300 hover:-translate-y-1 hover:border-ink/15 hover:shadow-[0_24px_48px_-28px_rgba(16,38,62,0.4)]"
                 >
-                  <div className="relative h-[160px] w-full overflow-hidden">
-                    <Image
-                      src={location.image}
-                      alt={location.shortName}
-                      fill
-                      sizes="380px"
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
+                  {/* Phones get a 56px thumbnail inline with the branch name so
+                      the card is a compact row; sm and up restore the banner
+                      photo above the details. */}
+                  <div className="flex items-center gap-3 px-4 pt-4 sm:block sm:p-0">
+                    <div className="relative size-14 shrink-0 overflow-hidden rounded-lg sm:size-auto sm:h-[160px] sm:w-full sm:rounded-none">
+                      <Image
+                        src={location.image}
+                        alt={location.shortName}
+                        fill
+                        sizes="(max-width: 639px) 56px, 380px"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                    <h3 className="font-serif text-[17px] font-normal leading-[1.2] text-ink sm:hidden">
+                      {location.name}
+                    </h3>
                   </div>
 
-                  <div className="flex flex-col items-start gap-3 p-6">
-                    <h3 className="font-serif text-[17px] lg:text-[20px] font-normal leading-[1.2] text-ink">
+                  <div className="flex flex-col items-start gap-3 px-4 pb-4 pt-3 sm:p-6">
+                    <h3 className="hidden font-serif text-[17px] font-normal leading-[1.2] text-ink sm:block lg:text-[20px]">
                       {location.name}
                     </h3>
 
