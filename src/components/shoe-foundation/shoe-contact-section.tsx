@@ -36,7 +36,7 @@ export function ShoeContactSection() {
           className="w-[180px]"
           aria-hidden
         />
-        <p className="font-display text-[17px] lg:text-[20px] leading-[1.5] text-shoe-yellow">
+        <p className="font-display text-[14px] leading-[1.5] text-shoe-yellow lg:text-[20px]">
           In memory of Dana, a legacy carried forward through opportunity and
           education.
         </p>
