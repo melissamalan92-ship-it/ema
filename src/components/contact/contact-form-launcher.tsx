@@ -49,7 +49,7 @@ function ContactFormSheet({ onClose }: { onClose: () => void }) {
         role="dialog"
         aria-modal="true"
         aria-labelledby="contact-form-title"
-        className="relative w-full max-w-[420px] rounded-[20px] bg-bg-warm p-5 shadow-[0_40px_90px_-30px_rgba(0,0,0,0.6)]"
+        className="relative max-h-[calc(100dvh-2.5rem)] w-full max-w-[420px] overflow-y-auto rounded-[20px] bg-bg-warm p-5 shadow-[0_40px_90px_-30px_rgba(0,0,0,0.6)]"
       >
         <button
           type="button"
