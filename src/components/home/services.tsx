@@ -196,7 +196,9 @@ export function Services() {
             <em className="italic text-blue-accent">business</em> needs to{" "}
             <em className="italic text-blue-accent">grow</em>.
           </h2>
-          <p className="max-w-[420px] font-body text-[12.3px] leading-[1.6] text-ink sm:text-[14px] lg:text-[16px]">
+          {/* The 420px measure is the desktop column's; below lg the copy
+              runs the full width, in line with the heading above it. */}
+          <p className="max-w-none font-body text-[12.3px] leading-[1.6] text-ink sm:text-[14px] lg:max-w-[420px] lg:text-[16px]">
             We offer a full range of professional services to support your
             business at every stage. Whether you need one piece of work handled
             or your whole finance function looked after, it&apos;s the same team
