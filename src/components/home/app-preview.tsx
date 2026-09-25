@@ -67,7 +67,7 @@ export function AppPreview() {
           <div className="relative grid grid-cols-1 items-start gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-center lg:gap-16">
             <Reveal className="relative w-full lg:-ml-[129px] lg:w-[312px]">
               <div className="flex items-start gap-4 lg:block">
-                <div className="-ml-6 -mt-[44px] w-[125px] shrink-0 transition-transform duration-500 ease-out lg:ml-0 lg:mt-0 lg:w-auto lg:hover:-translate-y-2">
+                <div className="-ml-6 -mt-[44px] w-[144px] shrink-0 transition-transform duration-500 ease-out lg:ml-0 lg:mt-0 lg:w-auto lg:hover:-translate-y-2">
                   <Image
                     src="/images/phone%20colour.png"
                     alt="Hand holding a phone with the EMA app"
@@ -79,7 +79,7 @@ export function AppPreview() {
                 </div>
                 {/* Phones show the badges beside the image; desktop keeps them
                 under the copy. */}
-                <div className="flex flex-col items-start justify-center gap-2 pt-2 lg:hidden">
+                <div className="ml-5 flex flex-col items-start justify-center gap-2 pt-2 lg:hidden">
                   <StoreBadges compact />
                 </div>
               </div>
