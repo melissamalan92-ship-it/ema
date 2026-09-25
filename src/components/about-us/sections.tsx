@@ -86,7 +86,10 @@ export function ApproachSection() {
           </p>
         </Reveal>
 
-        <Reveal className="-mx-2 -mb-14 grid grid-cols-3 gap-2 sm:gap-3 lg:-mx-[15%] lg:-mb-56 lg:gap-5">
+        {/* Phones run the row edge to edge — a landscape crop three across
+            leaves each photo ~86px tall, too small to read a face — so the
+            crop turns portrait below lg to buy back the height. */}
+        <Reveal className="-mx-5 -mb-14 grid grid-cols-3 gap-2 sm:-mx-2 sm:gap-3 lg:-mx-[15%] lg:-mb-56 lg:gap-5">
           {OFFICE_PHOTOS.map((photo) => (
             // The wrapper carries the scroll reveal so the image is free to
             // own the hover transform.
@@ -97,7 +100,7 @@ export function ApproachSection() {
                 width={673}
                 height={512}
                 sizes="(max-width: 1023px) 33vw, 460px"
-                className="aspect-[13/10] w-full object-cover transition-transform duration-500 ease-out hover:-translate-y-2 hover:scale-[1.02]"
+                className="aspect-[4/5] w-full object-cover lg:aspect-[13/10] transition-transform duration-500 ease-out hover:-translate-y-2 hover:scale-[1.02]"
               />
             </div>
           ))}

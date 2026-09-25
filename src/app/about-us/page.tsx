@@ -29,7 +29,9 @@ export default function AboutUsPage() {
       <div className="relative">
         <Nav />
         <AboutHero />
-        <div className="bg-bg-warm pb-48">
+        {/* The padding clears the photo row's overhang, which is far deeper
+            on desktop (-mb-56) than on phones (-mb-14). */}
+        <div className="bg-bg-warm pb-16 lg:pb-48">
           <DecadesSection />
           <ApproachSection />
         </div>
