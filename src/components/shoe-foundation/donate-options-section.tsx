@@ -30,7 +30,7 @@ export function DonateOptionsSection() {
         <h2 className="font-display text-[29px] sm:text-[38px] lg:text-[48px] font-normal leading-[1.15] text-shoe-blue">
           How can you donate?
         </h2>
-        <p className="font-body text-[14px] lg:text-[18px] leading-[1.5] text-ink">
+        <p className="font-body text-[14px] sm:text-[16px] lg:text-[18px] leading-[1.5] text-ink">
           Every contribution creates opportunity. Choose how you&rsquo;d like to
           make a difference.
         </p>

@@ -108,7 +108,7 @@ export function Services() {
       className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-10 lg:py-20"
     >
       <Container className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-[1.2fr_1fr] lg:gap-12">
-        <div className="order-2 grid grid-cols-1 gap-4 lg:order-none lg:col-start-1 lg:row-start-1 lg:grid-cols-2">
+        <div className="order-2 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:order-none lg:col-start-1 lg:row-start-1 lg:grid-cols-2">
           {SERVICES.map((service, i) => {
             const Motif = service.motif;
             const t = TONES[service.tone];
@@ -134,7 +134,7 @@ export function Services() {
                           {service.title}
                         </h3>
                         <p
-                          className={`max-w-[320px] font-body text-[12.5px] leading-[1.5] ${t.body}`}
+                          className={`max-w-[320px] font-body text-[12.5px] leading-[1.5] sm:text-[13.5px] lg:text-[12.5px] ${t.body}`}
                         >
                           {service.description}
                         </p>
@@ -162,7 +162,7 @@ export function Services() {
                     className={`group flex h-full items-start gap-3 overflow-hidden rounded-[18px] p-4 transition-all duration-500 hover:-translate-y-1 lg:flex-col lg:items-stretch lg:gap-0 lg:p-0 ${t.card}`}
                   >
                     <div
-                      className={`size-11 shrink-0 rounded-[10px] border p-2 lg:size-auto lg:w-full lg:rounded-none lg:border-0 lg:border-b lg:px-4 lg:pb-2 lg:pt-3 ${t.panel} ${t.motif}`}
+                      className={`size-11 shrink-0 rounded-[10px] border p-2 sm:size-12 lg:size-auto lg:w-full lg:rounded-none lg:border-0 lg:border-b lg:px-4 lg:pb-2 lg:pt-3 ${t.panel} ${t.motif}`}
                     >
                       <div className="h-full w-full lg:mx-auto lg:h-[52px]">
                         <Motif />
@@ -170,12 +170,12 @@ export function Services() {
                     </div>
                     <div className="flex flex-1 flex-col gap-1 lg:gap-1.5 lg:p-4">
                       <h3
-                        className={`font-serif text-[16px] font-normal leading-tight ${t.title} ${t.titleHover}`}
+                        className={`font-serif text-[16px] font-normal leading-tight sm:text-[17px] lg:text-[16px] ${t.title} ${t.titleHover}`}
                       >
                         {service.title}
                       </h3>
                       <p
-                        className={`font-body text-[12.5px] leading-[1.5] ${t.body}`}
+                        className={`font-body text-[12.5px] leading-[1.5] sm:text-[13.5px] lg:text-[12.5px] ${t.body}`}
                       >
                         {service.description}
                       </p>
@@ -196,7 +196,7 @@ export function Services() {
             <em className="italic text-blue-accent">business</em> needs to{" "}
             <em className="italic text-blue-accent">grow</em>.
           </h2>
-          <p className="max-w-[420px] font-body text-[12.3px] leading-[1.6] text-ink lg:text-[16px]">
+          <p className="max-w-[420px] font-body text-[12.3px] leading-[1.6] text-ink sm:text-[14px] lg:text-[16px]">
             We offer a full range of professional services to support your
             business at every stage. Whether you need one piece of work handled
             or your whole finance function looked after, it&apos;s the same team

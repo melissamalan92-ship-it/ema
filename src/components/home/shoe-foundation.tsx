@@ -8,7 +8,7 @@ export function ShoeFoundation() {
     <section id="shoe-foundation" className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-10 lg:py-20">
       <Container className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-16">
         <Reveal className="flex flex-col items-start gap-5 text-left lg:pl-9">
-          <span className="font-body text-[14px] lg:text-[16px] text-ink-soft">
+          <span className="font-body text-[14px] sm:text-[15px] lg:text-[16px] text-ink-soft">
             More than just accounting
           </span>
           <h2 className="max-w-[420px] font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-ink">
@@ -16,7 +16,7 @@ export function ShoeFoundation() {
             <br />
             <em className="italic text-blue-accent">The Shoe Foundation.</em>
           </h2>
-          <p className="max-w-[400px] font-body text-[14px] lg:text-[16px] leading-[1.6] text-ink-soft">
+          <p className="max-w-[400px] font-body text-[14px] sm:text-[15px] lg:text-[16px] leading-[1.6] text-ink-soft">
             Through The Shoe Foundation, we&rsquo;re committed to making a
             positive impact in the communities where we live and work.
           </p>

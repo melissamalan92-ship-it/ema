@@ -23,7 +23,7 @@ export function ScholarMessageSection() {
 
             <Reveal
               delay={120}
-              className="relative col-start-2 row-start-1 -mr-6 -mt-[44px] w-[156px] lg:mr-0 lg:mt-0 lg:col-start-2 lg:row-span-2 lg:-mb-[88px] lg:-mr-20 lg:ml-auto lg:w-[calc(100%-35px)] lg:max-w-[420px] lg:self-start"
+              className="relative col-start-2 row-start-1 -mr-6 -mt-[44px] w-[156px] sm:-mt-[60px] sm:w-[230px] lg:mr-0 lg:mt-0 lg:col-start-2 lg:row-span-2 lg:-mb-[88px] lg:-mr-20 lg:ml-auto lg:w-[calc(100%-35px)] lg:max-w-[420px] lg:self-start"
             >
               <Image
                 src="/images/Nontsikelelo%20Fokazi.jpg"
@@ -48,7 +48,7 @@ export function ScholarMessageSection() {
                 Foundation&rsquo;s heart, it&rsquo;s not just about funding,
                 it&rsquo;s about lifting people up with kindness and real
                 support. Thank you to The Shoe foundation.{" "}
-                <span className="ml-[70px] font-display text-[19.3px] text-shoe-yellow lg:hidden">
+                <span className="ml-[70px] font-display text-[19.3px] sm:text-[24px] text-shoe-yellow lg:hidden">
                   Nontsikelelo Fokasi
                 </span>
               </p>

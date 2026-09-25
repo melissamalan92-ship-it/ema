@@ -43,7 +43,7 @@ export function LocationCard({
           <X size={13} strokeWidth={1.75} />
         </button>
 
-        <h3 className="pr-6 font-serif text-[15px] lg:text-[18px] font-normal leading-tight text-ink">
+        <h3 className="pr-6 font-serif text-[15px] sm:text-[16px] lg:text-[18px] font-normal leading-tight text-ink">
           {location.name}
         </h3>
 

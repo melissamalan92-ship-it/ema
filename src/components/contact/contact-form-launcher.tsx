@@ -10,7 +10,7 @@ export function ContactFormLauncher() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="lg:hidden">
+    <div className="sm:hidden">
       <button
         type="button"
         onClick={() => setOpen(true)}

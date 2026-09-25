@@ -20,14 +20,14 @@ export function TrainingSection() {
             </h2>
 
             <div className="mt-5 flex flex-col gap-3">
-              <p className="font-body text-[14px] leading-[1.6] text-cream/80 lg:max-w-[460px]">
+              <p className="font-body text-[14px] leading-[1.6] text-cream/80 sm:max-w-[440px] sm:text-[15px] lg:max-w-[460px] lg:text-[14px]">
                 <strong className="font-semibold text-cream">
                   As a SAIPA Accredited Training Centre,
                 </strong>{" "}
                 EMA gives aspiring Professional Accountants the practical
                 experience to build their careers.
               </p>
-              <p className="font-body text-[14px] leading-[1.6] text-cream/80 lg:max-w-[460px]">
+              <p className="font-body text-[14px] leading-[1.6] text-cream/80 sm:max-w-[440px] sm:text-[15px] lg:max-w-[460px] lg:text-[14px]">
                 Our structured learnership combines hands-on experience,
                 professional development and mentorship, helping trainees
                 turn knowledge into real-world expertise.
@@ -39,7 +39,7 @@ export function TrainingSection() {
             </CtaLink>
           </Reveal>
 
-          <Reveal delay={120} className="absolute -bottom-[78px] right-6 w-[131px] lg:relative lg:bottom-auto lg:right-auto lg:-mb-[77px] lg:-mr-[77px] lg:ml-auto lg:w-[63%]">
+          <Reveal delay={120} className="absolute -bottom-[78px] right-6 w-[131px] sm:w-[200px] lg:relative lg:bottom-auto lg:right-auto lg:-mb-[77px] lg:-mr-[77px] lg:ml-auto lg:w-[63%]">
             <Image
               src="/images/Saipa.png"
               alt="SAIPA accredited training centre"

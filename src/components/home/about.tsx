@@ -7,10 +7,10 @@ export function About() {
     <section id="about" className="bg-bg-warm px-5 sm:px-8 lg:px-20 pb-10 lg:pb-20 pt-12 lg:pt-[120px]">
       <Container className="grid grid-cols-1 lg:grid-cols-[0.45fr_1fr] items-stretch gap-8 lg:gap-12">
         <Reveal className="flex flex-col items-start gap-4 lg:pl-[58px] text-left">
-          <span className="font-body text-[14px] lg:text-[17px] text-ink-soft">
+          <span className="font-body text-[14px] sm:text-[16px] lg:text-[17px] text-ink-soft">
             Trusted expertise since 1983
           </span>
-          <h2 className="font-serif text-[29px] lg:text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-ink">
+          <h2 className="font-serif text-[29px] sm:text-[35px] lg:text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-ink">
             More than
             <br />
             <em className="italic text-blue-accent">numbers</em>
@@ -28,7 +28,7 @@ export function About() {
           delay={120}
           className="flex flex-col items-start justify-center gap-6 lg:border-l lg:border-ink/20 lg:pl-[60px] text-left"
         >
-          <p className="max-w-[640px] font-body text-[14px] lg:text-[16px] leading-[1.6] text-ink">
+          <p className="max-w-[640px] font-body text-[14px] sm:text-[15px] lg:text-[16px] leading-[1.6] text-ink">
             For over{" "}
             <em className="italic text-blue-accent">four decades</em>,
             we&rsquo;ve worked alongside businesses to navigate change, seize
@@ -36,7 +36,7 @@ export function About() {
             single practice now runs from offices across South Africa, with the
             same people-first approach it began with.
           </p>
-          <p className="max-w-[640px] font-body text-[14px] lg:text-[16px] leading-[1.6] text-ink-soft">
+          <p className="max-w-[640px] font-body text-[14px] sm:text-[15px] lg:text-[16px] leading-[1.6] text-ink-soft">
             Our work covers the full picture &mdash; bookkeeping and annual
             financial statements, tax and payroll, company secretarial matters,
             and the advice that sits behind bigger decisions. Much of it is
@@ -44,7 +44,7 @@ export function About() {
             that balance, and records that hold up when a bank or SARS asks
             questions.
           </p>
-          <p className="max-w-[640px] font-body text-[14px] lg:text-[16px] leading-[1.6] text-ink-soft">
+          <p className="max-w-[640px] font-body text-[14px] sm:text-[15px] lg:text-[16px] leading-[1.6] text-ink-soft">
             Clients stay with us because they deal with people who know their
             business, not a call centre and not a template. As a SAIPA-registered
             practice and accredited training centre, we also help bring through

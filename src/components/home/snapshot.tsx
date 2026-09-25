@@ -172,7 +172,7 @@ function ModernPanel({
         <span className="text-xs font-semibold tracking-[0.04em] text-ink-soft">
           NET PROFIT
         </span>
-        <span className="font-mono text-[20px] lg:text-[26px] font-semibold text-navy-primary">
+        <span className="font-mono text-[20px] sm:text-[23px] lg:text-[26px] font-semibold text-navy-primary">
           R {net.toLocaleString("en-ZA", { maximumFractionDigits: 0 })}
         </span>
       </div>

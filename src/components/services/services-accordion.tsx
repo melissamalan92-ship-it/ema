@@ -11,7 +11,7 @@ export function ServicesAccordion() {
   const [open, setOpen] = useState<string | null>(null);
 
   return (
-    <div className="flex flex-col gap-3 lg:hidden">
+    <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:items-start lg:hidden">
       {SERVICES.map((service, i) => {
         const Motif = service.motif;
         const t = TONES[service.tone];
@@ -29,10 +29,10 @@ export function ServicesAccordion() {
               onClick={() => setOpen(isOpen ? null : slug)}
               aria-expanded={isOpen}
               aria-controls={`${slug}-panel`}
-              className="flex w-full items-center gap-3 px-4 py-3.5 text-left"
+              className="flex w-full items-center gap-3 px-4 py-3.5 text-left sm:px-5 sm:py-4"
             >
               <span
-                className={`flex size-9 shrink-0 items-center justify-center rounded-[10px] border p-1.5 ${t.panel} ${t.motif}`}
+                className={`flex size-9 shrink-0 items-center justify-center rounded-[10px] border p-1.5 sm:size-10 ${t.panel} ${t.motif}`}
               >
                 <Motif />
               </span>
@@ -44,7 +44,7 @@ export function ServicesAccordion() {
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <span
-                  className={`font-serif text-[16px] font-normal leading-tight ${t.title}`}
+                  className={`font-serif text-[16px] font-normal leading-tight sm:text-[17px] ${t.title}`}
                 >
                   {service.title}
                 </span>
@@ -70,12 +70,12 @@ export function ServicesAccordion() {
               <div className="overflow-hidden">
                 <div className="flex flex-col gap-3 px-4 pb-4 pt-1">
                   <p
-                    className={`font-body text-[13px] leading-[1.6] ${t.lead}`}
+                    className={`font-body text-[13px] leading-[1.6] sm:text-[14px] ${t.lead}`}
                   >
                     {service.description}
                   </p>
                   <p
-                    className={`font-body text-[12.5px] leading-[1.6] ${t.detail}`}
+                    className={`font-body text-[12.5px] leading-[1.6] sm:text-[13.5px] ${t.detail}`}
                   >
                     {service.detail}
                   </p>

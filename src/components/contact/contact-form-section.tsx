@@ -13,7 +13,7 @@ export function ContactFormSection() {
             <br />
             <em className="italic text-blue-accent">business.</em>
           </h2>
-          <p className="max-w-[420px] font-body text-[16px] lg:text-[22px] leading-[1.5] text-cream/85">
+          <p className="max-w-[420px] font-body text-[16px] sm:text-[19px] lg:text-[22px] leading-[1.5] text-cream/85">
             Not sure which branch to reach out to?{" "}
             <strong className="font-bold text-cream">
               Contact us here for general enquiries
@@ -22,14 +22,14 @@ export function ContactFormSection() {
           </p>
         </Reveal>
 
-        {/* Phones open the form in a sheet; desktop keeps it inline. */}
+        {/* Phones open the form in a sheet; tablet and desktop keep it inline. */}
         <Reveal delay={120}>
           <ContactFormLauncher />
         </Reveal>
 
         <Reveal
           delay={120}
-          className="hidden rounded-[28px] bg-bg-warm p-10 shadow-[0_40px_80px_-24px_rgba(0,0,0,0.4)] lg:block"
+          className="hidden w-full rounded-[28px] bg-bg-warm p-7 shadow-[0_40px_80px_-24px_rgba(0,0,0,0.4)] sm:block sm:max-w-[560px] lg:max-w-none lg:p-10"
         >
           <ContactForm />
         </Reveal>

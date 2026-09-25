@@ -40,10 +40,10 @@ export function ContactForm() {
   if (status === "sent") {
     return (
       <div className="flex min-h-[420px] flex-col items-center justify-center gap-3 text-center">
-        <h3 className="font-serif text-[22px] lg:text-[32px] font-normal text-ink">
+        <h3 className="font-serif text-[22px] sm:text-[27px] lg:text-[32px] font-normal text-ink">
           Thank you
         </h3>
-        <p className="max-w-[320px] font-body text-[14px] lg:text-[16px] leading-[1.6] text-ink-soft">
+        <p className="max-w-[320px] font-body text-[14px] sm:text-[15px] lg:text-[16px] leading-[1.6] text-ink-soft">
           We&rsquo;ve got your message and someone will come back to you
           shortly.
         </p>
@@ -63,20 +63,20 @@ export function ContactForm() {
 
       {FIELDS.map((field) => (
         <label key={field.name} className="flex flex-col gap-1 lg:gap-2">
-          <span className="font-body text-[15px] lg:text-[18px] text-ink">
+          <span className="font-body text-[15px] sm:text-[16px] lg:text-[18px] text-ink">
             {field.label}
           </span>
           <input
             type={field.type}
             name={field.name}
             required={field.required}
-            className="border-b border-ink/20 bg-transparent py-2 font-body text-[13px] lg:text-[15px] text-ink outline-none transition-colors focus:border-blue-accent"
+            className="border-b border-ink/20 bg-transparent py-2 font-body text-[13px] sm:text-[14px] lg:text-[15px] text-ink outline-none transition-colors focus:border-blue-accent"
           />
         </label>
       ))}
 
       <label className="flex flex-col gap-1 lg:gap-2">
-        <span className="font-body text-[15px] lg:text-[18px] text-ink">Message</span>
+        <span className="font-body text-[15px] sm:text-[16px] lg:text-[18px] text-ink">Message</span>
         <textarea
           name="message"
           rows={5}

@@ -32,14 +32,14 @@ export function Hero() {
             } as React.CSSProperties
           }
         >
-          <span className="font-body text-[15px] lg:text-[18px] text-cream/70">E Malan &amp; Associates</span>
-          <h1 className="max-w-[480px] font-serif text-[27px] sm:text-[32px] lg:text-[38px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
+          <span className="font-body text-[15px] sm:text-[16px] lg:text-[18px] text-cream/70">E Malan &amp; Associates</span>
+          <h1 className="max-w-[480px] font-serif text-[27px] sm:text-[36px] lg:text-[38px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
             Accounting services{" "}
             <em className="italic text-blue-accent">designed</em> for{" "}
             <em className="italic text-blue-accent">growth</em>.
           </h1>
 
-          <div className="mt-6 grid w-full grid-cols-1 gap-3 border-t border-cream/15 pt-4 sm:mt-20 sm:grid-cols-3 sm:gap-5 sm:pt-5">
+          <div className="mt-6 grid w-full grid-cols-1 gap-3 border-t border-cream/15 pt-4 sm:mt-10 lg:mt-20 sm:grid-cols-3 sm:gap-5 sm:pt-5">
             {FEATURES.map((feature) => (
               // On phones the icon sits inline with the title so each feature
               // is two tight rows instead of three stacked ones.

@@ -92,7 +92,7 @@ export function TestimonialsCarousel() {
             className="flex animate-[testimonial-in_450ms_cubic-bezier(0.16,1,0.3,1)_both] flex-col items-center gap-3"
           >
             <p
-              className={`font-body text-[13px] leading-[1.65] text-ink lg:line-clamp-none lg:text-[15px] ${
+              className={`font-body text-[13px] leading-[1.65] text-ink sm:text-[14px] lg:line-clamp-none lg:text-[15px] ${
                 expanded ? "" : "line-clamp-4"
               }`}
             >
@@ -114,7 +114,7 @@ export function TestimonialsCarousel() {
             <span className="lg:hidden">{arrow(-1, ARROW_BARE)}</span>
             <span
               key={`author-${index}`}
-              className="animate-[testimonial-in_450ms_cubic-bezier(0.16,1,0.3,1)_both] font-display text-[20px] leading-tight text-shoe-blue lg:text-[23px]"
+              className="animate-[testimonial-in_450ms_cubic-bezier(0.16,1,0.3,1)_both] font-display text-[20px] leading-tight text-shoe-blue sm:text-[22px] lg:text-[23px]"
             >
               {active.author}
             </span>

@@ -252,15 +252,27 @@
   }
 }
 
-/* Mobile type scale: headings ~30% smaller, body ~15% smaller than desktop.
+/* Phone type scale: headings ~30% smaller, body ~15% smaller than desktop.
    The @theme tokens inline their values, so they can't be overridden by
    redefining the variable — these rules do it instead. */
-@media (max-width: 1023px) {
+@media (max-width: 639px) {
   .text-heading-xl { font-size: 36px; }
   .text-heading-lg { font-size: 29px; }
   .text-heading-md { font-size: 23px; }
   .text-heading-sm { font-size: 18px; }
   .text-body-lg { font-size: 16px; }
   .text-body-md { font-size: 14px; }
+  .text-body-sm { font-size: 13px; }
+}
+
+/* Tablet sits between the two: 768px of column is far too wide for
+   phone-sized headings, but still short of the desktop measure. */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .text-heading-xl { font-size: 45px; }
+  .text-heading-lg { font-size: 35px; }
+  .text-heading-md { font-size: 27px; }
+  .text-heading-sm { font-size: 20px; }
+  .text-body-lg { font-size: 17px; }
+  .text-body-md { font-size: 15px; }
   .text-body-sm { font-size: 13px; }
 }

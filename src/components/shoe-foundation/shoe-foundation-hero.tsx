@@ -24,10 +24,10 @@ export function ShoeFoundationHero() {
             alt="The Shoe Foundation"
             width={280}
             height={343}
-            className="w-full max-w-[119px] lg:max-w-[200px]"
+            className="w-full max-w-[119px] sm:max-w-[165px] lg:max-w-[200px]"
             priority
           />
-          <p className="text-center font-display text-[16px] leading-[1.35] text-shoe-yellow lg:whitespace-nowrap lg:text-[22px]">
+          <p className="text-center font-display text-[16px] leading-[1.35] text-shoe-yellow sm:text-[19px] lg:whitespace-nowrap lg:text-[22px]">
             Supporting learners through school
           </p>
         </Reveal>

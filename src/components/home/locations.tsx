@@ -15,7 +15,7 @@ export function Locations() {
       <div className="relative -mx-5 rounded-[24px] bg-navy-primary p-6 sm:-mx-8 lg:mx-0 lg:mr-24 lg:rounded-[32px] lg:p-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-10 lg:gap-16">
           <Reveal className="flex h-full flex-col items-start justify-start gap-4 text-left">
-            <span className="font-body text-[14px] lg:text-[16px] text-cream/60">
+            <span className="font-body text-[14px] sm:text-[15px] lg:text-[16px] text-cream/60">
               Where to find us
             </span>
             <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-cream">

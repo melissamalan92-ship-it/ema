@@ -38,7 +38,7 @@ export function ServicesGrid() {
           <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-ink">
             Explore our <em className="italic text-blue-accent">services</em>.
           </h2>
-          <p className="font-body text-[14px] lg:text-[16px] leading-[1.6] text-ink-soft">
+          <p className="font-body text-[14px] sm:text-[15px] lg:text-[16px] leading-[1.6] text-ink-soft">
             Day-to-day bookkeeping, payroll and tax, the statutory work that
             keeps you compliant, the software that runs it all &mdash; and the
             advice behind your bigger decisions.
@@ -159,11 +159,11 @@ export function ServicesGrid() {
           delay={160}
           className="mx-auto mt-20 flex max-w-[620px] flex-col items-center gap-3 text-center"
         >
-          <h2 className="font-serif text-[29px] lg:text-heading-md font-normal leading-[1.15] tracking-[-0.01em] text-ink">
+          <h2 className="font-serif text-[29px] sm:text-[30px] lg:text-heading-md font-normal leading-[1.15] tracking-[-0.01em] text-ink">
             Not sure which <em className="italic text-blue-accent">service</em>{" "}
             you need?
           </h2>
-          <p className="font-body text-[13px] lg:text-[15px] leading-[1.6] text-ink-soft">
+          <p className="font-body text-[13px] sm:text-[14px] lg:text-[15px] leading-[1.6] text-ink-soft">
             Tell us what you&rsquo;re trying to sort out and we&rsquo;ll point
             you to the right team.
           </p>

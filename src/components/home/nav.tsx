@@ -50,7 +50,7 @@ export function Nav() {
             <Link
               key={link.href}
               href={link.href}
-              className="group/link relative py-1 font-body text-[14px] lg:text-[16px] text-cream/80 transition-colors duration-200 hover:text-cream"
+              className="group/link relative py-1 font-body text-[14px] sm:text-[15px] lg:text-[16px] text-cream/80 transition-colors duration-200 hover:text-cream"
             >
               {link.label}
               <span className="absolute bottom-0 left-0 h-px w-0 bg-blue-accent transition-all duration-300 ease-out group-hover/link:w-full" />
@@ -80,7 +80,7 @@ export function Nav() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="py-3 font-body text-[14px] lg:text-[17px] text-cream/85 transition-colors hover:text-cream"
+                className="py-3 font-body text-[14px] sm:text-[16px] lg:text-[17px] text-cream/85 transition-colors hover:text-cream"
               >
                 {link.label}
               </Link>
