@@ -29,7 +29,7 @@ const SERVICES: Service[] = [
     description:
       "Accounting records, annual financial statements, and audit file support for your business.",
     motif: LedgerMotif,
-    tone: "navy",
+    tone: "white",
     wide: true,
   },
   {
@@ -57,7 +57,7 @@ const SERVICES: Service[] = [
     description:
       "Salary and wage processing, PAYE, IRP5s, and HR administration support.",
     motif: PayrollMotif,
-    tone: "navy",
+    tone: "white",
   },
   {
     title: "Taxation Services",
@@ -88,13 +88,14 @@ const TONES: Record<
     panel: "border-cream/10 bg-cream/[0.04]",
     motif: "text-cream/35",
   },
+  // White at rest, navy on hover — every colour inside flips with the card.
   white: {
-    card: "border border-ink/10 bg-white hover:border-blue-accent/45 hover:shadow-[0_22px_48px_-28px_rgba(36,63,74,0.5)]",
-    title: "text-ink",
-    titleHover: "transition-colors duration-300 group-hover:text-blue-accent",
-    body: "text-ink-soft",
-    panel: "border-ink/[0.07] bg-bg-warm",
-    motif: "text-ink/30",
+    card: "border border-ink/10 bg-white transition-colors hover:border-navy-primary hover:bg-navy-primary hover:shadow-[0_26px_54px_-30px_rgba(36,63,74,0.75)]",
+    title: "text-ink transition-colors duration-300 group-hover:text-cream",
+    titleHover: "",
+    body: "text-ink-soft transition-colors duration-300 group-hover:text-cream/70",
+    panel: "border-ink/[0.07] bg-bg-warm transition-colors duration-300 group-hover:border-cream/10 group-hover:bg-cream/[0.04]",
+    motif: "text-ink/30 transition-colors duration-300 group-hover:text-cream/35",
   },
 };
 
@@ -136,7 +137,7 @@ export function Services() {
                           {service.description}
                         </p>
                       </div>
-                      <div className="relative w-[30%] shrink-0">
+                      <div className="relative order-first size-11 shrink-0 lg:order-none lg:size-auto lg:w-[30%]">
                         <div
                           className={`absolute inset-0 rounded-[12px] border p-3 ${t.panel} ${t.motif}`}
                         >
@@ -156,16 +157,16 @@ export function Services() {
                   className="block h-full"
                 >
                   <article
-                    className={`group flex h-full flex-col overflow-hidden rounded-[18px] transition-all duration-500 hover:-translate-y-1 ${t.card}`}
+                    className={`group flex h-full items-start gap-3 overflow-hidden rounded-[18px] p-4 transition-all duration-500 hover:-translate-y-1 lg:flex-col lg:items-stretch lg:gap-0 lg:p-0 ${t.card}`}
                   >
                     <div
-                      className={`shrink-0 border-b px-4 pb-2 pt-3 ${t.panel} ${t.motif}`}
+                      className={`size-11 shrink-0 rounded-[10px] border p-2 lg:size-auto lg:w-full lg:rounded-none lg:border-0 lg:border-b lg:px-4 lg:pb-2 lg:pt-3 ${t.panel} ${t.motif}`}
                     >
-                      <div className="mx-auto h-[52px] w-full">
+                      <div className="h-full w-full lg:mx-auto lg:h-[52px]">
                         <Motif />
                       </div>
                     </div>
-                    <div className="flex flex-1 flex-col gap-1.5 p-4">
+                    <div className="flex flex-1 flex-col gap-1 lg:gap-1.5 lg:p-4">
                       <h3
                         className={`font-serif text-[16px] font-normal leading-tight ${t.title} ${t.titleHover}`}
                       >
