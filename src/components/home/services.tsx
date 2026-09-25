@@ -189,7 +189,7 @@ export function Services() {
 
         <Reveal
           delay={150}
-          className="flex flex-col items-start justify-center gap-6 border-l border-blue-accent/20 pl-12 text-left"
+          className="flex flex-col items-start justify-center gap-6 text-left lg:border-l lg:border-blue-accent/20 lg:pl-12"
         >
           <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-ink">
             Everything your{" "}
@@ -203,7 +203,7 @@ export function Services() {
             seeing it through. That means advice built around how your business
             actually runs, rather than a standard package applied to everyone.
           </p>
-          <CtaLink href="/contact" className="mt-10">
+          <CtaLink href="/contact" className="mt-4 lg:mt-10">
             Contact Us
           </CtaLink>
         </Reveal>
