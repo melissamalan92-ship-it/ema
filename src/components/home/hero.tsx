@@ -65,7 +65,7 @@ export function Hero() {
         </div>
 
         <div
-          className="reveal-group is-visible relative h-[240px] sm:h-[380px] lg:h-auto"
+          className="reveal-group is-visible relative -mb-[50px] h-[240px] sm:mb-0 sm:h-[380px] lg:h-auto"
           style={
             {
               "--reveal-duration": "1000ms",
