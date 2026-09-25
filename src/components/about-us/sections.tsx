@@ -89,7 +89,9 @@ export function ApproachSection() {
         {/* Phones run the row edge to edge — a landscape crop three across
             leaves each photo ~86px tall, too small to read a face — so the
             crop turns portrait below lg to buy back the height. */}
-        <Reveal className="-mx-5 -mb-14 grid grid-cols-3 gap-2 sm:-mx-2 sm:gap-3 lg:-mx-[15%] lg:-mb-56 lg:gap-5">
+        {/* The -mt matches the extra height the taller phone crop adds, so the
+            row grows up into the banner and its overhang stays put. */}
+        <Reveal className="-mx-5 -mb-14 -mt-[30px] grid grid-cols-3 gap-2 sm:-mx-2 sm:gap-3 lg:-mx-[15%] lg:-mb-56 lg:mt-0 lg:gap-5">
           {OFFICE_PHOTOS.map((photo) => (
             // The wrapper carries the scroll reveal so the image is free to
             // own the hover transform.
@@ -100,7 +102,7 @@ export function ApproachSection() {
                 width={673}
                 height={512}
                 sizes="(max-width: 1023px) 33vw, 460px"
-                className="aspect-[4/5] w-full object-cover lg:aspect-[13/10] transition-transform duration-500 ease-out hover:-translate-y-2 hover:scale-[1.02]"
+                className="aspect-[2/3] w-full rounded-[14px] object-cover lg:aspect-[13/10] transition-transform duration-500 ease-out hover:-translate-y-2 hover:scale-[1.02]"
               />
             </div>
           ))}
