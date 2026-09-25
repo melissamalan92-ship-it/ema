@@ -89,13 +89,15 @@ const TONES: Record<
     motif: "text-cream/35",
   },
   // White at rest, navy on hover — every colour inside flips with the card.
+  // Touchscreens have no hover, so the same flip is mirrored on :active,
+  // which fires while a finger is down and gives the tap visible feedback.
   white: {
-    card: "border border-ink/10 bg-white transition-colors hover:border-navy-primary hover:bg-navy-primary hover:shadow-[0_26px_54px_-30px_rgba(36,63,74,0.75)]",
-    title: "text-ink transition-colors duration-300 group-hover:text-cream",
+    card: "border border-ink/10 bg-white transition-colors hover:border-navy-primary hover:bg-navy-primary hover:shadow-[0_26px_54px_-30px_rgba(36,63,74,0.75)] active:border-navy-primary active:bg-navy-primary",
+    title: "text-ink transition-colors duration-300 group-hover:text-cream group-active:text-cream",
     titleHover: "",
-    body: "text-ink-soft transition-colors duration-300 group-hover:text-cream/70",
-    panel: "border-ink/[0.07] bg-bg-warm transition-colors duration-300 group-hover:border-cream/10 group-hover:bg-cream/[0.04]",
-    motif: "text-ink/30 transition-colors duration-300 group-hover:text-cream/35",
+    body: "text-ink-soft transition-colors duration-300 group-hover:text-cream/70 group-active:text-cream/70",
+    panel: "border-ink/[0.07] bg-bg-warm transition-colors duration-300 group-hover:border-cream/10 group-hover:bg-cream/[0.04] group-active:border-cream/10 group-active:bg-cream/[0.04]",
+    motif: "text-ink/30 transition-colors duration-300 group-hover:text-cream/35 group-active:text-cream/35",
   },
 };
 
