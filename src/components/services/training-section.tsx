@@ -39,7 +39,7 @@ export function TrainingSection() {
             </CtaLink>
           </Reveal>
 
-          <Reveal delay={120} className="absolute -bottom-[78px] right-6 w-[109px] lg:relative lg:bottom-auto lg:right-auto lg:-mb-[77px] lg:-mr-[77px] lg:ml-auto lg:w-[63%]">
+          <Reveal delay={120} className="absolute -bottom-[78px] right-6 w-[131px] lg:relative lg:bottom-auto lg:right-auto lg:-mb-[77px] lg:-mr-[77px] lg:ml-auto lg:w-[63%]">
             <Image
               src="/images/Saipa.png"
               alt="SAIPA accredited training centre"
