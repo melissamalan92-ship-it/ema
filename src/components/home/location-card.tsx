@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { Phone, Mail, MapPin, X } from "lucide-react";
 import type { LocationInfo } from "./locations-data";
 
@@ -14,8 +15,24 @@ export function LocationCard({
     location.address
   )}`;
 
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [onClose]);
+
   return (
-    <div className="pointer-events-none absolute inset-0 z-10 flex items-end justify-end">
+    // The card is 220px wide but a phone tile is ~100px, so anchoring it to
+    // the tile pushes it off-screen for the leftmost column. On phones it
+    // centres over the page instead; desktop keeps the tile-anchored card.
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/45 p-5 lg:pointer-events-none lg:absolute lg:z-10 lg:items-end lg:justify-end lg:bg-transparent lg:p-0"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onClose();
+      }}
+    >
       <div className="pointer-events-auto relative flex h-[205px] w-[220px] shrink-0 flex-col gap-3 rounded-[14px] bg-white p-5 shadow-[0_24px_48px_-16px_rgba(0,0,0,0.4)]">
         <button
           type="button"
