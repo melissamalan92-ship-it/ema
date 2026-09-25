@@ -11,19 +11,8 @@ function AppleIcon({ size = 20 }: { size?: number }) {
   );
 }
 
-function PlayIcon({ size = 18 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
-      <path
-        d="M5 3.5 19 12 5 20.5V3.5Z"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinejoin="round"
-        fill="none"
-      />
-    </svg>
-  );
-}
+const APP_STORE_URL =
+  "https://apps.apple.com/za/app/pocket-tax-sa/id1080802749";
 
 function StoreBadges({ compact = false }: { compact?: boolean }) {
   const box = compact
@@ -36,22 +25,18 @@ function StoreBadges({ compact = false }: { compact?: boolean }) {
   const iconSize = compact ? 15 : 20;
 
   return (
-    <>
-      <span className={box}>
-        <AppleIcon size={iconSize} />
-        <span className="flex flex-col items-start leading-tight">
-          <span className={small}>Download on the</span>
-          <span className={big}>App Store</span>
-        </span>
+    <a
+      href={APP_STORE_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={box}
+    >
+      <AppleIcon size={iconSize} />
+      <span className="flex flex-col items-start leading-tight">
+        <span className={small}>Download on the</span>
+        <span className={big}>App Store</span>
       </span>
-      <span className={box}>
-        <PlayIcon size={compact ? 14 : 18} />
-        <span className="flex flex-col items-start leading-tight">
-          <span className={small}>Get it on</span>
-          <span className={big}>Google Play</span>
-        </span>
-      </span>
-    </>
+    </a>
   );
 }
 
