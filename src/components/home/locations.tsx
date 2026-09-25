@@ -29,7 +29,11 @@ export function Locations() {
               glad to meet in person, or to handle everything remotely if that
               suits you better.
             </p>
-            <CtaLink href="/contact" variant="cream" className="mt-auto">
+            <CtaLink
+              href="/contact"
+              variant="cream"
+              className="mt-auto hidden lg:inline-flex"
+            >
               Contact Us
             </CtaLink>
           </Reveal>
@@ -39,6 +43,14 @@ export function Locations() {
             className="relative h-[320px] w-full sm:h-[420px] lg:-mb-24 lg:-mr-20 lg:h-[540px] lg:w-[calc(100%+5rem)]"
           >
             <LocationsBento active={active} onSelect={setActive} />
+          </Reveal>
+
+          {/* Below lg the CTA closes the section, after the photos, rather
+              than sitting between the copy and them. */}
+          <Reveal delay={180} className="lg:hidden">
+            <CtaLink href="/contact" variant="cream">
+              Contact Us
+            </CtaLink>
           </Reveal>
         </div>
       </div>
