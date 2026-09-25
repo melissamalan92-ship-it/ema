@@ -57,7 +57,7 @@ function StoreBadges({ compact = false }: { compact?: boolean }) {
 
 export function AppPreview() {
   return (
-    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-10 lg:py-20">
+    <section className="bg-bg-warm px-5 pb-10 pt-14 sm:px-8 lg:px-20 lg:py-20">
       <Container>
         <div className="relative -mx-5 rounded-[24px] bg-navy-primary p-6 sm:-mx-8 lg:mx-0 lg:ml-24 lg:rounded-[32px] lg:p-12">
           <div
@@ -66,8 +66,8 @@ export function AppPreview() {
           />
           <div className="relative grid grid-cols-1 items-start gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-center lg:gap-16">
             <Reveal className="relative w-full lg:-ml-[129px] lg:w-[312px]">
-              <div className="flex items-stretch gap-4 lg:block">
-                <div className="w-[125px] shrink-0 transition-transform duration-500 ease-out lg:w-auto lg:hover:-translate-y-2">
+              <div className="flex items-start gap-4 lg:block">
+                <div className="-ml-6 -mt-[44px] w-[125px] shrink-0 transition-transform duration-500 ease-out lg:ml-0 lg:mt-0 lg:w-auto lg:hover:-translate-y-2">
                   <Image
                     src="/images/phone%20colour.png"
                     alt="Hand holding a phone with the EMA app"
@@ -79,7 +79,7 @@ export function AppPreview() {
                 </div>
                 {/* Phones show the badges beside the image; desktop keeps them
                 under the copy. */}
-                <div className="flex flex-col items-start justify-center gap-2 lg:hidden">
+                <div className="flex flex-col items-start justify-center gap-2 pt-2 lg:hidden">
                   <StoreBadges compact />
                 </div>
               </div>
