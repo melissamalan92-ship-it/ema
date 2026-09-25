@@ -108,7 +108,7 @@ export function Services() {
       className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-10 lg:py-20"
     >
       <Container className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-[1.2fr_1fr] lg:gap-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className="order-2 grid grid-cols-1 gap-4 lg:order-none lg:col-start-1 lg:row-start-1 lg:grid-cols-2">
           {SERVICES.map((service, i) => {
             const Motif = service.motif;
             const t = TONES[service.tone];
@@ -189,23 +189,31 @@ export function Services() {
 
         <Reveal
           delay={150}
-          className="flex flex-col items-start justify-center gap-6 text-left lg:border-l lg:border-blue-accent/20 lg:pl-12"
+          className="order-1 flex flex-col items-start justify-center gap-4 text-left lg:order-none lg:col-start-2 lg:row-start-1 lg:gap-6 lg:border-l lg:border-blue-accent/20 lg:pl-12"
         >
           <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-ink">
             Everything your{" "}
             <em className="italic text-blue-accent">business</em> needs to{" "}
             <em className="italic text-blue-accent">grow</em>.
           </h2>
-          <p className="max-w-[420px] font-body text-[14px] lg:text-[16px] leading-[1.6] text-ink">
+          <p className="max-w-[420px] font-body text-[12.3px] leading-[1.6] text-ink lg:text-[16px]">
             We offer a full range of professional services to support your
             business at every stage. Whether you need one piece of work handled
             or your whole finance function looked after, it&apos;s the same team
             seeing it through. That means advice built around how your business
             actually runs, rather than a standard package applied to everyone.
           </p>
-          <CtaLink href="/contact" className="mt-4 lg:mt-10">
+          <CtaLink
+            href="/contact"
+            className="mt-4 hidden lg:mt-10 lg:inline-flex"
+          >
             Contact Us
           </CtaLink>
+        </Reveal>
+
+        {/* Phones close the section with the CTA, after the cards. */}
+        <Reveal delay={200} className="order-3 lg:hidden">
+          <CtaLink href="/contact">Contact Us</CtaLink>
         </Reveal>
       </Container>
     </section>
