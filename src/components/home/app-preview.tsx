@@ -49,9 +49,9 @@ export function AppPreview() {
             className="pointer-events-none absolute -bottom-32 right-0 h-[480px] w-[480px] rounded-full opacity-[0.12] blur-[120px]"
             style={{ background: "var(--blue-accent)" }}
           />
-          <div className="relative grid grid-cols-1 items-start gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-center lg:gap-16">
+          <div className="relative grid grid-cols-1 items-start gap-6 sm:grid-cols-[230px_1fr] sm:items-center sm:gap-9 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
             <Reveal className="relative w-full lg:-ml-[129px] lg:w-[312px]">
-              <div className="flex items-start gap-4 lg:block">
+              <div className="flex items-start gap-4 sm:block">
                 <div className="-ml-6 -mt-[44px] w-[144px] shrink-0 sm:-ml-2 sm:-mt-[60px] sm:w-[210px] transition-transform duration-500 ease-out lg:ml-0 lg:mt-0 lg:w-auto lg:hover:-translate-y-2">
                   <Image
                     src="/images/phone%20colour.png"
@@ -62,9 +62,9 @@ export function AppPreview() {
                     priority
                   />
                 </div>
-                {/* Phones show the badges beside the image; desktop keeps them
-                under the copy. */}
-                <div className="ml-5 flex flex-col items-start justify-center gap-2 pt-2 lg:hidden">
+                {/* Only phones put the badges beside the image; from tablet up they
+                sit under the copy, as on desktop. */}
+                <div className="ml-5 flex flex-col items-start justify-center gap-2 pt-2 sm:hidden">
                   <StoreBadges compact />
                 </div>
               </div>
@@ -74,11 +74,11 @@ export function AppPreview() {
               delay={120}
               className="flex flex-col items-start gap-6 text-left"
             >
-              <h2 className="font-serif text-[29px] sm:text-[32px] lg:text-[38px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
+              <h2 className="font-serif text-[29px] sm:text-[34px] lg:text-[38px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
                 Your accountants <br />
                 in your <em className="italic text-blue-accent">pocket</em>.
               </h2>
-              <p className="max-w-[420px] font-body text-[14px] sm:text-[15px] lg:text-[16px] leading-[1.6] text-cream/70">
+              <p className="max-w-[420px] font-body text-[14px] sm:max-w-none sm:text-[15px] lg:max-w-[420px] lg:text-[16px] leading-[1.6] text-cream/70">
                 We&rsquo;re building an app that brings the same clarity we
                 bring to every client relationship straight to your phone. It
                 will put your numbers, key documents and upcoming deadlines in
@@ -87,7 +87,7 @@ export function AppPreview() {
                 download.
               </p>
 
-              <div className="mt-10 hidden flex-wrap items-center gap-3 lg:flex">
+              <div className="mt-6 hidden flex-wrap items-center gap-3 sm:flex lg:mt-10">
                 <StoreBadges />
               </div>
             </Reveal>
