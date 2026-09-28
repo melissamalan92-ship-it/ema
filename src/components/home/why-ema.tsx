@@ -51,6 +51,10 @@ const PILLARS = [
   },
 ];
 
+// SHELVED — not rendered (see the note in src/app/page.tsx).
+// Before bringing this back: the section sits on bg-navy-secondary, which is
+// the same #86af9f as blue-accent, so every text-blue-accent below renders
+// invisible against it. Use text-cream or text-shoe-blue instead.
 export function WhyEma() {
   return (
     <section className="bg-navy-secondary px-5 sm:px-8 lg:px-20 py-14 lg:py-24">
