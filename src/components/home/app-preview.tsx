@@ -75,16 +75,17 @@ export function AppPreview() {
               className="flex flex-col items-start gap-6 text-left"
             >
               <h2 className="font-serif text-[29px] sm:text-[34px] lg:text-[38px] font-normal leading-[1.15] tracking-[-0.01em] text-cream">
-                Your accountants <br />
+                Tax answers <br />
                 in your <em className="italic text-blue-accent">pocket</em>.
               </h2>
               <p className="max-w-[420px] font-body text-[14px] sm:max-w-none sm:text-[15px] lg:max-w-[420px] lg:text-[16px] leading-[1.6] text-cream/70">
-                We&rsquo;re building an app that brings the same clarity we
-                bring to every client relationship straight to your phone. It
-                will put your numbers, key documents and upcoming deadlines in
-                one place, so you can see where things stand without having to
-                ask. We&rsquo;ll let you know the moment it&rsquo;s ready to
-                download.
+                Pocket Tax SA is our free income tax calculator, built
+                in-house and kept current with the SARS tax tables. Work out
+                the tax on an annual or monthly salary, compare it against
+                earlier years or a different age bracket, and see what share
+                of your income actually goes to SARS. It&rsquo;s ad-free, and
+                handy whether you&rsquo;re checking a payslip or weighing up a
+                new package.
               </p>
 
               <div className="mt-6 hidden flex-wrap items-center gap-3 sm:flex lg:mt-10">
