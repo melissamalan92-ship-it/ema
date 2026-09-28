@@ -1,0 +1,11 @@
+# Pins the build in the repo so a stale setting in the Netlify UI can't
+# override it. A long-running command here (next dev / next start) never
+# exits, so the build hangs indefinitely rather than failing with an error —
+# which is what stalled deploys for 11 days.
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  # Next.js 16 requires Node 20.9+.
+  NODE_VERSION = "20"
