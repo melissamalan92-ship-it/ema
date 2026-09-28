@@ -19,14 +19,22 @@ export function ShoeFoundationHero() {
         </Reveal>
 
         <Reveal className="order-2 flex flex-col items-center gap-3 lg:order-none lg:col-start-1 lg:row-start-1 lg:gap-5">
-          <Image
-            src="/images/shoe%20foundation%20logo.png"
-            alt="The Shoe Foundation"
-            width={280}
-            height={343}
-            className="w-full max-w-[119px] sm:max-w-[165px] lg:max-w-[200px]"
-            priority
-          />
+          {/* The logotype is this page's title, so it carries the h1 and the
+              alt text is the heading. The wrapping div keeps the h1 off
+              .reveal-group's direct children, which are what animate in —
+              the group deliberately skips headings. */}
+          <div className="w-full max-w-[119px] sm:max-w-[165px] lg:max-w-[200px]">
+            <h1>
+              <Image
+                src="/images/shoe%20foundation%20logo.png"
+                alt="The Shoe Foundation"
+                width={280}
+                height={343}
+                className="w-full"
+                priority
+              />
+            </h1>
+          </div>
           <p className="text-center font-display text-[16px] leading-[1.35] text-shoe-yellow sm:text-[19px] lg:whitespace-nowrap lg:text-[22px]">
             Supporting learners through school
           </p>
