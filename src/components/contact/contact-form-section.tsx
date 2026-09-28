@@ -6,7 +6,7 @@ import { Container } from "@/components/ui/container";
 export function ContactFormSection() {
   return (
     <section className="bg-navy-primary px-5 sm:px-8 lg:px-20 py-14 lg:py-28">
-      <Container className="grid grid-cols-1 sm:grid-cols-2 items-center gap-10 sm:gap-8 lg:gap-16">
+      <Container className="grid grid-cols-1 sm:grid-cols-[1fr_1.2fr] items-center gap-10 sm:gap-8 lg:grid-cols-2 lg:gap-16">
         <Reveal className="flex flex-col items-start gap-6 text-left">
           <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-cream">
             Let&apos;s talk

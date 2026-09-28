@@ -37,7 +37,7 @@ export function BranchEmailButton({ branch }: { branch: LocationInfo }) {
     <button
       type="button"
       onClick={() => open?.(branch)}
-      className="text-left underline decoration-ink/20 underline-offset-2 transition-colors hover:text-ink hover:decoration-ink/50"
+      className="text-left underline decoration-ink/20 underline-offset-2 transition-colors hover:text-ink hover:decoration-ink/50 sm:py-1.5 lg:py-0"
     >
       {branch.email}
     </button>

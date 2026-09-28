@@ -48,11 +48,11 @@ export function BranchList() {
                       {location.name}
                     </h3>
 
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 sm:gap-0.5 lg:gap-2">
                       <ContactRow icon={Phone}>
                         <a
                           href={`tel:${location.phone.replace(/\s+/g, "")}`}
-                          className="underline decoration-ink/20 underline-offset-2 transition-colors hover:text-ink hover:decoration-ink/50"
+                          className="underline decoration-ink/20 underline-offset-2 transition-colors hover:text-ink hover:decoration-ink/50 sm:inline-block sm:py-1.5 lg:inline lg:py-0"
                         >
                           {location.phone}
                         </a>
@@ -67,7 +67,7 @@ export function BranchList() {
                           )}`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="underline decoration-ink/20 underline-offset-2 transition-colors hover:text-ink hover:decoration-ink/50"
+                          className="underline decoration-ink/20 underline-offset-2 transition-colors hover:text-ink hover:decoration-ink/50 sm:inline-block sm:py-1.5 lg:inline lg:py-0"
                         >
                           {location.address}
                         </a>
@@ -92,7 +92,7 @@ function ContactRow({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex items-start gap-2.5 font-body text-[13px] leading-[1.5] text-ink-soft">
+    <div className="flex items-start gap-2.5 font-body text-[13px] leading-[1.5] text-ink-soft sm:text-[14px] lg:text-[13px]">
       <Icon
         className="mt-[1px] size-3.5 shrink-0 text-blue-accent"
         strokeWidth={1.75}

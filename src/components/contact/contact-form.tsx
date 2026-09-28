@@ -70,7 +70,7 @@ export function ContactForm() {
             type={field.type}
             name={field.name}
             required={field.required}
-            className="border-b border-ink/20 bg-transparent py-2 font-body text-[13px] sm:text-[14px] lg:text-[15px] text-ink outline-none transition-colors focus:border-blue-accent"
+            className="border-b border-ink/20 bg-transparent py-2 font-body text-[13px] sm:py-3 sm:text-[14px] lg:py-2 lg:text-[15px] text-ink outline-none transition-colors focus:border-blue-accent"
           />
         </label>
       ))}
