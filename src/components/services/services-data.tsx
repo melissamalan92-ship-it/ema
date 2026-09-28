@@ -140,7 +140,7 @@ export const TONES: Record<
     card: "border border-ink/10 bg-white hover:border-blue-accent/45 hover:shadow-[0_28px_60px_-32px_rgba(36,63,74,0.5)]",
     index: "text-ink-soft/60",
     title: "text-ink",
-    titleHover: "transition-colors duration-300 group-hover:text-blue-accent",
+    titleHover: "transition-colors duration-300 group-hover:text-blue-accent-ink",
     lead: "text-ink",
     detail: "text-ink-soft",
     chip: "border-ink/10 bg-bg-warm text-ink-soft",

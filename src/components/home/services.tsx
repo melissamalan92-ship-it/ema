@@ -193,8 +193,8 @@ export function Services() {
         >
           <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-ink">
             Everything your{" "}
-            <em className="italic text-blue-accent">business</em> needs to{" "}
-            <em className="italic text-blue-accent">grow</em>.
+            <em className="italic text-blue-accent-ink">business</em> needs to{" "}
+            <em className="italic text-blue-accent-ink">grow</em>.
           </h2>
           {/* The 420px measure is the desktop column's; below lg the copy
               runs the full width, in line with the heading above it. */}

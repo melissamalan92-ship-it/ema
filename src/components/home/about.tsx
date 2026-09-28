@@ -13,7 +13,7 @@ export function About() {
           <h2 className="font-serif text-[29px] sm:text-[35px] lg:text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-ink">
             More than
             <br />
-            <em className="italic text-blue-accent">numbers</em>
+            <em className="italic text-blue-accent-ink">numbers</em>
           </h2>
           <CtaLink
             href="/contact"
@@ -30,7 +30,7 @@ export function About() {
         >
           <p className="max-w-[640px] font-body text-[14px] sm:text-[15px] lg:text-[16px] leading-[1.6] text-ink">
             For over{" "}
-            <em className="italic text-blue-accent">four decades</em>,
+            <em className="italic text-blue-accent-ink">four decades</em>,
             we&rsquo;ve worked alongside businesses to navigate change, seize
             opportunities and build stronger futures. What started in 1983 as a
             single practice now runs from offices across South Africa, with the

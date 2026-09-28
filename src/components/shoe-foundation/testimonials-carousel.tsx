@@ -12,7 +12,7 @@ type Testimonial = {
 const TESTIMONIALS: Testimonial[] = [
   {
     quote:
-      "As a parent of a child supported by the Shoe Foundation, I would gladly express my heartfelt gratitude as they have helped a lot. From school outings to fundraisers organized by the school the foundation has helped tremendously as they handled all of those matters. Their constant contact with the students show their care and support. All I can say is thank you.",
+      "As a parent of a child supported by the Shoe Foundation, I would gladly express my heartfelt gratitude as they have helped a lot. From school outings to fundraisers organised by the school the foundation has helped tremendously as they handled all of those matters. Their constant contact with the students show their care and support. All I can say is thank you.",
     author: "Gradner Leonard",
     role: "Parent",
   },

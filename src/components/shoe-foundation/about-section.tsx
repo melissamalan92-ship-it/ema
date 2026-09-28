@@ -10,7 +10,7 @@ export function AboutSection() {
             beneath, all left aligned with the copy below. Desktop keeps the
             centred lockup with the shoes between the number and the caption. */}
         <Reveal className="flex flex-wrap items-center gap-x-4 gap-y-3 text-left lg:flex-col lg:flex-nowrap lg:items-center lg:gap-4 lg:text-center">
-          <span className="font-display text-[56px] font-normal leading-none text-blue-accent sm:text-[80px] lg:text-[110px]">
+          <span className="font-display text-[56px] font-normal leading-none text-blue-accent-ink sm:text-[80px] lg:text-[110px]">
             42
           </span>
           {/* shoes-trimmed.png is shoes.png with its transparent padding cropped
@@ -23,7 +23,7 @@ export function AboutSection() {
             className="h-[56px] w-auto sm:h-[80px] lg:h-auto lg:w-[248px]"
             aria-hidden
           />
-          <p className="w-full font-display text-[18px] leading-[1.25] text-blue-accent sm:text-[23px] lg:w-auto lg:whitespace-nowrap lg:text-[28px] lg:leading-[1.15]">
+          <p className="w-full font-display text-[18px] leading-[1.25] text-blue-accent-ink sm:text-[23px] lg:w-auto lg:whitespace-nowrap lg:text-[28px] lg:leading-[1.15]">
             learners being put through school and counting
           </p>
         </Reveal>

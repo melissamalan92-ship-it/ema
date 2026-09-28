@@ -39,7 +39,7 @@ export function ScholarMessageSection() {
               className="col-span-2 col-start-1 row-start-2 flex flex-col items-start gap-6 text-left lg:col-span-1 lg:row-start-2"
             >
               <p className="font-body text-[14px] leading-[1.7] text-cream/90 lg:max-w-[440px] lg:text-[16px]">
-                During my time with The Shoe Foundation, I recieved such
+                During my time with The Shoe Foundation, I received such
                 genuine support, guidance, and encouragement to help me become
                 the best version of myself. Their support turned a stressful
                 situation into a journey I could actually enjoy, letting me

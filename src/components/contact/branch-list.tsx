@@ -14,7 +14,7 @@ export function BranchList() {
             Where to find us
           </span>
           <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-ink">
-            Our <em className="italic text-blue-accent">branches</em>.
+            Our <em className="italic text-blue-accent-ink">branches</em>.
           </h2>
         </Reveal>
 
@@ -93,7 +93,7 @@ function ContactRow({
   return (
     <div className="flex items-start gap-2.5 font-body text-[13px] leading-[1.5] text-ink-soft sm:text-[14px] lg:text-[13px]">
       <Icon
-        className="mt-[1px] size-3.5 shrink-0 text-blue-accent"
+        className="mt-[1px] size-3.5 shrink-0 text-blue-accent-ink"
         strokeWidth={1.75}
       />
       <span>{children}</span>

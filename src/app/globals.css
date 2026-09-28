@@ -25,6 +25,7 @@
   --color-navy-dark: var(--navy-dark);
   --color-navy-secondary: var(--navy-secondary);
   --color-blue-accent: var(--blue-accent);
+  --color-blue-accent-ink: var(--blue-accent-ink);
   --color-cream: var(--cream);
   --color-button-navy: var(--button-navy);
   --color-bg-warm: var(--bg-warm);
@@ -98,13 +99,17 @@
   --navy-dark: #243f4a;
   --navy-secondary: #86af9f;
   --blue-accent: #86af9f;
+  /* Same sage, darkened for light backgrounds: #86af9f only reaches
+     2.27:1 on bg-warm, which fails AA. This hits 4.53:1. The lighter
+     value stays for navy, where it already passes at 4.59:1. */
+  --blue-accent-ink: #517a6a;
   --cream: #f2f4ef;
   --button-navy: #37616b;
   --bg-warm: #f5f8f8;
   --bg-grey: #f5f8f8;
   --bg-mint: #f5f8f8;
   --ink: #2a3e43;
-  --ink-soft: #758291;
+  --ink-soft: #677381;
   --shoe-blue: #496c74;
   --shoe-yellow: #fcfdc9;
   --background: oklch(1 0 0);

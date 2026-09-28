@@ -149,7 +149,7 @@ function Row({
 }) {
   return (
     <div className="flex items-start gap-2.5 font-body text-[13px] leading-[1.5] text-ink-soft">
-      <Icon className="mt-[1px] size-3.5 shrink-0 text-blue-accent" strokeWidth={1.75} />
+      <Icon className="mt-[1px] size-3.5 shrink-0 text-blue-accent-ink" strokeWidth={1.75} />
       <span>{children}</span>
     </div>
   );

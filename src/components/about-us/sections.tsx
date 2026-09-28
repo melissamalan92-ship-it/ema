@@ -14,9 +14,9 @@ export function DecadesSection() {
           <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-ink">
             Decades of
             <br />
-            <em className="italic text-blue-accent">experience.</em>
+            <em className="italic text-blue-accent-ink">experience.</em>
             <br />
-            Built for <em className="italic text-blue-accent">today.</em>
+            Built for <em className="italic text-blue-accent-ink">today.</em>
           </h2>
           <CtaLink
             href="/contact"

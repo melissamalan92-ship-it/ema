@@ -45,14 +45,14 @@ export function DonateOptionsSection() {
             delay={i * 80}
             className="group flex items-start gap-3 text-left sm:flex-col sm:items-center sm:text-center"
           >
-            <span className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-blue-accent/15 text-blue-accent transition-colors duration-300 group-hover:bg-shoe-yellow group-hover:text-shoe-blue sm:size-11">
+            <span className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-blue-accent/15 text-blue-accent-ink transition-colors duration-300 group-hover:bg-shoe-yellow group-hover:text-shoe-blue sm:size-11">
               <option.icon className="size-4 sm:size-5" strokeWidth={1.75} />
             </span>
             <div className="flex flex-col gap-1 sm:items-center sm:gap-3">
               <h3 className="font-body text-[14px] font-bold text-shoe-blue lg:text-[19px]">
                 {option.title}
               </h3>
-              <p className="font-body text-[14px] leading-[1.55] text-blue-accent sm:max-w-[280px] sm:leading-[1.6]">
+              <p className="font-body text-[14px] leading-[1.55] text-blue-accent-ink sm:max-w-[280px] sm:leading-[1.6]">
                 {option.description}
               </p>
             </div>

@@ -14,7 +14,7 @@ export function ShoeFoundation() {
           <h2 className="max-w-[420px] font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-ink">
             Proudly supporting
             <br />
-            <em className="italic text-blue-accent">The Shoe Foundation.</em>
+            <em className="italic text-blue-accent-ink">The Shoe Foundation.</em>
           </h2>
           <p className="max-w-[400px] font-body text-[14px] sm:text-[15px] lg:text-[16px] leading-[1.6] text-ink-soft">
             Through The Shoe Foundation, we&rsquo;re committed to making a
