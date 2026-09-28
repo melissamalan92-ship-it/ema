@@ -92,7 +92,7 @@ export function TestimonialsCarousel() {
             className="flex animate-[testimonial-in_450ms_cubic-bezier(0.16,1,0.3,1)_both] flex-col items-center gap-3"
           >
             <p
-              className={`font-body text-[13px] leading-[1.65] text-ink sm:text-[14px] lg:line-clamp-none lg:text-[15px] ${
+              className={`font-body text-[13px] leading-[1.65] text-ink sm:text-[15px] lg:line-clamp-none lg:text-[15px] ${
                 expanded ? "" : "line-clamp-4"
               }`}
             >

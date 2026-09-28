@@ -5,7 +5,7 @@ import { ShoeFoundationVideo } from "./shoe-foundation-video";
 
 export function ShoeFoundationHero() {
   return (
-    <section className="bg-shoe-blue px-5 pb-10 pt-10 sm:px-8 lg:px-20 lg:pb-20 lg:pt-20">
+    <section className="bg-shoe-blue px-5 pb-10 sm:pb-14 pt-10 sm:pt-14 sm:px-8 lg:px-20 lg:pb-20 lg:pt-20">
       {/* Phones stack: video, logo lockup, then the quote at full width.
           There isn't room beside a 150px logo for a second column of text,
           so the quote takes the whole measure — as it does on desktop.
@@ -47,7 +47,7 @@ export function ShoeFoundationHero() {
         >
           <p
             data-glow
-            className="font-body text-[14px] font-bold leading-[1.6] text-cream lg:text-[18px]"
+            className="mx-auto font-body text-[14px] font-bold leading-[1.6] text-cream sm:max-w-[560px] sm:text-[16px] lg:max-w-none lg:text-[18px]"
           >
             &ldquo;Education is the most powerful weapon which you can use to
             change the world.&rdquo; Nelson Mandela

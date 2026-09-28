@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/container";
 
 export function ContactFormSection() {
   return (
-    <section className="bg-navy-primary px-5 sm:px-8 lg:px-20 py-14 lg:py-28">
+    <section className="bg-navy-primary px-5 sm:px-8 lg:px-20 py-14 sm:py-16 lg:py-28">
       <Container className="grid grid-cols-1 sm:grid-cols-[1fr_1.2fr] items-center gap-10 sm:gap-8 lg:grid-cols-2 lg:gap-16">
         <Reveal className="flex flex-col items-start gap-6 text-left">
           <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-cream">
@@ -29,7 +29,7 @@ export function ContactFormSection() {
 
         <Reveal
           delay={120}
-          className="hidden w-full rounded-[28px] bg-bg-warm p-6 shadow-[0_40px_80px_-24px_rgba(0,0,0,0.4)] sm:block lg:p-10"
+          className="hidden w-full rounded-[24px] bg-bg-warm p-6 shadow-[0_40px_80px_-24px_rgba(0,0,0,0.4)] sm:block lg:p-10"
         >
           <ContactForm />
         </Reveal>

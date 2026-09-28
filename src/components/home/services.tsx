@@ -105,7 +105,7 @@ export function Services() {
   return (
     <section
       id="services"
-      className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-10 lg:py-20"
+      className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-10 sm:py-14 lg:py-20"
     >
       <Container className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-[1.2fr_1fr] lg:gap-12">
         <div className="order-2 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:order-none lg:col-start-1 lg:row-start-1 lg:grid-cols-2">
@@ -162,7 +162,7 @@ export function Services() {
                     className={`group flex h-full items-start gap-3 overflow-hidden rounded-[18px] p-4 transition-all duration-500 hover:-translate-y-1 lg:flex-col lg:items-stretch lg:gap-0 lg:p-0 ${t.card}`}
                   >
                     <div
-                      className={`size-11 shrink-0 rounded-[10px] border p-2 sm:size-12 lg:size-auto lg:w-full lg:rounded-none lg:border-0 lg:border-b lg:px-4 lg:pb-2 lg:pt-3 ${t.panel} ${t.motif}`}
+                      className={`size-11 shrink-0 rounded-[12px] border p-2 sm:size-12 lg:size-auto lg:w-full lg:rounded-none lg:border-0 lg:border-b lg:px-4 lg:pb-2 lg:pt-3 ${t.panel} ${t.motif}`}
                     >
                       <div className="h-full w-full lg:mx-auto lg:h-[52px]">
                         <Motif />
@@ -198,7 +198,7 @@ export function Services() {
           </h2>
           {/* The 420px measure is the desktop column's; below lg the copy
               runs the full width, in line with the heading above it. */}
-          <p className="max-w-none font-body text-[12.3px] leading-[1.6] text-ink sm:text-[14px] lg:max-w-[420px] lg:text-[16px]">
+          <p className="max-w-none font-body text-[12.3px] leading-[1.6] text-ink sm:max-w-[560px] sm:text-[15px] lg:max-w-[420px] lg:text-[16px]">
             We offer a full range of professional services to support your
             business at every stage. Whether you need one piece of work handled
             or your whole finance function looked after, it&rsquo;s the same team

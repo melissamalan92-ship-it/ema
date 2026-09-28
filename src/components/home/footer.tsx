@@ -3,9 +3,9 @@ import { Container } from "@/components/ui/container";
 
 function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
   const className =
-    "group/flink relative w-fit text-[14px] text-cream/80 transition-colors hover:text-cream lg:text-[17px]";
+    "group/flink relative flex w-fit items-center py-[12px] text-[14px] text-cream/80 transition-colors hover:text-cream lg:py-0 lg:text-[17px]";
   const underline = (
-    <span className="absolute bottom-0 left-0 h-px w-0 bg-blue-accent transition-all duration-300 ease-out group-hover/flink:w-full" />
+    <span className="absolute bottom-[10px] left-0 h-px w-0 bg-blue-accent transition-all duration-300 ease-out group-hover/flink:w-full lg:bottom-0" />
   );
 
   if (href.startsWith("http")) {

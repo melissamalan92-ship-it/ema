@@ -4,7 +4,7 @@ import { Container } from "@/components/ui/container";
 
 export function AboutSection() {
   return (
-    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-14 lg:py-24">
+    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-14 sm:py-16 lg:py-24">
       <Container className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] items-start gap-10 lg:gap-16">
         {/* Phones: 42 and the shoes share a row at matching height, caption
             beneath, all left aligned with the copy below. Desktop keeps the

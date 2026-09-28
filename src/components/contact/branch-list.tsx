@@ -7,7 +7,7 @@ import { BranchTiles } from "./branch-tiles";
 
 export function BranchList() {
   return (
-    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-10 lg:py-20">
+    <section className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-10 sm:py-14 lg:py-20">
       <Container>
         <Reveal className="mx-auto mb-14 flex max-w-[560px] flex-col items-center gap-3 text-center">
           <span className="font-body text-[14px] sm:text-[15px] lg:text-[16px] text-ink-soft/70">

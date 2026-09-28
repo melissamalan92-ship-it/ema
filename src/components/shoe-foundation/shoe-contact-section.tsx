@@ -4,7 +4,7 @@ import { ShoeContactButton } from "./contact-modal";
 
 export function ShoeContactSection() {
   return (
-    <section className="bg-shoe-blue px-5 sm:px-8 lg:px-20 py-14 lg:py-24">
+    <section className="bg-shoe-blue px-5 sm:px-8 lg:px-20 py-14 sm:py-16 lg:py-24">
       <Reveal className="mx-auto flex max-w-[720px] flex-col items-center gap-5 text-center">
         <h2 className="lg:whitespace-nowrap font-display text-[29px] sm:text-[38px] lg:text-[48px] font-normal leading-[1.15] text-blue-accent">
           <span className="text-cream/70">Contact</span> The Shoe Foundation

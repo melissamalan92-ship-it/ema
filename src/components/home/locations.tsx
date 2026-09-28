@@ -10,7 +10,7 @@ export function Locations() {
   const [active, setActive] = useState<string | null>(null);
 
   return (
-    <section id="locations" className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-10 lg:py-20">
+    <section id="locations" className="bg-bg-warm px-5 sm:px-8 lg:px-20 py-10 sm:py-14 lg:py-20">
       <Container>
       <div className="relative -mx-5 rounded-[24px] bg-navy-primary p-6 sm:-mx-8 lg:mx-0 lg:mr-24 lg:rounded-[32px] lg:p-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-10 lg:gap-16">
@@ -21,7 +21,7 @@ export function Locations() {
             <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-cream">
               Our <em className="italic text-blue-accent">locations</em>.
             </h2>
-            <p className="font-body text-[14px] leading-[1.6] text-cream/70 lg:max-w-[400px] lg:text-[16px]">
+            <p className="font-body text-[14px] leading-[1.6] text-cream/70 sm:max-w-[520px] sm:text-[15px] lg:max-w-[400px] lg:text-[16px]">
               Contact your nearest branch for more information on how we can
               help you, or click a photo to find out more. Each branch is run by
               people who work with businesses in that area every day, so

@@ -37,7 +37,7 @@ export function BranchTiles() {
             <button
               type="button"
               onClick={() => setOpen(location)}
-              className="self-start font-body text-[12px] text-ink-soft underline decoration-ink/25 underline-offset-2 transition-colors hover:text-ink"
+              className="-my-2 flex min-h-[44px] items-center self-start py-2 font-body text-[12px] text-ink-soft underline decoration-ink/25 underline-offset-2 transition-colors hover:text-ink"
             >
               More info
             </button>

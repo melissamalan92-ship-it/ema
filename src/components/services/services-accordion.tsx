@@ -22,7 +22,7 @@ export function ServicesAccordion() {
           <div
             key={service.title}
             id={slug}
-            className={`scroll-mt-24 overflow-hidden rounded-[16px] ${t.card}`}
+            className={`scroll-mt-24 overflow-hidden rounded-[18px] ${t.card}`}
           >
             <button
               type="button"
@@ -32,7 +32,7 @@ export function ServicesAccordion() {
               className="flex w-full items-center gap-3 px-4 py-3.5 text-left sm:px-5 sm:py-4"
             >
               <span
-                className={`flex size-9 shrink-0 items-center justify-center rounded-[10px] border p-1.5 sm:size-10 ${t.panel} ${t.motif}`}
+                className={`flex size-9 shrink-0 items-center justify-center rounded-[12px] border p-1.5 sm:size-10 ${t.panel} ${t.motif}`}
               >
                 <Motif />
               </span>
