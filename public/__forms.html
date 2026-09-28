@@ -7,9 +7,9 @@
   <body>
     <!--
       Netlify discovers forms by scanning static HTML at deploy time. The real
-      form lives in a React modal that doesn't exist until a visitor opens it,
-      so it declares its fields here instead. The modal POSTs back to this file.
-      Field names must stay in sync with contact-modal.tsx.
+      forms live in React components that don't exist until a visitor opens
+      them, so they declare their fields here instead. Each form POSTs back to
+      this file. Field names must stay in sync with the React components.
     -->
     <!-- Shoe Foundation popup -> Zubeida@ema.co.za -->
     <form name="shoe-foundation-enquiry" data-netlify="true" netlify-honeypot="bot-field" hidden>
@@ -31,64 +31,10 @@
       <textarea name="message"></textarea>
     </form>
 
-    <!-- EMA Joburg -> admin@ema.co.za -->
-    <form name="branch-joburg" data-netlify="true" netlify-honeypot="bot-field" hidden>
-      <input type="hidden" name="form-name" value="branch-joburg" />
-      <input type="hidden" name="branch" />
-      <input type="text" name="bot-field" />
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-    </form>
 
-    <!-- EMA Paarl -> infopaarl@ema.co.za -->
-    <form name="branch-paarl" data-netlify="true" netlify-honeypot="bot-field" hidden>
-      <input type="hidden" name="form-name" value="branch-paarl" />
-      <input type="hidden" name="branch" />
-      <input type="text" name="bot-field" />
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-    </form>
 
-    <!-- EMA Cape Town -> infoct@ema.co.za -->
-    <form name="branch-capetown" data-netlify="true" netlify-honeypot="bot-field" hidden>
-      <input type="hidden" name="form-name" value="branch-capetown" />
-      <input type="hidden" name="branch" />
-      <input type="text" name="bot-field" />
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-    </form>
 
-    <!-- EMA Tygervalley -> infotv@ema.co.za -->
-    <form name="branch-tygervalley" data-netlify="true" netlify-honeypot="bot-field" hidden>
-      <input type="hidden" name="form-name" value="branch-tygervalley" />
-      <input type="hidden" name="branch" />
-      <input type="text" name="bot-field" />
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-    </form>
 
-    <!-- EMA CPT Peninsula -> infopen@ema.co.za -->
-    <form name="branch-cptpeninsula" data-netlify="true" netlify-honeypot="bot-field" hidden>
-      <input type="hidden" name="form-name" value="branch-cptpeninsula" />
-      <input type="hidden" name="branch" />
-      <input type="text" name="bot-field" />
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-    </form>
 
-    <!-- EMA Loxton CBD -> info@ema.co.za -->
-    <form name="branch-loxton" data-netlify="true" netlify-honeypot="bot-field" hidden>
-      <input type="hidden" name="form-name" value="branch-loxton" />
-      <input type="hidden" name="branch" />
-      <input type="text" name="bot-field" />
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-    </form>
   </body>
 </html>

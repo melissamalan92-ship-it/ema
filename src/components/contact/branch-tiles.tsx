@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Phone, Mail, MapPin, X } from "lucide-react";
 import { LOCATIONS, type LocationInfo } from "@/components/home/locations-data";
-import { BranchEmailButton } from "./branch-contact-modal";
 
 // The phone view of the branch list: photo tiles two to a row, with the
 // details behind a More info card rather than stacked under every tile.
@@ -116,7 +115,12 @@ function BranchInfoCard({
             </a>
           </Row>
           <Row icon={Mail}>
-            <BranchEmailButton branch={location} />
+            <a
+              href={`mailto:${location.email}`}
+              className="underline decoration-ink/20 underline-offset-2 hover:text-ink"
+            >
+              {location.email}
+            </a>
           </Row>
           <Row icon={MapPin}>
             <a
