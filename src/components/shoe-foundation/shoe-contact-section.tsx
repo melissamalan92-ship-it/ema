@@ -30,6 +30,7 @@ export function ShoeContactSection() {
       >
         <Image
           src="/images/shoes-trimmed.png"
+                sizes="180px"
           alt=""
           width={433}
           height={176}

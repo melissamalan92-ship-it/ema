@@ -27,6 +27,7 @@ export function ScholarMessageSection() {
             >
               <Image
                 src="/images/Nontsikelelo%20Fokazi.jpg"
+                sizes="(max-width: 639px) 156px, (max-width: 1023px) 230px, 420px"
                 alt="Nontsikelelo Fokazi, The Shoe Foundation’s first scholar"
                 width={1200}
                 height={900}

@@ -55,6 +55,7 @@ export function AppPreview() {
                 <div className="-ml-6 -mt-[44px] w-[144px] shrink-0 sm:-ml-2 sm:-mt-[60px] sm:w-[210px] transition-transform duration-500 ease-out lg:ml-0 lg:mt-0 lg:w-auto lg:hover:-translate-y-2">
                   <Image
                     src="/images/phone%20colour.png"
+                sizes="(max-width: 639px) 144px, (max-width: 1023px) 210px, 312px"
                     alt="Hand holding a phone with the EMA app"
                     width={518}
                     height={741}

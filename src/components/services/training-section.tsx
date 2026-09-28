@@ -42,6 +42,7 @@ export function TrainingSection() {
           <Reveal delay={120} className="absolute -bottom-[78px] right-6 w-[131px] sm:w-[200px] lg:relative lg:bottom-auto lg:right-auto lg:-mb-[77px] lg:-mr-[77px] lg:ml-auto lg:w-[63%]">
             <Image
               src="/images/Saipa.png"
+                sizes="(max-width: 639px) 131px, (max-width: 1023px) 200px, 320px"
               alt="SAIPA accredited training centre"
               width={476}
               height={722}

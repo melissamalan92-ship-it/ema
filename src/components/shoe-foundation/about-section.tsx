@@ -17,6 +17,7 @@ export function AboutSection() {
               off, so it sizes on the artwork rather than on dead pixels. */}
           <Image
             src="/images/shoes-trimmed.png"
+                sizes="(max-width: 639px) 140px, (max-width: 1023px) 200px, 248px"
             alt=""
             width={433}
             height={176}

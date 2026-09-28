@@ -58,7 +58,7 @@ export function ShoeFoundationVideo() {
           aria-label="Play the Shoe Foundation film"
           className="group absolute inset-0 flex items-center justify-center bg-[rgba(36,63,74,0.35)] transition-colors hover:bg-[rgba(36,63,74,0.45)]"
         >
-          <span className="flex size-16 items-center justify-center rounded-full bg-cream/95 text-shoe-blue shadow-[0_12px_32px_-8px_rgba(0,0,0,0.5)] transition-transform duration-300 group-hover:scale-105 lg:size-20">
+          <span className="flex size-16 items-center justify-center rounded-full bg-cream/95 sm:size-[72px] text-shoe-blue shadow-[0_12px_32px_-8px_rgba(0,0,0,0.5)] transition-transform duration-300 group-hover:scale-105 lg:size-20">
             <Play className="ml-1 size-7 lg:size-8" fill="currentColor" strokeWidth={0} />
           </span>
         </button>

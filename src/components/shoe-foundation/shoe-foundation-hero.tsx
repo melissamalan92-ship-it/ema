@@ -27,6 +27,7 @@ export function ShoeFoundationHero() {
             <h1>
               <Image
                 src="/images/shoe%20foundation%20logo.png"
+                sizes="(max-width: 639px) 119px, (max-width: 1023px) 165px, 200px"
                 alt="The Shoe Foundation"
                 width={280}
                 height={343}
