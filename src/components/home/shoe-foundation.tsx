@@ -17,8 +17,9 @@ export function ShoeFoundation() {
             <em className="italic text-blue-accent-ink">The Shoe Foundation.</em>
           </h2>
           <p className="max-w-[400px] font-body text-[14px] sm:text-[15px] lg:text-[16px] leading-[1.6] text-ink-soft">
-            Through The Shoe Foundation, we&rsquo;re committed to making a
-            positive impact in the communities where we live and work.
+            Since 2012, The Shoe Foundation has put 42 learners through high
+            school &mdash; covering fees, uniforms, books and transport from
+            Grade 8 to Matric, in partnership with Camps Bay High School.
           </p>
           <CtaLink
             href="/shoe-foundation"

@@ -31,10 +31,10 @@ export function About() {
           <p className="max-w-[640px] font-body text-[14px] sm:text-[15px] lg:text-[16px] leading-[1.6] text-ink">
             For over{" "}
             <em className="italic text-blue-accent-ink">four decades</em>,
-            we&rsquo;ve worked alongside businesses to navigate change, seize
-            opportunities and build stronger futures. What started in 1983 as a
-            single practice now runs from offices across South Africa, with the
-            same people-first approach it began with.
+            we&rsquo;ve kept the books, filed the returns and sat in the
+            rooms where the difficult decisions get made. What started in 1983
+            as a single practice now runs from branches across South Africa,
+            still run by people who answer their own phones.
           </p>
           <p className="max-w-[640px] font-body text-[14px] sm:text-[15px] lg:text-[16px] leading-[1.6] text-ink-soft">
             Our work covers the full picture &mdash; bookkeeping and annual

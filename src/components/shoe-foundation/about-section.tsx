@@ -41,7 +41,7 @@ export function AboutSection() {
             school and on to university.
           </p>
           <p className="max-w-[520px] font-body text-[14px] sm:text-[16px] lg:text-[17px] leading-[1.6] text-ink">
-            More than 13 years later, the Foundation continues to help
+            More than a decade later, the Foundation continues to help
             learners complete their secondary education, providing the
             support and opportunities they need to{" "}
             <strong className="font-bold">

@@ -10,8 +10,8 @@ const STATS = [
   },
   {
     icon: MapPin,
-    title: "Five offices across South Africa",
-    body: "From the Cape through to Johannesburg, so there's a team within reach of the businesses we look after.",
+    title: "Five branches across South Africa",
+    body: "From the Cape through to Johannesburg, so there’s a team within reach of the businesses we look after.",
   },
   {
     icon: ShieldCheck,

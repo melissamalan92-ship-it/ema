@@ -27,7 +27,7 @@ export function ScholarMessageSection() {
             >
               <Image
                 src="/images/Nontsikelelo%20Fokazi.jpg"
-                alt="Nontsikelelo Fokasi, The Shoe Foundation's first scholar"
+                alt="Nontsikelelo Fokazi, The Shoe Foundation’s first scholar"
                 width={1200}
                 height={900}
                 className="aspect-[215/187] w-full rounded-2xl object-cover object-bottom shadow-[0_40px_80px_-25px_rgba(0,0,0,0.55)] lg:aspect-auto lg:object-center"
@@ -47,13 +47,13 @@ export function ScholarMessageSection() {
                 kind of care is a true reflection of The Shoe
                 Foundation&rsquo;s heart, it&rsquo;s not just about funding,
                 it&rsquo;s about lifting people up with kindness and real
-                support. Thank you to The Shoe foundation.{" "}
+                support. Thank you to The Shoe Foundation.{" "}
                 <span className="ml-[70px] font-display text-[19.3px] sm:text-[24px] text-shoe-yellow lg:hidden">
-                  Nontsikelelo Fokasi
+                  Nontsikelelo Fokazi
                 </span>
               </p>
               <p className="hidden font-display text-shoe-yellow lg:block lg:self-end lg:text-[30px]">
-                Nontsikelelo Fokasi
+                Nontsikelelo Fokazi
               </p>
             </Reveal>
           </div>

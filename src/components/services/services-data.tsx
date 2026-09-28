@@ -38,7 +38,7 @@ export const SERVICES: Service[] = [
   {
     title: "Corporate Secretarial & Legal",
     description:
-      "Keep your company's statutory affairs in order, from registration through every change your business goes through.",
+      "Keep your company’s statutory affairs in order, from registration through every change your business goes through.",
     detail:
       "We register companies and trusts, maintain your statutory records, and file the annual returns and resolutions that keep you in good standing. When directors change or founding documents need amending, we prepare and lodge the paperwork.",
     items: [
@@ -54,9 +54,9 @@ export const SERVICES: Service[] = [
   {
     title: "Accounting Software",
     description:
-      "Modern tools set up around how your business actually works, with support that doesn't disappear after go-live.",
+      "Modern tools set up around how your business actually works, with support that doesn’t disappear after go-live.",
     detail:
-      "We implement and configure Xero, Sage, Pastel and QuickBooks around your operation rather than a generic template, and handle migration so nothing is lost. Your team is trained on the workflows they'll actually use, with support afterwards.",
+      "We implement and configure Xero, Sage, Pastel and QuickBooks around your operation rather than a generic template, and handle migration so nothing is lost. Your team is trained on the workflows they’ll actually use, with support afterwards.",
     items: [
       "Software implementation & setup",
       "Team training",
@@ -99,9 +99,9 @@ export const SERVICES: Service[] = [
   {
     title: "Taxation Services",
     description:
-      "Proactive tax planning that keeps you compliant with SARS while making sure you're not paying more than you should.",
+      "Proactive tax planning that keeps you compliant with SARS while making sure you’re not paying more than you should.",
     detail:
-      "Provisional and annual returns, VAT submissions and employees' tax are prepared, reconciled and filed on schedule. We handle SARS correspondence and verifications on your behalf, and plan through the year rather than at the deadline.",
+      "Provisional and annual returns, VAT submissions and employees’ tax are prepared, reconciled and filed on schedule. We handle SARS correspondence and verifications on your behalf, and plan through the year rather than at the deadline.",
     items: ["Income tax", "VAT", "Company tax & tax planning"],
     motif: TaxMotif,
     span: "full",

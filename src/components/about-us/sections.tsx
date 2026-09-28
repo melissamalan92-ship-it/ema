@@ -32,13 +32,13 @@ export function DecadesSection() {
             Established in 1983, EMA has worked across South Africa
             providing accounting, tax and advisory services to businesses
             of every size. We are a member of the South African Institute
-            of Professional Accountants (SAIPA), and our commitment to
-            understanding each client&rsquo;s individual needs has kept
-            many relationships strong for over twenty years.
+            of Professional Accountants (SAIPA). Many of the businesses we
+            look after have been with us for decades, through changes of
+            owner, of premises and of generation.
           </p>
           <p className="max-w-[590px] font-body text-[14px] sm:text-[16px] lg:text-[19px] leading-[1.6] text-ink-soft">
             What began as a single practice has grown steadily rather than
-            quickly &mdash; opening offices where clients needed them, and
+            quickly &mdash; opening branches where clients needed them, and
             adding specialists as the work asked for it. In that time
             we&rsquo;ve seen businesses through changing tax regimes, new
             company law and the move from paper ledgers to cloud software,
@@ -71,7 +71,7 @@ export function ApproachSection() {
           <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-cream">
             More expertise,{" "}
             <br />
-            <em className="italic text-blue-accent">under one roof.</em>
+            <em className="italic text-blue-accent">one relationship.</em>
           </h2>
           <p className="font-body text-[14px] sm:text-[16px] lg:text-[19px] leading-[1.5] text-cream/70">
             As EMA has grown, so has the expertise behind it. Our group brings

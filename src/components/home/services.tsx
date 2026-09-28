@@ -62,7 +62,7 @@ const SERVICES: Service[] = [
   {
     title: "Taxation Services",
     description:
-      "Income tax, VAT, employees' tax, and statutory levies handled end-to-end.",
+      "Income tax, VAT, employees’ tax, and statutory levies handled end-to-end.",
     motif: TaxMotif,
     tone: "white",
     wide: true,
@@ -201,7 +201,7 @@ export function Services() {
           <p className="max-w-none font-body text-[12.3px] leading-[1.6] text-ink sm:text-[14px] lg:max-w-[420px] lg:text-[16px]">
             We offer a full range of professional services to support your
             business at every stage. Whether you need one piece of work handled
-            or your whole finance function looked after, it&apos;s the same team
+            or your whole finance function looked after, it&rsquo;s the same team
             seeing it through. That means advice built around how your business
             actually runs, rather than a standard package applied to everyone.
           </p>

@@ -42,7 +42,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "EMA | E Malan and Associates",
   description:
-    "Accounting and financial guidance to grow and protect what you've built.",
+    "Accounting and financial guidance to grow and protect what you’ve built.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

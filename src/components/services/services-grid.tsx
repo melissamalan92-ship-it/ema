@@ -168,7 +168,7 @@ export function ServicesGrid() {
             you to the right team.
           </p>
           <CtaLink href="/contact" className="mt-3">
-            Book a consultation
+            Contact Us
           </CtaLink>
         </Reveal>
       </Container>

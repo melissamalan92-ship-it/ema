@@ -9,7 +9,7 @@ export function ContactFormSection() {
       <Container className="grid grid-cols-1 sm:grid-cols-[1fr_1.2fr] items-center gap-10 sm:gap-8 lg:grid-cols-2 lg:gap-16">
         <Reveal className="flex flex-col items-start gap-6 text-left">
           <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-cream">
-            Let&apos;s talk
+            Let&rsquo;s talk
             <br />
             <em className="italic text-blue-accent">business.</em>
           </h2>
@@ -18,7 +18,7 @@ export function ContactFormSection() {
             <strong className="font-bold text-cream">
               Contact us here for general enquiries
             </strong>{" "}
-            and we&apos;ll point you in the right direction.
+            and we&rsquo;ll point you in the right direction.
           </p>
         </Reveal>
 

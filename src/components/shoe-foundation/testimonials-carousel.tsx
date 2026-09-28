@@ -18,7 +18,7 @@ const TESTIMONIALS: Testimonial[] = [
   },
   {
     quote:
-      "My experience with the Shoe Foundation has been truly life-changing. The support I've received from school supplies to mentorship has helped me stay focused on my studies and believe in myself. The Foundation has not only given me opportunities to grow academically. I'm proud to be part of a program that genuinely cares about our future.",
+      "My experience with the Shoe Foundation has been truly life-changing. The support I’ve received from school supplies to mentorship has helped me stay focused on my studies and believe in myself. The Foundation has not only given me opportunities to grow academically. I’m proud to be part of a program that genuinely cares about our future.",
     author: "Vuyolwethu Prince Ndlovu",
     role: "Camps Bay High School",
   },
@@ -30,7 +30,7 @@ const TESTIMONIALS: Testimonial[] = [
   },
   {
     quote:
-      "Being a Shoe Foundation student at Camps Bay has truly changed my life. The scholarship has allowed me to fully experience all the opportunities that Camps Bay offers, from excelling in academics, thanks to their academic aid, to joining sports teams, cultural events, like the privilege of watching plays such as Spring Awakening and The Tempest as well as leadership activities. Without the Foundation's support, many of these experiences might not have been possible. I've grown in confidence, discovered new passions, and learned the value of giving back to my community. I'm deeply grateful to the Shoe Foundation for believing in me and helping me make the most of my education.",
+      "Being a Shoe Foundation student at Camps Bay has truly changed my life. The scholarship has allowed me to fully experience all the opportunities that Camps Bay offers, from excelling in academics, thanks to their academic aid, to joining sports teams, cultural events, like the privilege of watching plays such as Spring Awakening and The Tempest as well as leadership activities. Without the Foundation’s support, many of these experiences might not have been possible. I’ve grown in confidence, discovered new passions, and learned the value of giving back to my community. I’m deeply grateful to the Shoe Foundation for believing in me and helping me make the most of my education.",
     author: "Zayb Williams",
     role: "Student",
   },

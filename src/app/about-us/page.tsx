@@ -10,7 +10,7 @@ import {
 export const metadata: Metadata = {
   title: "About Us | EMA",
   description:
-    "E Malan & Associates is a progressive firm of commercial and financial accountants, working for your company's future.",
+    "E Malan & Associates is a progressive firm of commercial and financial accountants, working for your company’s future.",
 };
 
 const GRAIN =

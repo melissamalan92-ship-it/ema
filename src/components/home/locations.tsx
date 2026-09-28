@@ -23,7 +23,7 @@ export function Locations() {
             </h2>
             <p className="font-body text-[14px] leading-[1.6] text-cream/70 lg:max-w-[400px] lg:text-[16px]">
               Contact your nearest branch for more information on how we can
-              help you, or click a photo to find out more. Each office is run by
+              help you, or click a photo to find out more. Each branch is run by
               people who work with businesses in that area every day, so
               you&rsquo;re dealing with someone who knows your market. We&rsquo;re
               glad to meet in person, or to handle everything remotely if that
