@@ -47,7 +47,7 @@ export function ShoeFoundationHero() {
         >
           <p
             data-glow
-            className="mx-auto font-body text-[14px] font-bold leading-[1.6] text-cream sm:max-w-[560px] sm:text-[16px] lg:max-w-none lg:text-[18px]"
+            className="mx-auto font-body text-[14px] font-bold leading-[1.6] text-cream sm:max-w-[560px] sm:text-[16px] lg:max-w-[700px] lg:text-[18px]"
           >
             &ldquo;Education is the most powerful weapon which you can use to
             change the world.&rdquo; Nelson Mandela

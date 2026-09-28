@@ -67,7 +67,7 @@ export function ApproachSection() {
   return (
     <section className="relative z-10 bg-navy-primary px-5 sm:px-8 lg:px-20 pb-9 sm:pb-12 lg:pb-32 pt-10 sm:pt-14 lg:pt-20">
       <Container>
-        <Reveal className="mx-auto mb-16 flex max-w-[640px] flex-col items-center gap-5 text-center lg:max-w-[1000px]">
+        <Reveal className="mx-auto mb-16 flex max-w-[640px] flex-col items-center gap-5 text-center lg:max-w-[720px]">
           <h2 className="font-serif text-heading-lg font-normal leading-[1.15] tracking-[-0.01em] text-cream">
             More expertise,{" "}
             <br />
