@@ -138,8 +138,8 @@ function ContactModal({ onClose }: { onClose: () => void }) {
               Thank you
             </h2>
             <p className="max-w-[340px] font-body text-[13px] sm:text-[14px] lg:text-[15px] leading-[1.6] text-ink-soft">
-              Your message is on its way to Zubeida. She&rsquo;ll be in touch
-              as soon as she can.
+              Your message has been sent. We&rsquo;ll get back to you
+              shortly.
             </p>
             <button
               type="button"
