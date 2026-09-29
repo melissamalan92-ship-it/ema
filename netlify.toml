@@ -9,3 +9,17 @@
 [build.environment]
   # Next.js 16 requires Node 20.9+.
   NODE_VERSION = "20"
+
+# The old WordPress site lived at these URLs. Without these, every indexed
+# link and bookmark 404s the moment the domain points here.
+[[redirects]]
+  from = "/contact-us/*"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/home/*"
+  to = "/"
+  status = 301
+  force = true
