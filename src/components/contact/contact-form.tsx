@@ -44,8 +44,7 @@ export function ContactForm() {
           Thank you
         </h3>
         <p className="max-w-[320px] font-body text-[14px] sm:text-[15px] lg:text-[16px] leading-[1.6] text-ink-soft">
-          We&rsquo;ve got your message and someone will come back to you
-          shortly.
+          Your message has been sent. We&rsquo;ll get back to you shortly.
         </p>
       </div>
     );
