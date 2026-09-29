@@ -197,6 +197,23 @@
   }
 }
 
+/* Keyboard focus. The site alternates navy and near-white sections, and no
+   single ring colour reads on both, so this uses two: a cream outline that
+   shows on navy, wrapped in a navy halo that shows on light. One of the two
+   is always visible. :focus-visible keeps it off mouse clicks. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--cream);
+  outline-color: var(--cream);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px var(--navy-primary);
+}
+
 @keyframes blink {
   50% {
     opacity: 0;

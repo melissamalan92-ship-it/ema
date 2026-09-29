@@ -11,7 +11,7 @@ import { ShoeContactSection } from "@/components/shoe-foundation/shoe-contact-se
 import { ShoeContactProvider } from "@/components/shoe-foundation/contact-modal";
 
 export const metadata: Metadata = {
-  title: "The Shoe Foundation | EMA",
+  title: "The Shoe Foundation",
   description:
     "The Shoe Foundation helps learners complete their education, one pair of shoes at a time.",
 };

@@ -178,7 +178,7 @@ function ContactModal({ onClose }: { onClose: () => void }) {
                   name="name"
                   type="text"
                   required
-                  className="border-b border-ink/20 bg-transparent py-2 font-body text-[13px] sm:text-[14px] lg:text-[15px] text-ink outline-none transition-colors focus:border-shoe-blue"
+                  className="border-b border-ink/20 bg-transparent py-2 font-body text-[13px] sm:text-[14px] lg:text-[15px] text-ink transition-colors focus:border-shoe-blue"
                 />
               </label>
 
@@ -188,7 +188,7 @@ function ContactModal({ onClose }: { onClose: () => void }) {
                   name="email"
                   type="email"
                   required
-                  className="border-b border-ink/20 bg-transparent py-2 font-body text-[13px] sm:text-[14px] lg:text-[15px] text-ink outline-none transition-colors focus:border-shoe-blue"
+                  className="border-b border-ink/20 bg-transparent py-2 font-body text-[13px] sm:text-[14px] lg:text-[15px] text-ink transition-colors focus:border-shoe-blue"
                 />
               </label>
 
@@ -198,7 +198,7 @@ function ContactModal({ onClose }: { onClose: () => void }) {
                   name="message"
                   rows={4}
                   required
-                  className="resize-none rounded-md border border-ink/20 bg-transparent p-3 font-body text-[13px] sm:text-[14px] lg:text-[15px] text-ink outline-none transition-colors focus:border-shoe-blue"
+                  className="resize-none rounded-md border border-ink/20 bg-transparent p-3 font-body text-[13px] sm:text-[14px] lg:text-[15px] text-ink transition-colors focus:border-shoe-blue"
                 />
               </label>
 

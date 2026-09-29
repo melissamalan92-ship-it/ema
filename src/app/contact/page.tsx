@@ -6,7 +6,7 @@ import { BranchList } from "@/components/contact/branch-list";
 import { ContactFormSection } from "@/components/contact/contact-form-section";
 
 export const metadata: Metadata = {
-  title: "Contact | EMA",
+  title: "Contact",
   description:
     "Find your nearest EMA branch, or get in touch for general enquiries.",
 };

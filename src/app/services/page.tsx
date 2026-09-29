@@ -6,7 +6,7 @@ import { ServicesGrid } from "@/components/services/services-grid";
 import { TrainingSection } from "@/components/services/training-section";
 
 export const metadata: Metadata = {
-  title: "Services | EMA",
+  title: "Services",
   description:
     "A full range of professional services to support your business at every stage.",
 };

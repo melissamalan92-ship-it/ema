@@ -5,7 +5,7 @@ import { Reveal } from "@/components/home/reveal";
 import { CtaLink } from "@/components/home/cta-link";
 
 export const metadata: Metadata = {
-  title: "Careers | EMA",
+  title: "Careers",
   description: "Join the team at E Malan & Associates.",
 };
 
