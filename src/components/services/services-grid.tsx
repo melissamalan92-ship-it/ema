@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/container";
 import { serviceSlug } from "./service-anchors";
 import { SERVICES, TONES } from "./services-data";
 import { ServicesAccordion } from "./services-accordion";
+import { ServicesAnchor } from "./services-anchor";
 
 function Index({ n, className }: { n: number; className: string }) {
   return (
@@ -45,6 +46,7 @@ export function ServicesGrid() {
           </p>
         </Reveal>
 
+        <ServicesAnchor />
         <ServicesAccordion />
 
         {/* The bento is desktop-only; phones get the accordion above. */}
@@ -65,7 +67,7 @@ export function ServicesGrid() {
                   }
                 >
                   <article
-                    id={serviceSlug(service.title)}
+                    data-service={serviceSlug(service.title)}
                     className={`group relative flex h-full scroll-mt-32 items-stretch gap-6 overflow-hidden rounded-[24px] p-5 transition-all duration-500 hover:-translate-y-1 lg:p-6 ${t.card}`}
                   >
                     {t.glow && (
@@ -116,7 +118,7 @@ export function ServicesGrid() {
                 }
               >
                 <article
-                  id={serviceSlug(service.title)}
+                  data-service={serviceSlug(service.title)}
                   className={`group relative flex h-full scroll-mt-32 flex-col overflow-hidden rounded-[24px] transition-all duration-500 hover:-translate-y-1 ${t.card}`}
                 >
                   <div

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { SERVICES, TONES } from "./services-data";
 import { serviceSlug } from "./service-anchors";
@@ -9,6 +9,18 @@ import { serviceSlug } from "./service-anchors";
 // carrying its motif as an icon, and expands in place for the detail.
 export function ServicesAccordion() {
   const [open, setOpen] = useState<string | null>(null);
+
+  // Arriving from a home-page card should open the service it names, not just
+  // scroll near it.
+  useEffect(() => {
+    const fromHash = () => {
+      const slug = decodeURIComponent(window.location.hash.replace("#", ""));
+      if (slug) setOpen(slug);
+    };
+    fromHash();
+    window.addEventListener("hashchange", fromHash);
+    return () => window.removeEventListener("hashchange", fromHash);
+  }, []);
 
   return (
     <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:items-start lg:hidden">
@@ -21,7 +33,7 @@ export function ServicesAccordion() {
         return (
           <div
             key={service.title}
-            id={slug}
+            data-service={slug}
             className={`scroll-mt-24 overflow-hidden rounded-[18px] ${t.card}`}
           >
             <button
